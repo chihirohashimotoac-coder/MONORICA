@@ -1,0 +1,257 @@
+{
+  "scope": "draft_data_structure_and_arithmetic_only_no_gameplay_test",
+  "result": "pass",
+  "single_type_cells_checked": 144,
+  "dual_defender_pairs_checked": 66,
+  "dual_attack_results_checked": 792,
+  "immunities": [
+    {
+      "attack": "雷",
+      "defender": "地"
+    },
+    {
+      "attack": "毒",
+      "defender": "鋼"
+    }
+  ],
+  "strict_single_type_defensive_dominance_pairs": [],
+  "summary": [
+    {
+      "type_id": "neutral",
+      "label": "無",
+      "super_effective_targets": [],
+      "weak_to": [
+        "鋼",
+        "闇"
+      ],
+      "resists": [],
+      "immune_to": []
+    },
+    {
+      "type_id": "grass",
+      "label": "草",
+      "super_effective_targets": [
+        "水",
+        "地"
+      ],
+      "weak_to": [
+        "炎",
+        "氷",
+        "風",
+        "毒"
+      ],
+      "resists": [
+        "草",
+        "水",
+        "雷",
+        "地",
+        "光"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "fire",
+      "label": "炎",
+      "super_effective_targets": [
+        "草",
+        "氷",
+        "鋼"
+      ],
+      "weak_to": [
+        "水",
+        "地"
+      ],
+      "resists": [
+        "草",
+        "炎",
+        "氷",
+        "鋼",
+        "闇"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "water",
+      "label": "水",
+      "super_effective_targets": [
+        "炎",
+        "地",
+        "光"
+      ],
+      "weak_to": [
+        "草",
+        "雷",
+        "毒"
+      ],
+      "resists": [
+        "炎",
+        "水",
+        "氷",
+        "鋼",
+        "光"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "electric",
+      "label": "雷",
+      "super_effective_targets": [
+        "水",
+        "風",
+        "鋼"
+      ],
+      "weak_to": [
+        "地"
+      ],
+      "resists": [
+        "雷",
+        "風",
+        "鋼"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "ice",
+      "label": "氷",
+      "super_effective_targets": [
+        "草",
+        "地",
+        "風"
+      ],
+      "weak_to": [
+        "炎",
+        "鋼"
+      ],
+      "resists": [
+        "水",
+        "氷",
+        "風"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "earth",
+      "label": "地",
+      "super_effective_targets": [
+        "炎",
+        "雷",
+        "鋼",
+        "毒"
+      ],
+      "weak_to": [
+        "草",
+        "水",
+        "氷"
+      ],
+      "resists": [
+        "無",
+        "炎",
+        "毒"
+      ],
+      "immune_to": [
+        "雷"
+      ]
+    },
+    {
+      "type_id": "wind",
+      "label": "風",
+      "super_effective_targets": [
+        "草",
+        "毒"
+      ],
+      "weak_to": [
+        "雷",
+        "氷"
+      ],
+      "resists": [
+        "草",
+        "地"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "steel",
+      "label": "鋼",
+      "super_effective_targets": [
+        "無",
+        "氷",
+        "光"
+      ],
+      "weak_to": [
+        "炎",
+        "雷",
+        "地"
+      ],
+      "resists": [
+        "無",
+        "草",
+        "氷",
+        "鋼",
+        "光"
+      ],
+      "immune_to": [
+        "毒"
+      ]
+    },
+    {
+      "type_id": "poison",
+      "label": "毒",
+      "super_effective_targets": [
+        "草",
+        "水"
+      ],
+      "weak_to": [
+        "地",
+        "風",
+        "光"
+      ],
+      "resists": [
+        "草",
+        "毒"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "light",
+      "label": "光",
+      "super_effective_targets": [
+        "闇",
+        "毒"
+      ],
+      "weak_to": [
+        "水",
+        "鋼",
+        "闇"
+      ],
+      "resists": [
+        "毒",
+        "光"
+      ],
+      "immune_to": []
+    },
+    {
+      "type_id": "dark",
+      "label": "闇",
+      "super_effective_targets": [
+        "無",
+        "光"
+      ],
+      "weak_to": [
+        "光"
+      ],
+      "resists": [
+        "闇"
+      ],
+      "immune_to": []
+    }
+  ],
+  "not_verified": [
+    "species_stats",
+    "move_power_and_accuracy",
+    "abilities",
+    "held_items",
+    "AI",
+    "actual_encounters",
+    "gameplay_balance"
+  ]
+}

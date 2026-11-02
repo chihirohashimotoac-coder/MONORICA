@@ -1,0 +1,19 @@
+{
+  "browser": "headless Chromium",
+  "checks_passed": [
+    "five_reference_images_listed",
+    "reference_switches_loaded",
+    "reference_is_not_runtime_sprite",
+    "candidate_dimensions_alpha_margin_pass",
+    "four_times_actual_pixels",
+    "background_changes",
+    "all_transparent_rejected",
+    "non_png_rejected",
+    "narrow_layout_no_horizontal_page_overflow",
+    "no_uncaught_page_errors",
+    "no_external_requests"
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "scope": "asset viewer only; no game, actual audio, or iPhone/Android hardware validation"
+}

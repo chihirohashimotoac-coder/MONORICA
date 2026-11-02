@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "visual_baseline_adopted",
+  "viewport": {
+    "width": 384,
+    "height": 256,
+    "field_bottom": 174
+  },
+  "palette": {
+    "ink": "#303d35",
+    "status_face": "#f7f6dc",
+    "olive_border": "#78845e",
+    "message_face": "#28546a",
+    "gold_trim": "#d4bd80",
+    "menu_face": "#fffdf0"
+  },
+  "font": {
+    "family": "BattleDot",
+    "size_px": 16,
+    "source": "assets/runtime/fonts/DotGothic16-Regular.ttf"
+  },
+  "rects": {
+    "enemy_status": [
+      18,
+      22,
+      166,
+      40
+    ],
+    "ally_status": [
+      202,
+      118,
+      172,
+      54
+    ],
+    "message": [
+      6,
+      178,
+      204,
+      72
+    ],
+    "commands": [
+      213,
+      178,
+      165,
+      72
+    ]
+  },
+  "sprites": {
+    "enemy": {
+      "x": 252,
+      "y": 18,
+      "width": 96,
+      "height": 96,
+      "path": "assets/runtime/monsters/starter_flower_hare_01/front.png"
+    },
+    "ally": {
+      "x": 32,
+      "y": 74,
+      "width": 128,
+      "height": 128,
+      "path": "assets/runtime/monsters/starter_flower_hare_01/back.png"
+    }
+  },
+  "preview_values": {
+    "status": "display_examples_not_species_stats",
+    "enemy": {
+      "name": "ハナミミ",
+      "level": 12,
+      "hp_ratio": 1
+    },
+    "ally": {
+      "name": "ハナミミ",
+      "level": 14,
+      "hp": 39,
+      "max_hp": 45,
+      "experience_ratio": 0.58
+    }
+  },
+  "note_ja": "表示済みの枠・配置・書体の見た目をユーザーが採用。基準384×256の最終実機対応や、仮レベルとHP・戦闘仕様・種族能力値を確定した意味ではない。"
+}

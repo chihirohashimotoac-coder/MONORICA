@@ -1,0 +1,1569 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:monorica:planning:species-catalog:0.1",
+  "title": "MONORICA species catalog planning v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "purpose",
+    "status",
+    "design_draft_complete",
+    "approved_game_data_complete",
+    "art_complete",
+    "created_date_jst",
+    "source_bundle",
+    "policy_ja",
+    "types",
+    "regions",
+    "allocation",
+    "role_definitions",
+    "field_moves",
+    "time_policy",
+    "return_safety_policy",
+    "evolution_sites",
+    "families",
+    "species",
+    "unresolved_ja"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "purpose": {
+      "const": "planning_only_not_runtime"
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "design_draft_complete": {
+      "const": true
+    },
+    "approved_game_data_complete": {
+      "const": false
+    },
+    "art_complete": {
+      "const": false
+    },
+    "created_date_jst": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_bundle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_ja": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 12
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 10
+    },
+    "allocation": {
+      "type": "object"
+    },
+    "role_definitions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 1
+    },
+    "field_moves": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 4
+    },
+    "time_policy": {
+      "type": "object"
+    },
+    "return_safety_policy": {
+      "type": "object"
+    },
+    "evolution_sites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]+$",
+            "minLength": 1
+          },
+          "name_ja": {
+            "type": "string",
+            "minLength": 1
+          },
+          "region_id": {
+            "type": "string",
+            "enum": [
+              "region_kazami",
+              "region_minase",
+              "region_hinowa",
+              "region_kanato",
+              "region_tsukishiro",
+              "region_sanagi",
+              "region_akatsuki",
+              "region_hoshimi",
+              "post_shizuna",
+              "post_meguri"
+            ]
+          },
+          "unlock_story_rank": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "access_required_gate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]+$",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "repeatable": {
+            "const": true
+          },
+          "consumable_required": {
+            "const": false
+          },
+          "status": {
+            "const": "production_proposal"
+          },
+          "access_ja": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "name_ja",
+          "region_id",
+          "unlock_story_rank",
+          "access_required_gate_ids",
+          "repeatable",
+          "consumable_required",
+          "status",
+          "access_ja"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]+$",
+            "minLength": 1
+          },
+          "allocation_bucket_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]+$",
+            "minLength": 1
+          },
+          "species_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]+$",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "stage_count": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "motif_ja": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "allocation_bucket_id",
+          "species_ids",
+          "stage_count",
+          "motif_ja",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "species": {
+      "type": "array",
+      "minItems": 156,
+      "maxItems": 156,
+      "items": {
+        "$ref": "#/$defs/species"
+      }
+    },
+    "unresolved_ja": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "species": {
+      "type": "object",
+      "properties": {
+        "dex_number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 156
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]+$",
+          "minLength": 1
+        },
+        "name_ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]+$",
+          "minLength": 1
+        },
+        "evolution_stage": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "family_stage_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "evolves_from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]+$",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evolves_to": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "enum": [
+                    "level",
+                    "level_at_time",
+                    "site_interaction"
+                  ]
+                },
+                "level": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "site_id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]+$",
+                  "minLength": 1
+                },
+                "time": {
+                  "enum": [
+                    "night",
+                    "day",
+                    "evening"
+                  ]
+                },
+                "status": {
+                  "enum": [
+                    "confirmed",
+                    "production_proposal"
+                  ]
+                },
+                "text_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unlock_story_rank": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]+$",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "method",
+                "status",
+                "text_ja",
+                "unlock_story_rank",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evolution_condition_from": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "enum": [
+                    "level",
+                    "level_at_time",
+                    "site_interaction"
+                  ]
+                },
+                "level": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "site_id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]+$",
+                  "minLength": 1
+                },
+                "time": {
+                  "enum": [
+                    "night",
+                    "day",
+                    "evening"
+                  ]
+                },
+                "status": {
+                  "enum": [
+                    "confirmed",
+                    "production_proposal"
+                  ]
+                },
+                "text_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unlock_story_rank": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "method",
+                "status",
+                "text_ja",
+                "unlock_story_rank"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "primary_type": {
+          "type": "string",
+          "enum": [
+            "neutral",
+            "grass",
+            "fire",
+            "water",
+            "electric",
+            "ice",
+            "earth",
+            "wind",
+            "steel",
+            "poison",
+            "light",
+            "dark"
+          ]
+        },
+        "secondary_type": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "neutral",
+                "grass",
+                "fire",
+                "water",
+                "electric",
+                "ice",
+                "earth",
+                "wind",
+                "steel",
+                "poison",
+                "light",
+                "dark"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "allocation_bucket_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]+$",
+          "minLength": 1
+        },
+        "allocation_region_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "region_kazami",
+                "region_minase",
+                "region_hinowa",
+                "region_kanato",
+                "region_tsukishiro",
+                "region_sanagi",
+                "region_akatsuki",
+                "region_hoshimi",
+                "post_shizuna",
+                "post_meguri"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "battle": {
+          "type": "object",
+          "properties": {
+            "role_id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]+$",
+              "minLength": 1
+            },
+            "role_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ability_trends": {
+              "type": "object",
+              "properties": {
+                "hp": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                },
+                "attack": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                },
+                "defense": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                },
+                "special_attack": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                },
+                "special_defense": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                },
+                "speed": {
+                  "enum": [
+                    "控えめ",
+                    "標準",
+                    "高め"
+                  ]
+                }
+              },
+              "required": [
+                "hp",
+                "attack",
+                "defense",
+                "special_attack",
+                "special_defense",
+                "speed"
+              ],
+              "additionalProperties": false
+            },
+            "ability_trends_scope": {
+              "type": "string",
+              "minLength": 1
+            },
+            "strengths_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "weaknesses_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "received_type_multipliers": {
+              "type": "object",
+              "properties": {
+                "neutral": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "grass": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "fire": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "water": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "electric": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "ice": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "earth": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "wind": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "steel": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "poison": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "light": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                },
+                "dark": {
+                  "type": "number",
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    1,
+                    2,
+                    4
+                  ]
+                }
+              },
+              "required": [
+                "neutral",
+                "grass",
+                "fire",
+                "water",
+                "electric",
+                "ice",
+                "earth",
+                "wind",
+                "steel",
+                "poison",
+                "light",
+                "dark"
+              ],
+              "additionalProperties": false
+            },
+            "weak_to_type_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "neutral",
+                  "grass",
+                  "fire",
+                  "water",
+                  "electric",
+                  "ice",
+                  "earth",
+                  "wind",
+                  "steel",
+                  "poison",
+                  "light",
+                  "dark"
+                ]
+              },
+              "minItems": 0
+            },
+            "resists_type_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "neutral",
+                  "grass",
+                  "fire",
+                  "water",
+                  "electric",
+                  "ice",
+                  "earth",
+                  "wind",
+                  "steel",
+                  "poison",
+                  "light",
+                  "dark"
+                ]
+              },
+              "minItems": 0
+            },
+            "immune_type_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "neutral",
+                  "grass",
+                  "fire",
+                  "water",
+                  "electric",
+                  "ice",
+                  "earth",
+                  "wind",
+                  "steel",
+                  "poison",
+                  "light",
+                  "dark"
+                ]
+              },
+              "minItems": 0
+            },
+            "damage_basis": {
+              "type": "string",
+              "minLength": 1
+            },
+            "move_direction_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "signature_move": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]+$",
+                  "minLength": 1
+                },
+                "name_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "effect_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "type_candidates": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "neutral",
+                      "grass",
+                      "fire",
+                      "water",
+                      "electric",
+                      "ice",
+                      "earth",
+                      "wind",
+                      "steel",
+                      "poison",
+                      "light",
+                      "dark"
+                    ]
+                  },
+                  "minItems": 1
+                },
+                "power": {
+                  "type": "null"
+                },
+                "accuracy": {
+                  "type": "null"
+                },
+                "usage_count": {
+                  "type": "null"
+                },
+                "status": {
+                  "const": "production_proposal"
+                },
+                "note_ja": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "name_ja",
+                "effect_ja",
+                "type_candidates",
+                "power",
+                "accuracy",
+                "usage_count",
+                "status",
+                "note_ja"
+              ],
+              "additionalProperties": false
+            },
+            "numeric_stats_status": {
+              "const": "not_designed"
+            }
+          },
+          "required": [
+            "role_id",
+            "role_ja",
+            "ability_trends",
+            "ability_trends_scope",
+            "strengths_ja",
+            "weaknesses_ja",
+            "received_type_multipliers",
+            "weak_to_type_ids",
+            "resists_type_ids",
+            "immune_type_ids",
+            "damage_basis",
+            "move_direction_ja",
+            "signature_move",
+            "numeric_stats_status"
+          ],
+          "additionalProperties": false
+        },
+        "exploration": {
+          "type": "object",
+          "properties": {
+            "role_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "field_move_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]+$",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "learn_methods": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "move_id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]+$",
+                    "minLength": 1
+                  },
+                  "name_ja": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "method": {
+                    "const": "reusable_free_lesson"
+                  },
+                  "unlock_story_rank": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "teacher_region_id": {
+                    "type": "string",
+                    "enum": [
+                      "region_kazami",
+                      "region_minase",
+                      "region_hinowa",
+                      "region_kanato",
+                      "region_tsukishiro",
+                      "region_sanagi",
+                      "region_akatsuki",
+                      "region_hoshimi",
+                      "post_shizuna",
+                      "post_meguri"
+                    ]
+                  },
+                  "status": {
+                    "const": "production_proposal"
+                  },
+                  "text_ja": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "move_id",
+                  "name_ja",
+                  "method",
+                  "unlock_story_rank",
+                  "teacher_region_id",
+                  "status",
+                  "text_ja"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "battle_slots_used_per_move": {
+              "const": 1
+            },
+            "requires_currently_learned_move": {
+              "const": true
+            },
+            "requires_in_party": {
+              "const": true
+            },
+            "status": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "role_ja",
+            "field_move_ids",
+            "learn_methods",
+            "battle_slots_used_per_move",
+            "requires_currently_learned_move",
+            "requires_in_party",
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "habitat": {
+          "type": "object",
+          "properties": {
+            "primary_region_id": {
+              "type": "string",
+              "enum": [
+                "region_kazami",
+                "region_minase",
+                "region_hinowa",
+                "region_kanato",
+                "region_tsukishiro",
+                "region_sanagi",
+                "region_akatsuki",
+                "region_hoshimi",
+                "post_shizuna",
+                "post_meguri"
+              ]
+            },
+            "environment_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ecology_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "environment_status": {
+              "const": "production_proposal"
+            },
+            "wild_locations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "region_id": {
+                    "type": "string",
+                    "enum": [
+                      "region_kazami",
+                      "region_minase",
+                      "region_hinowa",
+                      "region_kanato",
+                      "region_tsukishiro",
+                      "region_sanagi",
+                      "region_akatsuki",
+                      "region_hoshimi",
+                      "post_shizuna",
+                      "post_meguri"
+                    ]
+                  },
+                  "environment_ja": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "region_id",
+                  "environment_ja",
+                  "access"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "note_ja": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "primary_region_id",
+            "environment_ja",
+            "ecology_ja",
+            "environment_status",
+            "wild_locations",
+            "note_ja"
+          ],
+          "additionalProperties": false
+        },
+        "acquisition": {
+          "type": "object",
+          "properties": {
+            "first_available_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "earliest_story_rank": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "methods": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "method": {
+                    "enum": [
+                      "evolution",
+                      "starter_choice",
+                      "postgame_rescue",
+                      "wild_capture",
+                      "fixed_repeatable"
+                    ]
+                  },
+                  "source_species_id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]+$",
+                    "minLength": 1
+                  },
+                  "condition": {
+                    "type": "object",
+                    "properties": {
+                      "method": {
+                        "enum": [
+                          "level",
+                          "level_at_time",
+                          "site_interaction"
+                        ]
+                      },
+                      "level": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "site_id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9_]+$",
+                        "minLength": 1
+                      },
+                      "time": {
+                        "enum": [
+                          "night",
+                          "day",
+                          "evening"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "confirmed",
+                          "production_proposal"
+                        ]
+                      },
+                      "text_ja": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "unlock_story_rank": {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "method",
+                      "status",
+                      "text_ja",
+                      "unlock_story_rank"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "region_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "region_kazami",
+                          "region_minase",
+                          "region_hinowa",
+                          "region_kanato",
+                          "region_tsukishiro",
+                          "region_sanagi",
+                          "region_akatsuki",
+                          "region_hoshimi",
+                          "post_shizuna",
+                          "post_meguri"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "story_rank": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "required_field_move_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9_]+$",
+                      "minLength": 1
+                    },
+                    "minItems": 0
+                  },
+                  "solo": {
+                    "const": true
+                  },
+                  "repeatable": {
+                    "type": "boolean"
+                  },
+                  "external_requirement": {
+                    "const": false
+                  },
+                  "encounter_time": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "all",
+                          "day",
+                          "night",
+                          "evening"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "text_ja": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "choice_family_id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]+$",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "method",
+                  "region_id",
+                  "story_rank",
+                  "required_field_move_ids",
+                  "solo",
+                  "repeatable",
+                  "external_requirement",
+                  "encounter_time",
+                  "text_ja"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "rarity": {
+              "enum": [
+                "common",
+                "uncommon",
+                "rare",
+                "gift",
+                "fixed_repeatable",
+                "evolution_only"
+              ]
+            },
+            "rarity_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "appearance_conditions_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "phase": {
+              "enum": [
+                "main_story",
+                "postgame",
+                "choice_dependent_main_and_postgame"
+              ]
+            },
+            "repeatable_source_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "acquisition_status": {
+              "const": "production_proposal"
+            },
+            "no_external_requirements": {
+              "const": true
+            }
+          },
+          "required": [
+            "first_available_ja",
+            "earliest_story_rank",
+            "methods",
+            "rarity",
+            "rarity_ja",
+            "appearance_conditions_ja",
+            "phase",
+            "repeatable_source_ja",
+            "acquisition_status",
+            "no_external_requirements"
+          ],
+          "additionalProperties": false
+        },
+        "art": {
+          "type": "object",
+          "properties": {
+            "motifs_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "full_body_silhouette_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "palette_main": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "palette_accents": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "palette_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "face_expression_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "anatomy_counts": {
+              "type": "object",
+              "properties": {
+                "independent_arms": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "legs": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "independent_wings": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "tails": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "horns": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "antennae": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "fins": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "tentacles": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "independent_arms",
+                "legs",
+                "independent_wings",
+                "tails",
+                "horns",
+                "antennae",
+                "fins",
+                "tentacles"
+              ],
+              "additionalProperties": false
+            },
+            "anatomy_connections_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "anatomy_scope_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "view_invariants": {
+              "type": "object",
+              "properties": {
+                "front_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "back_ja": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "side_ja": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "front_ja",
+                "back_ja",
+                "side_ja"
+              ],
+              "additionalProperties": false
+            },
+            "evolution_changes_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "family_retained_features_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sprite_96px_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "icon_32px_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "differentiation_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "production_difficulty_ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "art_adoption": {
+              "type": "object",
+              "properties": {
+                "concept_direction": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "model_sheet": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "runtime_art": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "new_anatomy_detail": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "note_ja": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "concept_direction",
+                "model_sheet",
+                "runtime_art",
+                "new_anatomy_detail",
+                "note_ja"
+              ],
+              "additionalProperties": false
+            },
+            "explicit_anatomy_constraint": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "motifs_ja",
+            "full_body_silhouette_ja",
+            "palette_main",
+            "palette_accents",
+            "palette_status",
+            "face_expression_ja",
+            "anatomy_counts",
+            "anatomy_connections_ja",
+            "anatomy_scope_ja",
+            "view_invariants",
+            "evolution_changes_ja",
+            "family_retained_features_ja",
+            "sprite_96px_ja",
+            "icon_32px_ja",
+            "differentiation_ja",
+            "production_difficulty_ja",
+            "art_adoption"
+          ],
+          "additionalProperties": false
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "origin": {
+              "enum": [
+                "existing_with_proposed_details",
+                "new_production_proposal"
+              ]
+            },
+            "name_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "typing_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "original_concept_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "game_design_status": {
+              "enum": [
+                "proposal_with_inherited_decisions",
+                "production_proposal"
+              ]
+            },
+            "confirmed_inherited_fields": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "source_paths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "source_asset_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]+$",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "legacy_card_snapshot": {
+              "anyOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "new_fields_status": {
+              "const": "production_proposal"
+            },
+            "user_adopted_new_design": {
+              "const": false
+            },
+            "change_proposals": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "origin",
+            "name_status",
+            "typing_status",
+            "original_concept_status",
+            "game_design_status",
+            "confirmed_inherited_fields",
+            "source_paths",
+            "source_asset_ids",
+            "legacy_card_snapshot",
+            "new_fields_status",
+            "user_adopted_new_design",
+            "change_proposals"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "dex_number",
+        "id",
+        "name_ja",
+        "family_id",
+        "evolution_stage",
+        "family_stage_count",
+        "evolves_from",
+        "evolves_to",
+        "evolution_condition_from",
+        "primary_type",
+        "secondary_type",
+        "allocation_bucket_id",
+        "allocation_region_id",
+        "battle",
+        "exploration",
+        "habitat",
+        "acquisition",
+        "art",
+        "provenance"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

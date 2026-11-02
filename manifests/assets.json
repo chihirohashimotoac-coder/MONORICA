@@ -1,0 +1,711 @@
+{
+  "schema_version": 1,
+  "phase": "asset_preparation_before_full_implementation",
+  "catalog_complete": false,
+  "runtime_image_count": 19,
+  "audio_track_count": 0,
+  "full_content_data_complete": false,
+  "pending_categories": [
+    "full_species_catalog",
+    "monster_runtime_art",
+    "character_sprites",
+    "map_tiles_and_layouts",
+    "complete_moves_items_abilities",
+    "complete_story_events",
+    "audio",
+    "ui_art"
+  ],
+  "entries": [
+    {
+      "id": "ref_starter_initial_final",
+      "path": "brief/starter_concepts_v0.4.png",
+      "role": "reference_only",
+      "state": "concept_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "74b189216c3eef95577cd7388d804d28e00d776c3dc7894b67bbd4712f22b7e2",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "ref_starter_middle",
+      "path": "brief/starter_middle_concepts_v0.1.png",
+      "role": "reference_only",
+      "state": "concept_proposed",
+      "runtime_ready": false,
+      "sha256": "1ce37ff0cd7f1b9d2386fa3d2b1baba8590a135df029642a634c28336a288118",
+      "png_width": 1774,
+      "png_height": 887
+    },
+    {
+      "id": "ref_early_wild_six",
+      "path": "brief/wild_monsters_concepts_v0.1.png",
+      "role": "reference_only",
+      "state": "concept_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "23367dc3e8cc8cb3fb75cee382f92574697713051ae04d559858d9f6dafb4028",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "ref_field_topdown",
+      "path": "brief/field_topdown_concept_v0.1.png",
+      "role": "reference_only",
+      "state": "visual_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "cdb80fed1ba4b7284560aeb673bc627699b8740622561a08e28cca227621408a",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "data_type_chart",
+      "path": "content/type-chart.json",
+      "role": "game_data",
+      "state": "adopted_for_prototype_balance_unverified",
+      "sha256": "c74de140ce99d2f249d6c89d35e55091581fcf6d8eb25a96c4f49e817dc78341"
+    },
+    {
+      "id": "source_hanamimi_model_sheet_v01",
+      "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_orientation_change_requested",
+      "runtime_ready": false,
+      "sha256": "e055f68f402d5f5f09018bbe80b9818dfa52dd7fb0f755f5dc007b6dcdf18139",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "ref_starter_initial_final",
+      "generation_prompt": "docs/prompts/hanamimi_model_sheet_v0.1.txt",
+      "review_note_ja": "ユーザーが前後横の形の方向を採用。戦闘用には中央の背面のみ左右反転する指示。元画像を保持。取り込み素材ではない。"
+    },
+    {
+      "id": "source_hanamimi_model_sheet_v02",
+      "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
+      "role": "reference_only",
+      "state": "orientation_adjusted_review_pending",
+      "runtime_ready": false,
+      "sha256": "2eb01f8b836fd1c467eb929be62679e0f4d3867373ef507045e4be9d3e66474c",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_hanamimi_model_sheet_v01",
+      "generation_prompt": "docs/prompts/hanamimi_model_sheet_orientation_v0.2.txt",
+      "review_note_ja": "中央背面を右上向きへ編集。指示された方向に修正、編集後の出力自体のユーザー確認は未実施。"
+    },
+    {
+      "id": "source_hanamimi_pixel_study_v01",
+      "path": "assets/source/monsters/starter_flower_hare_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_study_proposed",
+      "runtime_ready": false,
+      "sha256": "e88123b68ef6ec432252b674935e8946ced35594805235172595732e839f50df",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_hanamimi_model_sheet_v02",
+      "generation_prompt": "docs/prompts/hanamimi_pixel_study_v0.1.txt",
+      "review_note_ja": "前面は左下、背面は右上向きの高解像度試作。透過ありだが96/32px規格未達。取り込み用ではない。"
+    },
+    {
+      "id": "runtime_hanamimi_front_v01",
+      "path": "assets/runtime/monsters/starter_flower_hare_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "9f8b04e585fd94e2c4c920a3a858a8e8294a5764993f928c87e970ec882f7b61",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_hanamimi_pixel_study_v01",
+      "preparation_tool": "tools/prepare_hanamimi_sprites.py",
+      "review_note_ja": "ユーザーがドット絵の雰囲気・細かさに問題なしと回答。個別3枚の見た目を採用。寸法・透過・余白確認済み。アニメーション・実機確認は別。"
+    },
+    {
+      "id": "runtime_hanamimi_back_v01",
+      "path": "assets/runtime/monsters/starter_flower_hare_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "2273824f0803c6d950d70c7d5547ddca2cd1ee97c8279f2daeaab4a2b02c705c",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_hanamimi_pixel_study_v01",
+      "preparation_tool": "tools/prepare_hanamimi_sprites.py",
+      "review_note_ja": "ユーザーがドット絵の雰囲気・細かさに問題なしと回答。個別3枚の見た目を採用。寸法・透過・余白確認済み。アニメーション・実機確認は別。"
+    },
+    {
+      "id": "runtime_hanamimi_icon_v01",
+      "path": "assets/runtime/monsters/starter_flower_hare_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "0f6103deccd8b43ba3f1803cdd83842cc17a21090a0e630bf06efd81f398f5e1",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_hanamimi_pixel_study_v01",
+      "preparation_tool": "tools/prepare_hanamimi_sprites.py",
+      "review_note_ja": "ユーザーがドット絵の雰囲気・細かさに問題なしと回答。個別3枚の見た目を採用。寸法・透過・余白確認済み。アニメーション・実機確認は別。"
+    },
+    {
+      "id": "source_battle_ui_frame_v01",
+      "path": "assets/source/ui/battle/frame_layer_v0.1.png",
+      "role": "reference_only",
+      "state": "ui_frame_visual_adopted",
+      "runtime_ready": false,
+      "derived_from": "content/ui/battle-ui-layout.json",
+      "sha256": "88b95812414c40eadb1a9743210b8e028b97062155fd8b72c1eb6550e52c1fda",
+      "png_width": 384,
+      "png_height": 256,
+      "runtime_copy": "assets/runtime/ui/battle/frame.png"
+    },
+    {
+      "id": "font_dotgothic16",
+      "path": "assets/runtime/fonts/DotGothic16-Regular.ttf",
+      "role": "font",
+      "state": "upstream_unmodified_license_included",
+      "runtime_ready": true,
+      "source_url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/dotgothic16/DotGothic16-Regular.ttf",
+      "license_path": "assets/runtime/fonts/OFL-DotGothic16.txt",
+      "sha256": "3ad9af88726d42b40f7f365f0dcac785af73cf20ea6f1d5b44e57cc21150b8f1"
+    },
+    {
+      "id": "license_dotgothic16",
+      "path": "assets/runtime/fonts/OFL-DotGothic16.txt",
+      "role": "license",
+      "state": "upstream_unmodified",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec/ofl/dotgothic16/OFL.txt",
+      "sha256": "b6630c61ea078cacd7fabe37d14ffe557a0b45b06683374a9aa9e24262993e33"
+    },
+    {
+      "id": "ui_battle_strings_ja",
+      "path": "content/ui/battle-ui-ja.json",
+      "role": "ui_text",
+      "state": "main_commands_visual_adopted_other_copy_proposed",
+      "sha256": "f26c1ee5ff092e6ad4eeec5c0887b85a504e1fc9dff037f55b983dc5ee6ec1c9"
+    },
+    {
+      "id": "ui_battle_layout_v01",
+      "path": "content/ui/battle-ui-layout.json",
+      "role": "ui_layout",
+      "state": "visual_baseline_adopted",
+      "sha256": "a5fb1097c02f015f181884cd5fbaf10698c2c7021d76a38d508c7a8834498e67"
+    },
+    {
+      "id": "runtime_battle_ui_frame_v01",
+      "path": "assets/runtime/ui/battle/frame.png",
+      "role": "runtime_image",
+      "state": "ui_frame_visual_adopted",
+      "runtime_ready": true,
+      "derived_from": "source_battle_ui_frame_v01",
+      "review_note_ja": "ユーザーが戦闘UI v0.1の見た目を採用。文字と数値を含まない透過枠。実機・操作・戦闘は未検証。",
+      "sha256": "88b95812414c40eadb1a9743210b8e028b97062155fd8b72c1eb6550e52c1fda",
+      "png_width": 384,
+      "png_height": 256
+    },
+    {
+      "id": "source_honoru_model_sheet_v01",
+      "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "rejected_anatomy_superseded",
+      "runtime_ready": false,
+      "derived_from": "ref_starter_initial_final",
+      "superseded_by": "source_honoru_model_sheet_v02",
+      "generation_prompt": "docs/prompts/honoru_model_sheet_v0.1.txt",
+      "review_note_ja": "翼が前肢の4肢案はユーザー不採用。制作基準には使わない。",
+      "sha256": "b6fbd5056648fbfe46a8ad9171bea920013434abf4cfb97bf105f6660aee2c48",
+      "png_width": 1983,
+      "png_height": 793
+    },
+    {
+      "id": "source_honoru_model_sheet_v02",
+      "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_for_sprite_production",
+      "runtime_ready": false,
+      "derived_from": "source_honoru_model_sheet_v01",
+      "generation_prompt": "docs/prompts/honoru_six_limb_model_sheet_v0.2.txt",
+      "review_note_ja": "前後横の設定画を提示後、ユーザーが「進めてください」と指示。この設定画を基準にドット素材へ展開する。新しいドット出力そのものの採用とは別。",
+      "sha256": "2df05475544cb4fbd35ed07ecd9f2326809d765a6ec15d2c9375972235ea2dde",
+      "png_width": 1983,
+      "png_height": 793
+    },
+    {
+      "id": "source_miomaru_model_sheet_v01",
+      "path": "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_for_sprite_production",
+      "runtime_ready": false,
+      "derived_from": "ref_starter_initial_final",
+      "generation_prompt": "docs/prompts/miomaru_model_sheet_v0.1.txt",
+      "review_note_ja": "前後横の設定画を提示後、ユーザーが「進めてください」と指示。この設定画を基準にドット素材へ展開する。新しいドット出力そのものの採用とは別。",
+      "sha256": "a6558302e4de5085950577982bf932b9dc4e80eecfb10e0ee509dbd5fb9f2a24",
+      "png_width": 1983,
+      "png_height": 793
+    },
+    {
+      "id": "source_honoru_pixel_study_v01",
+      "path": "assets/source/monsters/starter_ember_wyvern_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_source_study",
+      "runtime_ready": false,
+      "sha256": "075b34d905c44fd5b44b9531503af81e5c0dd3cfdbbdfea76683ff4470145456",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_honoru_model_sheet_v02",
+      "generation_prompt": "docs/prompts/honoru_pixel_study_v0.1.txt"
+    },
+    {
+      "id": "runtime_honoru_front_v01",
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "68886654f8751b118148a26cacf543f03d6633952254a3049e4d6fee9e1c9b72",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 5,
+      "derived_from": "source_honoru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "runtime_honoru_back_v01",
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "1fb93284a705129a9b9c3955598d0320a77d2823b42f6834218cedd24cd267bb",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_honoru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "runtime_honoru_icon_v01",
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "abf61a4c8bbae812e0ee4727b623a6579fa378a23721bb8d4b21ff319e57b402",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_honoru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "source_miomaru_pixel_study_v01",
+      "path": "assets/source/monsters/starter_tide_bear_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_source_study",
+      "runtime_ready": false,
+      "sha256": "34010c13d0e5911149f00681cfaf31d31a923dbad68bf8def11c2a81e452c4f2",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_miomaru_model_sheet_v01",
+      "generation_prompt": "docs/prompts/miomaru_pixel_study_v0.1.txt"
+    },
+    {
+      "id": "runtime_miomaru_front_v01",
+      "path": "assets/runtime/monsters/starter_tide_bear_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "705d555b5f43bf0e1c532b7cb6b56e8eba5800ff8ce4f78d2f9b0720ec6ed6a6",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 6,
+      "derived_from": "source_miomaru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "runtime_miomaru_back_v01",
+      "path": "assets/runtime/monsters/starter_tide_bear_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "3a87bb9b546954611d26d4d8f690ec87143d64f638bbe807fffb65f1d462fedf",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_miomaru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "runtime_miomaru_icon_v01",
+      "path": "assets/runtime/monsters/starter_tide_bear_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "c4272c4ff422dc018f0767acc9b7415bde315e8642c1ea70c95f6dfa5411f49d",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_miomaru_pixel_study_v01",
+      "preparation_tool": "tools/prepare_starter_sprites.py",
+      "review_note_ja": "比較画像と戦闘表示を提示後、ユーザーが「完璧です」と回答。今回の静止素材を採用。実機・アニメーションは別。"
+    },
+    {
+      "id": "starter_art_export_profiles",
+      "path": "content/starter-art-export-profiles.json",
+      "role": "preparation_data",
+      "state": "reviewed_source_panels_and_orientation",
+      "sha256": "af2cafe9c770192a8eb009e0d3771d84b9acbc40e8c68beba2037080d56d0207"
+    },
+    {
+      "id": "source_riscoro_model_sheet_v01",
+      "path": "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_for_sprite_production",
+      "runtime_ready": false,
+      "sha256": "31d8893e41711a27e38577f7eb69abe01d21e97a8e45732f2df475900563c3d2",
+      "png_width": 1923,
+      "png_height": 817,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/riscoro_model_sheet_v0.1.txt",
+      "review_note_ja": "3体の設定画を提示後、ユーザーが問題なしと回答。前後横の形を採用し、ドット素材へ進める。作業名・属性・数値の確定は別。"
+    },
+    {
+      "id": "source_tsurumogu_model_sheet_v01",
+      "path": "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_for_sprite_production",
+      "runtime_ready": false,
+      "sha256": "060363a944ca3453dc18fb0cb9fb8eedb12a6ef5774ef80ba095bb0e454b5fb0",
+      "png_width": 1995,
+      "png_height": 788,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/tsurumogu_model_sheet_v0.1.txt",
+      "review_note_ja": "3体の設定画を提示後、ユーザーが問題なしと回答。前後横の形を採用し、ドット素材へ進める。作業名・属性・数値の確定は別。"
+    },
+    {
+      "id": "source_haneri_model_sheet_v01",
+      "path": "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_direction_adopted_for_sprite_production",
+      "runtime_ready": false,
+      "sha256": "6e0b2683a35f1b7e154a342255215f8af37751120be9e69b86e37a72d59187ae",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/haneri_model_sheet_v0.1.txt",
+      "review_note_ja": "3体の設定画を提示後、ユーザーが問題なしと回答。前後横の形を採用し、ドット素材へ進める。作業名・属性・数値の確定は別。"
+    },
+    {
+      "id": "source_riscoro_pixel_study_v01",
+      "path": "assets/source/monsters/wild_seed_squirrel_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_source_study",
+      "runtime_ready": false,
+      "sha256": "7b9511d6183cd331a84ad05cb6ec8e609bb532974b66223ee3b0ed52c1b824dd",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_riscoro_model_sheet_v01",
+      "generation_prompt": "docs/prompts/riscoro_pixel_study_v0.1.txt"
+    },
+    {
+      "id": "runtime_riscoro_front_v01",
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "deef967043e89987a4ed38fad81afb523fdd87d875459d47bb8de1cdf492efae",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 5,
+      "derived_from": "source_riscoro_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_riscoro_back_v01",
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "84b8c4eca109678972fa535e01e94f7a49b37535e171579c499387978f0e39cf",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 7,
+      "derived_from": "source_riscoro_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_riscoro_icon_v01",
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "83be36ba719a5cee8bcfaa70664ac7675b276e338dbb1ea83ee9206559febf8f",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_riscoro_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "source_tsurumogu_pixel_study_v01",
+      "path": "assets/source/monsters/wild_vine_mole_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_source_study",
+      "runtime_ready": false,
+      "sha256": "ac8d6d68b6636553671782ecccb2ae1f6f7a03c3a0c37236861bd68384dfe3f0",
+      "png_width": 1997,
+      "png_height": 788,
+      "derived_from": "source_tsurumogu_model_sheet_v01",
+      "generation_prompt": "docs/prompts/tsurumogu_pixel_study_v0.1.txt"
+    },
+    {
+      "id": "runtime_tsurumogu_front_v01",
+      "path": "assets/runtime/monsters/wild_vine_mole_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "a60bffcbc6f4e138705ad297601edad12e1094b386e9e80b43187228605af1c7",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 6,
+      "derived_from": "source_tsurumogu_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_tsurumogu_back_v01",
+      "path": "assets/runtime/monsters/wild_vine_mole_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "03ac12620c015447ec48287065b7454cde59538886da4772b9875ea9ec5e989d",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_tsurumogu_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_tsurumogu_icon_v01",
+      "path": "assets/runtime/monsters/wild_vine_mole_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "bcb64bd1e3a14ad4091b105ee25153a21d0cd97dc7859cc263e2667dab5839a0",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_tsurumogu_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "source_haneri_pixel_study_v01",
+      "path": "assets/source/monsters/wild_breeze_bird_01/pixel_study_v0.1.png",
+      "role": "reference_only",
+      "state": "pixel_art_source_study",
+      "runtime_ready": false,
+      "sha256": "d27732a3b8a91ab86975243aeeedcd38c210fb4bfd1829fc4a575d3b77a1967f",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "source_haneri_model_sheet_v01",
+      "generation_prompt": "docs/prompts/haneri_pixel_study_v0.1.txt"
+    },
+    {
+      "id": "runtime_haneri_front_v01",
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/front.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "2a6b973facafac32d63992c3fdd8e2bbf0905eacdc17f654f39b154b8ce2feb7",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "front",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "derived_from": "source_haneri_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_haneri_back_v01",
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/back.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "e2efe01fc09f631407b9a589498d68c1ae7253027c54f23c657a345b941ac146",
+      "png_width": 96,
+      "png_height": 96,
+      "kind": "back",
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 6,
+      "derived_from": "source_haneri_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "runtime_haneri_icon_v01",
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/icon.png",
+      "role": "runtime_image",
+      "state": "static_sprite_visual_adopted_technical_checked",
+      "runtime_ready": true,
+      "sha256": "1766cb46ced5700074ee2379c70590761003ff8b799854a1c522796284c6e9f3",
+      "png_width": 32,
+      "png_height": 32,
+      "kind": "icon",
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "derived_from": "source_haneri_pixel_study_v01",
+      "preparation_tool": "tools/prepare_early_wild_sprites.py",
+      "review_note_ja": "2026-11-02、比較画像を提示後、ユーザーが「3体ともこのまま採用」と回答。前面・背面・アイコンの見た目を採用。実機・アニメーションは未検証。"
+    },
+    {
+      "id": "early_wild_art_export_profiles",
+      "path": "content/early-wild-art-export-profiles.json",
+      "role": "preparation_data",
+      "state": "reviewed_source_panels_and_orientation",
+      "sha256": "a719692e7dfaa92c285a78420f84a142c666c2d3f483dd9ac1ea6332a0c9e7f7"
+    },
+    {
+      "id": "source_mizutta_model_sheet_v01",
+      "path": "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_visual_review_pending",
+      "runtime_ready": false,
+      "sha256": "695b9d7696c9a6a21bd47f0bdb92e20ff58644166bf367ca7ff4977cb7afcdbc",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/mizutta_model_sheet_v0.1.txt",
+      "review_note_ja": "採用済み比較原画から前後横を補完した新しい設定画案。ユーザーの見た目確認待ち。高解像度参照資料で、runtime素材ではない。"
+    },
+    {
+      "id": "source_cocoil_model_sheet_v01",
+      "path": "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "model_sheet_visual_review_pending",
+      "runtime_ready": false,
+      "sha256": "8b555a79c5c7ce13944eb6fe8f9f256b5d887a7332c26ab8e51cbc3cba109618",
+      "png_width": 1983,
+      "png_height": 793,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/cocoil_model_sheet_v0.1.txt",
+      "review_note_ja": "採用済み比較原画から前後横を補完した新しい設定画案。ユーザーの見た目確認待ち。高解像度参照資料で、runtime素材ではない。"
+    },
+    {
+      "id": "source_yorumiru_model_sheet_v01",
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.1.png",
+      "role": "reference_only",
+      "state": "rejected_anatomy_superseded",
+      "runtime_ready": false,
+      "sha256": "4c49f88accf1983c5b12c64bded7215f643440412bc429d731b84418552dcd76",
+      "png_width": 1923,
+      "png_height": 818,
+      "derived_from": "ref_early_wild_six",
+      "generation_prompt": "docs/prompts/yorumiru_model_sheet_v0.1.txt",
+      "review_note_ja": "不採用：飛膜端の後脚とは別に腹下へ余分な脚が生えた。v0.2で四肢構造へ修正。"
+    },
+    {
+      "id": "source_yorumiru_model_sheet_v02",
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
+      "role": "reference_only",
+      "state": "model_sheet_visual_review_pending",
+      "runtime_ready": false,
+      "sha256": "2f51f9991b102f69d85f927cff80c84113368032551c183bec215d4a79f9be06",
+      "png_width": 1922,
+      "png_height": 818,
+      "derived_from": "source_yorumiru_model_sheet_v01",
+      "generation_prompt": "docs/prompts/yorumiru_model_sheet_anatomy_fix_v0.2.txt",
+      "review_note_ja": "採用済み比較原画から前後横を補完した新しい設定画案。ユーザーの見た目確認待ち。高解像度参照資料で、runtime素材ではない。"
+    }
+  ],
+  "note_ja": "採用済みPNG19点（御三家初期3体9＋一般種3体9＋UI枠1）。全素材・全データ・音源は未完成。設定画の新しい案は採用状態を別途記録する。",
+  "runtime_ready_image_count": 19
+}

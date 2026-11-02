@@ -1,0 +1,6331 @@
+{
+  "schema_version": "0.1",
+  "created_date_jst": "2026-11-02",
+  "status": "pass",
+  "scope_ja": "設計表の件数・参照・抽象の入手依存・既存素材不変の検査。実ゲーム・面白さ・バランスの検証ではない。",
+  "schema_engine_ja": "同梱スキーマが使用する型・必須・anyOf・参照・列挙・定数・範囲・配列長・文字列長・パターンをローカル実装で検査。外部JSON Schema実装は未導入。",
+  "summary": {
+    "species_count": 156,
+    "family_count": 79,
+    "stage_family_counts": {
+      "3": 17,
+      "2": 43,
+      "1": 19
+    },
+    "primary_type_counts": {
+      "grass": 13,
+      "fire": 14,
+      "water": 16,
+      "neutral": 13,
+      "wind": 13,
+      "electric": 14,
+      "dark": 14,
+      "steel": 11,
+      "earth": 13,
+      "ice": 9,
+      "light": 14,
+      "poison": 12
+    },
+    "secondary_type_counts": {
+      "grass": 9,
+      "earth": 9,
+      "wind": 7,
+      "water": 11,
+      "light": 8,
+      "fire": 4,
+      "steel": 11,
+      "electric": 2,
+      "ice": 9,
+      "neutral": 2,
+      "poison": 4,
+      "dark": 3
+    },
+    "allocation": {
+      "starter_pool": 9,
+      "region_kazami": 12,
+      "region_minase": 18,
+      "region_hinowa": 18,
+      "region_kanato": 18,
+      "region_tsukishiro": 18,
+      "region_sanagi": 18,
+      "region_akatsuki": 15,
+      "region_hoshimi": 12,
+      "post_shizuna": 9,
+      "post_meguri": 9
+    },
+    "role_counts": {
+      "swift_special": 9,
+      "breaker": 8,
+      "counter_tank": 13,
+      "allround": 9,
+      "physical_wall": 19,
+      "pivot": 12,
+      "physical_attacker": 14,
+      "disruptor": 14,
+      "healer": 11,
+      "special_wall": 12,
+      "special_attacker": 14,
+      "attrition": 9,
+      "double_support": 12
+    },
+    "existing_species": 15,
+    "newly_added_species": 141,
+    "new_names_from_previous_world_proposals": 6,
+    "wholly_new_species_proposals": 135,
+    "runtime_png_count": 19,
+    "runtime_ready_png_count": 19
+  },
+  "source_audit": {
+    "bundle_name": "MONORICA_preproduction_v0.12.zip",
+    "bundle_sha256": "e0e9965ef3d05e88723572eea20b07ac9c75e348eb642f9a428711814f83c612",
+    "hash_source_ja": "元ZIP展開直後の計測を同梱baselineへ保存。検査の再実行に元ZIPを要求しない。",
+    "documents_read": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "LATEST_HANDOFF.md",
+      "HANDOFF_MONORICA_2026-11-02_v0.12.md",
+      "docs/DECISIONS.md",
+      "docs/WORLD_OUTLINE_v0.1.md",
+      "docs/STORY_CONFLICT_B_v0.1.md",
+      "content/planning/world-outline.json",
+      "content/planning/known-species.json",
+      "content/type-chart.json",
+      "docs/STARTER_MODEL_SHEETS_v0.1.md",
+      "docs/EARLY_WILD_MODEL_SHEETS_v0.1.md",
+      "docs/LATER_WILD_MODEL_SHEETS_v0.1.md",
+      "brief/07_starter_evolution_plan_v0.1.md",
+      "brief/10_starter_playstyle_proposal_v0.2.md",
+      "brief/11_field_moves_and_opening_v0.2.md",
+      "brief/12_first_region_proposal_v0.3.md",
+      "brief/14_early_wild_creatures_v0.2.md",
+      "brief/06_starter_signature_design_brief_v0.2.md",
+      "tools/validate_assets.py",
+      "tools/validate_preproduction.py"
+    ],
+    "images_visually_inspected": [
+      "brief/starter_concepts_v0.4.png",
+      "brief/starter_middle_concepts_v0.1.png",
+      "brief/wild_monsters_concepts_v0.1.png",
+      "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
+      "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
+      "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
+      "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png"
+    ],
+    "unavailable_required_sources": [],
+    "note_ja": "最初は取得に失敗したが、ユーザーがWindows作業フォルダーへ配置したZIPを展開して必要資料を読んだ。初回失敗を資料読了へ読み替えていない。"
+  },
+  "checks": [
+    {
+      "id": "common_json_schema",
+      "pass": true,
+      "details": []
+    },
+    {
+      "id": "species_count",
+      "pass": true,
+      "details": 156
+    },
+    {
+      "id": "dex_1_to_156",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "unique_species_ids",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "unique_names",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "existing_15_exactly_once",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "existing_identity_and_snapshot",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "evolution_references_and_reverse_links",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "evolution_acyclic",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "starter_conditions_16_36",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "type_refs_and_max_two",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "region_refs",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "original_region_allocation_unchanged",
+      "pass": true,
+      "details": {
+        "starter_pool": 9,
+        "region_kazami": 12,
+        "region_minase": 18,
+        "region_hinowa": 18,
+        "region_kanato": 18,
+        "region_tsukishiro": 18,
+        "region_sanagi": 18,
+        "region_akatsuki": 15,
+        "region_hoshimi": 12,
+        "post_shizuna": 9,
+        "post_meguri": 9
+      }
+    },
+    {
+      "id": "allocation_total_156",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "source_types_and_regions_retained",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "all12_normal_base_types_by_hinowa",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "main8_post2_reps8",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "no_new_adoption_claim",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "no_fabricated_wild_evolution_locations",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "solo_routes_no_external",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "evolution_conditions_supported",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "evolution_site_refs_and_repeatable_access",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "no_unverified_numeric_stats",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "all_1872_type_products",
+      "pass": true,
+      "details": 1872
+    },
+    {
+      "id": "honoru_family_6_limbs",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "yorumiru_family_4_limbs",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "pending_art_not_adopted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "adopted_6_species_sprites_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "family_membership_stages",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "field_move_references",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "field_four_slots_and_party",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "normal_base_providers_before_gates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "field_relearn_preserved_on_evolution",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "acquisition_and_field_dependency_acyclic",
+      "pass": true,
+      "details": "複数入手方法は代替経路であり、全て同時必須ではない。御三家の分岐は別の3ケース検査。"
+    },
+    {
+      "id": "all_three_choices_main132_post156",
+      "pass": true,
+      "details": {
+        "starter_flower_hare": {
+          "main": 132,
+          "postgame": 156
+        },
+        "starter_ember_wyvern": {
+          "main": 132,
+          "postgame": 156
+        },
+        "starter_tide_bear": {
+          "main": 132,
+          "postgame": 156
+        }
+      }
+    },
+    {
+      "id": "unchosen_starters_postgame_only",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "source_paths_and_asset_refs",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "yorumiru_reference_v02_only",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "original_bundle_preserved",
+      "pass": true,
+      "details": {
+        "original_files": 202,
+        "missing": [],
+        "changed": [
+          "LATEST_HANDOFF.md",
+          "README.md",
+          "docs/DECISIONS.md"
+        ],
+        "allowed_document_updates": [
+          "LATEST_HANDOFF.md",
+          "README.md",
+          "docs/DECISIONS.md"
+        ]
+      }
+    },
+    {
+      "id": "original_art_and_planning_hashes_unchanged",
+      "pass": true,
+      "details": {
+        "protected_file_count": 94
+      }
+    },
+    {
+      "id": "csv_json_alignment",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "markdown_all156_rows",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "art_batches_10_to15_150_plus6",
+      "pass": true,
+      "details": [
+        13,
+        12,
+        14,
+        12,
+        12,
+        12,
+        12,
+        12,
+        13,
+        13,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "art_batches_no_family_split",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "negative_control_detection",
+      "pass": true,
+      "details": [
+        {
+          "id": "duplicate_id",
+          "detected": true,
+          "expected_check": "unique_species_ids"
+        },
+        {
+          "id": "duplicate_name",
+          "detected": true,
+          "expected_check": "unique_names"
+        },
+        {
+          "id": "missing_number",
+          "detected": true,
+          "expected_check": "dex_1_to_156"
+        },
+        {
+          "id": "starter_level_17",
+          "detected": true,
+          "expected_check": "starter_conditions_16_36"
+        },
+        {
+          "id": "new_adoption_false_claim",
+          "detected": true,
+          "expected_check": "no_new_adoption_claim"
+        },
+        {
+          "id": "removed_field_provider",
+          "detected": true,
+          "expected_check": "normal_base_providers_before_gates"
+        },
+        {
+          "id": "wing_arm_regression",
+          "detected": true,
+          "expected_check": "honoru_family_6_limbs"
+        },
+        {
+          "id": "six_leg_glider_regression",
+          "detected": true,
+          "expected_check": "yorumiru_family_4_limbs"
+        }
+      ]
+    },
+    {
+      "id": "legacy_validators_pass",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "passed_check_count": 46,
+  "failed_check_count": 0,
+  "starter_choice_simulations": {
+    "starter_flower_hare": {
+      "main": {
+        "success": true,
+        "obtained_count": 132,
+        "obtained_ids": [
+          "starter_flower_hare_01",
+          "starter_flower_hare_02",
+          "starter_flower_hare_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_flower_hare_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_flower_hare_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_flower_hare_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          }
+        ]
+      },
+      "postgame": {
+        "success": true,
+        "obtained_count": 156,
+        "obtained_ids": [
+          "starter_ember_wyvern_01",
+          "starter_ember_wyvern_02",
+          "starter_ember_wyvern_03",
+          "starter_flower_hare_01",
+          "starter_flower_hare_02",
+          "starter_flower_hare_03",
+          "starter_tide_bear_01",
+          "starter_tide_bear_02",
+          "starter_tide_bear_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_brine_orb_01",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_compass_01",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_filament_worm_01",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_frost_lotus_01",
+          "wild_frost_lotus_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_hollow_loam_01",
+          "wild_hollow_loam_02",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_memory_seed_01",
+          "wild_memory_seed_02",
+          "wild_memory_seed_03",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_reef_crown_01",
+          "wild_reef_kiln_01",
+          "wild_reef_kiln_02",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_shell_harp_01",
+          "wild_shell_harp_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_tide_veil_01",
+          "wild_tide_veil_02",
+          "wild_tide_veil_03",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_hollow_loam_01",
+            "wild_hollow_loam_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "post_meguri",
+          "post_shizuna",
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_flower_hare_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_flower_hare_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_flower_hare_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "starter_ember_wyvern_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_ember_wyvern_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_ember_wyvern_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_tide_bear_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tide_veil_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reef_kiln_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_kiln_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shell_harp_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shell_harp_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_brine_orb_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_crown_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_memory_seed_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_memory_seed_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_lotus_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_compass_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_filament_worm_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_lotus_02",
+            "rank": 101,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_memory_seed_03",
+            "rank": 102,
+            "method": "evolution"
+          }
+        ]
+      }
+    },
+    "starter_ember_wyvern": {
+      "main": {
+        "success": true,
+        "obtained_count": 132,
+        "obtained_ids": [
+          "starter_ember_wyvern_01",
+          "starter_ember_wyvern_02",
+          "starter_ember_wyvern_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_ember_wyvern_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_ember_wyvern_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_ember_wyvern_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          }
+        ]
+      },
+      "postgame": {
+        "success": true,
+        "obtained_count": 156,
+        "obtained_ids": [
+          "starter_ember_wyvern_01",
+          "starter_ember_wyvern_02",
+          "starter_ember_wyvern_03",
+          "starter_flower_hare_01",
+          "starter_flower_hare_02",
+          "starter_flower_hare_03",
+          "starter_tide_bear_01",
+          "starter_tide_bear_02",
+          "starter_tide_bear_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_brine_orb_01",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_compass_01",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_filament_worm_01",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_frost_lotus_01",
+          "wild_frost_lotus_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_hollow_loam_01",
+          "wild_hollow_loam_02",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_memory_seed_01",
+          "wild_memory_seed_02",
+          "wild_memory_seed_03",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_reef_crown_01",
+          "wild_reef_kiln_01",
+          "wild_reef_kiln_02",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_shell_harp_01",
+          "wild_shell_harp_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_tide_veil_01",
+          "wild_tide_veil_02",
+          "wild_tide_veil_03",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_hollow_loam_01",
+            "wild_hollow_loam_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "post_meguri",
+          "post_shizuna",
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_ember_wyvern_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_ember_wyvern_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_ember_wyvern_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "starter_flower_hare_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_flower_hare_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_flower_hare_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_tide_bear_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tide_veil_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reef_kiln_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_kiln_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shell_harp_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shell_harp_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_brine_orb_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_crown_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_memory_seed_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_memory_seed_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_lotus_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_compass_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_filament_worm_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_lotus_02",
+            "rank": 101,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_memory_seed_03",
+            "rank": 102,
+            "method": "evolution"
+          }
+        ]
+      }
+    },
+    "starter_tide_bear": {
+      "main": {
+        "success": true,
+        "obtained_count": 132,
+        "obtained_ids": [
+          "starter_tide_bear_01",
+          "starter_tide_bear_02",
+          "starter_tide_bear_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_tide_bear_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_tide_bear_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          }
+        ]
+      },
+      "postgame": {
+        "success": true,
+        "obtained_count": 156,
+        "obtained_ids": [
+          "starter_ember_wyvern_01",
+          "starter_ember_wyvern_02",
+          "starter_ember_wyvern_03",
+          "starter_flower_hare_01",
+          "starter_flower_hare_02",
+          "starter_flower_hare_03",
+          "starter_tide_bear_01",
+          "starter_tide_bear_02",
+          "starter_tide_bear_03",
+          "wild_alpine_newt_01",
+          "wild_amber_weevil_01",
+          "wild_amber_weevil_02",
+          "wild_ash_tumble_01",
+          "wild_aurora_ray_01",
+          "wild_aurora_ray_02",
+          "wild_bell_beetle_01",
+          "wild_bell_beetle_02",
+          "wild_bloom_siphon_01",
+          "wild_bloom_siphon_02",
+          "wild_bog_leech_01",
+          "wild_bog_leech_02",
+          "wild_breeze_bird_01",
+          "wild_breeze_bird_02",
+          "wild_brine_orb_01",
+          "wild_bubble_moth_01",
+          "wild_cable_marten_01",
+          "wild_cable_marten_02",
+          "wild_cable_marten_03",
+          "wild_coil_dormouse_01",
+          "wild_coil_dormouse_02",
+          "wild_cold_well_01",
+          "wild_coolant_slug_01",
+          "wild_draught_chime_01",
+          "wild_draught_chime_02",
+          "wild_dusk_compass_01",
+          "wild_dusk_glider_01",
+          "wild_dusk_glider_02",
+          "wild_echo_owl_01",
+          "wild_echo_owl_02",
+          "wild_fen_slug_01",
+          "wild_fen_slug_02",
+          "wild_filament_worm_01",
+          "wild_fountain_axolotl_01",
+          "wild_fountain_axolotl_02",
+          "wild_frost_kite_01",
+          "wild_frost_kite_02",
+          "wild_frost_lotus_01",
+          "wild_frost_lotus_02",
+          "wild_glass_gecko_01",
+          "wild_glass_gecko_02",
+          "wild_glass_gecko_03",
+          "wild_granite_pika_01",
+          "wild_granite_pika_02",
+          "wild_hinge_mantis_01",
+          "wild_hinge_mantis_02",
+          "wild_hinge_mantis_03",
+          "wild_hollow_loam_01",
+          "wild_hollow_loam_02",
+          "wild_ink_cuttle_01",
+          "wild_ink_cuttle_02",
+          "wild_kiln_pup_01",
+          "wild_kiln_pup_02",
+          "wild_kiln_pup_03",
+          "wild_lantern_jelly_01",
+          "wild_lantern_jelly_02",
+          "wild_lattice_lichen_01",
+          "wild_lattice_lichen_02",
+          "wild_lens_moth_01",
+          "wild_lens_moth_02",
+          "wild_lichen_spool_01",
+          "wild_lock_crab_01",
+          "wild_lock_crab_02",
+          "wild_lock_crab_03",
+          "wild_lotus_frog_01",
+          "wild_lotus_frog_02",
+          "wild_memory_seed_01",
+          "wild_memory_seed_02",
+          "wild_memory_seed_03",
+          "wild_metro_isopod_01",
+          "wild_metro_isopod_02",
+          "wild_mire_drum_01",
+          "wild_mirror_fawn_01",
+          "wild_mirror_fawn_02",
+          "wild_mirror_fawn_03",
+          "wild_mist_snail_01",
+          "wild_mist_snail_02",
+          "wild_night_curtain_01",
+          "wild_parcel_golem_01",
+          "wild_rain_garden_01",
+          "wild_reed_crane_01",
+          "wild_reed_crane_02",
+          "wild_reed_crane_03",
+          "wild_reed_whistle_01",
+          "wild_reef_crown_01",
+          "wild_reef_kiln_01",
+          "wild_reef_kiln_02",
+          "wild_rooftop_sail_01",
+          "wild_rooftop_sail_02",
+          "wild_root_tapir_01",
+          "wild_root_tapir_02",
+          "wild_root_tapir_03",
+          "wild_rot_kiln_01",
+          "wild_seal_gel_01",
+          "wild_seal_gel_02",
+          "wild_seed_squirrel_01",
+          "wild_seed_squirrel_02",
+          "wild_shade_hedgehog_01",
+          "wild_shade_hedgehog_02",
+          "wild_shell_harp_01",
+          "wild_shell_harp_02",
+          "wild_signal_pigeon_01",
+          "wild_signal_pigeon_02",
+          "wild_signal_pigeon_03",
+          "wild_silt_skate_01",
+          "wild_silt_skate_02",
+          "wild_snow_ibex_01",
+          "wild_snow_ibex_02",
+          "wild_snow_ibex_03",
+          "wild_soot_moth_01",
+          "wild_soot_moth_02",
+          "wild_spark_mica_01",
+          "wild_spore_cicada_01",
+          "wild_spore_cicada_02",
+          "wild_spore_cicada_03",
+          "wild_spring_steam_01",
+          "wild_spring_steam_02",
+          "wild_star_larva_01",
+          "wild_star_larva_02",
+          "wild_star_larva_03",
+          "wild_static_scarab_01",
+          "wild_storm_sail_01",
+          "wild_storm_sail_02",
+          "wild_stream_otter_01",
+          "wild_stream_otter_02",
+          "wild_sulfur_toad_01",
+          "wild_sulfur_toad_02",
+          "wild_sun_sprout_01",
+          "wild_sun_sprout_02",
+          "wild_sunwheel_01",
+          "wild_sunwheel_02",
+          "wild_tablet_pillbug_01",
+          "wild_tablet_pillbug_02",
+          "wild_thermal_fan_01",
+          "wild_thermal_marmot_01",
+          "wild_thermal_marmot_02",
+          "wild_tide_veil_01",
+          "wild_tide_veil_02",
+          "wild_tide_veil_03",
+          "wild_twilight_wolf_01",
+          "wild_twilight_wolf_02",
+          "wild_umbra_civet_01",
+          "wild_umbra_civet_02",
+          "wild_vine_mole_01",
+          "wild_vine_mole_02",
+          "wild_wound_sentry_01",
+          "wild_wound_sentry_02"
+        ],
+        "gates": [
+          "field_break",
+          "field_ember",
+          "field_vine",
+          "field_wave"
+        ],
+        "normal_gate_providers": {
+          "field_vine": [
+            "wild_hinge_mantis_01",
+            "wild_hinge_mantis_02",
+            "wild_hinge_mantis_03",
+            "wild_lattice_lichen_01",
+            "wild_lattice_lichen_02",
+            "wild_lichen_spool_01",
+            "wild_rain_garden_01",
+            "wild_rooftop_sail_01",
+            "wild_rooftop_sail_02",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_umbra_civet_01",
+            "wild_umbra_civet_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_wave": [
+            "wild_fen_slug_01",
+            "wild_fen_slug_02",
+            "wild_fountain_axolotl_01",
+            "wild_fountain_axolotl_02",
+            "wild_ink_cuttle_01",
+            "wild_ink_cuttle_02",
+            "wild_lotus_frog_01",
+            "wild_lotus_frog_02",
+            "wild_rain_garden_01",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_stream_otter_01",
+            "wild_stream_otter_02"
+          ],
+          "field_break": [
+            "wild_amber_weevil_01",
+            "wild_amber_weevil_02",
+            "wild_bell_beetle_01",
+            "wild_bell_beetle_02",
+            "wild_granite_pika_01",
+            "wild_granite_pika_02",
+            "wild_hollow_loam_01",
+            "wild_hollow_loam_02",
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_lock_crab_01",
+            "wild_lock_crab_02",
+            "wild_lock_crab_03",
+            "wild_root_tapir_01",
+            "wild_root_tapir_02",
+            "wild_root_tapir_03",
+            "wild_silt_skate_01",
+            "wild_silt_skate_02",
+            "wild_snow_ibex_01",
+            "wild_snow_ibex_02",
+            "wild_snow_ibex_03",
+            "wild_tablet_pillbug_01",
+            "wild_tablet_pillbug_02",
+            "wild_vine_mole_01",
+            "wild_vine_mole_02"
+          ],
+          "field_ember": [
+            "wild_kiln_pup_01",
+            "wild_kiln_pup_02",
+            "wild_kiln_pup_03",
+            "wild_reef_kiln_01",
+            "wild_reef_kiln_02",
+            "wild_rot_kiln_01",
+            "wild_spring_steam_01",
+            "wild_spring_steam_02",
+            "wild_sulfur_toad_01",
+            "wild_sulfur_toad_02",
+            "wild_sunwheel_01",
+            "wild_sunwheel_02",
+            "wild_thermal_fan_01",
+            "wild_thermal_marmot_01",
+            "wild_thermal_marmot_02"
+          ]
+        },
+        "visited_regions": [
+          "post_meguri",
+          "post_shizuna",
+          "region_akatsuki",
+          "region_hinowa",
+          "region_hoshimi",
+          "region_kanato",
+          "region_kazami",
+          "region_minase",
+          "region_sanagi",
+          "region_tsukishiro"
+        ],
+        "history": [
+          {
+            "id": "starter_tide_bear_01",
+            "rank": 10,
+            "method": "starter_choice"
+          },
+          {
+            "id": "starter_tide_bear_02",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_tide_bear_03",
+            "rank": 10,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seed_squirrel_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seed_squirrel_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_vine_mole_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_vine_mole_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_breeze_bird_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_breeze_bird_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_stream_otter_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_stream_otter_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coil_dormouse_01",
+            "rank": 11,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_coil_dormouse_02",
+            "rank": 11,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_glider_01",
+            "rank": 14,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_dusk_glider_02",
+            "rank": 14,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reed_crane_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_crane_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lock_crab_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lock_crab_03",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lotus_frog_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lotus_frog_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_silt_skate_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_silt_skate_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mist_snail_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mist_snail_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lantern_jelly_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lantern_jelly_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bog_leech_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bog_leech_02",
+            "rank": 20,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reed_whistle_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bubble_moth_01",
+            "rank": 20,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_kiln_pup_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_kiln_pup_03",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_glass_gecko_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_soot_moth_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_soot_moth_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spring_steam_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spring_steam_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bell_beetle_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bell_beetle_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sun_sprout_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sun_sprout_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sulfur_toad_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sulfur_toad_02",
+            "rank": 30,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spark_mica_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ash_tumble_01",
+            "rank": 30,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_glass_gecko_03",
+            "rank": 35,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cable_marten_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_cable_marten_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hinge_mantis_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_hinge_mantis_03",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lattice_lichen_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lattice_lichen_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_seal_gel_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_seal_gel_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_draught_chime_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_draught_chime_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shade_hedgehog_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shade_hedgehog_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lens_moth_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_lens_moth_02",
+            "rank": 40,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_coolant_slug_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_parcel_golem_01",
+            "rank": 40,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_snow_ibex_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_snow_ibex_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_star_larva_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_star_larva_03",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_kite_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_kite_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_thermal_marmot_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_marmot_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_granite_pika_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_granite_pika_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_aurora_ray_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_aurora_ray_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_twilight_wolf_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_twilight_wolf_02",
+            "rank": 50,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_lichen_spool_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_alpine_newt_01",
+            "rank": 50,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_root_tapir_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_root_tapir_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_spore_cicada_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_spore_cicada_03",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fen_slug_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fen_slug_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_umbra_civet_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_umbra_civet_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_amber_weevil_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_amber_weevil_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_bloom_siphon_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_bloom_siphon_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_storm_sail_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_storm_sail_02",
+            "rank": 60,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mire_drum_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rot_kiln_01",
+            "rank": 60,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_mirror_fawn_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_mirror_fawn_03",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tablet_pillbug_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tablet_pillbug_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_wound_sentry_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_wound_sentry_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_echo_owl_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_echo_owl_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_ink_cuttle_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_ink_cuttle_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_sunwheel_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_sunwheel_02",
+            "rank": 70,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_static_scarab_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_cold_well_01",
+            "rank": 70,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_signal_pigeon_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_signal_pigeon_03",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_metro_isopod_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_metro_isopod_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_rooftop_sail_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rooftop_sail_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_fountain_axolotl_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_fountain_axolotl_02",
+            "rank": 80,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_night_curtain_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_thermal_fan_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_rain_garden_01",
+            "rank": 80,
+            "method": "wild_capture"
+          },
+          {
+            "id": "starter_flower_hare_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_flower_hare_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_flower_hare_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_ember_wyvern_01",
+            "rank": 100,
+            "method": "postgame_rescue"
+          },
+          {
+            "id": "starter_ember_wyvern_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "starter_ember_wyvern_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_tide_veil_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_tide_veil_03",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_reef_kiln_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_kiln_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_shell_harp_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_shell_harp_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_brine_orb_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_reef_crown_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_memory_seed_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_memory_seed_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_frost_lotus_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_hollow_loam_02",
+            "rank": 100,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_dusk_compass_01",
+            "rank": 100,
+            "method": "fixed_repeatable"
+          },
+          {
+            "id": "wild_filament_worm_01",
+            "rank": 100,
+            "method": "wild_capture"
+          },
+          {
+            "id": "wild_frost_lotus_02",
+            "rank": 101,
+            "method": "evolution"
+          },
+          {
+            "id": "wild_memory_seed_03",
+            "rank": 102,
+            "method": "evolution"
+          }
+        ]
+      }
+    }
+  },
+  "existing_validators": [
+    {
+      "script": "tools/validate_assets.py",
+      "exit_code": 0,
+      "output": {
+        "recorded_file_check": "pass",
+        "files_checked": 49,
+        "catalog_complete": false,
+        "runtime_images": 19,
+        "audio_tracks": 0,
+        "pending_categories": [
+          "full_species_catalog",
+          "monster_runtime_art",
+          "character_sprites",
+          "map_tiles_and_layouts",
+          "complete_moves_items_abilities",
+          "complete_story_events",
+          "audio",
+          "ui_art"
+        ],
+        "errors": [],
+        "scope": "file existence, hashes and PNG header dimensions only"
+      },
+      "stderr": ""
+    },
+    {
+      "script": "tools/validate_preproduction.py",
+      "exit_code": 0,
+      "output": {
+        "planning_check": "pass",
+        "species_slots": 156,
+        "known_production_cards": 15,
+        "main_regions": 8,
+        "postgame_regions": 2,
+        "representatives": 8,
+        "music_cues_not_generated": 28,
+        "queued_assets_not_created": 3,
+        "runtime_image_count": 19,
+        "runtime_ready_images": 19,
+        "errors": [],
+        "scope": "planning counts and references, not playthrough or complete content"
+      },
+      "stderr": ""
+    }
+  ],
+  "simulation_assumptions_ja": [
+    "捕獲は通常の再試行で可能、道具は通常の補充が可能とする設計前提。成功確率・経済は未検証。",
+    "必要レベルまでは育成可能とする。経験値曲線・所要時間は未設定。",
+    "昼夜待機・無償再講習・固定戦再挑戦は制作案で、ゲーム内挙動は未実装。",
+    "地域接続はworld-outlineの順序を用いる。タイル・帰路・全滅・技忘却の状態空間は実ゲームで未検証。"
+  ],
+  "unresolved": [
+    "新規141種と既存15種への詳細追加はユーザー未採用。一般6種の表示名・属性と追加進化6種も案。",
+    "ミズッタv0.1・ココイルv0.1・ヨルミルv0.2の新三面設定画は確認待ち。",
+    "御三家中間形の美術は提案、最終形は方向採用のみで背面接続の新設計は未採用。",
+    "進化レベル（御三家以外）・場所進化・技名と具体効果・昼夜待機・再挑戦は制作案。",
+    "種族値・技威力・命中・技使用回数・成長曲線・捕獲率・出現率・実マップ・ゲーム内UIは未設計または未検証。",
+    "固有名と造形の網羅的な既存作品照合・商標調査は未実施。独自モチーフの組合せと輪郭を設計したが法的保証ではない。"
+  ],
+  "game_balance_verified": false,
+  "fun_verified": false,
+  "playthrough_verified": false,
+  "image_generation_performed": false,
+  "game_implementation_performed": false,
+  "git_commit_push_or_publish_performed": false
+}

@@ -1,0 +1,84 @@
+{
+  "date_jst": "2026-11-02",
+  "result": "pass",
+  "recorded_assets": 49,
+  "png_entries": 42,
+  "runtime_images": 19,
+  "runtime_ready_images": 19,
+  "original_art_and_brief_files_unchanged": 80,
+  "model_sheet_browser_checks": [
+    {
+      "id": "source_mizutta_model_sheet_v01",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "label": "ミズッタ 前後横の設定画・確認待ち",
+      "rejected": false
+    },
+    {
+      "id": "source_cocoil_model_sheet_v01",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "label": "ココイル 前後横の設定画・確認待ち",
+      "rejected": false
+    },
+    {
+      "id": "source_yorumiru_model_sheet_v02",
+      "dimensions": [
+        1922,
+        818
+      ],
+      "label": "ヨルミル 四肢へ修正した設定画・確認待ち",
+      "rejected": false
+    },
+    {
+      "id": "source_yorumiru_model_sheet_v01",
+      "dimensions": [
+        1923,
+        818
+      ],
+      "label": "ヨルミル旧6肢案・不採用",
+      "rejected": true
+    }
+  ],
+  "sprite_adoption_checks": [
+    {
+      "species": "hanamimi",
+      "adopted": true
+    },
+    {
+      "species": "honoru",
+      "adopted": true
+    },
+    {
+      "species": "miomaru",
+      "adopted": true
+    },
+    {
+      "species": "riscoro",
+      "adopted": true
+    },
+    {
+      "species": "tsurumogu",
+      "adopted": true
+    },
+    {
+      "species": "haneri",
+      "adopted": true
+    }
+  ],
+  "mobile_390px_overflow": false,
+  "adopted_battle_ui_pixels_unchanged": true,
+  "battle_examples_checked": 3,
+  "page_errors": [],
+  "failed_responses": [],
+  "external_http_requests": [],
+  "harness_corrections": [
+    "Wait for PNG entries (42), not all manifest entries (49).",
+    "Local blob URLs used for raster decode are not external HTTP requests."
+  ],
+  "scope": "static asset and display validation; not game logic or physical-device tests"
+}

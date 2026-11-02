@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "purpose": "planning_only_not_runtime",
+  "scope_status": "user_accepted_scope_for_outline",
+  "target_species_count": 156,
+  "target_main_regions": 8,
+  "target_representatives": 8,
+  "target_postgame_regions": 2,
+  "starter_species_slots": 9,
+  "additional_map_units": 6,
+  "antagonist_direction": "concealment_by_one_executive",
+  "regions": [
+    {
+      "id": "region_kazami",
+      "name_ja": "ハルネ村・カザミ町",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 12,
+      "estimated_map_units": 7,
+      "art_set": "grassland_forest",
+      "representative": {
+        "id": "npc_sayo",
+        "name_ja": "サヨ",
+        "job_ja": "配達員",
+        "battle_theme_ja": "観察と交代"
+      },
+      "unlocks_after": []
+    },
+    {
+      "id": "region_minase",
+      "name_ja": "ミナセ水郷",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 18,
+      "estimated_map_units": 5,
+      "art_set": "waterways_wetland",
+      "representative": {
+        "id": "npc_nagi",
+        "name_ja": "ナギ",
+        "job_ja": "水路管理人",
+        "battle_theme_ja": "場の変化と役割"
+      },
+      "unlocks_after": [
+        "region_kazami"
+      ]
+    },
+    {
+      "id": "region_hinowa",
+      "name_ja": "ヒノワ丘陵",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 18,
+      "estimated_map_units": 5,
+      "art_set": "geothermal_hills",
+      "representative": {
+        "id": "npc_en",
+        "name_ja": "エン",
+        "job_ja": "窯工房の職人",
+        "battle_theme_ja": "状態変化と交代"
+      },
+      "unlocks_after": [
+        "region_minase"
+      ]
+    },
+    {
+      "id": "region_kanato",
+      "name_ja": "カナト工業林",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 18,
+      "estimated_map_units": 5,
+      "art_set": "industrial_forest",
+      "representative": {
+        "id": "npc_ritsu",
+        "name_ja": "リツ",
+        "job_ja": "整備士",
+        "battle_theme_ja": "2対2の連携"
+      },
+      "unlocks_after": [
+        "region_hinowa"
+      ]
+    },
+    {
+      "id": "region_tsukishiro",
+      "name_ja": "ツキシロ高地",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 18,
+      "estimated_map_units": 5,
+      "art_set": "snow_observatory",
+      "representative": {
+        "id": "npc_shion",
+        "name_ja": "シオン",
+        "job_ja": "観測員",
+        "battle_theme_ja": "行動順と守り"
+      },
+      "unlocks_after": [
+        "region_kanato"
+      ]
+    },
+    {
+      "id": "region_sanagi",
+      "name_ja": "サナギ原生域",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 18,
+      "estimated_map_units": 5,
+      "art_set": "ancient_wet_forest",
+      "representative": {
+        "id": "npc_sui",
+        "name_ja": "スイ",
+        "job_ja": "保全員",
+        "battle_theme_ja": "長期戦と回復"
+      },
+      "unlocks_after": [
+        "region_tsukishiro"
+      ]
+    },
+    {
+      "id": "region_akatsuki",
+      "name_ja": "アカツキ遺構",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 15,
+      "estimated_map_units": 5,
+      "art_set": "white_stone_ruins",
+      "representative": {
+        "id": "npc_towa",
+        "name_ja": "トワ",
+        "job_ja": "史料修復師",
+        "battle_theme_ja": "技の組合せ"
+      },
+      "unlocks_after": [
+        "region_sanagi"
+      ]
+    },
+    {
+      "id": "region_hoshimi",
+      "name_ja": "ホシミ環状市",
+      "detail_status": "proposed",
+      "phase": "main_story",
+      "new_species_slots": 12,
+      "estimated_map_units": 5,
+      "art_set": "modern_city",
+      "representative": {
+        "id": "npc_hibiki",
+        "name_ja": "ヒビキ",
+        "job_ja": "大会実戦指導員",
+        "battle_theme_ja": "編成の総仕上げ"
+      },
+      "unlocks_after": [
+        "region_akatsuki"
+      ]
+    },
+    {
+      "id": "post_shizuna",
+      "name_ja": "シズナ群島",
+      "detail_status": "proposed",
+      "phase": "postgame",
+      "new_species_slots": 9,
+      "estimated_map_units": 6,
+      "art_set": "coast_caves",
+      "representative": null,
+      "unlocks_after": [
+        "chapter_final"
+      ]
+    },
+    {
+      "id": "post_meguri",
+      "name_ja": "メグリ盆地",
+      "detail_status": "proposed",
+      "phase": "postgame",
+      "new_species_slots": 9,
+      "estimated_map_units": 6,
+      "art_set": "breeding_meadow",
+      "representative": null,
+      "unlocks_after": [
+        "chapter_final"
+      ]
+    }
+  ],
+  "route_edges": [
+    [
+      "region_kazami",
+      "region_minase"
+    ],
+    [
+      "region_minase",
+      "region_hinowa"
+    ],
+    [
+      "region_hinowa",
+      "region_kanato"
+    ],
+    [
+      "region_kanato",
+      "region_tsukishiro"
+    ],
+    [
+      "region_tsukishiro",
+      "region_sanagi"
+    ],
+    [
+      "region_sanagi",
+      "region_akatsuki"
+    ],
+    [
+      "region_akatsuki",
+      "region_hoshimi"
+    ]
+  ],
+  "ending": {
+    "id": "chapter_final",
+    "predecessor": "chapter_resolution",
+    "content_ja": "事件解決後に幼なじみとの大会決勝"
+  },
+  "nonclaims_ja": [
+    "地域配分と人物名は提案",
+    "全種の系統・能力値・会話・マップは未完成",
+    "入手経路のゲーム内実行検証は未実施"
+  ],
+  "antagonist_direction_status": "user_adopted",
+  "antagonist_detail_status": "proposed",
+  "antagonist_plan": "docs/STORY_CONFLICT_B_v0.1.md"
+}

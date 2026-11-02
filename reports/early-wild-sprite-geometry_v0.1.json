@@ -1,0 +1,276 @@
+{
+  "resampling": "nearest",
+  "opaque_palette_limit_per_species": 31,
+  "species": {
+    "wild_seed_squirrel_01": {
+      "source": "assets/source/monsters/wild_seed_squirrel_01/pixel_study_v0.1.png",
+      "source_sha256": "7b9511d6183cd331a84ad05cb6ec8e609bb532974b66223ee3b0ed52c1b824dd",
+      "mirror_x": {
+        "front": false,
+        "back": false,
+        "icon": false
+      },
+      "battle_common_scale": 0.10526315789473684,
+      "icon_scale": 0.08306709265175719,
+      "icon_alignment": "bounds",
+      "state": "technical_checks_passed_visual_review_pending",
+      "entries": {
+        "front": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            25,
+            11,
+            91,
+            88
+          ],
+          "opaque_colors": 31,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 5,
+          "path": "assets/runtime/monsters/wild_seed_squirrel_01/front.png",
+          "sha256": "deef967043e89987a4ed38fad81afb523fdd87d875459d47bb8de1cdf492efae",
+          "bytes": 5386
+        },
+        "back": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            7,
+            16,
+            72,
+            88
+          ],
+          "opaque_colors": 31,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 7,
+          "path": "assets/runtime/monsters/wild_seed_squirrel_01/back.png",
+          "sha256": "84b8c4eca109678972fa535e01e94f7a49b37535e171579c499387978f0e39cf",
+          "bytes": 4549
+        },
+        "icon": {
+          "size": [
+            32,
+            32
+          ],
+          "opaque_bbox": [
+            4,
+            2,
+            30,
+            30
+          ],
+          "opaque_colors": 29,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            16,
+            30
+          ],
+          "minimum_border_px": 2,
+          "path": "assets/runtime/monsters/wild_seed_squirrel_01/icon.png",
+          "sha256": "83be36ba719a5cee8bcfaa70664ac7675b276e338dbb1ea83ee9206559febf8f",
+          "bytes": 1426
+        }
+      }
+    },
+    "wild_vine_mole_01": {
+      "source": "assets/source/monsters/wild_vine_mole_01/pixel_study_v0.1.png",
+      "source_sha256": "ac8d6d68b6636553671782ecccb2ae1f6f7a03c3a0c37236861bd68384dfe3f0",
+      "mirror_x": {
+        "front": false,
+        "back": false,
+        "icon": false
+      },
+      "battle_common_scale": 0.10941475826972011,
+      "icon_scale": 0.07926829268292683,
+      "icon_alignment": "bounds",
+      "state": "technical_checks_passed_visual_review_pending",
+      "entries": {
+        "front": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            6,
+            22,
+            84,
+            88
+          ],
+          "opaque_colors": 30,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 6,
+          "path": "assets/runtime/monsters/wild_vine_mole_01/front.png",
+          "sha256": "a60bffcbc6f4e138705ad297601edad12e1094b386e9e80b43187228605af1c7",
+          "bytes": 5204
+        },
+        "back": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            10,
+            25,
+            83,
+            88
+          ],
+          "opaque_colors": 31,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 8,
+          "path": "assets/runtime/monsters/wild_vine_mole_01/back.png",
+          "sha256": "03ac12620c015447ec48287065b7454cde59538886da4772b9875ea9ec5e989d",
+          "bytes": 4464
+        },
+        "icon": {
+          "size": [
+            32,
+            32
+          ],
+          "opaque_bbox": [
+            4,
+            8,
+            30,
+            30
+          ],
+          "opaque_colors": 30,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            16,
+            30
+          ],
+          "minimum_border_px": 2,
+          "path": "assets/runtime/monsters/wild_vine_mole_01/icon.png",
+          "sha256": "bcb64bd1e3a14ad4091b105ee25153a21d0cd97dc7859cc263e2667dab5839a0",
+          "bytes": 1127
+        }
+      }
+    },
+    "wild_breeze_bird_01": {
+      "source": "assets/source/monsters/wild_breeze_bird_01/pixel_study_v0.1.png",
+      "source_sha256": "d27732a3b8a91ab86975243aeeedcd38c210fb4bfd1829fc4a575d3b77a1967f",
+      "mirror_x": {
+        "front": true,
+        "back": false,
+        "icon": true
+      },
+      "battle_common_scale": 0.10643564356435643,
+      "icon_scale": 0.0979020979020979,
+      "icon_alignment": "bounds",
+      "state": "technical_checks_passed_visual_review_pending",
+      "entries": {
+        "front": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            9,
+            16,
+            78,
+            88
+          ],
+          "opaque_colors": 30,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 8,
+          "path": "assets/runtime/monsters/wild_breeze_bird_01/front.png",
+          "sha256": "2a6b973facafac32d63992c3fdd8e2bbf0905eacdc17f654f39b154b8ce2feb7",
+          "bytes": 4788
+        },
+        "back": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            6,
+            15,
+            74,
+            88
+          ],
+          "opaque_colors": 29,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 6,
+          "path": "assets/runtime/monsters/wild_breeze_bird_01/back.png",
+          "sha256": "e2efe01fc09f631407b9a589498d68c1ae7253027c54f23c657a345b941ac146",
+          "bytes": 4665
+        },
+        "icon": {
+          "size": [
+            32,
+            32
+          ],
+          "opaque_bbox": [
+            4,
+            2,
+            30,
+            30
+          ],
+          "opaque_colors": 30,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            16,
+            30
+          ],
+          "minimum_border_px": 2,
+          "path": "assets/runtime/monsters/wild_breeze_bird_01/icon.png",
+          "sha256": "1766cb46ced5700074ee2379c70590761003ff8b799854a1c522796284c6e9f3",
+          "bytes": 1313
+        }
+      }
+    }
+  }
+}

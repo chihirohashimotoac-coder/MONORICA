@@ -1,0 +1,9 @@
+{
+  "reference_png_count": 7,
+  "default_reference": "model_sheet_v0.2",
+  "pixel_study_has_transparent_pixels": true,
+  "composition": "ally_lower_left_enemy_upper_right",
+  "page_errors": [],
+  "390px_width_no_page_overflow": true,
+  "scope": "reference image display and static composition only; no game functionality or hardware validation"
+}

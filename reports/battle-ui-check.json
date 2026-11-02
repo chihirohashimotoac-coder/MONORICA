@@ -1,0 +1,40 @@
+{
+  "commands": [
+    "たたかう",
+    "どうぐ",
+    "なかま",
+    "にげる"
+  ],
+  "ui_copy_kanji_check": "no_kanji_in_commands_messages_common",
+  "local_dot_font_loaded": true,
+  "external_requests": [],
+  "preview_export_sizes": {
+    "battle-ui_v0.1.png": [
+      1152,
+      768
+    ],
+    "battle-ui_native_v0.1.png": [
+      384,
+      256
+    ]
+  },
+  "transparent_text_free_frame_size": [
+    384,
+    256
+  ],
+  "frame_export_repeatable": true,
+  "viewport_width_checks": [
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "viewer_png_entries": 11,
+  "approved_sprite_label": "pass",
+  "page_errors": [],
+  "scope": "static UI and fonts, not combat, touch interaction or physical phones"
+}

@@ -1,0 +1,17 @@
+{
+  "date_jst": "2026-11-02",
+  "continuity_rule_saved_in": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/SESSION_CONTINUITY.md"
+  ],
+  "account_memory_written": false,
+  "account_memory_tool_available": false,
+  "latest_handoff": "HANDOFF_MONORICA_2026-11-02_v0.11.md",
+  "start_prompt": "NEXT_SESSION_START_v0.11.txt",
+  "adopted_runtime_pngs": 10,
+  "new_pngs_visual_review_pending": 9,
+  "github_push": "not_performed",
+  "next_step": "review_new_9_wild_creature_sprites",
+  "local_links": "pass"
+}

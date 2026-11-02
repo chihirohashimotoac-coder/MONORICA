@@ -1,0 +1,18 @@
+{
+  "creature_selector": "6_creatures_pass",
+  "native_sizes_and_render_widths": [
+    96,
+    96,
+    32
+  ],
+  "adopted_vs_pending_labels": "pass",
+  "new_9_images_spec_display": "pass",
+  "recorded_png_entries": 38,
+  "default_adopted_ui_unchanged": true,
+  "battle_switches_to_new_wild_pair": "pass",
+  "dark_background": "pass",
+  "390px_no_horizontal_overflow": true,
+  "page_errors": [],
+  "external_requests": [],
+  "scope": "asset display and static battle UI only; new sprite adoption and physical phones pending"
+}

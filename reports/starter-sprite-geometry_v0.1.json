@@ -1,0 +1,184 @@
+{
+  "resampling": "nearest",
+  "opaque_palette_limit_per_species": 31,
+  "species": {
+    "starter_ember_wyvern_01": {
+      "source": "assets/source/monsters/starter_ember_wyvern_01/pixel_study_v0.1.png",
+      "source_sha256": "075b34d905c44fd5b44b9531503af81e5c0dd3cfdbbdfea76683ff4470145456",
+      "mirror_x": {
+        "front": true,
+        "back": false,
+        "icon": false
+      },
+      "battle_common_scale": 0.09817351598173515,
+      "icon_scale": 0.09364548494983277,
+      "state": "technical_checks_passed_visual_review_pending",
+      "entries": {
+        "front": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            5,
+            17,
+            85,
+            88
+          ],
+          "opaque_colors": 31,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 5,
+          "path": "assets/runtime/monsters/starter_ember_wyvern_01/front.png",
+          "sha256": "68886654f8751b118148a26cacf543f03d6633952254a3049e4d6fee9e1c9b72",
+          "bytes": 5830
+        },
+        "back": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            13,
+            20,
+            82,
+            88
+          ],
+          "opaque_colors": 31,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 8,
+          "path": "assets/runtime/monsters/starter_ember_wyvern_01/back.png",
+          "sha256": "1fb93284a705129a9b9c3955598d0320a77d2823b42f6834218cedd24cd267bb",
+          "bytes": 5129
+        },
+        "icon": {
+          "size": [
+            32,
+            32
+          ],
+          "opaque_bbox": [
+            6,
+            2,
+            29,
+            30
+          ],
+          "opaque_colors": 30,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            16,
+            30
+          ],
+          "minimum_border_px": 2,
+          "path": "assets/runtime/monsters/starter_ember_wyvern_01/icon.png",
+          "sha256": "abf61a4c8bbae812e0ee4727b623a6579fa378a23721bb8d4b21ff319e57b402",
+          "bytes": 1474
+        }
+      }
+    },
+    "starter_tide_bear_01": {
+      "source": "assets/source/monsters/starter_tide_bear_01/pixel_study_v0.1.png",
+      "source_sha256": "34010c13d0e5911149f00681cfaf31d31a923dbad68bf8def11c2a81e452c4f2",
+      "mirror_x": {
+        "front": true,
+        "back": false,
+        "icon": false
+      },
+      "battle_common_scale": 0.1171303074670571,
+      "icon_scale": 0.09032258064516129,
+      "state": "technical_checks_passed_visual_review_pending",
+      "entries": {
+        "front": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            6,
+            8,
+            86,
+            88
+          ],
+          "opaque_colors": 29,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 6,
+          "path": "assets/runtime/monsters/starter_tide_bear_01/front.png",
+          "sha256": "705d555b5f43bf0e1c532b7cb6b56e8eba5800ff8ce4f78d2f9b0720ec6ed6a6",
+          "bytes": 6154
+        },
+        "back": {
+          "size": [
+            96,
+            96
+          ],
+          "opaque_bbox": [
+            18,
+            8,
+            85,
+            88
+          ],
+          "opaque_colors": 29,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            48,
+            88
+          ],
+          "minimum_border_px": 8,
+          "path": "assets/runtime/monsters/starter_tide_bear_01/back.png",
+          "sha256": "3a87bb9b546954611d26d4d8f690ec87143d64f638bbe807fffb65f1d462fedf",
+          "bytes": 4843
+        },
+        "icon": {
+          "size": [
+            32,
+            32
+          ],
+          "opaque_bbox": [
+            6,
+            2,
+            29,
+            30
+          ],
+          "opaque_colors": 28,
+          "alpha_values": [
+            0,
+            255
+          ],
+          "ground_anchor": [
+            16,
+            30
+          ],
+          "minimum_border_px": 2,
+          "path": "assets/runtime/monsters/starter_tide_bear_01/icon.png",
+          "sha256": "c4272c4ff422dc018f0767acc9b7415bde315e8642c1ea70c95f6dfa5411f49d",
+          "bytes": 1378
+        }
+      }
+    }
+  }
+}

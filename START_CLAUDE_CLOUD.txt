@@ -1,0 +1,17 @@
+最初にLATEST_HANDOFF.mdとAGENTS.mdを読み、最新の停止位置から続けてください。コンテキストが増えたら毎回Handoffを保存し、新しいセッションへ移るよう案内するユーザー希望を守ってください。以下の記述は更新の経緯です。
+
+CLAUDE.md、docs/DECISIONS.md、docs/WORLD_OUTLINE_v0.1.md、docs/ASSET_SPEC_v0.1.md、docs/GITHUB_CLAUDE_HANDOFF.mdを読んでください。
+現在は素材準備段階です。ゲーム本体の実装を始めず、python3 tools/validate_assets.py と python3 tools/validate_preproduction.py を実行してください。
+156種・本編8地域／8代表・クリア後2地域の骨格案を進めます。対立側はB「一部責任者の隠蔽」を採用済みです。docs/STORY_CONFLICT_B_v0.1.mdを読み、人物の具体像・外見・素材規格の最終値は提案として区別してください。
+
+ハナミミの前後96px・アイコン32pxの候補を追加しています。docs/HANAMIMI_SPRITES_v0.1.mdを読み、寸法等の確認済みと見た目の採用待ちを区別してください。
+
+最新：ハナミミのドット絵3点は見た目採用済み。戦闘UIは参考画面に近づけ、ひらがなを基本にする方針です。docs/BATTLE_UI_v0.1.mdを優先してください。UIの新案そのものは提案段階です。
+
+さらに最新：戦闘UI v0.1の見た目も採用され、枠をassets/runtime/ui/battle/frame.pngへ登録しました。ホノルは独立腕2本・脚2本・背中の翼2枚がユーザー指定です。docs/STARTER_MODEL_SHEETS_v0.1.mdを読み、旧4肢案は不採用としてください。新しい2体の設定画の見た目は確認待ちです。
+
+最新：提示したホノル・ミオマルの設定画を基準に進める指示を受け、個別PNG候補6枚を制作しました。docs/STARTER_SPRITES_v0.1.mdを読み、採用済み4PNGと、画像規格確認済み・見た目採用待ち6PNGを区別してください。
+
+最新：ホノル・ミオマルの6PNGも採用され、御三家初期3体の静止素材9枚＋UI枠1枚の計10PNGが採用済みです。現在の確認対象はdocs/EARLY_WILD_MODEL_SHEETS_v0.1.mdのリスコロ・ツルモグ・ハネリ設定画案です。
+
+最新：リスコロ・ツルモグ・ハネリの設定画が採用され、個別PNG候補9枚を追加しました。docs/EARLY_WILD_SPRITES_v0.1.mdを読み、既存の採用済み10PNGと、今回の見た目確認待ち9PNGを区別してください。

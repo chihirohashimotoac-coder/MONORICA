@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "language": "ja",
+  "writing_style": "hiragana_base",
+  "allowed_exceptions": [
+    "species_names",
+    "player_names",
+    "HP",
+    "Lv",
+    "numbers"
+  ],
+  "commands": {
+    "fight": "たたかう",
+    "bag": "どうぐ",
+    "party": "なかま",
+    "run": "にげる"
+  },
+  "messages": {
+    "choose_action": "{name}は\nどうする？",
+    "choose_move": "わざを えらんでね",
+    "choose_item": "どうぐを えらんでね",
+    "choose_companion": "だれと いれかえる？"
+  },
+  "common": {
+    "back": "もどる",
+    "use": "つかう",
+    "cancel": "やめる",
+    "confirm": "きめる"
+  },
+  "note_ja": "操作文言はひらがなを基本にする。モンスター名などの固有名はカタカナ等を維持する。メニュー画面の実装や戦闘処理を表すデータではない。",
+  "approval": {
+    "main_commands_and_choose_action": "user_adopted",
+    "other_copy": "proposed_not_yet_displayed"
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONORICA 素材確認帳</title>
+<link rel="stylesheet" href="review.css">
+<header>
+  <a href="../../README.md">MONORICA</a>
+  <h1>素材確認帳</h1>
+  <p>原画を守りながら、次の一枚を確かめる。</p>
+</header>
+<main>
+  <aside>
+    <h2>画像を選ぶ</h2>
+    <label for="asset">記録済みの原画・設定画</label>
+    <select id="asset"><option>読み込み中…</option></select>
+    <p id="provenance" class="note"></p>
+    <label for="upload">手元の制作候補を開く</label>
+    <input id="upload" type="file" accept="image/png">
+    <p class="note">PNGはこのブラウザ内で表示します。サーバーへ送信しません。</p>
+    <label for="kind">照合する規格案</label>
+    <select id="kind">
+      <option value="reference">参照画像（寸法自由）</option>
+      <option value="front">戦闘前面 96×96</option>
+      <option value="back">戦闘背面 96×96</option>
+      <option value="icon">アイコン 32×32</option>
+      <option value="walk">人物歩行 96×192</option>
+    </select>
+    <h2>表示</h2>
+    <label for="zoom">倍率</label>
+    <select id="zoom"><option value="fit">枠に収める</option><option value="1">1倍</option><option value="2">2倍</option><option value="4">4倍</option><option value="8">8倍</option></select>
+    <label for="background">背景</label>
+    <select id="background"><option value="checker">透過チェック</option><option value="white">白</option><option value="dark">濃紺</option><option value="green">草地色</option></select>
+    <label class="check"><input id="guides" type="checkbox" checked> 基準点・外周余白を重ねる</label>
+    <label class="check"><input id="grid" type="checkbox"> 1pxの格子（4倍以上）</label>
+    <a class="spec" href="../../docs/ASSET_SPEC_v0.1.md">規格案を読む</a>
+  </aside>
+  <section class="workbench" aria-label="画像の確認">
+    <div class="art-head"><h2 id="name">画像を読み込みます</h2><span id="size"></span></div>
+    <div id="stage" data-background="checker"><canvas id="canvas" aria-label="選択した素材"></canvas></div>
+    <div id="results" aria-live="polite"></div>
+    <p class="boundary">寸法や透過が合っても、向き・造形・ドットの読みやすさは目視で確認します。この画面は素材の採用や完成状態を書き換えません。</p>
+  </section>
+</main>
+<footer>ゲーム本体とは別の素材確認用ツール。動作に外部サービス・外部フォントは使いません。</footer>
+<script src="review.js"></script>
+</html>

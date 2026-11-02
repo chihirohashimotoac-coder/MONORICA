@@ -1,0 +1,50 @@
+{
+  "date_jst": "2026-11-03",
+  "source_commit": "66d12e7bdb19fdebd0f7dd4896b9f29c1a2cebf7",
+  "source_zip_sha256": "548d7c87d5b0fad25a8a179ded85f9607ca41406bc37768cb4b2cfcaf031235c",
+  "original_archive_file_count": 217,
+  "commands": [
+    {
+      "command": "python tools/build_species_catalog_v01.py",
+      "exit_code": 0,
+      "stdout": "{\"species\": 156, \"families\": 79}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_species_catalog_v01.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"checks\": 46,\n  \"passed\": 46,\n  \"failed\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_assets.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"recorded_file_check\": \"pass\",\n  \"files_checked\": 49,\n  \"catalog_complete\": false,\n  \"runtime_images\": 19,\n  \"audio_tracks\": 0,\n  \"pending_categories\": [\n    \"full_species_catalog\",\n    \"monster_runtime_art\",\n    \"character_sprites\",\n    \"map_tiles_and_layouts\",\n    \"complete_moves_items_abilities\",\n    \"complete_story_events\",\n    \"audio\",\n    \"ui_art\"\n  ],\n  \"errors\": [],\n  \"scope\": \"file existence, hashes and PNG header dimensions only\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_preproduction.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"planning_check\": \"pass\",\n  \"species_slots\": 156,\n  \"known_production_cards\": 15,\n  \"main_regions\": 8,\n  \"postgame_regions\": 2,\n  \"representatives\": 8,\n  \"music_cues_not_generated\": 28,\n  \"queued_assets_not_created\": 3,\n  \"runtime_image_count\": 19,\n  \"runtime_ready_images\": 19,\n  \"errors\": [],\n  \"scope\": \"planning counts and references, not playthrough or complete content\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "archive_paths_changed_by_regeneration_or_validation": [
+    "content/planning/species-art-batches_v0.1.json",
+    "content/planning/species-catalog_v0.1.json",
+    "content/planning/species-catalog_v0.1.schema.json",
+    "docs/SPECIES_ART_BATCHES_v0.1.md",
+    "docs/SPECIES_CATALOG_v0.1.md",
+    "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+    "reports/species-catalog-check_v0.1.json"
+  ],
+  "species_review_complete": false,
+  "original_archive_files_preserved_byte_for_byte": true,
+  "regeneration_diff_reason": "7 generated text files normalized CRLF to LF only; originals restored for the initial import checkpoint. JSON/content are unchanged.",
+  "runtime_png_count": 19,
+  "font_present": true,
+  "registered_manifest_entries": 49,
+  "known_species_cards": 15,
+  "design_review_complete": false,
+  "source_audit_warning_ja": "reports/species-catalog-check_v0.1.json内の読了・画像目視・Windows作業の記述は元v0.13資料の履歴。今回の読了・目視実績には流用していない。今回の実行結果は本レポートのcommandsを参照。"
+}

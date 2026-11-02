@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "phase": "asset_preparation_before_full_implementation",
+  "catalog_complete": false,
+  "runtime_image_count": 0,
+  "audio_track_count": 0,
+  "full_content_data_complete": false,
+  "pending_categories": [
+    "full_species_catalog",
+    "monster_runtime_art",
+    "character_sprites",
+    "map_tiles_and_layouts",
+    "complete_moves_items_abilities",
+    "complete_story_events",
+    "audio",
+    "ui_art"
+  ],
+  "entries": [
+    {
+      "id": "ref_starter_initial_final",
+      "path": "brief/starter_concepts_v0.4.png",
+      "role": "reference_only",
+      "state": "concept_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "74b189216c3eef95577cd7388d804d28e00d776c3dc7894b67bbd4712f22b7e2",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "ref_starter_middle",
+      "path": "brief/starter_middle_concepts_v0.1.png",
+      "role": "reference_only",
+      "state": "concept_proposed",
+      "runtime_ready": false,
+      "sha256": "1ce37ff0cd7f1b9d2386fa3d2b1baba8590a135df029642a634c28336a288118",
+      "png_width": 1774,
+      "png_height": 887
+    },
+    {
+      "id": "ref_early_wild_six",
+      "path": "brief/wild_monsters_concepts_v0.1.png",
+      "role": "reference_only",
+      "state": "concept_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "23367dc3e8cc8cb3fb75cee382f92574697713051ae04d559858d9f6dafb4028",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "ref_field_topdown",
+      "path": "brief/field_topdown_concept_v0.1.png",
+      "role": "reference_only",
+      "state": "visual_direction_adopted",
+      "runtime_ready": false,
+      "sha256": "cdb80fed1ba4b7284560aeb673bc627699b8740622561a08e28cca227621408a",
+      "png_width": 1536,
+      "png_height": 1024
+    },
+    {
+      "id": "data_type_chart",
+      "path": "content/type-chart.json",
+      "role": "game_data",
+      "state": "adopted_for_prototype_balance_unverified",
+      "sha256": "c74de140ce99d2f249d6c89d35e55091581fcf6d8eb25a96c4f49e817dc78341"
+    }
+  ],
+  "note_ja": "参照用原画と相性データの台帳。全素材完成やゲーム取り込み用画像の完成を示すものではない。"
+}

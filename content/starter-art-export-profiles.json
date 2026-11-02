@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "source_art_export_only_not_runtime_game_data",
+  "profiles": [
+    {
+      "species_id": "starter_ember_wyvern_01",
+      "name_ja": "ホノル",
+      "source": "assets/source/monsters/starter_ember_wyvern_01/pixel_study_v0.1.png",
+      "source_sha256": "075b34d905c44fd5b44b9531503af81e5c0dd3cfdbbdfea76683ff4470145456",
+      "source_size": [1983, 793],
+      "panels": {"front": [0, 0, 900, 793], "back": [900, 0, 1660, 793], "icon": [1660, 0, 1983, 793]},
+      "mirror_x": {"front": true, "back": false, "icon": false},
+      "note_ja": "生成された前面は右向きなので、切り出し後に左右反転して敵側の左下向きへ合わせる。独立腕2・脚2・背中の翼2を保持。"
+    },
+    {
+      "species_id": "starter_tide_bear_01",
+      "name_ja": "ミオマル",
+      "source": "assets/source/monsters/starter_tide_bear_01/pixel_study_v0.1.png",
+      "source_sha256": "34010c13d0e5911149f00681cfaf31d31a923dbad68bf8def11c2a81e452c4f2",
+      "source_size": [1983, 793],
+      "panels": {"front": [0, 0, 870, 793], "back": [870, 0, 1550, 793], "icon": [1550, 0, 1983, 793]},
+      "mirror_x": {"front": true, "back": false, "icon": false},
+      "note_ja": "前面のみ左右反転。背面の波形の付け根、小さな尾を保持し、背中へ胸の渦巻きを追加しない。"
+    }
+  ]
+}

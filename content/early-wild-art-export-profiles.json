@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "purpose": "source_art_export_only_not_runtime_game_data",
+  "profiles": [
+    {
+      "species_id": "wild_seed_squirrel_01",
+      "name_ja": "リスコロ",
+      "source": "assets/source/monsters/wild_seed_squirrel_01/pixel_study_v0.1.png",
+      "source_sha256": "7b9511d6183cd331a84ad05cb6ec8e609bb532974b66223ee3b0ed52c1b824dd",
+      "source_size": [
+        1983,
+        793
+      ],
+      "panels": {
+        "front": [
+          0,
+          0,
+          825,
+          793
+        ],
+        "back": [
+          825,
+          0,
+          1540,
+          793
+        ],
+        "icon": [
+          1540,
+          0,
+          1983,
+          793
+        ]
+      },
+      "mirror_x": {
+        "front": false,
+        "back": false,
+        "icon": false
+      },
+      "icon_alignment": "bounds",
+      "note_ja": "前面は左下向き・背面は右上向き。アイコンは輪郭全体を中央へ置き、尾や冠羽を切らずに収める。"
+    },
+    {
+      "species_id": "wild_vine_mole_01",
+      "name_ja": "ツルモグ",
+      "source": "assets/source/monsters/wild_vine_mole_01/pixel_study_v0.1.png",
+      "source_sha256": "ac8d6d68b6636553671782ecccb2ae1f6f7a03c3a0c37236861bd68384dfe3f0",
+      "source_size": [
+        1997,
+        788
+      ],
+      "panels": {
+        "front": [
+          0,
+          0,
+          815,
+          788
+        ],
+        "back": [
+          815,
+          0,
+          1560,
+          788
+        ],
+        "icon": [
+          1560,
+          0,
+          1997,
+          788
+        ]
+      },
+      "mirror_x": {
+        "front": false,
+        "back": false,
+        "icon": false
+      },
+      "icon_alignment": "bounds",
+      "note_ja": "前面は左下向き・背面は右上向き。アイコンは輪郭全体を中央へ置き、尾や冠羽を切らずに収める。"
+    },
+    {
+      "species_id": "wild_breeze_bird_01",
+      "name_ja": "ハネリ",
+      "source": "assets/source/monsters/wild_breeze_bird_01/pixel_study_v0.1.png",
+      "source_sha256": "d27732a3b8a91ab86975243aeeedcd38c210fb4bfd1829fc4a575d3b77a1967f",
+      "source_size": [
+        1983,
+        793
+      ],
+      "panels": {
+        "front": [
+          0,
+          0,
+          825,
+          793
+        ],
+        "back": [
+          825,
+          0,
+          1570,
+          793
+        ],
+        "icon": [
+          1570,
+          0,
+          1983,
+          793
+        ]
+      },
+      "mirror_x": {
+        "front": true,
+        "back": false,
+        "icon": true
+      },
+      "icon_alignment": "bounds",
+      "note_ja": "前面は左下向き・背面は右上向き。アイコンは輪郭全体を中央へ置き、尾や冠羽を切らずに収める。"
+    }
+  ]
+}

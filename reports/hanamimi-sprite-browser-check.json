@@ -1,0 +1,20 @@
+{
+  "native_image_sizes": [
+    96,
+    96,
+    32
+  ],
+  "native_display_widths": [
+    96,
+    96,
+    32
+  ],
+  "viewer_png_entries": 10,
+  "candidate_spec_auto_selection": "pass",
+  "candidate_alpha_and_margin_display": "pass",
+  "dark_background_switch": "pass",
+  "composition_uses_individual_96px_pngs": true,
+  "390px_no_page_overflow": true,
+  "page_errors": [],
+  "scope": "Chromium viewer and static composition; user review and physical phones pending"
+}

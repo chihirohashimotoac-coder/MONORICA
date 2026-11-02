@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ハナミミ・小さな素材の確認</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:28px;background:#f4f8f3;color:#253b30;font:15px/1.7 "Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}main{max-width:1120px;margin:auto}.picker{display:flex;gap:12px;align-items:center;margin:12px 0}.picker select{font:inherit;max-width:100%;padding:6px 12px;border:1px solid #326648;background:#fff;color:#253b30}h1{font-size:27px;margin:0 0 8px}h2{font-size:18px;margin:0 0 6px}p{margin:8px 0 20px}a{color:#326648}.samples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid #326648}.sample{min-width:0;padding:20px 14px;border-right:1px solid #cfdbd0}.sample:last-child{border:0}.size{font-size:13px;color:#496352}.view{display:flex;justify-content:center;align-items:center;background-color:#fff;background-image:conic-gradient(#e5e9e2 25%,#fff 0 50%,#e5e9e2 0 75%,#fff 0);background-size:16px 16px;margin:10px 0 6px;overflow:auto;min-height:112px}.view img{image-rendering:pixelated;flex-shrink:0}.large{height:310px}.large .battle{width:288px;height:288px}.large .icon{width:128px;height:128px}.caption{font-size:13px;text-align:center;margin:2px 0 20px;color:#496352}.note{border-top:1px solid #cfdbd0;padding-top:18px}.links{display:flex;flex-wrap:wrap;gap:20px}.status{color:#326648;font-weight:700}button{font:inherit;padding:6px 14px;border:1px solid #326648;border-radius:5px;color:#253b30;background:#fff;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #a9436a;outline-offset:3px}[data-bg=dark] .view{background:#24354b}[data-bg=green] .view{background:#638c5a}@media(max-width:850px){.samples{grid-template-columns:1fr}.sample{border-right:0;border-bottom:1px solid #cfdbd0}.large{height:310px}body{padding:16px}}
+</style>
+<main>
+<h1 id="heading">ハナミミの小さな素材</h1>
+<p>耳・顔・つぼみを小さな表示で見分けられるか、前後の形がつながるかを確かめます。元画像は保存し、別ファイルへ切り出し・減色・透過整理・サイズ調整を行いました。</p>
+<label class="picker">みる モンスター<select id="species-preview"><option value="hanamimi">ハナミミ</option><option value="honoru">ホノル</option><option value="miomaru">ミオマル</option></select></label>
+<p class="status" id="review-state">静止素材3点・見た目の採用済み</p>
+<button type="button" id="background">背景を濃紺に切り替える</button>
+<div class="samples" id="samples" data-bg="checker">
+ <section class="sample"><h2>相手側の前面</h2><div class="size">96 × 96 px ／ 左下向き</div>
+  <div class="view"><img class="native" data-kind="front" src="../../assets/runtime/monsters/starter_flower_hare_01/front.png" width="96" height="96" alt="ハナミミの戦闘前面・原寸"></div><p class="caption">原寸 1倍</p>
+  <div class="view large"><img class="battle" data-kind="front" src="../../assets/runtime/monsters/starter_flower_hare_01/front.png" width="288" height="288" alt="前面の3倍表示"></div><p class="caption">3倍・補間なし</p>
+ </section>
+ <section class="sample"><h2>味方側の背面</h2><div class="size">96 × 96 px ／ 右上向き</div>
+  <div class="view"><img class="native" data-kind="back" src="../../assets/runtime/monsters/starter_flower_hare_01/back.png" width="96" height="96" alt="ハナミミの戦闘背面・原寸"></div><p class="caption">原寸 1倍</p>
+  <div class="view large"><img class="battle" data-kind="back" src="../../assets/runtime/monsters/starter_flower_hare_01/back.png" width="288" height="288" alt="背面の3倍表示"></div><p class="caption">3倍・補間なし</p>
+ </section>
+ <section class="sample"><h2>手持ちアイコン</h2><div class="size">32 × 32 px</div>
+  <div class="view"><img class="native" data-kind="icon" src="../../assets/runtime/monsters/starter_flower_hare_01/icon.png" width="32" height="32" alt="ハナミミのアイコン・原寸"></div><p class="caption">原寸 1倍</p>
+  <div class="view large"><img class="icon" data-kind="icon" src="../../assets/runtime/monsters/starter_flower_hare_01/icon.png" width="128" height="128" alt="アイコンの4倍表示"></div><p class="caption">4倍・補間なし</p>
+ </section>
+</div>
+<p class="note" id="review-note">前後は共通の縮小率・色表で仕上げ、足元を基準点にそろえています。寸法・透過・外周余白は検査済みです。静止素材3点は採用済みですが、他の全種への適用、スマートフォン実機での読みやすさは今後の確認です。</p>
+<div class="links"><a id="battle-link" href="battle-composition.html">戦闘構図で見る</a><a href="index.html">素材確認帳で検査する</a></div>
+</main>
+<script src="starter-preview-catalog.js"></script>
+<script>
+const samples=document.getElementById('samples'),button=document.getElementById('background');
+const modes=['checker','dark','green'];let mode=0;
+button.addEventListener('click',()=>{mode=(mode+1)%modes.length;samples.dataset.bg=modes[mode];button.textContent=['背景を濃紺に切り替える','背景を草地色に切り替える','背景を透過チェックに戻す'][mode];});
+const picker=document.getElementById('species-preview'),catalog=window.StarterPreviewCatalog;
+picker.replaceChildren(...Object.entries(catalog).map(([value,entry])=>{const option=document.createElement('option');option.value=value;option.textContent=entry.name;return option;}));
+async function chooseSpecies(key){
+ if(!Object.hasOwn(catalog,key))key='hanamimi';
+ const entry=catalog[key];picker.value=key;
+ document.getElementById('heading').textContent=entry.name+'の小さな素材';
+ document.title=entry.name+'・小さな素材の確認';
+ document.getElementById('review-note').textContent=entry.review==='adopted'?'前後は共通の色表で仕上げ、足元を基準点にそろえています。静止素材3点は画像規格確認・見た目採用済み。実機での表示は今後の確認です。':'前後は共通の倍率と色表で仕上げ、足元を基準点にそろえています。寸法・透過・余白は検査済み。今回の3枚の見た目は確認待ちで、実機の検証はまだです。';
+ const state=document.getElementById('review-state');state.textContent=entry.review==='adopted'?'静止素材3点・見た目の採用済み':'取り込み候補3点・見た目の確認待ち';state.style.color=entry.review==='adopted'?'#326648':'#8c354d';
+ document.getElementById('battle-link').href='battle-composition.html?ally='+key+'&enemy=hanamimi';
+ const images=[...document.querySelectorAll('img[data-kind]')];
+ window.SpritePreviewReady=null;
+ await Promise.all(images.map(async image=>{image.src='../../assets/runtime/monsters/'+entry.id+'/'+image.dataset.kind+'.png';image.alt=entry.name+' '+image.dataset.kind;await image.decode();}));
+ window.SpritePreviewReady={species:key};
+}
+picker.addEventListener('change',()=>chooseSpecies(picker.value));
+chooseSpecies(new URLSearchParams(location.search).get('species')||'hanamimi');
+
+</script>
+</html>

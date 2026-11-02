@@ -1,0 +1,7 @@
+MONORICAの続きです。HANDOFF_MONORICA_2026-11-02_v0.13.mdとMONORICA_preproduction_v0.13_species-catalog.zipを読み、AGENTS.md・LATEST_HANDOFF.md・docs/DECISIONS.mdを確認してください。
+
+全156種の文字設計案と検査まで完了しています。docs/SPECIES_CATALOG_v0.1.md・詳細JSON・reports/species-catalog-check_v0.1.jsonを確認し、私がこれから指示する設計レビュー・修正へ進んでください。追加141種と既存種への詳細追加は制作案で、採用済みにしないでください。
+
+既存15カード・原画・runtime19PNGを維持。ホノル系列は腕2・脚2・背翼2、ヨルミル系列は四肢4・独立翼0。後続3体の新三面設定は確認待ち。画像生成・ドット制作・ゲーム実装・Git操作・公開は明示するまで開始しないでください。
+
+156種、元の地域配分、12属性、御三家Lv16/36、全種の一人用入手、戦闘4枠を使う探索技を維持。コンテキストが増えたら安全に保存し、最新HandoffとZIPでセッション移行を案内してください。

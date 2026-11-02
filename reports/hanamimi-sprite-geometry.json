@@ -1,0 +1,84 @@
+{
+  "source": "assets/source/monsters/starter_flower_hare_01/pixel_study_v0.1.png",
+  "source_sha256": "e88123b68ef6ec432252b674935e8946ced35594805235172595732e839f50df",
+  "resampling": "nearest",
+  "opaque_palette_limit": 31,
+  "user_visual_review": "pending",
+  "entries": {
+    "front": {
+      "size": [
+        96,
+        96
+      ],
+      "opaque_bbox": [
+        24,
+        8,
+        86,
+        88
+      ],
+      "opaque_colors": 30,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "path": "assets/runtime/monsters/starter_flower_hare_01/front.png",
+      "sha256": "9f8b04e585fd94e2c4c920a3a858a8e8294a5764993f928c87e970ec882f7b61",
+      "bytes": 5305
+    },
+    "back": {
+      "size": [
+        96,
+        96
+      ],
+      "opaque_bbox": [
+        15,
+        12,
+        74,
+        88
+      ],
+      "opaque_colors": 30,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "ground_anchor": [
+        48,
+        88
+      ],
+      "minimum_border_px": 8,
+      "path": "assets/runtime/monsters/starter_flower_hare_01/back.png",
+      "sha256": "2273824f0803c6d950d70c7d5547ddca2cd1ee97c8279f2daeaab4a2b02c705c",
+      "bytes": 4516
+    },
+    "icon": {
+      "size": [
+        32,
+        32
+      ],
+      "opaque_bbox": [
+        6,
+        2,
+        30,
+        30
+      ],
+      "opaque_colors": 30,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "ground_anchor": [
+        16,
+        30
+      ],
+      "minimum_border_px": 2,
+      "path": "assets/runtime/monsters/starter_flower_hare_01/icon.png",
+      "sha256": "0f6103deccd8b43ba3f1803cdd83842cc17a21090a0e630bf06efd81f398f5e1",
+      "bytes": 1350
+    }
+  }
+}

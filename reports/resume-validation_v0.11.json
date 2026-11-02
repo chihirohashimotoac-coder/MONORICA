@@ -1,0 +1,84 @@
+{
+  "checked_at_jst": "2026-11-02",
+  "scope": "restored preproduction assets and review tools; not gameplay or device testing",
+  "reproduced_pngs": 9,
+  "sha256": {
+    "assets/runtime/monsters/wild_seed_squirrel_01/front.png": "deef967043e89987a4ed38fad81afb523fdd87d875459d47bb8de1cdf492efae",
+    "assets/runtime/monsters/wild_seed_squirrel_01/back.png": "84b8c4eca109678972fa535e01e94f7a49b37535e171579c499387978f0e39cf",
+    "assets/runtime/monsters/wild_seed_squirrel_01/icon.png": "83be36ba719a5cee8bcfaa70664ac7675b276e338dbb1ea83ee9206559febf8f",
+    "assets/runtime/monsters/wild_vine_mole_01/front.png": "a60bffcbc6f4e138705ad297601edad12e1094b386e9e80b43187228605af1c7",
+    "assets/runtime/monsters/wild_vine_mole_01/back.png": "03ac12620c015447ec48287065b7454cde59538886da4772b9875ea9ec5e989d",
+    "assets/runtime/monsters/wild_vine_mole_01/icon.png": "bcb64bd1e3a14ad4091b105ee25153a21d0cd97dc7859cc263e2667dab5839a0",
+    "assets/runtime/monsters/wild_breeze_bird_01/front.png": "2a6b973facafac32d63992c3fdd8e2bbf0905eacdc17f654f39b154b8ce2feb7",
+    "assets/runtime/monsters/wild_breeze_bird_01/back.png": "e2efe01fc09f631407b9a589498d68c1ae7253027c54f23c657a345b941ac146",
+    "assets/runtime/monsters/wild_breeze_bird_01/icon.png": "1766cb46ced5700074ee2379c70590761003ff8b799854a1c522796284c6e9f3"
+  },
+  "sprite_browser_checks": [
+    {
+      "species": "hanamimi",
+      "images_loaded": 6,
+      "state": "静止素材3点・見た目の採用済み"
+    },
+    {
+      "species": "honoru",
+      "images_loaded": 6,
+      "state": "静止素材3点・見た目の採用済み"
+    },
+    {
+      "species": "miomaru",
+      "images_loaded": 6,
+      "state": "静止素材3点・見た目の採用済み"
+    },
+    {
+      "species": "riscoro",
+      "images_loaded": 6,
+      "state": "取り込み候補3点・見た目の確認待ち"
+    },
+    {
+      "species": "tsurumogu",
+      "images_loaded": 6,
+      "state": "取り込み候補3点・見た目の確認待ち"
+    },
+    {
+      "species": "haneri",
+      "images_loaded": 6,
+      "state": "取り込み候補3点・見た目の確認待ち"
+    }
+  ],
+  "dark_background": true,
+  "mobile_width_390_overflow": false,
+  "battle_browser_checks": [
+    {
+      "ally": "hanamimi",
+      "enemy": "riscoro",
+      "canvas": [
+        384,
+        256
+      ]
+    },
+    {
+      "ally": "tsurumogu",
+      "enemy": "haneri",
+      "canvas": [
+        384,
+        256
+      ]
+    },
+    {
+      "ally": "haneri",
+      "enemy": "tsurumogu",
+      "canvas": [
+        384,
+        256
+      ]
+    }
+  ],
+  "page_errors": [],
+  "failed_responses": [],
+  "external_requests": [],
+  "pending_visual_review": [
+    "riscoro",
+    "tsurumogu",
+    "haneri"
+  ]
+}

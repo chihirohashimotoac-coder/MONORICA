@@ -1,0 +1,382 @@
+{
+  "status": "production_proposal",
+  "reference_only_adopted_species": [
+    "starter_ember_wyvern_01",
+    "starter_flower_hare_01",
+    "starter_tide_bear_01",
+    "wild_breeze_bird_01",
+    "wild_seed_squirrel_01",
+    "wild_vine_mole_01"
+  ],
+  "target_species_count": 150,
+  "batches": [
+    {
+      "id": "art_batch_01",
+      "species_ids": [
+        "starter_flower_hare_02",
+        "starter_flower_hare_03",
+        "starter_ember_wyvern_02",
+        "starter_ember_wyvern_03",
+        "starter_tide_bear_02",
+        "starter_tide_bear_03",
+        "wild_seed_squirrel_02",
+        "wild_vine_mole_02",
+        "wild_breeze_bird_02",
+        "wild_stream_otter_01",
+        "wild_stream_otter_02",
+        "wild_coil_dormouse_01",
+        "wild_coil_dormouse_02"
+      ],
+      "reference_only_species_ids": [
+        "starter_flower_hare_01",
+        "starter_ember_wyvern_01",
+        "starter_tide_bear_01",
+        "wild_seed_squirrel_01",
+        "wild_vine_mole_01",
+        "wild_breeze_bird_01"
+      ],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 13,
+      "shared_focus_ja": "御三家別枠／ハルネ村・カザミ町の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "starter_flower_hare",
+        "starter_ember_wyvern",
+        "starter_tide_bear",
+        "wild_seed_squirrel",
+        "wild_vine_mole",
+        "wild_breeze_bird",
+        "wild_stream_otter",
+        "wild_coil_dormouse"
+      ]
+    },
+    {
+      "id": "art_batch_02",
+      "species_ids": [
+        "wild_dusk_glider_01",
+        "wild_dusk_glider_02",
+        "wild_reed_crane_01",
+        "wild_reed_crane_02",
+        "wild_reed_crane_03",
+        "wild_lock_crab_01",
+        "wild_lock_crab_02",
+        "wild_lock_crab_03",
+        "wild_lotus_frog_01",
+        "wild_lotus_frog_02",
+        "wild_silt_skate_01",
+        "wild_silt_skate_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "ハルネ村・カザミ町／ミナセ水郷の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_dusk_glider",
+        "wild_reed_crane",
+        "wild_lock_crab",
+        "wild_lotus_frog",
+        "wild_silt_skate"
+      ]
+    },
+    {
+      "id": "art_batch_03",
+      "species_ids": [
+        "wild_mist_snail_01",
+        "wild_mist_snail_02",
+        "wild_lantern_jelly_01",
+        "wild_lantern_jelly_02",
+        "wild_bog_leech_01",
+        "wild_bog_leech_02",
+        "wild_reed_whistle_01",
+        "wild_bubble_moth_01",
+        "wild_kiln_pup_01",
+        "wild_kiln_pup_02",
+        "wild_kiln_pup_03",
+        "wild_glass_gecko_01",
+        "wild_glass_gecko_02",
+        "wild_glass_gecko_03"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 14,
+      "shared_focus_ja": "ミナセ水郷／ヒノワ丘陵の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_mist_snail",
+        "wild_lantern_jelly",
+        "wild_bog_leech",
+        "wild_reed_whistle",
+        "wild_bubble_moth",
+        "wild_kiln_pup",
+        "wild_glass_gecko"
+      ]
+    },
+    {
+      "id": "art_batch_04",
+      "species_ids": [
+        "wild_soot_moth_01",
+        "wild_soot_moth_02",
+        "wild_spring_steam_01",
+        "wild_spring_steam_02",
+        "wild_bell_beetle_01",
+        "wild_bell_beetle_02",
+        "wild_sun_sprout_01",
+        "wild_sun_sprout_02",
+        "wild_sulfur_toad_01",
+        "wild_sulfur_toad_02",
+        "wild_spark_mica_01",
+        "wild_ash_tumble_01"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "ヒノワ丘陵の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_soot_moth",
+        "wild_spring_steam",
+        "wild_bell_beetle",
+        "wild_sun_sprout",
+        "wild_sulfur_toad",
+        "wild_spark_mica",
+        "wild_ash_tumble"
+      ]
+    },
+    {
+      "id": "art_batch_05",
+      "species_ids": [
+        "wild_cable_marten_01",
+        "wild_cable_marten_02",
+        "wild_cable_marten_03",
+        "wild_hinge_mantis_01",
+        "wild_hinge_mantis_02",
+        "wild_hinge_mantis_03",
+        "wild_lattice_lichen_01",
+        "wild_lattice_lichen_02",
+        "wild_seal_gel_01",
+        "wild_seal_gel_02",
+        "wild_draught_chime_01",
+        "wild_draught_chime_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "カナト工業林の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_cable_marten",
+        "wild_hinge_mantis",
+        "wild_lattice_lichen",
+        "wild_seal_gel",
+        "wild_draught_chime"
+      ]
+    },
+    {
+      "id": "art_batch_06",
+      "species_ids": [
+        "wild_shade_hedgehog_01",
+        "wild_shade_hedgehog_02",
+        "wild_lens_moth_01",
+        "wild_lens_moth_02",
+        "wild_coolant_slug_01",
+        "wild_parcel_golem_01",
+        "wild_snow_ibex_01",
+        "wild_snow_ibex_02",
+        "wild_snow_ibex_03",
+        "wild_star_larva_01",
+        "wild_star_larva_02",
+        "wild_star_larva_03"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "カナト工業林／ツキシロ高地の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_shade_hedgehog",
+        "wild_lens_moth",
+        "wild_coolant_slug",
+        "wild_parcel_golem",
+        "wild_snow_ibex",
+        "wild_star_larva"
+      ]
+    },
+    {
+      "id": "art_batch_07",
+      "species_ids": [
+        "wild_frost_kite_01",
+        "wild_frost_kite_02",
+        "wild_thermal_marmot_01",
+        "wild_thermal_marmot_02",
+        "wild_granite_pika_01",
+        "wild_granite_pika_02",
+        "wild_aurora_ray_01",
+        "wild_aurora_ray_02",
+        "wild_twilight_wolf_01",
+        "wild_twilight_wolf_02",
+        "wild_lichen_spool_01",
+        "wild_alpine_newt_01"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "ツキシロ高地の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_frost_kite",
+        "wild_thermal_marmot",
+        "wild_granite_pika",
+        "wild_aurora_ray",
+        "wild_twilight_wolf",
+        "wild_lichen_spool",
+        "wild_alpine_newt"
+      ]
+    },
+    {
+      "id": "art_batch_08",
+      "species_ids": [
+        "wild_root_tapir_01",
+        "wild_root_tapir_02",
+        "wild_root_tapir_03",
+        "wild_spore_cicada_01",
+        "wild_spore_cicada_02",
+        "wild_spore_cicada_03",
+        "wild_fen_slug_01",
+        "wild_fen_slug_02",
+        "wild_umbra_civet_01",
+        "wild_umbra_civet_02",
+        "wild_amber_weevil_01",
+        "wild_amber_weevil_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "サナギ原生域の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_root_tapir",
+        "wild_spore_cicada",
+        "wild_fen_slug",
+        "wild_umbra_civet",
+        "wild_amber_weevil"
+      ]
+    },
+    {
+      "id": "art_batch_09",
+      "species_ids": [
+        "wild_bloom_siphon_01",
+        "wild_bloom_siphon_02",
+        "wild_storm_sail_01",
+        "wild_storm_sail_02",
+        "wild_mire_drum_01",
+        "wild_rot_kiln_01",
+        "wild_mirror_fawn_01",
+        "wild_mirror_fawn_02",
+        "wild_mirror_fawn_03",
+        "wild_tablet_pillbug_01",
+        "wild_tablet_pillbug_02",
+        "wild_wound_sentry_01",
+        "wild_wound_sentry_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 13,
+      "shared_focus_ja": "サナギ原生域／アカツキ遺構の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_bloom_siphon",
+        "wild_storm_sail",
+        "wild_mire_drum",
+        "wild_rot_kiln",
+        "wild_mirror_fawn",
+        "wild_tablet_pillbug",
+        "wild_wound_sentry"
+      ]
+    },
+    {
+      "id": "art_batch_10",
+      "species_ids": [
+        "wild_echo_owl_01",
+        "wild_echo_owl_02",
+        "wild_ink_cuttle_01",
+        "wild_ink_cuttle_02",
+        "wild_sunwheel_01",
+        "wild_sunwheel_02",
+        "wild_static_scarab_01",
+        "wild_cold_well_01",
+        "wild_signal_pigeon_01",
+        "wild_signal_pigeon_02",
+        "wild_signal_pigeon_03",
+        "wild_metro_isopod_01",
+        "wild_metro_isopod_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 13,
+      "shared_focus_ja": "アカツキ遺構／ホシミ環状市の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_echo_owl",
+        "wild_ink_cuttle",
+        "wild_sunwheel",
+        "wild_static_scarab",
+        "wild_cold_well",
+        "wild_signal_pigeon",
+        "wild_metro_isopod"
+      ]
+    },
+    {
+      "id": "art_batch_11",
+      "species_ids": [
+        "wild_rooftop_sail_01",
+        "wild_rooftop_sail_02",
+        "wild_fountain_axolotl_01",
+        "wild_fountain_axolotl_02",
+        "wild_night_curtain_01",
+        "wild_thermal_fan_01",
+        "wild_rain_garden_01",
+        "wild_tide_veil_01",
+        "wild_tide_veil_02",
+        "wild_tide_veil_03",
+        "wild_reef_kiln_01",
+        "wild_reef_kiln_02"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 12,
+      "shared_focus_ja": "ホシミ環状市／シズナ群島の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_rooftop_sail",
+        "wild_fountain_axolotl",
+        "wild_night_curtain",
+        "wild_thermal_fan",
+        "wild_rain_garden",
+        "wild_tide_veil",
+        "wild_reef_kiln"
+      ]
+    },
+    {
+      "id": "art_batch_12",
+      "species_ids": [
+        "wild_shell_harp_01",
+        "wild_shell_harp_02",
+        "wild_brine_orb_01",
+        "wild_reef_crown_01",
+        "wild_memory_seed_01",
+        "wild_memory_seed_02",
+        "wild_memory_seed_03",
+        "wild_frost_lotus_01",
+        "wild_frost_lotus_02",
+        "wild_hollow_loam_01",
+        "wild_hollow_loam_02",
+        "wild_dusk_compass_01",
+        "wild_filament_worm_01"
+      ],
+      "reference_only_species_ids": [],
+      "status": "planned_not_started",
+      "new_or_pending_model_sheet_count": 13,
+      "shared_focus_ja": "シズナ群島／メグリ盆地の配分枠。系列内の接続・配色をそろえる。",
+      "family_ids": [
+        "wild_shell_harp",
+        "wild_brine_orb",
+        "wild_reef_crown",
+        "wild_memory_seed",
+        "wild_frost_lotus",
+        "wild_hollow_loam",
+        "wild_dusk_compass",
+        "wild_filament_worm"
+      ]
+    }
+  ]
+}

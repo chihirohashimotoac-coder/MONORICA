@@ -1,0 +1,12 @@
+{
+  "new_model_sheets_loaded": [
+    "source_honoru_model_sheet_v02",
+    "source_miomaru_model_sheet_v01"
+  ],
+  "rejected_four_limb_warning": "pass",
+  "runtime_ui_frame_matches_source": true,
+  "approved_ui_render_unchanged": true,
+  "page_errors": [],
+  "scope": "file display and UI baseline preservation; new model drawings await user visual review",
+  "recorded_png_options": 15
+}

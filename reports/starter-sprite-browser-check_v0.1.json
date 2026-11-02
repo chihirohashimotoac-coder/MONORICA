@@ -1,0 +1,18 @@
+{
+  "species_selector": "3_species_pass",
+  "native_dimensions_and_display": [
+    96,
+    96,
+    32
+  ],
+  "candidate_and_adopted_labels": "pass",
+  "dark_background_switch": "pass",
+  "battle_ally_enemy_selectors": "pass",
+  "approved_hanamimi_ui_unchanged": true,
+  "viewer_recorded_png_entries": 23,
+  "new_6_candidates_dimension_display": "pass",
+  "narrow_width_no_overflow": true,
+  "page_errors": [],
+  "external_requests": [],
+  "scope": "asset display and static battle composition only; new art adoption and physical phones pending"
+}

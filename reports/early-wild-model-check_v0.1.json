@@ -1,0 +1,17 @@
+{
+  "recorded_png_options": 26,
+  "wild_model_sheets_loaded": [
+    "riscoro",
+    "tsurumogu",
+    "haneri"
+  ],
+  "starter_3_species_adopted_labels": "pass",
+  "approved_ui_unchanged": true,
+  "same_species_preview_note": "pass",
+  "page_errors": [],
+  "tsurumogu_generation_attempts": {
+    "initial": "output_blocked_no_file",
+    "retry_same_prompt": "success"
+  },
+  "scope": "reference images and adopted-state display; new wild model drawings await user review"
+}

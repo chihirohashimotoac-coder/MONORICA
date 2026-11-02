@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ハナミミ・戦闘UIの確認</title>
+<style>
+@font-face{font-family:BattleDot;src:url('../../assets/runtime/fonts/DotGothic16-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#f4f8f3;color:#253b30;font:15px/1.75 "Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}main{max-width:1152px;margin:auto}.preview-pickers{display:flex;gap:24px;flex-wrap:wrap;margin:12px 0 20px}.preview-pickers label{display:flex;gap:8px;align-items:center}.preview-pickers select{font:inherit;padding:6px 10px;color:#253b30;background:#fff;border:1px solid #517653;border-radius:4px}h1{font-size:25px;margin:0 0 6px}p{margin:8px 0 18px}canvas{display:block;width:100%;height:auto;image-rendering:pixelated;background:#dce8c9;outline:2px solid #303d35;outline-offset:2px}.note{font-size:13px;color:#496352;margin-top:20px}a{color:#326648}.links{display:flex;gap:22px;flex-wrap:wrap}@media(max-width:600px){body{padding:14px}h1{font-size:21px}}
+</style>
+<main>
+<h1 id="heading">ハナミミの戦闘UI</h1>
+<p>採用済みの枠と配置、ひらがなを基本にしたコマンドの表示です。</p>
+<div class="preview-pickers"><label>みかた<select id="ally-preview" aria-label="表示する味方"></select></label><label>あいて<select id="enemy-preview" aria-label="表示する相手"></select></label></div>
+<p id="loading" role="status">もじと そざいを よみこんでいます。</p>
+<canvas id="battle" width="384" height="256" role="img" aria-label="左上に相手の情報、右下に味方の情報。左下の味方は背面、右上の相手は正面。下部はハナミミはどうするという会話欄と、たたかう・どうぐ・なかま・にげるの2行2列のコマンド。"></canvas>
+<p id="preview-note" class="note">同じハナミミを両側へ仮配置した見た目の確認画面です。レベル・HP・経験値は表示用の例で、種族データの確定値ではありません。操作・戦闘の機能はまだありません。</p>
+<div class="links"><a href="sprite-candidates.html">モンスターの原寸と拡大</a><a href="index.html">素材確認帳へ</a></div>
+</main>
+<script src="starter-preview-catalog.js"></script>
+<script src="battle-ui.js"></script>
+</html>

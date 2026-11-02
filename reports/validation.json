@@ -1,0 +1,71 @@
+[
+  {
+    "command": "python3 tools/validate_assets.py",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "result": {
+      "recorded_file_check": "pass",
+      "files_checked": 45,
+      "catalog_complete": false,
+      "runtime_images": 19,
+      "audio_tracks": 0,
+      "pending_categories": [
+        "full_species_catalog",
+        "monster_runtime_art",
+        "character_sprites",
+        "map_tiles_and_layouts",
+        "complete_moves_items_abilities",
+        "complete_story_events",
+        "audio",
+        "ui_art"
+      ],
+      "errors": [],
+      "scope": "file existence, hashes and PNG header dimensions only"
+    }
+  },
+  {
+    "command": "python3 tools/validate_preproduction.py",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "result": {
+      "planning_check": "pass",
+      "species_slots": 156,
+      "known_production_cards": 15,
+      "main_regions": 8,
+      "postgame_regions": 2,
+      "representatives": 8,
+      "music_cues_not_generated": 28,
+      "queued_assets_not_created": 6,
+      "runtime_image_count": 19,
+      "runtime_ready_images": 10,
+      "errors": [],
+      "scope": "planning counts and references, not playthrough or complete content"
+    }
+  },
+  {
+    "command": "python3 tools/validate_assets.py --require-complete",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "result": {
+      "recorded_file_check": "fail",
+      "files_checked": 45,
+      "catalog_complete": false,
+      "runtime_images": 19,
+      "audio_tracks": 0,
+      "pending_categories": [
+        "full_species_catalog",
+        "monster_runtime_art",
+        "character_sprites",
+        "map_tiles_and_layouts",
+        "complete_moves_items_abilities",
+        "complete_story_events",
+        "audio",
+        "ui_art"
+      ],
+      "errors": [
+        "Full asset/content preparation is not complete."
+      ],
+      "scope": "file existence, hashes and PNG header dimensions only"
+    }
+  }
+]

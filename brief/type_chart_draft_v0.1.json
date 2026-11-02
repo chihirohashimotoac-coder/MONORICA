@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "status": "draft_matchups_not_approved",
+  "confirmed": {
+    "type_names": true,
+    "multipliers": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "max_defender_types": 2,
+    "dual_type_method": "multiply"
+  },
+  "orientation": "rows_are_attack_move_type_columns_are_defender_type",
+  "type_order": [
+    "neutral",
+    "grass",
+    "fire",
+    "water",
+    "electric",
+    "ice",
+    "earth",
+    "wind",
+    "steel",
+    "poison",
+    "light",
+    "dark"
+  ],
+  "types": [
+    {
+      "id": "neutral",
+      "label_ja": "無"
+    },
+    {
+      "id": "grass",
+      "label_ja": "草"
+    },
+    {
+      "id": "fire",
+      "label_ja": "炎"
+    },
+    {
+      "id": "water",
+      "label_ja": "水"
+    },
+    {
+      "id": "electric",
+      "label_ja": "雷"
+    },
+    {
+      "id": "ice",
+      "label_ja": "氷"
+    },
+    {
+      "id": "earth",
+      "label_ja": "地"
+    },
+    {
+      "id": "wind",
+      "label_ja": "風"
+    },
+    {
+      "id": "steel",
+      "label_ja": "鋼"
+    },
+    {
+      "id": "poison",
+      "label_ja": "毒"
+    },
+    {
+      "id": "light",
+      "label_ja": "光"
+    },
+    {
+      "id": "dark",
+      "label_ja": "闇"
+    }
+  ],
+  "damage_multipliers": {
+    "neutral": {
+      "neutral": 1,
+      "grass": 1,
+      "fire": 1,
+      "water": 1,
+      "electric": 1,
+      "ice": 1,
+      "earth": 0.5,
+      "wind": 1,
+      "steel": 0.5,
+      "poison": 1,
+      "light": 1,
+      "dark": 1
+    },
+    "grass": {
+      "neutral": 1,
+      "grass": 0.5,
+      "fire": 0.5,
+      "water": 2,
+      "electric": 1,
+      "ice": 1,
+      "earth": 2,
+      "wind": 0.5,
+      "steel": 0.5,
+      "poison": 0.5,
+      "light": 1,
+      "dark": 1
+    },
+    "fire": {
+      "neutral": 1,
+      "grass": 2,
+      "fire": 0.5,
+      "water": 0.5,
+      "electric": 1,
+      "ice": 2,
+      "earth": 0.5,
+      "wind": 1,
+      "steel": 2,
+      "poison": 1,
+      "light": 1,
+      "dark": 1
+    },
+    "water": {
+      "neutral": 1,
+      "grass": 0.5,
+      "fire": 2,
+      "water": 0.5,
+      "electric": 1,
+      "ice": 0.5,
+      "earth": 2,
+      "wind": 1,
+      "steel": 1,
+      "poison": 1,
+      "light": 2,
+      "dark": 1
+    },
+    "electric": {
+      "neutral": 1,
+      "grass": 0.5,
+      "fire": 1,
+      "water": 2,
+      "electric": 0.5,
+      "ice": 1,
+      "earth": 0,
+      "wind": 2,
+      "steel": 2,
+      "poison": 1,
+      "light": 1,
+      "dark": 1
+    },
+    "ice": {
+      "neutral": 1,
+      "grass": 2,
+      "fire": 0.5,
+      "water": 0.5,
+      "electric": 1,
+      "ice": 0.5,
+      "earth": 2,
+      "wind": 2,
+      "steel": 0.5,
+      "poison": 1,
+      "light": 1,
+      "dark": 1
+    },
+    "earth": {
+      "neutral": 1,
+      "grass": 0.5,
+      "fire": 2,
+      "water": 1,
+      "electric": 2,
+      "ice": 1,
+      "earth": 1,
+      "wind": 0.5,
+      "steel": 2,
+      "poison": 2,
+      "light": 1,
+      "dark": 1
+    },
+    "wind": {
+      "neutral": 1,
+      "grass": 2,
+      "fire": 1,
+      "water": 1,
+      "electric": 0.5,
+      "ice": 0.5,
+      "earth": 1,
+      "wind": 1,
+      "steel": 1,
+      "poison": 2,
+      "light": 1,
+      "dark": 1
+    },
+    "steel": {
+      "neutral": 2,
+      "grass": 1,
+      "fire": 0.5,
+      "water": 0.5,
+      "electric": 0.5,
+      "ice": 2,
+      "earth": 1,
+      "wind": 1,
+      "steel": 0.5,
+      "poison": 1,
+      "light": 2,
+      "dark": 1
+    },
+    "poison": {
+      "neutral": 1,
+      "grass": 2,
+      "fire": 1,
+      "water": 2,
+      "electric": 1,
+      "ice": 1,
+      "earth": 0.5,
+      "wind": 1,
+      "steel": 0,
+      "poison": 0.5,
+      "light": 0.5,
+      "dark": 1
+    },
+    "light": {
+      "neutral": 1,
+      "grass": 0.5,
+      "fire": 1,
+      "water": 0.5,
+      "electric": 1,
+      "ice": 1,
+      "earth": 1,
+      "wind": 1,
+      "steel": 0.5,
+      "poison": 2,
+      "light": 0.5,
+      "dark": 2
+    },
+    "dark": {
+      "neutral": 2,
+      "grass": 1,
+      "fire": 0.5,
+      "water": 1,
+      "electric": 1,
+      "ice": 1,
+      "earth": 1,
+      "wind": 1,
+      "steel": 1,
+      "poison": 1,
+      "light": 2,
+      "dark": 0.5
+    }
+  }
+}

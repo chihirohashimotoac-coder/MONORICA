@@ -1,0 +1,19 @@
+{
+  "date_jst": "2026-11-02",
+  "asset_validator": "pass (49 entries)",
+  "planning_validator": "pass",
+  "require_complete": "expected fail, exit 1",
+  "browser_report": "reports/later-wild-model-check_v0.1.json",
+  "current_document_links": "pass",
+  "v011_files_preserved": 185,
+  "original_art_and_brief_sha256_unchanged": 80,
+  "runtime_image_count": 19,
+  "runtime_ready_image_count": 19,
+  "new_model_sheets_visual_review": "pending",
+  "git_commit_push_deploy": "not performed",
+  "zip_excludes": [
+    ".git",
+    "secrets",
+    "caches"
+  ]
+}
