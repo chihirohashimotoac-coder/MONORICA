@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-11-03",
+  "status": "blocked_by_cloud_destination_policy",
+  "repository": "https://github.com/chihirohashimotoac-coder/MONORICA",
+  "branch": "work/github-migration-preflight-20261102",
+  "base_commit": "12fc1d3732d766ab0aa09b91a18c8a2e2b4f9e66",
+  "pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/1",
+  "source": {
+    "service": "Google Drive",
+    "file_id": "1g5Wt0afmoWK9YFIEXNkUjP-DCLao_-nU",
+    "filename": "MONORICA_preproduction_v0.13_species-catalog (1).zip",
+    "mime_type": "application/x-zip-compressed",
+    "size_bytes": 36372679,
+    "metadata_read": true,
+    "authenticated_download_reference_obtained": true,
+    "archive_saved_in_cloud": false,
+    "archive_extracted": false,
+    "sha256_verified": false,
+    "expected_sha256_from_request": "548d7c87d5b0fad25a8a179ded85f9607ca41406bc37768cb4b2cfcaf031235c"
+  },
+  "network": {
+    "required_destination_host": "sdmntpraustraliaeast.oaiusercontent.com",
+    "http_status": 403,
+    "observed_error": "CONNECT tunnel failed, response 403",
+    "proxy_preserved": true,
+    "tls_verification_preserved": true,
+    "network_configuration_change_requested": true,
+    "short_lived_download_url_persisted": false
+  },
+  "current_validation": {
+    "required_four_checks_rerun": false,
+    "reason": "ZIP・検査コード未取得。前回は4件ともファイル不在で開始不可。",
+    "previous_report": "reports/github-migration-preflight_2026-11-02.json",
+    "species_review_complete": false,
+    "successful_structural_checks": 0,
+    "prior_46_checks_reused": false
+  },
+  "next_action": "クラウド環境の許可先へ必要ホストを追加後、Driveから新しい参照を取得して保存を再試行する。",
+  "security_review": {
+    "assessment": "reasonable_to_allow_exact_host_temporarily_for_requested_download",
+    "official_source": "https://help.openai.com/ja-jp/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+    "official_domain_pattern": "*.oaiusercontent.com",
+    "reference_provenance": "authenticated Google Drive connector",
+    "reference_https": true,
+    "reference_read_permission": "r",
+    "signed_reference_present": true,
+    "signature_cryptographically_verified": false,
+    "live_target_tls_certificate_verified": false,
+    "archive_content_safety_verified": false,
+    "network_configuration_change_confirmed": false,
+    "details": "docs/operations/STORAGE_HOST_SECURITY_2026-11-03.md"
+  }
+}
