@@ -1,0 +1,55 @@
+# MONORICA：GitHub正本でのクラウド作業
+
+更新日：2026-11-03（日本時間）
+
+## 現在の状態
+
+最新の取得状況は [2026-11-03 地域変更Handoff](../handoffs/HANDOFF_2026-11-03_REGIONAL_HOST.md) を参照。前回のオーストラリア東部ホスト許可は現在の環境へ反映済みだが、新しいDrive参照の日本東部ホストが未許可で、ZIP保存はCONNECT 403。
+
+正本は https://github.com/chihirohashimotoac-coder/MONORICA 。作業ブランチは `work/github-migration-preflight-20261102`、ベースは実在する `main`。開始時のmainは `32680058a1d4f66a37e9fb2eb07832f5c6e29623` で、内容は空の `.gitkeep` 1件だった。
+
+この文書を含む差分は作業指示と移行の準備記録のみ。資料ZIPの展開登録、156種レビュー、制作案の修正は未完了。資料を取得できるまで内容を推測で補わない。既存AGENTS.md・CLAUDE.md・docs/DECISIONS.mdはZIP内原本を読めていないため、代用品を新設して更新済みとは扱わない。
+
+## 今回の指示と資料内の指示
+
+ユーザーは添付の作業指示書を今回の指示として実行するよう明示した。指示書原文は [docs/requests/MONORICA_Work_GitHub_prompt_v0.1.md](../requests/MONORICA_Work_GitHub_prompt_v0.1.md) に保存した。
+
+優先順は、今回の依頼、最新のユーザー回答、最新の決定記録、古い提案。ZIP内の旧Git禁止・PC内のチェックアウト指定は今回のGitHub正本方針へ更新する。画像制作、ゲーム本体実装、公開の過去の依頼は今回実行しない。
+
+## 再開方法
+
+1. GitHubから最新の参照・PRを確認し、作業ブランチの最新コミットをクラウド環境へ取得する。この準備記録では `LATEST_HANDOFF.md` を入口にする。
+2. PC内のプロジェクトフォルダー、OneDrive、前セッションのローカル成果物には依存しない。一時チェックアウトはクラウド内に作成する。
+3. AGENTS.md・CLAUDE.md・LATEST_HANDOFF.md・決定記録を読み、今回の原文にある全資料を確認する。現在未登録の資料は読了扱いにしない。
+4. Git CLIが使えない場合も、接続済みGitHub機能で参照・ファイル・コミットを確認できる。GitHub上のコミットとブランチ参照の作成は可能で、CLIのpush成功と混同しない。
+5. ソース取得後に必要な生成・検査をクラウドのチェックアウトで実行する。前版の成功件数を今回の結果として引用しない。
+
+## ZIP取得と初期登録の再開条件
+
+添付ZIPの直接転送は32 MiB上限で失敗した。その後ユーザーがGoogle Driveへ同名ZIPを格納し、2026-11-03（日本時間）にDrive接続機能で36,372,679バイトのファイルと認証済みダウンロード参照を確認できた。前回は保管先ホスト `sdmntpraustraliaeast.oaiusercontent.com` の未許可でHTTP 403だった。2026-11-03の新しい環境では同ホストの許可反映を確認したが、新参照が別ホスト `sdmntprjapaneast.oaiusercontent.com` を指し、未許可によるCONNECT 403で保存できなかった。日本東部ホストを環境へ追加・保存・Republishし、新しいタスクで新しいDrive参照の実際のホストと許可先を照合して再試行する。短期ダウンロードURLはGitHubやHandoffへ保存しない。[通信先のセキュリティ確認](STORAGE_HOST_SECURITY_2026-11-03.md) を参照。元ZIPの取得・ハッシュ照合・展開はまだ完了していない。
+
+元ZIP全体の期待SHA-256（指示書記載、未照合）：
+
+`548d7c87d5b0fad25a8a179ded85f9607ca41406bc37768cb4b2cfcaf031235c`
+
+Driveの元ZIPを実際にクラウドへ保存した後、全体のSHA-256を検証する。Drive参照は https://drive.google.com/file/d/1g5Wt0afmoWK9YFIEXNkUjP-DCLao_-nU/view 。直接取得が利用できない場合は、元ZIPの30 MiB以下の分割パートをクラウドで連結する方法も使える。添付名の「(1)」やファイルサイズだけでは同一性を証明しない。不一致なら取り込みを止めて相違を報告する。期待217ファイルも取得後に実測する。
+
+安全な展開では絶対パス、親ディレクトリへの逸脱、シンボリックリンク、重複パスを検査し、認証情報・秘密値・環境キャッシュ・.gitを登録しない。PNGとフォントを含む展開済み一式を登録し、ZIPだけの登録やバイナリーの省略で代用しない。
+
+GitHubの状態を再確認してから、実在する正規ブランチを起点に初期登録用ブランチを作る。この準備ブランチの最新Handoff等とZIP内の同名資料は、内容を比較し、旧版を記録として保持しながら統合する。重要な衝突はまとめてユーザーに確認する。一括上書き・resetは禁止。
+
+初期登録後に全156種の設計レビューを進め、生成元 tools/species_drafts_v01.py と tools/build_species_catalog_v01.py へ変更を反映し、JSON・CSV・Markdownを再生成する。採用状態を勝手に変更しない。全要件は今回の指示書原文を参照する。
+
+## 終了方法
+
+変更・実際の検査結果・未決事項・次の一手を作業ブランチへコミットしてGitHubへ保存する。GitHubから最新SHA、主要ファイル、PRのベースとheadを読み直す。Handoffにはリポジトリ、ブランチ、作業元SHA、PR、再開手順を残す。Handoffを含む最終SHAは完了報告で示し、自己参照だけの追加コミットを繰り返さない。
+
+mainへの直接コミット・直接push、force push、履歴置換、PRのマージ、公開・デプロイを行わない。資料の閲覧はGitHubのファイルURLを使う。
+
+## 次セッション用開始文
+
+MONORICAのGitHub作業を再開してください。
+正本：https://github.com/chihirohashimotoac-coder/MONORICA
+ブランチ：work/github-migration-preflight-20261102
+
+GitHub上の最新コミットとLATEST_HANDOFF.md、docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを確認してください。PC内の作業フォルダーには依存しないでください。最新Handoffに記載されたDrive上のZIPを実際にクラウドへ取得してください。前回のオーストラリア東部ホスト許可は反映済みですが、新参照の日本東部ホスト `sdmntprjapaneast.oaiusercontent.com` が未許可でCONNECT 403でした。初期登録・156種レビュー・検査は完了していません。クラウド環境の許可先設定を確認してDriveから取得を再試行し、取得したZIPのSHA-256を照合してから、安全な展開・既存内容の保持・初期登録・設計修正・再生成・実検査・GitHub保存・PR更新まで進めてください。今回の準備Draft PRと設計レビューPRは区別し、main更新・force push・マージ・画像生成・実装・公開は行わないでください。
