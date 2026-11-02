@@ -4,6 +4,8 @@
 
 ## 現在の状態
 
+最新の取得状況は [2026-11-03 地域変更Handoff](../handoffs/HANDOFF_2026-11-03_REGIONAL_HOST.md) を参照。前回のオーストラリア東部ホスト許可は現在の環境へ反映済みだが、新しいDrive参照の日本東部ホストが未許可で、ZIP保存はCONNECT 403。
+
 正本は https://github.com/chihirohashimotoac-coder/MONORICA 。作業ブランチは `work/github-migration-preflight-20261102`、ベースは実在する `main`。開始時のmainは `32680058a1d4f66a37e9fb2eb07832f5c6e29623` で、内容は空の `.gitkeep` 1件だった。
 
 この文書を含む差分は作業指示と移行の準備記録のみ。資料ZIPの展開登録、156種レビュー、制作案の修正は未完了。資料を取得できるまで内容を推測で補わない。既存AGENTS.md・CLAUDE.md・docs/DECISIONS.mdはZIP内原本を読めていないため、代用品を新設して更新済みとは扱わない。
@@ -24,7 +26,7 @@
 
 ## ZIP取得と初期登録の再開条件
 
-添付ZIPの直接転送は32 MiB上限で失敗した。その後ユーザーがGoogle Driveへ同名ZIPを格納し、2026-11-03（日本時間）にDrive接続機能で36,372,679バイトのファイルと認証済みダウンロード参照を確認できた。クラウドへの保存は保管先ホスト `sdmntpraustraliaeast.oaiusercontent.com` への通信がHTTP 403で拒否され、未完了。クラウド環境のネットワーク許可先へこのホストを追加後、Driveから新しい参照を取得して再試行する。短期ダウンロードURLはGitHubやHandoffへ保存しない。[通信先のセキュリティ確認](STORAGE_HOST_SECURITY_2026-11-03.md) を参照。元ZIPの取得・ハッシュ照合・展開はまだ完了していない。
+添付ZIPの直接転送は32 MiB上限で失敗した。その後ユーザーがGoogle Driveへ同名ZIPを格納し、2026-11-03（日本時間）にDrive接続機能で36,372,679バイトのファイルと認証済みダウンロード参照を確認できた。前回は保管先ホスト `sdmntpraustraliaeast.oaiusercontent.com` の未許可でHTTP 403だった。2026-11-03の新しい環境では同ホストの許可反映を確認したが、新参照が別ホスト `sdmntprjapaneast.oaiusercontent.com` を指し、未許可によるCONNECT 403で保存できなかった。日本東部ホストを環境へ追加・保存・Republishし、新しいタスクで新しいDrive参照の実際のホストと許可先を照合して再試行する。短期ダウンロードURLはGitHubやHandoffへ保存しない。[通信先のセキュリティ確認](STORAGE_HOST_SECURITY_2026-11-03.md) を参照。元ZIPの取得・ハッシュ照合・展開はまだ完了していない。
 
 元ZIP全体の期待SHA-256（指示書記載、未照合）：
 
@@ -50,4 +52,4 @@ MONORICAのGitHub作業を再開してください。
 正本：https://github.com/chihirohashimotoac-coder/MONORICA
 ブランチ：work/github-migration-preflight-20261102
 
-GitHub上の最新コミットとLATEST_HANDOFF.md、docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを確認してください。PC内の作業フォルダーには依存しないでください。最新Handoffに記載されたDrive上のZIPを実際にクラウドへ取得してください。現在は保管先ホストへのHTTP 403により保存できず、初期登録・156種レビュー・検査は完了していません。クラウド環境の許可先設定を確認してDriveから取得を再試行し、取得したZIPのSHA-256を照合してから、安全な展開・既存内容の保持・初期登録・設計修正・再生成・実検査・GitHub保存・PR更新まで進めてください。今回の準備Draft PRと設計レビューPRは区別し、main更新・force push・マージ・画像生成・実装・公開は行わないでください。
+GitHub上の最新コミットとLATEST_HANDOFF.md、docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを確認してください。PC内の作業フォルダーには依存しないでください。最新Handoffに記載されたDrive上のZIPを実際にクラウドへ取得してください。前回のオーストラリア東部ホスト許可は反映済みですが、新参照の日本東部ホスト `sdmntprjapaneast.oaiusercontent.com` が未許可でCONNECT 403でした。初期登録・156種レビュー・検査は完了していません。クラウド環境の許可先設定を確認してDriveから取得を再試行し、取得したZIPのSHA-256を照合してから、安全な展開・既存内容の保持・初期登録・設計修正・再生成・実検査・GitHub保存・PR更新まで進めてください。今回の準備Draft PRと設計レビューPRは区別し、main更新・force push・マージ・画像生成・実装・公開は行わないでください。
