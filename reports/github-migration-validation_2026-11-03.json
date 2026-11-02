@@ -1,0 +1,79 @@
+{
+  "date_jst": "2026-11-03",
+  "base_import_commit": "c15d5bf661265d54f7cc61b651ee7884e74b6537",
+  "integrated_preflight_commit": "8637aa17eee5cca5abaf1e68eebe7ea11a6880fe",
+  "review_branch": "work/species-review-v013-20261103",
+  "commands": [
+    {
+      "command": "python tools/build_species_catalog_v01.py",
+      "exit_code": 0,
+      "stdout": "{\"species\": 156, \"families\": 79}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_species_catalog_v01.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"checks\": 46,\n  \"passed\": 46,\n  \"failed\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_assets.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"recorded_file_check\": \"pass\",\n  \"files_checked\": 49,\n  \"catalog_complete\": false,\n  \"runtime_images\": 19,\n  \"audio_tracks\": 0,\n  \"pending_categories\": [\n    \"full_species_catalog\",\n    \"monster_runtime_art\",\n    \"character_sprites\",\n    \"map_tiles_and_layouts\",\n    \"complete_moves_items_abilities\",\n    \"complete_story_events\",\n    \"audio\",\n    \"ui_art\"\n  ],\n  \"errors\": [],\n  \"scope\": \"file existence, hashes and PNG header dimensions only\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_preproduction.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"planning_check\": \"pass\",\n  \"species_slots\": 156,\n  \"known_production_cards\": 15,\n  \"main_regions\": 8,\n  \"postgame_regions\": 2,\n  \"representatives\": 8,\n  \"music_cues_not_generated\": 28,\n  \"queued_assets_not_created\": 3,\n  \"runtime_image_count\": 19,\n  \"runtime_ready_images\": 19,\n  \"errors\": [],\n  \"scope\": \"planning counts and references, not playthrough or complete content\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "catalog_check_count": 46,
+  "failed_checks": 0,
+  "checks_added_or_removed": false,
+  "modified_validation_policy": "運用文書3件の明示的例外と検査メタデータの正確化。素材・既存15カード・元相性表の保護は維持。",
+  "original_bundle_preserved": {
+    "id": "original_bundle_preserved",
+    "pass": true,
+    "details": {
+      "original_files": 202,
+      "missing": [],
+      "changed": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "LATEST_HANDOFF.md",
+        "README.md",
+        "docs/DECISIONS.md",
+        "docs/SESSION_CONTINUITY.md"
+      ],
+      "allowed_document_updates": [
+        "LATEST_HANDOFF.md",
+        "README.md",
+        "docs/DECISIONS.md",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "docs/SESSION_CONTINUITY.md"
+      ],
+      "document_update_reasons": {
+        "LATEST_HANDOFF.md": "最新のGitHubブランチ・実検査・再開情報への入口を更新",
+        "README.md": "GitHub登録済みの現状と最新Handoffを案内",
+        "docs/DECISIONS.md": "今回許可されたGitHub正本方針と採用状態を明記",
+        "AGENTS.md": "PC依存を避けるGitHub正本運用と終了時pushを明記",
+        "CLAUDE.md": "同じGitHub正本運用をClaude Codeへ引き継ぐ",
+        "docs/SESSION_CONTINUITY.md": "ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新"
+      }
+    }
+  },
+  "original_art_and_planning_hashes_unchanged": {
+    "id": "original_art_and_planning_hashes_unchanged",
+    "pass": true,
+    "details": {
+      "protected_file_count": 94
+    }
+  },
+  "species_design_review_completed": false,
+  "current_images_visually_inspected": false,
+  "balance_verified": false,
+  "playthrough_verified": false
+}

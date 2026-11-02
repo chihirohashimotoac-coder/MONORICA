@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "created_date_jst": "2026-11-02",
+  "created_date_jst": "2026-11-03",
   "status": "pass",
   "scope_ja": "設計表の件数・参照・抽象の入手依存・既存素材不変の検査。実ゲーム・面白さ・バランスの検証ではない。",
   "schema_engine_ja": "同梱スキーマが使用する型・必須・anyOf・参照・列挙・定数・範囲・配列長・文字列長・パターンをローカル実装で検査。外部JSON Schema実装は未導入。",
@@ -76,10 +76,10 @@
     "runtime_ready_png_count": 19
   },
   "source_audit": {
-    "bundle_name": "MONORICA_preproduction_v0.12.zip",
-    "bundle_sha256": "e0e9965ef3d05e88723572eea20b07ac9c75e348eb642f9a428711814f83c612",
-    "hash_source_ja": "元ZIP展開直後の計測を同梱baselineへ保存。検査の再実行に元ZIPを要求しない。",
-    "documents_read": [
+    "baseline_bundle_name": "MONORICA_preproduction_v0.12.zip",
+    "baseline_bundle_sha256": "e0e9965ef3d05e88723572eea20b07ac9c75e348eb642f9a428711814f83c612",
+    "hash_source_ja": "元202ファイルのハッシュを同梱baselineと比較。素材・15カード・相性表等の保護は継続。",
+    "document_paths_checked_for_availability": [
       "AGENTS.md",
       "CLAUDE.md",
       "LATEST_HANDOFF.md",
@@ -102,7 +102,7 @@
       "tools/validate_assets.py",
       "tools/validate_preproduction.py"
     ],
-    "images_visually_inspected": [
+    "image_paths_checked_for_availability": [
       "brief/starter_concepts_v0.4.png",
       "brief/starter_middle_concepts_v0.1.png",
       "brief/wild_monsters_concepts_v0.1.png",
@@ -117,7 +117,9 @@
       "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png"
     ],
     "unavailable_required_sources": [],
-    "note_ja": "最初は取得に失敗したが、ユーザーがWindows作業フォルダーへ配置したZIPを展開して必要資料を読んだ。初回失敗を資料読了へ読み替えていない。"
+    "documents_read_verified_by_validator": false,
+    "images_visually_inspected_verified_by_validator": false,
+    "note_ja": "この検査器はファイルの存在・構造・ハッシュを確認する。本文読了・画像目視・156種レビューの実施は別の実行記録とHandoffを参照。旧Windows作業・旧目視実績を再実行の実績へ流用しない。"
   },
   "checks": [
     {
@@ -342,15 +344,29 @@
         "original_files": 202,
         "missing": [],
         "changed": [
+          "AGENTS.md",
+          "CLAUDE.md",
           "LATEST_HANDOFF.md",
           "README.md",
-          "docs/DECISIONS.md"
+          "docs/DECISIONS.md",
+          "docs/SESSION_CONTINUITY.md"
         ],
         "allowed_document_updates": [
           "LATEST_HANDOFF.md",
           "README.md",
-          "docs/DECISIONS.md"
-        ]
+          "docs/DECISIONS.md",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "docs/SESSION_CONTINUITY.md"
+        ],
+        "document_update_reasons": {
+          "LATEST_HANDOFF.md": "最新のGitHubブランチ・実検査・再開情報への入口を更新",
+          "README.md": "GitHub登録済みの現状と最新Handoffを案内",
+          "docs/DECISIONS.md": "今回許可されたGitHub正本方針と採用状態を明記",
+          "AGENTS.md": "PC依存を避けるGitHub正本運用と終了時pushを明記",
+          "CLAUDE.md": "同じGitHub正本運用をClaude Codeへ引き継ぐ",
+          "docs/SESSION_CONTINUITY.md": "ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新"
+        }
       }
     },
     {
@@ -6327,5 +6343,5 @@
   "playthrough_verified": false,
   "image_generation_performed": false,
   "game_implementation_performed": false,
-  "git_commit_push_or_publish_performed": false
+  "git_operations_are_outside_validation_scope": true
 }

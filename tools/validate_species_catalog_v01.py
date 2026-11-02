@@ -9,6 +9,7 @@ import re
 import subprocess
 import sys
 import unicodedata
+from datetime import datetime, timedelta, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
 CAT='content/planning/species-catalog_v0.1.json'
@@ -334,8 +335,16 @@ def main():
         p=ROOT/n
         if not p.is_file():missing.append(n)
         elif hashlib.sha256(p.read_bytes()).hexdigest()!=h:changed.append(n)
-    allowed=['LATEST_HANDOFF.md','README.md','docs/DECISIONS.md']
-    extra('original_bundle_preserved',not missing and set(changed).issubset(allowed),{'original_files':len(baseline),'missing':missing,'changed':changed,'allowed_document_updates':allowed})
+    document_update_reasons = {
+        'LATEST_HANDOFF.md': '最新のGitHubブランチ・実検査・再開情報への入口を更新',
+        'README.md': 'GitHub登録済みの現状と最新Handoffを案内',
+        'docs/DECISIONS.md': '今回許可されたGitHub正本方針と採用状態を明記',
+        'AGENTS.md': 'PC依存を避けるGitHub正本運用と終了時pushを明記',
+        'CLAUDE.md': '同じGitHub正本運用をClaude Codeへ引き継ぐ',
+        'docs/SESSION_CONTINUITY.md': 'ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新',
+    }
+    allowed=list(document_update_reasons)
+    extra('original_bundle_preserved',not missing and set(changed).issubset(allowed),{'original_files':len(baseline),'missing':missing,'changed':changed,'allowed_document_updates':allowed,'document_update_reasons':document_update_reasons})
     protected=[n for n in baseline if n.startswith(('assets/','brief/','manifests/','content/'))]
     extra('original_art_and_planning_hashes_unchanged',all(n not in changed and n not in missing for n in protected),{'protected_file_count':len(protected)})
     with (ROOT/'content/planning/species-catalog_v0.1.csv').open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
@@ -384,10 +393,17 @@ def main():
     visual=['brief/starter_concepts_v0.4.png','brief/starter_middle_concepts_v0.1.png','brief/wild_monsters_concepts_v0.1.png']
     for sid in ['starter_flower_hare_01','starter_ember_wyvern_01','starter_tide_bear_01','wild_seed_squirrel_01','wild_vine_mole_01','wild_breeze_bird_01','wild_stream_otter_01','wild_coil_dormouse_01','wild_dusk_glider_01']:
         model=next(x for x in known if x['id']==sid)['model_sheet_asset_id'];visual.append(aid[model]['path'])
-    source_audit={'bundle_name':baseline_record['source_bundle'],'bundle_sha256':baseline_record['source_bundle_sha256'],
-       'hash_source_ja':'元ZIP展開直後の計測を同梱baselineへ保存。検査の再実行に元ZIPを要求しない。',
-       'documents_read':readable,'images_visually_inspected':visual,'unavailable_required_sources':[],
-       'note_ja':'最初は取得に失敗したが、ユーザーがWindows作業フォルダーへ配置したZIPを展開して必要資料を読んだ。初回失敗を資料読了へ読み替えていない。'}
+    source_audit={
+       'baseline_bundle_name':baseline_record['source_bundle'],
+       'baseline_bundle_sha256':baseline_record['source_bundle_sha256'],
+       'hash_source_ja':'元202ファイルのハッシュを同梱baselineと比較。素材・15カード・相性表等の保護は継続。',
+       'document_paths_checked_for_availability':readable,
+       'image_paths_checked_for_availability':visual,
+       'unavailable_required_sources':[p for p in readable+visual if not (ROOT/p).is_file()],
+       'documents_read_verified_by_validator':False,
+       'images_visually_inspected_verified_by_validator':False,
+       'note_ja':'この検査器はファイルの存在・構造・ハッシュを確認する。本文読了・画像目視・156種レビューの実施は別の実行記録とHandoffを参照。旧Windows作業・旧目視実績を再実行の実績へ流用しない。'}
+
     summary={
        'species_count':len(cat['species']),'family_count':len(cat['families']),
        'stage_family_counts':dict(Counter(str(f['stage_count']) for f in cat['families'])),
@@ -397,7 +413,7 @@ def main():
        'role_counts':dict(Counter(s['battle']['role_id'] for s in cat['species'])),
        'existing_species':15,'newly_added_species':141,'new_names_from_previous_world_proposals':6,'wholly_new_species_proposals':135,
        'runtime_png_count':assets['runtime_image_count'],'runtime_ready_png_count':assets['runtime_ready_image_count']}
-    report={'schema_version':'0.1','created_date_jst':'2026-11-02','status':'pass' if all(x['pass'] for x in checks) else 'fail',
+    report={'schema_version':'0.1','created_date_jst':datetime.now(timezone(timedelta(hours=9))).date().isoformat(),'status':'pass' if all(x['pass'] for x in checks) else 'fail',
       'scope_ja':'設計表の件数・参照・抽象の入手依存・既存素材不変の検査。実ゲーム・面白さ・バランスの検証ではない。',
       'schema_engine_ja':'同梱スキーマが使用する型・必須・anyOf・参照・列挙・定数・範囲・配列長・文字列長・パターンをローカル実装で検査。外部JSON Schema実装は未導入。',
       'summary':summary,'source_audit':source_audit,'checks':checks,'passed_check_count':sum(x['pass'] for x in checks),
@@ -406,7 +422,7 @@ def main():
         '必要レベルまでは育成可能とする。経験値曲線・所要時間は未設定。','昼夜待機・無償再講習・固定戦再挑戦は制作案で、ゲーム内挙動は未実装。',
         '地域接続はworld-outlineの順序を用いる。タイル・帰路・全滅・技忘却の状態空間は実ゲームで未検証。'],
       'unresolved':cat['unresolved_ja'],'game_balance_verified':False,'fun_verified':False,'playthrough_verified':False,
-      'image_generation_performed':False,'game_implementation_performed':False,'git_commit_push_or_publish_performed':False}
+      'image_generation_performed':False,'game_implementation_performed':False,'git_operations_are_outside_validation_scope':True}
     (ROOT/REPORT).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'status':report['status'],'checks':len(checks),'passed':report['passed_check_count'],
         'failed':[x for x in checks if not x['pass']]},ensure_ascii=False,indent=2))

@@ -1,0 +1,11 @@
+MONORICAの設計レビューを続けてください。日本語で作業・報告してください。
+正本：https://github.com/chihirohashimotoac-coder/MONORICA
+再開ブランチ：work/species-review-v013-20261103
+初期登録ブランチ：work/preproduction-v013-import
+初期登録コミット：c15d5bf661265d54f7cc61b651ee7884e74b6537
+
+GitHubから再開ブランチの最新コミットをクラウドへ取得し、AGENTS.md・CLAUDE.md・LATEST_HANDOFF.md・リンク先Handoff・docs/DECISIONS.md・docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを読んでください。PC内の作業フォルダーには依存しないでください。
+
+元ZIPはGitHubから取得済み、SHA-256一致・217ファイルの展開登録と指定4検査は完了しています。Drive取得や初期登録をやり直さず、展開済みファイルを正本にしてください。カタログ46項目成功は構造・参照の検査であり、全156種の内容レビュー・画像目視・バランス・通しプレイは未実施です。
+
+今回の指示書の全資料と全156種を読み、問題を具体的に特定し、安全に修正できる制作案は生成元へ反映、JSON・CSV・Markdownを再生成して実検査、コミット・push、レビューPR更新まで進めてください。計画や問題一覧だけで止まらず、重大な確定条件の矛盾だけまとめて確認してください。採用状態を変えず、main直接更新・force push・履歴置換・PRマージ・画像生成・ゲーム実装・公開は行わないでください。

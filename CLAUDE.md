@@ -1,7 +1,15 @@
 # MONORICA：現在の制作段階
 
 日本語で相談・報告する。素材とデータを先に整え、GitHubのリポジトリからClaude Codeクラウドへ本格実装を引き継ぐ。今は素材準備と表示確認の段階。ユーザーが本体実装を依頼するまで、Phaser等のゲーム本体・戦闘・セーブを実装しない。
-既存チェックアウトで作業し、明示的な依頼がなければGit worktreeを作らない。旧資料のWindowsローカル実装開始手順へ戻さない。ユーザーの最新指示を優先する。
+今回の依頼ではクラウド内に一時チェックアウトを作成できる。PC内のプロジェクトフォルダーやOneDriveには依存しない。不要なGit worktreeは作らない。旧資料のWindowsローカル実装開始手順へ戻さない。ユーザーの最新指示を優先する。
+
+## 2026-11-03：GitHubを正本とするクラウド作業
+
+正本：https://github.com/chihirohashimotoac-coder/MONORICA 。PC内の作業フォルダー、OneDrive、過去のローカル成果物には依存しない。実行用の一時チェックアウトはクラウド内に作成してよい。最新のGitHub参照・AGENTS.md・CLAUDE.md・LATEST_HANDOFF.mdと決定記録から再開し、変更・検査結果・Handoffを作業ブランチへコミット・pushしてGitHubから再確認する。
+
+今回の指示書は docs/requests/MONORICA_Work_GitHub_prompt_v0.1.md 。GitHubへの初期登録・156種レビュー・必要な制作案の修正・検査・PR作成は許可済み。旧資料のGit操作未許可・PC内チェックアウトの指定は今回の方針へ更新する。mainへの直接コミット・直接push、force push、履歴置換、PRのマージ、画像生成、ドット制作、ゲーム本体実装、公開・デプロイは行わない。
+
+初期登録ブランチは work/preproduction-v013-import、再開する作業ブランチは work/species-review-v013-20261103 。元の採用状態・既存15カード・runtime PNG19枚を保持する。全156種の内容レビューは未実施で、構造検査の成功をレビュー・バランス・通しプレイの完了と扱わない。
 
 ## セッション継続のユーザー希望
 

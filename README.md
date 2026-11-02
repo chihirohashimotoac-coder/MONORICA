@@ -1,13 +1,15 @@
 # MONORICA：ゲーム企画と素材準備
 
+2026-11-03：GitHubを正本とする初期登録を完了。再開ブランチは `work/species-review-v013-20261103`。[最新Handoff](LATEST_HANDOFF.md)・[GitHub運用手順](docs/operations/GITHUB_WORKFLOW_v0.1.md)・[今回の実検査](reports/github-initial-import_2026-11-03.json)から再開する。以下のv0.13以前のGit未実施・PC内フォルダー指定は履歴。156種の内容レビューは次工程で、今回完了した構造検査とは区別する。
+
 2026-11-02 v0.13：**全156種の詳細設計案を作成**。[図鑑一覧](docs/SPECIES_CATALOG_v0.1.md)・[日本語詳細](docs/SPECIES_DESIGN_DETAILS_v0.1.md)・[設計JSON](content/planning/species-catalog_v0.1.json)・[設定画バッチ](docs/SPECIES_ART_BATCHES_v0.1.md)・[検査結果](reports/species-catalog-check_v0.1.json)を参照。追加内容は制作案で、新しい美術やゲーム仕様を採用済みへ変更していない。次は設計レビュー。画像生成・ゲーム実装・公開は今回行わない。
 
 2026-11-02 更新。素材を先に整え、展開済みファイルをGitHubからClaude Codeクラウドへ渡す。
-現在は制作途中。ゲーム本体の実装・全素材完成・GitHubへのpush・Claudeでの実行は未実施。
+現在は制作途中。展開済み資料のGitHub登録と今回の構造検査は完了。ゲーム本体の実装・全素材完成・Claudeでの本体実行は未実施。
 
 ## 次のセッションへ
 
-最新の引き継ぎは[LATEST_HANDOFF.md](LATEST_HANDOFF.md)、開始文は[NEXT_SESSION_START_v0.13.txt](NEXT_SESSION_START_v0.13.txt)。旧版の開始文は履歴として保持する。
+最新の引き継ぎは[LATEST_HANDOFF.md](LATEST_HANDOFF.md)、開始文は[NEXT_SESSION_START_2026-11-03_GITHUB.txt](NEXT_SESSION_START_2026-11-03_GITHUB.txt)。旧版の開始文は履歴として保持する。
 コンテキストが増えたら毎回Handoffを作成し、新しいセッションへ移るよう案内するユーザー希望を、[AGENTS.md](AGENTS.md)と[継続ルール](docs/SESSION_CONTINUITY.md)へ保存した。アカウント全体のメモリ登録ではない。
 
 ## 今回から読む入口
