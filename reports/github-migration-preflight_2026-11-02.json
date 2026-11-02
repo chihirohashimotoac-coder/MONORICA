@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "date_jst": "2026-11-02",
+  "status": "blocked_pending_source_archive",
+  "repository": "https://github.com/chihirohashimotoac-coder/MONORICA",
+  "default_branch": "main",
+  "base_commit": "32680058a1d4f66a37e9fb2eb07832f5c6e29623",
+  "base_tree_sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+  "base_files": [
+    {
+      "path": ".gitkeep",
+      "bytes": 0,
+      "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "branches_before": [
+    "main"
+  ],
+  "pull_requests_before": [],
+  "repository_push_permission": true,
+  "work_branch": "work/github-migration-preflight-20261102",
+  "request": {
+    "filename": "MONORICA_Work_GitHub_prompt_v0.1.md",
+    "acquired": true,
+    "sha256": "ad16d71d9925702f6609deabf32ff049859bd547122697693af9a3cce29603ce",
+    "saved_path": "docs/requests/MONORICA_Work_GitHub_prompt_v0.1.md"
+  },
+  "archive": {
+    "attachment_filename": "MONORICA_preproduction_v0.13_species-catalog (1).zip",
+    "acquired": false,
+    "transfer_error": "file exceeds the executor transfer limit of 32 MiB",
+    "expected_sha256_from_request": "548d7c87d5b0fad25a8a179ded85f9607ca41406bc37768cb4b2cfcaf031235c",
+    "observed_sha256": null,
+    "expected_file_count_from_request": 217,
+    "observed_file_count": null
+  },
+  "unavailable_materials": "指示書の「2. 読む資料」に列挙された全資料。リモートには.gitkeepのみで、ZIPも未取得。AGENTS.md、CLAUDE.md、LATEST_HANDOFF.mdの旧版、docs/DECISIONS.md、全カタログ・生成元・検査コード・採用画像・フォントも未読。",
+  "validation_attempts": [
+    {
+      "command": "python tools/build_species_catalog_v01.py",
+      "exit_code": 2,
+      "result": "entrypoint_unavailable",
+      "stderr": "python: can't open file '/workspace/MONORICA/tools/build_species_catalog_v01.py': [Errno 2] No such file or directory"
+    },
+    {
+      "command": "python tools/validate_species_catalog_v01.py",
+      "exit_code": 2,
+      "result": "entrypoint_unavailable",
+      "stderr": "python: can't open file '/workspace/MONORICA/tools/validate_species_catalog_v01.py': [Errno 2] No such file or directory"
+    },
+    {
+      "command": "python tools/validate_assets.py",
+      "exit_code": 2,
+      "result": "entrypoint_unavailable",
+      "stderr": "python: can't open file '/workspace/MONORICA/tools/validate_assets.py': [Errno 2] No such file or directory"
+    },
+    {
+      "command": "python tools/validate_preproduction.py",
+      "exit_code": 2,
+      "result": "entrypoint_unavailable",
+      "stderr": "python: can't open file '/workspace/MONORICA/tools/validate_preproduction.py': [Errno 2] No such file or directory"
+    }
+  ],
+  "structural_validation_passes": 0,
+  "prior_46_checks_reused": false,
+  "species_review_completed": false,
+  "balance_verified": false,
+  "playthrough_verified": false,
+  "git_cli": {
+    "ls_remote_succeeded": false,
+    "error": "Failed to connect to proxy port 8080: Could not connect to server",
+    "fallback": "接続済みGitHub機能を使用。CLIのpush成功とは報告しない。"
+  },
+  "source_of_truth_policy": "GitHub; cloud checkout is temporary; no dependency on PC working directories",
+  "not_performed": [
+    "資料ZIPの展開登録",
+    "156種の内容レビュー・修正・再生成",
+    "既存AGENTS.md・CLAUDE.md・docs/DECISIONS.mdの更新",
+    "成功した構造検査",
+    "画像生成",
+    "ゲーム本体実装",
+    "mainへの直接更新",
+    "force push",
+    "マージ",
+    "デプロイ"
+  ],
+  "next_required_input": "元ZIPを30 MiB以下へ分割した全パート。クラウドで連結後、指示書記載SHA-256と照合する。"
+}
