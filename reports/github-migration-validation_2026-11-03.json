@@ -75,5 +75,8 @@
   "species_design_review_completed": false,
   "current_images_visually_inspected": false,
   "balance_verified": false,
-  "playthrough_verified": false
+  "playthrough_verified": false,
+  "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/2",
+  "generated_design_files_semantically_changed": false,
+  "line_endings_preserved_after_validation": true
 }

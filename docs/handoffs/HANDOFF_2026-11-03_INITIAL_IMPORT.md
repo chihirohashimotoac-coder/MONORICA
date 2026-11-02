@@ -6,7 +6,7 @@
 
 - リポジトリ：https://github.com/chihirohashimotoac-coder/MONORICA
 - 再開ブランチ：`work/species-review-v013-20261103`
-- PR：作成後に実在URLを追記する。
+- Draft PR：https://github.com/chihirohashimotoac-coder/MONORICA/pull/2 （base：work/preproduction-v013-import、head：work/species-review-v013-20261103。内容レビューは未完了）
 - 今回のZIP提供元：`work/preproduction-v013-import` の `66d12e7bdb19fdebd0f7dd4896b9f29c1a2cebf7`
 - 展開一式の初期登録コミット：`c15d5bf661265d54f7cc61b651ee7884e74b6537`
 - 合流した準備ブランチの作業元：`8637aa17eee5cca5abaf1e68eebe7ea11a6880fe`
@@ -26,7 +26,7 @@ AGENTS.md・CLAUDE.md・docs/DECISIONS.md・docs/SESSION_CONTINUITY.md・README�
 
 ## 今回の実検査
 
-指定4コマンドをクラウドで実行し、初期取り込みで成功した。運用指示・検査メタデータ更新後にも再実行する。
+指定4コマンドをクラウドで実行し、初期取り込みで成功した。運用指示・検査メタデータ更新後にも4コマンドすべて再実行して成功した。
 
 - build_species_catalog_v01.py：156種・79系列を再生成。
 - validate_species_catalog_v01.py：46項目成功、失敗0。
@@ -34,6 +34,8 @@ AGENTS.md・CLAUDE.md・docs/DECISIONS.md・docs/SESSION_CONTINUITY.md・README�
 - validate_preproduction.py：既存15カード、本編8地域・代表8人、クリア後2地域、採用済み19PNGを保持。
 
 [初期登録実行レポート](../../reports/github-initial-import_2026-11-03.json)・[運用更新後の実行レポート](../../reports/github-migration-validation_2026-11-03.json)を参照。以前の46項目成功を今回の実行結果へ流用していない。
+
+再生成された設計データ・一覧等6ファイルは、初期登録との改行以外の差がないことを確認し、原本の改行を保持した。検査レポートも元の改行を保ち、設計変更のない巨大差分を残さない。
 
 検査項目数は46のまま。元202ファイルのハッシュ比較を維持し、正当な運用文書更新の例外は従来3文書にAGENTS.md・CLAUDE.md・docs/SESSION_CONTINUITY.mdを追加しただけ。対象と理由を検査レポートへ明記し、assets/・brief/・manifests/・元content/の保護を継続した。
 

@@ -2,6 +2,7 @@ MONORICAの設計レビューを続けてください。日本語で作業・報
 正本：https://github.com/chihirohashimotoac-coder/MONORICA
 再開ブランチ：work/species-review-v013-20261103
 初期登録ブランチ：work/preproduction-v013-import
+Draft PR：https://github.com/chihirohashimotoac-coder/MONORICA/pull/2
 初期登録コミット：c15d5bf661265d54f7cc61b651ee7884e74b6537
 
 GitHubから再開ブランチの最新コミットをクラウドへ取得し、AGENTS.md・CLAUDE.md・LATEST_HANDOFF.md・リンク先Handoff・docs/DECISIONS.md・docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを読んでください。PC内の作業フォルダーには依存しないでください。
