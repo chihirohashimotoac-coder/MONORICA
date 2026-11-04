@@ -10,7 +10,7 @@
 | 017 | wild_stream_otter_02 | カワミオ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png) |
 | 019 | wild_coil_dormouse_02 | マキデン | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png) |
 | 021 | wild_dusk_glider_02 | ヨイトバリ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_dusk_glider_02/model_sheet_v0.1.png) |
-| 022 | wild_reed_crane_01 | アシピナ | 未着手 | 未生成 |
+| 022 | wild_reed_crane_01 | アシピナ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_reed_crane_01/model_sheet_v0.1.png) |
 | 023 | wild_reed_crane_02 | ササナギ | 未着手 | 未生成 |
 | 024 | wild_reed_crane_03 | ミナツルネ | 未着手 | 未生成 |
 | 025 | wild_lock_crab_01 | カチコバ | 未着手 | 未生成 |
