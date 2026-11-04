@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 12,
-    "incomplete": 18
+    "saved_verified": 13,
+    "incomplete": 17
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -419,12 +419,13 @@
         "葉脈や頭の斑の微細な位置一致は美術確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1448594,
+        "sha256": "ad3c7fa5908343aa15deeb544f41bed678cd850d5f2b8218b66ad2f96d08d9d2"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "48666db3c4efcac4d4e554dd923104e656721c27",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
