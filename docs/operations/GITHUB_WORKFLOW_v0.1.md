@@ -1,6 +1,8 @@
 # MONORICA：GitHub正本でのクラウド作業
 
-更新日：2026-11-03（日本時間）
+更新日：2026-11-04（日本時間）
+
+全156種の文字設計レビューを実施した最新の結果は[SPECIES_REVIEW_v0.1.md](../SPECIES_REVIEW_v0.1.md)と[実検査記録](../../reports/species-review-validation_2026-11-04.json)に保存する。初期登録時の46項目は過去の結果。今回の検査器は52項目で、追加理由と実行結果は最新レポートを参照する。
 
 ## 現在の正本と参照
 
@@ -35,7 +37,7 @@ python tools/validate_preproduction.py
 
 元202ファイルのハッシュ検査を維持する。運用文書の正当な更新例外はAGENTS.md・CLAUDE.md・docs/SESSION_CONTINUITY.mdと、従来からのLATEST_HANDOFF.md・README.md・docs/DECISIONS.mdに限定し、検査レポートへ対象と理由を出す。assets/・brief/・manifests/・元content/の保護は変更しない。
 
-元のv0.13検査レポートに含まれるWindows作業・資料読了・画像目視の記述は過去の実績。更新した検査器は存在確認と読了・目視を分け、今回の実績へ流用しない。検査項目数は46のまま。
+元のv0.13検査レポートに含まれるWindows作業・資料読了・画像目視の記述は過去の実績。更新した検査器は存在確認と読了・目視を分け、今回の実績へ流用しない。初期登録時の検査項目数は46。
 
 ## 終了と再開
 
@@ -43,8 +45,8 @@ python tools/validate_preproduction.py
 
 mainへの直接コミット・直接push、force push、履歴置換、PRマージ、画像生成、ドット制作、ゲーム本体実装、公開・デプロイは行わない。新規141種と既存種への詳細追加は制作案のまま。採用済み19PNG・既存15カード・12属性表を保持する。
 
-会話と資料が増えたため、初期登録・検査・運用指示の統合を保存した区切りで次セッションへ移る。次の具体的な工程は、指示書の全資料と全156種を実際に読み、問題の特定・生成元の修正・再生成・実検査まで進めること。
+今回の停止位置と次工程はLATEST_HANDOFF.mdを確認する。全156種の文字レビュー後は、設定画・数値設計・試作の各工程を、ユーザーの最新依頼に合わせて選ぶ。
 
 ## 次セッション用開始文
 
-[NEXT_SESSION_START_2026-11-03_GITHUB.txt](../../NEXT_SESSION_START_2026-11-03_GITHUB.txt) を使用する。ZIPの再アップロードは不要。
+[NEXT_SESSION_START_2026-11-04_REVIEW.txt](../../NEXT_SESSION_START_2026-11-04_REVIEW.txt) を使用する。ZIPの再アップロードは不要。

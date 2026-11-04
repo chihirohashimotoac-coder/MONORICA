@@ -1,5 +1,9 @@
 # MONORICA：ゲーム企画と素材準備
 
+2026-11-04：全79系列・156種の文字設計をレビューし、制作案を修正。[レビュー記録](docs/SPECIES_REVIEW_v0.1.md)・[今回の検査](reports/species-review-validation_2026-11-04.json)・[最新Handoff](LATEST_HANDOFF.md)から確認する。次は設定画の確認・採用と、次工程の範囲を決める段階。
+
+以下の過去日付の記述は各時点の履歴。
+
 2026-11-03：GitHubを正本とする初期登録を完了。再開ブランチは `work/species-review-v013-20261103`。[最新Handoff](LATEST_HANDOFF.md)・[GitHub運用手順](docs/operations/GITHUB_WORKFLOW_v0.1.md)・[今回の実検査](reports/github-initial-import_2026-11-03.json)から再開する。以下のv0.13以前のGit未実施・PC内フォルダー指定は履歴。156種の内容レビューは次工程で、今回完了した構造検査とは区別する。
 
 2026-11-02 v0.13：**全156種の詳細設計案を作成**。[図鑑一覧](docs/SPECIES_CATALOG_v0.1.md)・[日本語詳細](docs/SPECIES_DESIGN_DETAILS_v0.1.md)・[設計JSON](content/planning/species-catalog_v0.1.json)・[設定画バッチ](docs/SPECIES_ART_BATCHES_v0.1.md)・[検査結果](reports/species-catalog-check_v0.1.json)を参照。追加内容は制作案で、新しい美術やゲーム仕様を採用済みへ変更していない。次は設計レビュー。画像生成・ゲーム実装・公開は今回行わない。

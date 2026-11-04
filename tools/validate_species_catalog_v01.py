@@ -8,7 +8,9 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 import unicodedata
+from itertools import combinations
 from datetime import datetime, timedelta, timezone
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,6 +18,10 @@ CAT='content/planning/species-catalog_v0.1.json'
 SCHEMA='content/planning/species-catalog_v0.1.schema.json'
 REPORT='reports/species-catalog-check_v0.1.json'
 def load(n):return json.loads((ROOT/n).read_text(encoding='utf-8'))
+def save_json(n,value):
+    path=ROOT/n
+    newline='\r\n' if path.is_file() and b'\r\n' in path.read_bytes() else '\n'
+    path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline=newline)
 def obj(props, optional=()):
     return {'type':'object','properties':props,'required':[k for k in props if k not in optional],'additionalProperties':False}
 def arr(item,minimum=0):return {'type':'array','items':item,'minItems':minimum}
@@ -48,7 +54,7 @@ def make_schema(types,regions):
       'received_type_multipliers':obj({t:{'type':'number','enum':[0,0.25,0.5,1,2,4]} for t in types}),
       'weak_to_type_ids':arr(typ),'resists_type_ids':arr(typ),'immune_type_ids':arr(typ),
       'damage_basis':STR,'move_direction_ja':STR,'signature_move':move,'numeric_stats_status':{'const':'not_designed'}})
-    learn=obj({'move_id':SID,'name_ja':STR,'method':{'const':'reusable_free_lesson'},'unlock_story_rank':INT,
+    learn=obj({'move_id':SID,'name_ja':STR,'method':{'const':'reusable_free_lesson'},'unlock_story_rank':INT,'required_gate_ids':arr(SID),
         'teacher_region_id':region,'status':{'const':'production_proposal'},'text_ja':STR})
     exploration=obj({'role_ja':STR,'field_move_ids':arr(SID),'learn_methods':arr(learn),'battle_slots_used_per_move':{'const':1},
         'requires_currently_learned_move':{'const':True},'requires_in_party':{'const':True},'status':STR})
@@ -140,6 +146,14 @@ def graph_cycles(edges):
     for n in edges:visit(n)
     return cycles
 
+def one_edit_apart(left,right):
+    if abs(len(left)-len(right))>1:return False
+    if len(left)==len(right):return sum(a!=b for a,b in zip(left,right))<=1
+    if len(left)>len(right):left,right=right,left
+    index=0
+    while index<len(left) and left[index]==right[index]:index+=1
+    return left[index:]==right[index+1:]
+
 def simulate(cat,choice,max_rank):
     """イベント順序・親・地域・講習を満たす取得。レベル稼ぎ可能性は抽象仮定で実時間は扱わない。"""
     got=set();learned={};visited=set();gates=set();history=[]
@@ -177,19 +191,18 @@ def simulate(cat,choice,max_rank):
                     elif method=='starter_choice':allowed=m['choice_family_id']==choice and m['region_id'] in visited
                     elif method=='postgame_rescue':allowed=rank>=100 and m['region_id'] in visited
                     else:allowed=m['region_id'] in visited
-                    if s['id']=='wild_dusk_glider_01' and 'field_vine' not in gates:allowed=False
                     if allowed:
                         got.add(s['id']);changed=True;history.append({'id':s['id'],'rank':rank,'method':method});break
             for s in cat['species']:
                 if s['id'] not in got:continue
                 for m in s['exploration']['learn_methods']:
-                    if m['unlock_story_rank']<=rank and m['teacher_region_id'] in visited:
+                    if m['unlock_story_rank']<=rank and m['teacher_region_id'] in visited and set(m['required_gate_ids']).issubset(gates):
                         learned.setdefault(m['move_id'],set()).add(s['id'])
         for mid,m in fields.items():
             if m['gate_rank']==rank:
                 # 必須前提：火の講習は岩の通路の後。通常種だけで解く。
                 normal={x for x in learned.get(mid,set()) if not x.startswith('starter_')}
-                if not normal or (mid=='field_ember' and 'field_break' not in gates):
+                if not normal or not set(m['required_gate_ids']).issubset(gates):
                     return dict(success=False,rank=rank,blocked_gate=mid,obtained_count=len(got))
                 gates.add(mid)
     return dict(success=True,obtained_count=len(got),obtained_ids=sorted(got),gates=sorted(gates),
@@ -205,6 +218,9 @@ def inspect(cat,known,world,chart):
     check('dex_1_to_156',sorted(s['dex_number'] for s in sp)==list(range(1,157)))
     check('unique_species_ids',len(set(ids))==len(ids))
     check('unique_names',len(set(names))==len(names))
+    near_names=[(a['name_ja'],b['name_ja']) for a,b in combinations(sp,2)
+        if a['family_id']!=b['family_id'] and one_edit_apart(a['name_ja'],b['name_ja'])]
+    check('cross_family_names_more_than_one_edit',not near_names,near_names)
     check('existing_15_exactly_once',all(ids.count(x['id'])==1 for x in known))
     check('existing_identity_and_snapshot',all(x['id'] in byid and byid[x['id']]['name_ja']==x['name_ja'] and
        byid[x['id']]['family_id']==x['family_id'] and byid[x['id']]['evolution_stage']==x['stage'] and
@@ -261,6 +277,17 @@ def inspect(cat,known,world,chart):
         matches=matches and s['battle']['resists_type_ids']==[t for t,v in expected.items() if 0<v<1]
         matches=matches and s['battle']['immune_type_ids']==[t for t,v in expected.items() if v==0]
     check('all_1872_type_products',matches,156*12)
+    prose_mismatches=[]
+    labels={t['label_ja']:t['id'] for t in chart['types']}
+    pattern=r'([無草炎水雷氷地風鋼毒光闇])(?:×|から|の|に)(0\.25|0\.5|0|1|2|4)(?:倍)?(?![0-9.])'
+    for s in sp:
+        text=s['battle']['move_direction_ja']
+        claims=[(labels[label],float(value)) for label,value in re.findall(pattern,text)]
+        claims += [(labels[label],1) for label in re.findall(r'([無草炎水雷氷地風鋼毒光闇])からの相性倍率は等倍',text)]
+        for typ,value in claims:
+            if s['battle']['received_type_multipliers'][typ]!=value:
+                prose_mismatches.append({'id':s['id'],'type':typ,'claimed':value})
+    check('explicit_prose_type_multipliers',not prose_mismatches,prose_mismatches)
     check('honoru_family_6_limbs',all(s['art']['anatomy_counts']['independent_arms']==2 and s['art']['anatomy_counts']['legs']==2 and
         s['art']['anatomy_counts']['independent_wings']==2 for s in sp if s['family_id']=='starter_ember_wyvern'))
     check('yorumiru_family_4_limbs',all(s['art']['anatomy_counts']['independent_arms']==0 and s['art']['anatomy_counts']['legs']==4 and
@@ -285,20 +312,43 @@ def inspect(cat,known,world,chart):
        m['id'] in byid[m['primary_provider']]['exploration']['field_move_ids'] for m in moves.values()))
     check('field_relearn_preserved_on_evolution',all(set(s['exploration']['field_move_ids']).issubset(byid[s['evolves_to']['id']]['exploration']['field_move_ids'])
          for s in sp if s['evolves_to'] and s['evolves_to']['id'] in byid))
+    check('explicit_gate_prerequisites',all(set(m['required_gate_ids']).issubset(moves) and
+        all(moves[x]['gate_rank']<m['learn_rank'] for x in m['required_gate_ids']) for m in moves.values()) and
+        all(set(a['required_field_move_ids']).issubset(moves) for s in sp for a in s['acquisition']['methods']) and
+        all(l['required_gate_ids']==moves[l['move_id']]['required_gate_ids'] for s in sp for l in s['exploration']['learn_methods']) and
+        all(set(site['access_required_gate_ids']).issubset(moves) for site in sites.values()))
+    check('glider_access_matches_opened_vine',all(m['required_field_move_ids']==['field_vine'] for m in byid['wild_dusk_glider_01']['acquisition']['methods']) and
+        all(x['access']=='on_foot_after_required_gates' for x in byid['wild_dusk_glider_01']['habitat']['wild_locations']))
+    check('stage_geometry_and_icon_regressions',
+        '銅4帯・水色4帯' in byid['wild_coil_dormouse_02']['art']['anatomy_connections_ja'] and
+        '銅3帯・水色3帯' in byid['wild_coil_dormouse_01']['art']['anatomy_connections_ja'] and
+        '個体の左' in byid['wild_lock_crab_02']['art']['anatomy_connections_ja'] and
+        '個体の左' in byid['wild_lock_crab_03']['art']['anatomy_connections_ja'] and
+        '外へ出る脚0・触角0・翅0' in byid['wild_star_larva_02']['art']['anatomy_connections_ja'] and
+        '橋形' in byid['wild_metro_isopod_02']['art']['icon_32px_ja'])
     # 条件参照の有向依存グラフ。講習は必要地点前、地点は地域の解禁後。
     dependency={}
     for s in sp:
         deps=[]
         for m in s['acquisition']['methods']:
+            # 御三家の最初の選択を主経路とし、クリア後の代替経路は3ケースのsimulateで評価する。
+            if m['method']=='postgame_rescue':continue
             if m['method']=='evolution':deps.append('species:'+m['source_species_id'])
             elif m.get('region_id'):deps.append('region:'+m['region_id'])
+            deps+=['gate:'+mid for mid in m['required_field_move_ids']]
+            if m['method']=='evolution' and m['condition']['method']=='site_interaction':
+                deps.append('site:'+m['condition']['site_id'])
         dependency['species:'+s['id']]=deps
     main_regions=[r['id'] for r in world['regions'] if r['phase']=='main_story']
     for i,rid in enumerate(main_regions):
         dependency['region:'+rid]=[] if i==0 else ['region:'+main_regions[i-1]]
     for rid in ['post_shizuna','post_meguri']:dependency['region:'+rid]=['region:region_hoshimi']
+    for rid,mid in [('region_minase','field_vine'),('region_hinowa','field_wave'),('region_kanato','field_ember')]:
+        dependency['region:'+rid].append('gate:'+mid)
+    for site in sites.values():
+        dependency['site:'+site['id']]=['region:'+site['region_id']]+['gate:'+mid for mid in site['access_required_gate_ids']]
     for mid,m in moves.items():
-        dependency['learn:'+mid]=['species:'+m['primary_provider'],'region:'+m['region_id']]
+        dependency['learn:'+mid]=['species:'+m['primary_provider'],'region:'+m['region_id']]+['gate:'+x for x in m['required_gate_ids']]
         dependency['gate:'+mid]=['learn:'+mid]
     check('acquisition_and_field_dependency_acyclic',not graph_cycles(dependency),
           '複数入手方法は代替経路であり、全て同時必須ではない。御三家の分岐は別の3ケース検査。')
@@ -317,7 +367,7 @@ def inspect(cat,known,world,chart):
 def main():
     cat=load(CAT);world=load('content/planning/world-outline.json');chart=load('content/type-chart.json');known=load('content/planning/known-species.json')['species']
     schema=make_schema(chart['type_order'],[r['id'] for r in world['regions']])
-    (ROOT/SCHEMA).write_text(json.dumps(schema,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    save_json(SCHEMA,schema)
     serr=schema_errors(cat,schema)
     checks,sims=inspect(cat,known,world,chart)
     checks.insert(0,{'id':'common_json_schema','pass':not serr,'details':serr})
@@ -338,9 +388,9 @@ def main():
     document_update_reasons = {
         'LATEST_HANDOFF.md': '最新のGitHubブランチ・実検査・再開情報への入口を更新',
         'README.md': 'GitHub登録済みの現状と最新Handoffを案内',
-        'docs/DECISIONS.md': '今回許可されたGitHub正本方針と採用状態を明記',
-        'AGENTS.md': 'PC依存を避けるGitHub正本運用と終了時pushを明記',
-        'CLAUDE.md': '同じGitHub正本運用をClaude Codeへ引き継ぐ',
+        'docs/DECISIONS.md': 'GitHub正本方針・採用状態と2026-11-04の文字レビュー工程を記録',
+        'AGENTS.md': 'GitHub正本運用を維持し、文字レビュー未実施の状態を今回の完了位置へ更新',
+        'CLAUDE.md': '同じGitHub正本運用と文字レビュー後の再開位置をClaude Codeへ引き継ぐ',
         'docs/SESSION_CONTINUITY.md': 'ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新',
     }
     allowed=list(document_update_reasons)
@@ -358,6 +408,21 @@ def main():
           len(batchids)==150 and len(set(batchids))==150 and len(refs)==6 and set(batchids).isdisjoint(refs) and set(batchids+refs)==set(byid),
           [len(b['species_ids']) for b in batches['batches']])
     extra('art_batches_no_family_split',all(len({b['id'] for b in batches['batches'] if any(x in b['species_ids'] for x in f['species_ids'])})==1 for f in cat['families']))
+    # 全54列と全156カードの本文も生成元から再現し、ID・名前だけ一致する取り残しを検出する。
+    import build_species_catalog_v01 as builder
+    generated_paths=[CAT,'content/planning/species-catalog_v0.1.csv','docs/SPECIES_CATALOG_v0.1.md',
+        'docs/SPECIES_DESIGN_DETAILS_v0.1.md','content/planning/species-art-batches_v0.1.json','docs/SPECIES_ART_BATCHES_v0.1.md']
+    with tempfile.TemporaryDirectory(prefix='monorica-repro-') as folder:
+        original_root=builder.ROOT
+        try:
+            builder.ROOT=Path(folder)
+            (builder.ROOT/'content/planning').mkdir(parents=True)
+            (builder.ROOT/'docs').mkdir()
+            reproduced=builder.build();builder.write_tables(reproduced);builder.write_batches(reproduced)
+            mismatched=[p for p in generated_paths if (ROOT/p).read_text(encoding='utf-8')!=(builder.ROOT/p).read_text(encoding='utf-8')]
+        finally:
+            builder.ROOT=original_root
+    extra('all_generated_outputs_reproducible',not mismatched,{'files':generated_paths,'mismatched':mismatched})
     # 最小限の故障注入で検査が代表的な誤りを検出することも点検。
     negatives=[]
     def negative(name,mutator,expected):
@@ -375,6 +440,11 @@ def main():
     negative('removed_field_provider',lambda c:c['species'][11]['exploration'].update(field_move_ids=[],learn_methods=[]),'normal_base_providers_before_gates')
     negative('wing_arm_regression',lambda c:c['species'][3]['art']['anatomy_counts'].update(independent_arms=0),'honoru_family_6_limbs')
     negative('six_leg_glider_regression',lambda c:c['species'][19]['art']['anatomy_counts'].update(legs=6),'yorumiru_family_4_limbs')
+    negative('missing_glider_gate',lambda c:c['species'][19]['acquisition']['methods'][0].update(required_field_move_ids=[]),'glider_access_matches_opened_vine')
+    negative('self_dependent_ember_lesson',lambda c:c['field_moves'][3].update(required_gate_ids=['field_ember']),'acquisition_and_field_dependency_acyclic')
+    negative('stale_coil_stage_bands',lambda c:c['species'][18]['art'].update(anatomy_connections_ja='銅3帯・水色3帯'),'stage_geometry_and_icon_regressions')
+    negative('confusable_ray_name',lambda c:c['species'][87].update(name_ja='オロヒラ'),'cross_family_names_more_than_one_edit')
+    negative('incorrect_crown_electric_prose',lambda c:c['species'][146]['battle'].update(move_direction_ja='雷から2倍を受ける。'),'explicit_prose_type_multipliers')
     extra('negative_control_detection',all(x['detected'] for x in negatives),negatives)
     validators=[]
     for script in ['validate_assets.py','validate_preproduction.py']:
@@ -423,7 +493,7 @@ def main():
         '地域接続はworld-outlineの順序を用いる。タイル・帰路・全滅・技忘却の状態空間は実ゲームで未検証。'],
       'unresolved':cat['unresolved_ja'],'game_balance_verified':False,'fun_verified':False,'playthrough_verified':False,
       'image_generation_performed':False,'game_implementation_performed':False,'git_operations_are_outside_validation_scope':True}
-    (ROOT/REPORT).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    save_json(REPORT,report)
     print(json.dumps({'status':report['status'],'checks':len(checks),'passed':report['passed_check_count'],
         'failed':[x for x in checks if not x['pass']]},ensure_ascii=False,indent=2))
     return 0 if report['status']=='pass' else 1

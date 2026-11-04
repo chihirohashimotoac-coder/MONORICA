@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "created_date_jst": "2026-11-03",
+  "created_date_jst": "2026-11-04",
   "status": "pass",
   "scope_ja": "設計表の件数・参照・抽象の入手依存・既存素材不変の検査。実ゲーム・面白さ・バランスの検証ではない。",
   "schema_engine_ja": "同梱スキーマが使用する型・必須・anyOf・参照・列挙・定数・範囲・配列長・文字列長・パターンをローカル実装で検査。外部JSON Schema実装は未導入。",
@@ -54,16 +54,16 @@
       "post_meguri": 9
     },
     "role_counts": {
-      "swift_special": 9,
+      "swift_special": 8,
       "breaker": 8,
       "counter_tank": 13,
       "allround": 9,
       "physical_wall": 19,
-      "pivot": 12,
-      "physical_attacker": 14,
+      "pivot": 13,
+      "physical_attacker": 13,
       "disruptor": 14,
       "healer": 11,
-      "special_wall": 12,
+      "special_wall": 13,
       "special_attacker": 14,
       "attrition": 9,
       "double_support": 12
@@ -146,6 +146,11 @@
       "id": "unique_names",
       "pass": true,
       "details": null
+    },
+    {
+      "id": "cross_family_names_more_than_one_edit",
+      "pass": true,
+      "details": []
     },
     {
       "id": "existing_15_exactly_once",
@@ -255,6 +260,11 @@
       "details": 1872
     },
     {
+      "id": "explicit_prose_type_multipliers",
+      "pass": true,
+      "details": []
+    },
+    {
       "id": "honoru_family_6_limbs",
       "pass": true,
       "details": null
@@ -296,6 +306,21 @@
     },
     {
       "id": "field_relearn_preserved_on_evolution",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "explicit_gate_prerequisites",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "glider_access_matches_opened_vine",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "stage_geometry_and_icon_regressions",
       "pass": true,
       "details": null
     },
@@ -362,9 +387,9 @@
         "document_update_reasons": {
           "LATEST_HANDOFF.md": "最新のGitHubブランチ・実検査・再開情報への入口を更新",
           "README.md": "GitHub登録済みの現状と最新Handoffを案内",
-          "docs/DECISIONS.md": "今回許可されたGitHub正本方針と採用状態を明記",
-          "AGENTS.md": "PC依存を避けるGitHub正本運用と終了時pushを明記",
-          "CLAUDE.md": "同じGitHub正本運用をClaude Codeへ引き継ぐ",
+          "docs/DECISIONS.md": "GitHub正本方針・採用状態と2026-11-04の文字レビュー工程を記録",
+          "AGENTS.md": "GitHub正本運用を維持し、文字レビュー未実施の状態を今回の完了位置へ更新",
+          "CLAUDE.md": "同じGitHub正本運用と文字レビュー後の再開位置をClaude Codeへ引き継ぐ",
           "docs/SESSION_CONTINUITY.md": "ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新"
         }
       }
@@ -410,6 +435,21 @@
       "details": null
     },
     {
+      "id": "all_generated_outputs_reproducible",
+      "pass": true,
+      "details": {
+        "files": [
+          "content/planning/species-catalog_v0.1.json",
+          "content/planning/species-catalog_v0.1.csv",
+          "docs/SPECIES_CATALOG_v0.1.md",
+          "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+          "content/planning/species-art-batches_v0.1.json",
+          "docs/SPECIES_ART_BATCHES_v0.1.md"
+        ],
+        "mismatched": []
+      }
+    },
+    {
       "id": "negative_control_detection",
       "pass": true,
       "details": [
@@ -452,6 +492,31 @@
           "id": "six_leg_glider_regression",
           "detected": true,
           "expected_check": "yorumiru_family_4_limbs"
+        },
+        {
+          "id": "missing_glider_gate",
+          "detected": true,
+          "expected_check": "glider_access_matches_opened_vine"
+        },
+        {
+          "id": "self_dependent_ember_lesson",
+          "detected": true,
+          "expected_check": "acquisition_and_field_dependency_acyclic"
+        },
+        {
+          "id": "stale_coil_stage_bands",
+          "detected": true,
+          "expected_check": "stage_geometry_and_icon_regressions"
+        },
+        {
+          "id": "confusable_ray_name",
+          "detected": true,
+          "expected_check": "cross_family_names_more_than_one_edit"
+        },
+        {
+          "id": "incorrect_crown_electric_prose",
+          "detected": true,
+          "expected_check": "explicit_prose_type_multipliers"
         }
       ]
     },
@@ -461,7 +526,7 @@
       "details": null
     }
   ],
-  "passed_check_count": 46,
+  "passed_check_count": 52,
   "failed_check_count": 0,
   "starter_choice_simulations": {
     "starter_flower_hare": {

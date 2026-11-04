@@ -16,9 +16,12 @@ def read(n):
 def write(n, obj):
     p = ROOT / n
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    newline='\r\n' if p.is_file() and b'\r\n' in p.read_bytes() else '\n'
+    p.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8',newline=newline)
 def md(n, text):
-    (ROOT / n).write_text(text.rstrip() + '\n', encoding='utf-8')
+    p=ROOT/n
+    newline='\r\n' if p.is_file() and b'\r\n' in p.read_bytes() else '\n'
+    p.write_text(text.rstrip() + '\n', encoding='utf-8',newline=newline)
 
 WORLD = read('content/planning/world-outline.json')
 KNOWN = {s['id']: s for s in read('content/planning/known-species.json')['species']}
@@ -31,16 +34,16 @@ RANKS['region_kazami'] = 11
 FIELD = {
  'field_vine': {'name_ja':'つたうち', 'type_id':'grass', 'learn_rank':12, 'gate_rank':13,
   'region_id':'region_kazami', 'teacher':'森の入口の徒歩の講習場所', 'gate':'森の崖の支点',
-  'battle':'草の攻撃と速さを下げる追加効果の案', 'primary_provider':'wild_vine_mole_01'},
+  'battle':'草の攻撃と速さを下げる追加効果の案', 'primary_provider':'wild_vine_mole_01', 'required_gate_ids':[]},
  'field_wave': {'name_ja':'なみわたり', 'type_id':'water', 'learn_rank':21, 'gate_rank':22,
   'region_id':'region_minase', 'teacher':'水門手前の徒歩の船着場の講習', 'gate':'水郷の指定の岸から渡る水路',
-  'battle':'水の攻撃。2対2では複数相手への攻撃候補', 'primary_provider':'wild_stream_otter_01'},
+  'battle':'水の攻撃。2対2では複数相手への攻撃候補', 'primary_provider':'wild_stream_otter_01', 'required_gate_ids':[]},
  'field_break': {'name_ja':'いわくだき', 'type_id':'earth', 'learn_rank':31, 'gate_rank':32,
   'region_id':'region_hinowa', 'teacher':'地熱洞手前の徒歩の工房講習', 'gate':'地熱洞のひび岩',
-  'battle':'地の攻撃と防御を下げる追加効果の案', 'primary_provider':'wild_vine_mole_01'},
+  'battle':'地の攻撃と防御を下げる追加効果の案', 'primary_provider':'wild_vine_mole_01', 'required_gate_ids':[]},
  'field_ember': {'name_ja':'ともしび', 'type_id':'fire', 'learn_rank':33, 'gate_rank':34,
   'region_id':'region_hinowa', 'teacher':'岩の講習後の徒歩の灯火広場', 'gate':'地熱洞奥の灯火',
-  'battle':'炎の攻撃とやけどの追加効果の案', 'primary_provider':'wild_kiln_pup_01'},
+  'battle':'炎の攻撃とやけどの追加効果の案', 'primary_provider':'wild_kiln_pup_01', 'required_gate_ids':['field_break']},
 }
 
 # hp・物攻・物防・特攻・特防・速さ。数値ではなく同段階の中での相対傾向。
@@ -178,26 +181,28 @@ def build():
                 condition_ja='昼夜共通。本編中の他の2系列取得は不可。'
             else:
                 method='fixed_repeatable' if rare=='fixed_repeatable' else 'wild_capture'
-                acq=[dict(method=method,region_id=f['region'],story_rank=base_rank,required_field_move_ids=[],
+                acq=[dict(method=method,region_id=f['region'],story_rank=base_rank,required_field_move_ids=list(f['acquire_gates']),
                     solo=True,repeatable=True,external_requirement=False,encounter_time=time,
                     text_ja=('徒歩の固定観察場所で捕獲戦。敗北・逃走・撃破後も安全地点へ戻れば再挑戦。捕獲後も保護調査の再遭遇で再入手できる制作案。'
                              if method=='fixed_repeatable' else '徒歩で到達する生息地で繰り返し捕獲。捕獲道具は通常店・講習の再補充から取得。'))]
                 first=REGIONS[f['region']]['name_ja']+'到達後。'+TIME_JA[time]+'。'
                 if fid=='wild_dusk_glider':
                     first='森のつた支点開通後。通常はゲーム内の夜。昼の異変固定個体は唯一の入手経路にしない。'
-                wild_locations=[] if method=='fixed_repeatable' else [dict(region_id=f['region'],environment_ja=f['ecology'],access='on_foot_before_local_required_gate')]
+                wild_locations=[] if method=='fixed_repeatable' else [dict(region_id=f['region'],environment_ja=f['ecology'],access='on_foot_after_required_gates' if f['acquire_gates'] else 'on_foot_before_local_required_gate')]
                 rarity=rare
                 condition_ja=TIME_JA[time]+'。天候・現実日付・期間限定条件なし。'
-            role,statvals,strong,weak=ROLES[f['role']]
+            role_id=s.get('role',f['role'])
+            role,statvals,strong,weak=ROLES[role_id]
             learn=[]
             for mid in f['field']:
                 mv=FIELD[mid]
                 learn.append(dict(move_id=mid,name_ja=mv['name_ja'],method='reusable_free_lesson',
-                    unlock_story_rank=mv['learn_rank'],teacher_region_id=mv['region_id'],status='production_proposal',
+                    unlock_story_rank=mv['learn_rank'],teacher_region_id=mv['region_id'],required_gate_ids=list(mv['required_gate_ids']),status='production_proposal',
                     text_ja=mv['teacher']+'。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。'))
             move_name,move_effect=s['move'].split('|',1)
             move_id='draft_'+sid+'_signature'
             anatomy=dict(zip(ANATOMY_KEYS,s.get('anatomy',f['anatomy'])))
+            connection=s.get('connection',f['connection'])
             refs,asset_ids=references(old)
             effective=dict(dex_number=len(species)+1,id=sid,name_ja=s['name'],family_id=fid,
                 evolution_stage=i+1,family_stage_count=len(ids),evolves_from=ids[i-1] if i else None,
@@ -205,7 +210,7 @@ def build():
                 primary_type=typ[0],secondary_type=typ[1] if len(typ)>1 else None,
                 allocation_bucket_id='starter_pool' if isstarter else f['region'],
                 allocation_region_id=None if isstarter else f['region'],
-                battle=dict(role_id=f['role'],role_ja=role,ability_trends=dict(zip(['hp','attack','defense','special_attack','special_defense','speed'],statvals)),
+                battle=dict(role_id=role_id,role_ja=role,ability_trends=dict(zip(['hp','attack','defense','special_attack','special_defense','speed'],statvals)),
                     ability_trends_scope='同じ進化段階内の相対的な制作案。具体的種族値ではない。',
                     strengths_ja=strong+'。'+s['tactic'],weaknesses_ja=weak,
                     received_type_multipliers=d,weak_to_type_ids=[t for t,v in d.items() if v>1],
@@ -227,14 +232,14 @@ def build():
                     acquisition_status='production_proposal',no_external_requirements=True),
                 art=dict(motifs_ja=f['motif'],full_body_silhouette_ja=s['silhouette'],palette_main=f['palette'][:2],palette_accents=f['palette'][2:],
                     palette_status='retain_existing_palette_direction' if old else 'production_proposal',
-                    face_expression_ja=f['face'],anatomy_counts=anatomy,anatomy_connections_ja=f['connection'],
+                    face_expression_ja=f['face'],anatomy_counts=anatomy,anatomy_connections_ja=connection,
                     anatomy_scope_ja='数と接続は原画で確認できる部分を維持。未確認部分は制作案。' if old else '全構造が今回の制作案。未制作の画像で確認済みとは扱わない。',
                     view_invariants=dict(front_ja='顔・前側の色面：'+f['face']+' 識別点：'+s['mark'],
-                        back_ja='背面でも保つ輪郭：'+s['silhouette']+'。'+f['connection'],
-                        side_ja='横面の接続：'+f['connection']+'。'+s['change']),
+                        back_ja='背面でも保つ輪郭：'+s['silhouette']+'。'+connection,
+                        side_ja='横面の接続：'+connection+'。'+s['change']),
                     evolution_changes_ja=s['change'],family_retained_features_ja=f['motif']+'。'+f['face'],
                     sprite_96px_ja=s['silhouette']+'。'+s['mark']+'を太い色面で残し、細い陰影より器官の重なりを優先。',
-                    icon_32px_ja=s['mark']+'を最優先。細部を省略しても付け根と本数の設計は変えない。',
+                    icon_32px_ja=s.get('icon',s['mark']+'を最優先。細部を省略しても付け根と本数の設計は変えない。'),
                     differentiation_ja=f['contrast'],production_difficulty_ja=f['notes'],
                     art_adoption=art_state(sid,old,f,i)),
                 provenance=dict(origin='existing_with_proposed_details' if old else 'new_production_proposal',
@@ -277,9 +282,11 @@ def build():
             field_usage_rule_proposal='探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。') for k,v in FIELD.items()],
         time_policy=dict(status='production_proposal',clock='game_internal',advance='安全地点で無償待機し昼・夕・夜を選べる。現実時刻・日付へ依存しない。'),
         return_safety_policy=dict(status='production_proposal',rules_ja=[
-            'つた・岩の仕掛けは帰路の開通を保持する。','水上で最後のなみわたりを失う忘却・預け入れ・逃がす操作を不可にする。',
+            'つた・岩の仕掛けは帰路の開通を保持する。','水上と水路で隔てられた岸で、最後のなみわたりを失う忘却・預け入れ・逃がす操作を不可にする。',
             '技のない個体や預かりからの遠隔探索は許可しない。','非常帰還は到達済み入口のみ。未開通の先へ進む代替手段にしない。',
-            '回復施設で必要な通常種の再捕獲と無償再習得へ戻れる。','複数の探索技を要する必須区間は最大2種類を目標とする。実マップ未制作。']),
+            '回復施設で必要な通常種の再捕獲と無償再習得へ戻れる。','複数の探索技を要する必須区間は最大2種類を目標とする。実マップ未制作。',
+            '灯火は帰路に必要な状態を保存する。中断再開後も帰路の岩・つた・灯火の開通状態と到達済み入口を復元する。',
+            '孤立した岸・全手持ち戦闘不能・技忘却・手持ち変更後は、到達済みの安全な入口へ非常帰還できる案。帰還先を保存し、そこから回復施設へ徒歩で戻れる配置にする。']),
         evolution_sites=[
             dict(id='site_glass_kiln',name_ja='ヒノワ旧窯観察台',region_id='region_hinowa',unlock_story_rank=35,access_required_gate_ids=['field_ember'],
                  repeatable=True,consumable_required=False,status='production_proposal',access_ja='灯火通路開通後の徒歩の旧窯。調べる操作で進化し、何度でも再取得可。'),
@@ -313,7 +320,7 @@ def write_tables(cat):
     secondary=collections.Counter(s['secondary_type'] for s in all_s if s['secondary_type'])
     roles=collections.Counter(s['battle']['role_id'] for s in all_s)
     lines=['# MONORICA 全156種設計表 v0.1','',
-      '2026-11-02（日本時間）。全156種を記述した**制作案**。既存15種のID・名前・確定した御三家進化条件を維持し、141種を追加。採用済み原画と今回の文字設計の採用は別。画像生成・ドット制作・ゲーム実装・Git操作・公開は行っていない。','',
+      '2026-11-02作成、2026-11-04設計レビュー反映（日本時間）。全156種を記述した**制作案**。既存15種のID・名前・確定した御三家進化条件を維持し、141種を追加。採用済み原画と文字設計案の状態は各カードを参照。レビュー記録は[SPECIES_REVIEW_v0.1.md](SPECIES_REVIEW_v0.1.md)。','',
       '詳細は [全種詳細](SPECIES_DESIGN_DETAILS_v0.1.md)、[JSON](../content/planning/species-catalog_v0.1.json)、[CSV](../content/planning/species-catalog_v0.1.csv)、[共通スキーマ](../content/planning/species-catalog_v0.1.schema.json)。','',
       '## 配分と数え方','',
       '御三家9＋カザミ12＋ミナセ18＋ヒノワ18＋カナト18＋ツキシロ18＋サナギ18＋アカツキ15＋ホシミ12＋シズナ9＋メグリ9＝156。元の地域配分から変更なし。各進化形は1種、色・性別・姿勢差分は加算しない。','',
@@ -326,7 +333,7 @@ def write_tables(cat):
     lines += ['', '複合種は属性登場枠に2回数える。種数156とは別の集計。主属性は9〜16種で、単独属性と複合属性を混ぜた。御三家の最終複合属性は未決定のため、この版では元の単属性候補を保持。','',
       '| 戦闘役割 | 種数 |','|---|---:|']
     for rid,v in ROLES.items(): lines.append(f'| {v[0]} | {roles[rid]} |')
-    lines += ['', '役割は系列内で継承する主軸。具体的な種族値・技威力・最終的な強さは未設定。比較可能な相性倍率は既存表から計算し、特性や道具は含めない。','',
+    lines += ['', '役割は系列の主軸を基本とし、カワミオは速い交代、マユシラは繭の特殊受けへ変化する制作案。具体的な種族値・技威力・最終的な強さは未設定。比較可能な相性倍率は既存表から計算し、特性や道具は含めない。','',
       '## 探索と入手の設計','',
       '序盤に草のツルモグ、水のミズッタ、雷のココイル、風のハネリを通常捕獲でき、御三家の選択を補う。12属性の基礎形はヒノワ到達までに全て通常種から取得可能な制作案。','',
       '| 必須技の案 | 通常種の主な提供元 | 最初の講習 | 必要地点 |','|---|---|---|---|']
