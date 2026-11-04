@@ -11,11 +11,11 @@
   "counts": {
     "assigned": 28,
     "generated": 3,
-    "github_image_readback_verified": 2,
-    "incomplete": 26
+    "github_image_readback_verified": 3,
+    "incomplete": 25
   },
   "status": "in_progress",
-  "next_species_id": "wild_amber_weevil_01",
+  "next_species_id": "wild_amber_weevil_02",
   "constraints": [
     "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
     "既存画像・runtime・共通設計・共通台帳は変更しない。",
@@ -131,12 +131,16 @@
         "美術採用待ち。閉殻下の翅2枚は外観で全数確認できない。"
       ],
       "github_readback": {
-        "status": "not_attempted",
-        "sha256_match": null,
-        "byte_count_match": null
+        "status": "verified_from_github_fetched_commit_blob",
+        "sha256_match": true,
+        "byte_count_match": true,
+        "commit": "a65f5a1d5c34f477fc3b4c4b8e38768643b70041",
+        "bytes": 1290637,
+        "sha256": "d1d034f2b6dbc533d420f558bd132db16aece7e15082e475a6989c07e609d691",
+        "date_jst": "2026-11-05"
       },
-      "image_save_commit": null,
-      "status": "生成済み未保存",
+      "image_save_commit": "a65f5a1d5c34f477fc3b4c4b8e38768643b70041",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
