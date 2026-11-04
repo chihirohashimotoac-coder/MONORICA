@@ -526,22 +526,21 @@
       "name": "ツユマキ",
       "species_id": "wild_mist_snail_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_mist_snail_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1424955,
+      "sha256": "53dafac6e67053b5b742b68039e7c45fc48432cef866c1543d4e88fe7960e6a8",
+      "visual_checks": [
+        "保存本体の全身3ビューを目視。頭の目付き触角2、背殻1、連続する腹足1面、脚/翼/尾なし。",
+        "霞青の体・真珠白渦殻・藍輪郭、薄い霧の縁と小口を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "殻の渦の立体的な巻き方向の完全一致と霧の微細な形は最終確認待ち。横図の遠側触角は重なる。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -549,7 +548,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
