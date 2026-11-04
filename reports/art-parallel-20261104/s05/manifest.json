@@ -5,7 +5,7 @@
   "art_state": "pending_user_review",
   "counts": {
     "assigned": 27,
-    "generated": 0,
+    "generated": 1,
     "saved_confirmed": 0,
     "incomplete": 27
   },
@@ -16,21 +16,21 @@
       "name": "ミチコロ",
       "stage": "1/2",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_metro_isopod_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_01/model_sheet_v0.1.png",
       "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checked": [],
+      "width": 1995,
+      "height": 788,
+      "mode": "RGB",
+      "bytes": 1538855,
+      "sha256": "32c0f14a8413cd4054cbf564430cc473d6284101def5e8b5bf1a7f4156ab7cd1",
+      "visual_checked": [
+        "前3/4・後3/4・横の3ビュー、全身と触角が枠内、文字なし",
+        "修正後は横の背板7枚と手前脚7本を目視。三面で石灰・青緑の色面と低い外形を維持"
+      ],
       "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
+        "反対側の脚は重なりがあり14本全ての個別描き分けは確認しにくい",
+        "GitHub画像本体読み戻し"
       ],
       "github_readback": {
         "status": "未実行",
@@ -38,8 +38,9 @@
         "bytes_match": null
       },
       "saved_commit": null,
-      "status": "未着手",
-      "adoption_state": "pending_user_review"
+      "status": "生成済み未保存",
+      "adoption_state": "pending_user_review",
+      "revision_prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_metro_isopod_01_fix01.txt"
     },
     {
       "dex_number": 131,
