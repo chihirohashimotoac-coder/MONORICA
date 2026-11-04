@@ -1,6 +1,6 @@
 # s01 レビュー一覧
 
-担当30種／保存確認済み10種／未完了20種。すべてpending_user_review。
+担当30種／保存確認済み11種／未完了19種。すべてpending_user_review。
 
 | 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
@@ -14,7 +14,7 @@
 | 023 | wild_reed_crane_02 | ササナギ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_reed_crane_02/model_sheet_v0.1.png) |
 | 024 | wild_reed_crane_03 | ミナツルネ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_reed_crane_03/model_sheet_v0.1.png) |
 | 025 | wild_lock_crab_01 | カチコバ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_01/model_sheet_v0.1.png) |
-| 026 | wild_lock_crab_02 | セキバサミ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png) |
+| 026 | wild_lock_crab_02 | セキバサミ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png) |
 | 027 | wild_lock_crab_03 | ミトガニス | 未着手 | 未生成 |
 | 028 | wild_lotus_frog_01 | ハスプク | 未着手 | 未生成 |
 | 029 | wild_lotus_frog_02 | ウキハスネ | 未着手 | 未生成 |

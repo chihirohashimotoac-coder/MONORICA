@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 10,
-    "incomplete": 20
+    "saved_verified": 11,
+    "incomplete": 19
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -348,12 +348,13 @@
         "前図の遠側歩脚の一部が小鋏や殻で隠れる。細い付け根の最終美術確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1873648,
+        "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "ab5ba40921dddcbc4dfd7f0135ffed2c8e4ed791",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
