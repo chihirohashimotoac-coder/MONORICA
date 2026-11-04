@@ -1,0 +1,433 @@
+{
+  "schema_version": "0.1",
+  "date_jst": "2026-11-04",
+  "repository": "chihirohashimotoac-coder/MONORICA",
+  "branch": "work/species-review-v013-20261103",
+  "starting_commit": "ae9b0c60aa2321a5d35d7c16c86252b1b3ffabdb",
+  "status": "blocked_on_previous_session_image_recovery",
+  "latest_authorized_goal_ja": "全156種を通しで制作し、ユーザーがまとめて確認して気になる部分を個別修正。既存成果物を欠損させない。",
+  "verified_scope_ja": [
+    "GitHub最新PR #2・全4ブランチ・作業ブランチの再帰ツリーを確認。",
+    "保存済みファイル全体の2026-11-04分とMonsterRPGフォルダー全14件を列挙。新画像の登録は6件。",
+    "画像バイトの取得・寸法・SHA-256・目視は今回は未実施。",
+    "前回クラウド実行領域のファイルはこのセッションから確認できない。"
+  ],
+  "counts": {
+    "runtime_png_git_entries": 19,
+    "existing_model_sheet_git_entries": 12,
+    "existing_model_sheet_species_ids": 9,
+    "new_image_persistent_records": 6,
+    "new_image_total_size_bytes": 9109081,
+    "expected_species": 156
+  },
+  "prior_session_claims": [
+    {
+      "claimed_missing_species_count": 131,
+      "evidence": "retrieved_prior_assistant_statement",
+      "status": "unverified",
+      "note_ja": "実体・種別一覧・生成ログ・保存先・ファイルハッシュは取得できていない。131を消失確定数や完成済み数に使用しない。156種の進捗との数の突合も未完了。"
+    }
+  ],
+  "confirmed_new_image_references": [
+    {
+      "species_id": "starter_flower_hare_02",
+      "dex": 2,
+      "name_ja": "ハナリット",
+      "id": "file_00000000def0820bb3aad976c127f933",
+      "kind": "file",
+      "name": "ハナリット 三面図モデルシート.png",
+      "path": "/MonsterRPG/ハナリット 三面図モデルシート.png",
+      "file_id": "file_00000000def0820bb3aad976c127f933",
+      "library_file_id": "libfile_ef9f7ab2bb6081918b6d1488e0983e27",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1417263,
+      "created_at": "2026-11-04T03:24:12.500547+00:00",
+      "modified_at": "2026-11-04T03:24:12.500547+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    },
+    {
+      "species_id": "starter_flower_hare_03",
+      "dex": 3,
+      "name_ja": "フロレーヌ",
+      "id": "file_00000000a96c820b849ef12852d1351a",
+      "kind": "file",
+      "name": "花咲く精霊兎フロレーヌ三面図.png",
+      "path": "/MonsterRPG/花咲く精霊兎フロレーヌ三面図.png",
+      "file_id": "file_00000000a96c820b849ef12852d1351a",
+      "library_file_id": "libfile_ec098fd6840881918cf6ced883672dfa",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1618686,
+      "created_at": "2026-11-04T03:24:15.873940+00:00",
+      "modified_at": "2026-11-04T03:24:15.873940+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    },
+    {
+      "species_id": "starter_ember_wyvern_02",
+      "dex": 5,
+      "name_ja": "フレイガ",
+      "id": "file_0000000026f4820b968d48213ff9c781",
+      "kind": "file",
+      "name": "フレイガ・太陽印の六肢炎竜三面図.png",
+      "path": "/MonsterRPG/フレイガ・太陽印の六肢炎竜三面図.png",
+      "file_id": "file_0000000026f4820b968d48213ff9c781",
+      "library_file_id": "libfile_6b650159b7048191b16783af7493204c",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1480113,
+      "created_at": "2026-11-04T03:24:19.282149+00:00",
+      "modified_at": "2026-11-04T03:24:19.282149+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    },
+    {
+      "species_id": "starter_ember_wyvern_03",
+      "dex": 6,
+      "name_ja": "グレンヴァル",
+      "id": "file_0000000056d0820b85594f65d79523ba",
+      "kind": "file",
+      "name": "グレンヴァル 太陽印の炎竜三面図.png",
+      "path": "/MonsterRPG/グレンヴァル 太陽印の炎竜三面図.png",
+      "file_id": "file_0000000056d0820b85594f65d79523ba",
+      "library_file_id": "libfile_d105a36a262881918e568c3a15b419fd",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1708723,
+      "created_at": "2026-11-04T03:24:26.261690+00:00",
+      "modified_at": "2026-11-04T03:24:26.261690+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    },
+    {
+      "species_id": "starter_tide_bear_02",
+      "dex": 8,
+      "name_ja": "ナミグマ",
+      "id": "file_00000000cb54820ba101a25df526f21b",
+      "kind": "file",
+      "name": "ナミグマの波盾三面図.png",
+      "path": "/MonsterRPG/ナミグマの波盾三面図.png",
+      "file_id": "file_00000000cb54820ba101a25df526f21b",
+      "library_file_id": "libfile_3ab69295b1e0819188ef9c7b06681f08",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1362726,
+      "created_at": "2026-11-04T03:24:22.729836+00:00",
+      "modified_at": "2026-11-04T03:24:22.729836+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    },
+    {
+      "species_id": "starter_tide_bear_03",
+      "dex": 9,
+      "name_ja": "タイドガル",
+      "id": "file_000000003628820b8f096512dcbfb97a",
+      "kind": "file",
+      "name": "タイドガル 波盾の守護熊.png",
+      "path": "/MonsterRPG/タイドガル 波盾の守護熊.png",
+      "file_id": "file_000000003628820b8f096512dcbfb97a",
+      "library_file_id": "libfile_0cdca3869db8819190f00ef336734d9b",
+      "library_artifact_type": "image",
+      "version_id": null,
+      "mime_type": "image/png",
+      "size_bytes": 1521570,
+      "created_at": "2026-11-04T03:24:29.721662+00:00",
+      "modified_at": "2026-11-04T03:24:29.721662+00:00",
+      "model_generated": true,
+      "surface": "library",
+      "verification": "persistent_file_metadata_confirmed; bytes_not_materialized_or_hashed",
+      "github_binary_imported": false,
+      "visual_adoption": "pending_user_review"
+    }
+  ],
+  "existing_model_sheets": [
+    {
+      "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b4bf0186601856f5c639ed70a4de09c4f57cf22",
+      "size": 1419348,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/8b4bf0186601856f5c639ed70a4de09c4f57cf22"
+    },
+    {
+      "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a4664a48c6d9d053efb9f49d2d33e1ce3673d23",
+      "size": 1537212,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/6a4664a48c6d9d053efb9f49d2d33e1ce3673d23"
+    },
+    {
+      "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c43038e24800d2ffcef913c4ffd1df17f5178681",
+      "size": 1362319,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/c43038e24800d2ffcef913c4ffd1df17f5178681"
+    },
+    {
+      "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f9dfa250f908db4f24a10e1ea6d7fcddde24d52",
+      "size": 1695990,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/8f9dfa250f908db4f24a10e1ea6d7fcddde24d52"
+    },
+    {
+      "path": "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b5aafb1070318483af793fc3c16fac0efd6cfb",
+      "size": 1353713,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/60b5aafb1070318483af793fc3c16fac0efd6cfb"
+    },
+    {
+      "path": "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d5135a5fcd42cb8ae31b59c00efaa8530ee2b0",
+      "size": 1409564,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/51d5135a5fcd42cb8ae31b59c00efaa8530ee2b0"
+    },
+    {
+      "path": "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7534ca13cc64bd7f4f616c0221ba07e5da51693f",
+      "size": 1367280,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/7534ca13cc64bd7f4f616c0221ba07e5da51693f"
+    },
+    {
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dbf6bc598ecd9b2a2b55b827b9b4926a47eb1a5",
+      "size": 1439271,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/2dbf6bc598ecd9b2a2b55b827b9b4926a47eb1a5"
+    },
+    {
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22898185e82a95d4dae1e493d730cdf1e9b417d7",
+      "size": 1667088,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/22898185e82a95d4dae1e493d730cdf1e9b417d7"
+    },
+    {
+      "path": "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53075f45e4fd38ad044ad239cf70840383a0602a",
+      "size": 1455056,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/53075f45e4fd38ad044ad239cf70840383a0602a"
+    },
+    {
+      "path": "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f82d9467d94716fe09154bbaed504ba529b242",
+      "size": 1286685,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/a7f82d9467d94716fe09154bbaed504ba529b242"
+    },
+    {
+      "path": "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55a5addc7233088bbb8f77ac8c42af7f2cf790b3",
+      "size": 1333012,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/55a5addc7233088bbb8f77ac8c42af7f2cf790b3"
+    }
+  ],
+  "existing_runtime_pngs": [
+    {
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6b680d20b65bb4bd6bb0f60739f3b24dcb90bcb",
+      "size": 5129,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/e6b680d20b65bb4bd6bb0f60739f3b24dcb90bcb"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a00a8132c15e3cdc0a157d27272b1b8c99fda641",
+      "size": 5830,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/a00a8132c15e3cdc0a157d27272b1b8c99fda641"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_ember_wyvern_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a87e8de52f7aee36377c617eb50d693564a06c",
+      "size": 1474,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/41a87e8de52f7aee36377c617eb50d693564a06c"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_flower_hare_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80ac8f390f63367281ecde8aa6c9310c4741423",
+      "size": 4516,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/f80ac8f390f63367281ecde8aa6c9310c4741423"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_flower_hare_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e988dfb9a441032e6d6f37ec8cba9f1abd401b",
+      "size": 5305,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/55e988dfb9a441032e6d6f37ec8cba9f1abd401b"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_flower_hare_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7cf8057696ffc69d44b680afd20f79efd3c1d3",
+      "size": 1350,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/1e7cf8057696ffc69d44b680afd20f79efd3c1d3"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_tide_bear_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef0e7cc1692327fe99333a3191185398d563f664",
+      "size": 4843,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/ef0e7cc1692327fe99333a3191185398d563f664"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_tide_bear_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "071da0bc9646d3eb59eba4d7cdd0ef479ccbf699",
+      "size": 6154,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/071da0bc9646d3eb59eba4d7cdd0ef479ccbf699"
+    },
+    {
+      "path": "assets/runtime/monsters/starter_tide_bear_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21aa928a945d28561da8c4bdc691fac397994756",
+      "size": 1378,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/21aa928a945d28561da8c4bdc691fac397994756"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea15f22ed52ad2b58a85b5d08924140ef8bb0de3",
+      "size": 4665,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/ea15f22ed52ad2b58a85b5d08924140ef8bb0de3"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35b2d18f5984a150be3bd730b48c9c42a5c7b09f",
+      "size": 4788,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/35b2d18f5984a150be3bd730b48c9c42a5c7b09f"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_breeze_bird_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71ba870217ec677282e5b6708ad9b479911ac39a",
+      "size": 1313,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/71ba870217ec677282e5b6708ad9b479911ac39a"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49683531b755bc0ec26c17f284cf96826dea1821",
+      "size": 4549,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/49683531b755bc0ec26c17f284cf96826dea1821"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a4bac773ef1441be2d8a5083413097d4dbf080",
+      "size": 5386,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/41a4bac773ef1441be2d8a5083413097d4dbf080"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_seed_squirrel_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f88d7bf6a1bfa8aacd33affe8344359b53a060",
+      "size": 1426,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/91f88d7bf6a1bfa8aacd33affe8344359b53a060"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_vine_mole_01/back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b879955c35aa68593c1d91040e7f62221d9f53ac",
+      "size": 4464,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/b879955c35aa68593c1d91040e7f62221d9f53ac"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_vine_mole_01/front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2159cdedc8ea9ba6c06dd9b61286c395e253254",
+      "size": 5204,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/b2159cdedc8ea9ba6c06dd9b61286c395e253254"
+    },
+    {
+      "path": "assets/runtime/monsters/wild_vine_mole_01/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "251b88df30553834bec393e43634366e50460cd1",
+      "size": 1127,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/251b88df30553834bec393e43634366e50460cd1"
+    },
+    {
+      "path": "assets/runtime/ui/battle/frame.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "445a03f52a001baf6d7cf85ecdf42c2e21988424",
+      "size": 4138,
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/445a03f52a001baf6d7cf85ecdf42c2e21988424"
+    }
+  ],
+  "mutations_ja": [
+    "本報告・Handoff・開始文を追加し、LATEST_HANDOFF.mdのみ入口更新する。",
+    "画像・設計データ・既存採用状態は変更しない。新画像生成は本セッション未実施。"
+  ],
+  "checks_not_run": [
+    "tools/build_species_catalog_v01.py",
+    "tools/validate_species_catalog_v01.py",
+    "tools/validate_assets.py",
+    "tools/validate_preproduction.py"
+  ],
+  "next_actions_ja": [
+    "前回セッションのクラウド作業領域または保存済みZIPから、生成画像と生成ログを回収する。",
+    "回収物は既存素材を上書きせず別パスへ保存。種ID・サイズ・SHA-256を取得して照合しGitHubへ画像バイトを保存・再確認する。",
+    "6新画像は上記永続ファイルIDで回収し、既存原画に上書きせず候補としてGitHubへ登録する。",
+    "画像実体の照合が終わってから未制作分だけを続行する。再生成で未発見分を置き換えない。"
+  ]
+}
