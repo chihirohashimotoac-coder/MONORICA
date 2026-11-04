@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-05",
-  "status": "bytes_materialized_pending_github_readback",
+  "status": "preserved_15_originals_readback_verified",
   "github_existing_9": [
     {
       "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
@@ -15,7 +15,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1537212,
-      "sha256": "2df05475544cb4fbd35ed07ecd9f2326809d765a6ec15d2c9375972235ea2dde"
+      "sha256": "2df05475544cb4fbd35ed07ecd9f2326809d765a6ec15d2c9375972235ea2dde",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1537212,
+        "sha256": "2df05475544cb4fbd35ed07ecd9f2326809d765a6ec15d2c9375972235ea2dde"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "starter_ember_wyvern_01"
     },
     {
       "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
@@ -30,7 +39,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1695990,
-      "sha256": "2eb01f8b836fd1c467eb929be62679e0f4d3867373ef507045e4be9d3e66474c"
+      "sha256": "2eb01f8b836fd1c467eb929be62679e0f4d3867373ef507045e4be9d3e66474c",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1695990,
+        "sha256": "2eb01f8b836fd1c467eb929be62679e0f4d3867373ef507045e4be9d3e66474c"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "starter_flower_hare_01"
     },
     {
       "path": "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
@@ -45,7 +63,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1353713,
-      "sha256": "a6558302e4de5085950577982bf932b9dc4e80eecfb10e0ee509dbd5fb9f2a24"
+      "sha256": "a6558302e4de5085950577982bf932b9dc4e80eecfb10e0ee509dbd5fb9f2a24",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1353713,
+        "sha256": "a6558302e4de5085950577982bf932b9dc4e80eecfb10e0ee509dbd5fb9f2a24"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "starter_tide_bear_01"
     },
     {
       "path": "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
@@ -60,7 +87,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1409564,
-      "sha256": "6e0b2683a35f1b7e154a342255215f8af37751120be9e69b86e37a72d59187ae"
+      "sha256": "6e0b2683a35f1b7e154a342255215f8af37751120be9e69b86e37a72d59187ae",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1409564,
+        "sha256": "6e0b2683a35f1b7e154a342255215f8af37751120be9e69b86e37a72d59187ae"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "wild_breeze_bird_01"
     },
     {
       "path": "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
@@ -75,7 +111,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1367280,
-      "sha256": "8b555a79c5c7ce13944eb6fe8f9f256b5d887a7332c26ab8e51cbc3cba109618"
+      "sha256": "8b555a79c5c7ce13944eb6fe8f9f256b5d887a7332c26ab8e51cbc3cba109618",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1367280,
+        "sha256": "8b555a79c5c7ce13944eb6fe8f9f256b5d887a7332c26ab8e51cbc3cba109618"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "pending_user_review",
+      "species_id": "wild_coil_dormouse_01"
     },
     {
       "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
@@ -90,7 +135,16 @@
       "height": 818,
       "mode": "RGB",
       "size_bytes": 1667088,
-      "sha256": "2f51f9991b102f69d85f927cff80c84113368032551c183bec215d4a79f9be06"
+      "sha256": "2f51f9991b102f69d85f927cff80c84113368032551c183bec215d4a79f9be06",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1667088,
+        "sha256": "2f51f9991b102f69d85f927cff80c84113368032551c183bec215d4a79f9be06"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "pending_user_review",
+      "species_id": "wild_dusk_glider_01"
     },
     {
       "path": "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
@@ -105,7 +159,16 @@
       "height": 817,
       "mode": "RGB",
       "size_bytes": 1455056,
-      "sha256": "31d8893e41711a27e38577f7eb69abe01d21e97a8e45732f2df475900563c3d2"
+      "sha256": "31d8893e41711a27e38577f7eb69abe01d21e97a8e45732f2df475900563c3d2",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1455056,
+        "sha256": "31d8893e41711a27e38577f7eb69abe01d21e97a8e45732f2df475900563c3d2"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "wild_seed_squirrel_01"
     },
     {
       "path": "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
@@ -120,7 +183,16 @@
       "height": 793,
       "mode": "RGB",
       "size_bytes": 1286685,
-      "sha256": "695b9d7696c9a6a21bd47f0bdb92e20ff58644166bf367ca7ff4977cb7afcdbc"
+      "sha256": "695b9d7696c9a6a21bd47f0bdb92e20ff58644166bf367ca7ff4977cb7afcdbc",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1286685,
+        "sha256": "695b9d7696c9a6a21bd47f0bdb92e20ff58644166bf367ca7ff4977cb7afcdbc"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "pending_user_review",
+      "species_id": "wild_stream_otter_01"
     },
     {
       "path": "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
@@ -135,7 +207,16 @@
       "height": 788,
       "mode": "RGB",
       "size_bytes": 1333012,
-      "sha256": "060363a944ca3453dc18fb0cb9fb8eedb12a6ef5774ef80ba095bb0e454b5fb0"
+      "sha256": "060363a944ca3453dc18fb0cb9fb8eedb12a6ef5774ef80ba095bb0e454b5fb0",
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1333012,
+        "sha256": "060363a944ca3453dc18fb0cb9fb8eedb12a6ef5774ef80ba095bb0e454b5fb0"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8",
+      "adoption_status": "static_art_adopted",
+      "species_id": "wild_vine_mole_01"
     }
   ],
   "library_existing_6": [
@@ -144,7 +225,7 @@
       "species_id": "starter_flower_hare_02",
       "name_ja": "ハナリット",
       "library_file_id": "libfile_ef9f7ab2bb6081918b6d1488e0983e27",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -157,14 +238,21 @@
       "sha256": "27732aeebf9cd4022e4ef6f6770ba15393616c5213de795db15667de6312bbe0",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1417263,
+        "sha256": "27732aeebf9cd4022e4ef6f6770ba15393616c5213de795db15667de6312bbe0"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     },
     {
       "dex": 3,
       "species_id": "starter_flower_hare_03",
       "name_ja": "フロレーヌ",
       "library_file_id": "libfile_ec098fd6840881918cf6ced883672dfa",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -177,14 +265,21 @@
       "sha256": "14ce5e0f4d5bd3ba5d925ea5bb557523bc86946ab729a58b75ae248571ea789b",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1618686,
+        "sha256": "14ce5e0f4d5bd3ba5d925ea5bb557523bc86946ab729a58b75ae248571ea789b"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     },
     {
       "dex": 5,
       "species_id": "starter_ember_wyvern_02",
       "name_ja": "フレイガ",
       "library_file_id": "libfile_6b650159b7048191b16783af7493204c",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -197,14 +292,21 @@
       "sha256": "0ea407a6ab571ad35645a3e20247ecb98d0467dd68e7e35b65a9848f6c759e62",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1480113,
+        "sha256": "0ea407a6ab571ad35645a3e20247ecb98d0467dd68e7e35b65a9848f6c759e62"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     },
     {
       "dex": 6,
       "species_id": "starter_ember_wyvern_03",
       "name_ja": "グレンヴァル",
       "library_file_id": "libfile_d105a36a262881918e568c3a15b419fd",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -217,14 +319,21 @@
       "sha256": "6d16ebdeee1d8beb591a203354280820b0be473a03915b0aa8c017cfe5da4de8",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1708723,
+        "sha256": "6d16ebdeee1d8beb591a203354280820b0be473a03915b0aa8c017cfe5da4de8"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     },
     {
       "dex": 8,
       "species_id": "starter_tide_bear_02",
       "name_ja": "ナミグマ",
       "library_file_id": "libfile_3ab69295b1e0819188ef9c7b06681f08",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -237,14 +346,21 @@
       "sha256": "0e0482af42c730e2e8c7830fee5c99d2b7eba7f4180f03c34a254579ab68cae1",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1362726,
+        "sha256": "0e0482af42c730e2e8c7830fee5c99d2b7eba7f4180f03c34a254579ab68cae1"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     },
     {
       "dex": 9,
       "species_id": "starter_tide_bear_03",
       "name_ja": "タイドガル",
       "library_file_id": "libfile_0cdca3869db8819190f00ef336734d9b",
-      "status": "本体取得・計測済み/GitHub読み戻し待ち",
+      "status": "元画像GitHub保存・本体読み戻し確認済み",
       "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
       "current_session_materialization_attempted": true,
       "copied_to_preserved": true,
@@ -257,7 +373,19 @@
       "sha256": "97019fc567e224449f7dccfcc436e78c2d2ed7cf5e56cef9dd3f8532d2153128",
       "visual_checks": [
         "画像本体を開き3ビュー・全身・種同一性を目視。再生成せず元PNGをそのまま複製。"
-      ]
+      ],
+      "github_readback": {
+        "status": "verified",
+        "method": "HTTPS full preserved original image body pinned commit",
+        "size_bytes": 1521570,
+        "sha256": "97019fc567e224449f7dccfcc436e78c2d2ed7cf5e56cef9dd3f8532d2153128"
+      },
+      "save_commit": "4e1455be6918df0b5a7aa81f656fe11e760913a8"
     }
-  ]
+  ],
+  "counts": {
+    "github_originals": 9,
+    "library_originals": 6,
+    "preserved_verified": 15
+  }
 }
