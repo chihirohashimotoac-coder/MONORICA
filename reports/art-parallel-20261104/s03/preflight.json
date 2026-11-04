@@ -1,0 +1,40 @@
+{
+  "date_jst": "2026-11-04",
+  "status": "blocked_before_generation",
+  "checks": {
+    "reference_sha_retrieved": true,
+    "design_branch_head_at_start": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+    "difference_from_reference": "none_at_initial_observation",
+    "assigned_count": 28,
+    "unique_ids": 28,
+    "contiguous_dex": true,
+    "lineages_complete": true,
+    "existing_assigned_source_entries_at_reference": 0,
+    "cloud_checkout_created": false,
+    "images_generated": 0,
+    "image_readback_verified": 0,
+    "validate_assets": "未実行",
+    "validate_preproduction": "未実行",
+    "runtime_validation": "未実行"
+  },
+  "observed_environment": {
+    "exec_command": "Windows PowerShell; Get-Location in OS temp succeeded; no repository files read or written locally",
+    "node_repl": "Windows; cwd points to OneDrive project folder; tmpDir Windows AppData/Local/Temp",
+    "cloud_environment_status_tool_exposed": false,
+    "cloud_network_policy_file_found": false,
+    "docker_command_found": false,
+    "independent_cloud_checkout": false
+  },
+  "tool_availability": {
+    "native_image_generation": "exposed, not invoked",
+    "github_connector": "reads and dedicated branch creation succeeded",
+    "ui_model_and_effort_selection": "not performed; cannot verify or change UI settings"
+  },
+  "limits_ja": [
+    "指定されたクラウド内独立チェックアウトを作成できる実行機能が、このセッションには見つからない。",
+    "Windowsローカル実行先をクラウドと扱わない。PC内・OneDriveへ依存する制作は行わない。",
+    "画像生成自体の失敗・回数制限・GitHubバイナリ保存の失敗は観測していない。未試行と区別する。",
+    "保存経路の最初の1種による一貫検証は未実行。大量生成へ進めない。"
+  ],
+  "next_species": "wild_coolant_slug_01"
+}
