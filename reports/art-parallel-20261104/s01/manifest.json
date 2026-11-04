@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 20,
-    "incomplete": 10
+    "saved_verified": 21,
+    "incomplete": 9
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -667,12 +667,13 @@
         "前背で胴の重なりによる分節の見え方が異なる。細かな節間隔の立体一致は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1262212,
+        "sha256": "a84c5fb1b5ccf289681699e72b046f955f023c2031f53d99f57889c212c2bda4"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "2604cc9c2b8211c42bc8f17d88c0dbc9b19f5e68",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {

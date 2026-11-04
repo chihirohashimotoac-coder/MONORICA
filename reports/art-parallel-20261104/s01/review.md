@@ -1,6 +1,6 @@
 # s01 レビュー一覧
 
-担当30種／保存確認済み20種／未完了10種。すべてpending_user_review。
+担当30種／保存確認済み21種／未完了9種。すべてpending_user_review。
 
 | 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
@@ -24,7 +24,7 @@
 | 033 | wild_mist_snail_02 | キリマイム | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_mist_snail_02/model_sheet_v0.1.png) |
 | 034 | wild_lantern_jelly_01 | ホヤリネ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_01/model_sheet_v0.1.png) |
 | 035 | wild_lantern_jelly_02 | ミナランプ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_02/model_sheet_v0.1.png) |
-| 036 | wild_bog_leech_01 | ペタリム | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png) |
+| 036 | wild_bog_leech_01 | ペタリム | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png) |
 | 037 | wild_bog_leech_02 | シブネリ | 未着手 | 未生成 |
 | 038 | wild_reed_whistle_01 | アシフエラ | 未着手 | 未生成 |
 | 039 | wild_bubble_moth_01 | アワハリカ | 未着手 | 未生成 |
