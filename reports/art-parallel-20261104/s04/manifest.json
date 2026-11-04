@@ -10,7 +10,7 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 1,
+    "generated": 2,
     "github_image_readback_verified": 1,
     "incomplete": 27
   },
@@ -78,18 +78,22 @@
       "stage": 2,
       "family_stages": 2,
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_prompt_file": null,
-      "image_path": null,
+      "generation_prompt_file": "reports/art-parallel-20261104/s04/prompts/wild_umbra_civet_02.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_02/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_02/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1328620,
+      "sha256": "2bc7831b333d2591ccbc91f05048192977360c5499726f016720839310068417",
+      "visual_checks": [
+        "前3/4・後3/4・横の全身3ビュー、欠けなし。",
+        "四脚・長尾1本、3つの若草色尾縞と長く流れる肩毛を全ビューで目視。",
+        "初期形との顔・配色の継承、上向き弧尾と肩毛の成長差を目視。"
+      ],
       "unverified": [
-        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
-        "GitHub画像保存と画像本体の再取得照合は未実施。"
+        "美術採用はユーザー確認待ち。",
+        "GitHub本体読み戻し待ち。"
       ],
       "github_readback": {
         "status": "not_attempted",
@@ -97,7 +101,7 @@
         "byte_count_match": null
       },
       "image_save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
