@@ -495,22 +495,21 @@
       "name": "スナミオ",
       "species_id": "wild_silt_skate_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_silt_skate_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_silt_skate_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_silt_skate_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1162943,
+      "sha256": "6a5dd3c93f2610c452c4cd1cdd7980a6fa66ed7bc73328b34b1dff84f1f1fbf0",
+      "visual_checks": [
+        "保存本体3ビューを目視。角張る左右胸鰭2が横長菱形を形成、櫂状の板尾1、脚/翼なし。",
+        "初期ドロヒラ原画を参照し、丸い鰭から菱形接地面と長い櫂尾への成長差を修正・確認。点目と泥茶/乳白/青を維持。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "腹側の口は接地姿勢のため見えない。乳白斑の細かい位置の一致は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -518,7 +517,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
