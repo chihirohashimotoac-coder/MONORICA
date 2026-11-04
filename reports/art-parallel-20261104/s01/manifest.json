@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 2,
-    "incomplete": 28
+    "saved_verified": 3,
+    "incomplete": 27
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -100,12 +100,13 @@
         "扇の奥行き・羽根の重なりは最終的な美術確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1488548,
+        "sha256": "c0edc6bd2d9517e14c4dc3ee4407d6cac2ef8831f2c13834ee3fa764a87ea17f"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "a826f1b7aa0acae8bc177e2aaf437262cf4cd8ee",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
@@ -113,22 +114,21 @@
       "name": "カワミオ",
       "species_id": "wild_stream_otter_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_stream_otter_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png",
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1173239,
+      "sha256": "faa842b281ba91e639735e856c14d43763e3a259f68dc59e61e0e1c04ce745f8",
+      "visual_checks": [
+        "保存本体を開き3ビューと全身を目視。短い四脚、腰中央の幅広平尾1、丸耳2とひげを確認。",
+        "初期原画を参照し長胴と尾の成長を確認。水紋は尾上面に限定、肩に盾や模様なし。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "横図も尾の上面が少し見える角度。厳密な投影整合と成長差の十分さはユーザー確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -136,7 +136,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
