@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 3,
-    "incomplete": 27
+    "saved_verified": 4,
+    "incomplete": 26
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -131,12 +131,13 @@
         "横図も尾の上面が少し見える角度。厳密な投影整合と成長差の十分さはユーザー確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1173239,
+        "sha256": "faa842b281ba91e639735e856c14d43763e3a259f68dc59e61e0e1c04ce745f8"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "0510ee210e6a618308ae2c00b12ebd5e80c2fc29",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
