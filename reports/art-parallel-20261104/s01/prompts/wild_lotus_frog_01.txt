@@ -1,0 +1,46 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_lotus_frog_01 ハスプク
+{
+  "motifs_ja": "蓮葉の肩を持つ蛙",
+  "full_body_silhouette_ja": "小さな丸胴に大きな後脚、肩へ葉2枚",
+  "palette_main": [
+    "青緑",
+    "浅緑"
+  ],
+  "palette_accents": [
+    "桃"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "横長の目と笑った幅広口。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "前脚2・後脚2。肩の葉2枚は皮膚のひだで追加肢ではない。尾なし。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：横長の目と笑った幅広口。 識別点：丸口と小さな肩葉",
+    "back_ja": "背面でも保つ輪郭：小さな丸胴に大きな後脚、肩へ葉2枚。前脚2・後脚2。肩の葉2枚は皮膚のひだで追加肢ではない。尾なし。",
+    "side_ja": "横面の接続：前脚2・後脚2。肩の葉2枚は皮膚のひだで追加肢ではない。尾なし。。葉はまだ折り畳む。"
+  },
+  "evolution_changes_ja": "葉はまだ折り畳む。",
+  "family_retained_features_ja": "蓮葉の肩を持つ蛙。横長の目と笑った幅広口。",
+  "sprite_96px_ja": "小さな丸胴に大きな後脚、肩へ葉2枚。丸口と小さな肩葉を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "丸口と小さな肩葉を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "原生域の長い水蛞蝓と違い跳躍と肩葉。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+

@@ -16,7 +16,7 @@
 | 025 | wild_lock_crab_01 | カチコバ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_01/model_sheet_v0.1.png) |
 | 026 | wild_lock_crab_02 | セキバサミ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.2.png) |
 | 027 | wild_lock_crab_03 | ミトガニス | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lock_crab_03/model_sheet_v0.1.png) |
-| 028 | wild_lotus_frog_01 | ハスプク | 未着手 | 未生成 |
+| 028 | wild_lotus_frog_01 | ハスプク | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_01/model_sheet_v0.1.png) |
 | 029 | wild_lotus_frog_02 | ウキハスネ | 未着手 | 未生成 |
 | 030 | wild_silt_skate_01 | ドロヒラ | 未着手 | 未生成 |
 | 031 | wild_silt_skate_02 | スナミオ | 未着手 | 未生成 |

@@ -402,22 +402,21 @@
       "name": "ハスプク",
       "species_id": "wild_lotus_frog_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lotus_frog_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1448594,
+      "sha256": "ad3c7fa5908343aa15deeb544f41bed678cd850d5f2b8218b66ad2f96d08d9d2",
+      "visual_checks": [
+        "保存本体3ビューと全身を目視。前脚2・大後脚2・尾なし、肩の折れた葉状皮膚2枚を確認。",
+        "青緑/浅緑と桃色、幅広い笑い口、丸胴と肩葉の連続性を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "葉脈や頭の斑の微細な位置一致は美術確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -425,7 +424,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
