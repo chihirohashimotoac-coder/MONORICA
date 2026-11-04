@@ -331,22 +331,21 @@
       "name": "セキバサミ",
       "species_id": "wild_lock_crab_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lock_crab_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1873648,
+      "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f",
+      "visual_checks": [
+        "保存本体の全身3ビューを目視。背3/4で歩脚3+3=6、鋏2の接続を確認。余剰の孤立脚を修正済み。",
+        "広い止水板形の大鋏を個体左に固定。前図の画面右/背図の画面左、横図の近側大鋏を確認。右小鋏の追加と板形への修正を実施。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "前図の遠側歩脚の一部が小鋏や殻で隠れる。細い付け根の最終美術確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -354,7 +353,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {

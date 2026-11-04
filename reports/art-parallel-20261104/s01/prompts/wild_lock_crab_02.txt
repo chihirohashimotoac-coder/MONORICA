@@ -1,0 +1,52 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_lock_crab_02 セキバサミ
+{
+  "motifs_ja": "水門の留め金に似た蟹殻",
+  "full_body_silhouette_ja": "横長の殻と片側が厚いはさみ",
+  "palette_main": [
+    "錫灰",
+    "群青"
+  ],
+  "palette_accents": [
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。",
+  "anatomy_counts": {
+    "independent_arms": 2,
+    "legs": 6,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。 識別点：角殻と左右差のあるはさみ",
+    "back_ja": "背面でも保つ輪郭：横長の殻と片側が厚いはさみ。個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。",
+    "side_ja": "横面の接続：個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。。片はさみが止水板形へ。左右差は全視点で固定。"
+  },
+  "evolution_changes_ja": "片はさみが止水板形へ。左右差は全視点で固定。",
+  "family_retained_features_ja": "水門の留め金に似た蟹殻。殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。",
+  "sprite_96px_ja": "横長の殻と片側が厚いはさみ。角殻と左右差のあるはさみを太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "左右差のあるはさみの外形と角殻を残す。個体の左を広くし、脚は接地側をまとめて表す。",
+  "differentiation_ja": "遺構の巻く石ダンゴムシと違い、横歩きと大はさみ。",
+  "production_difficulty_ja": "高：脚は6本、はさみ2本。蟹の慣習で歩脚を8本へ増やさない。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference is juvenile カチコバ. Intermediate セキバサミ has enlarged INDIVIDUAL'S LEFT pincer only. Anatomical left is fixed, never swap with camera: in front view large claw is on viewer RIGHT; in rear view large claw is on viewer LEFT; side view show the LEFT body side with the large left claw near camera, small right claw partly hidden. Exactly 6 walking legs (3 per side) PLUS 2 claws. Shell grows wider clasp ridges as specified. No added antennae/horns/tail. Expose all three near-side walking legs and three far-side leg roots in rear 3/4. Keep original tin-gray/ultramarine/orange palette.
+CORRECTION PASS:
+Correct this intermediate セキバサミ sheet. It must have TWO PINCERS plus SIX WALKING LEGS. The SMALL anatomical-RIGHT pincer is currently missing in front. Add a slim small RIGHT pincer on a clearly separate forearm at the front chest on VIEWER LEFT of the front drawing; show this same small right claw at the far side in rear/side (partly occluded is fine, visible tips). Keep giant anatomical LEFT pincer on VIEWER RIGHT in front and VIEWER LEFT in rear. Change giant left pincer from a round ball into a BROAD FLAT STOP-WATER PLATE SHAPE: squared shield-like claw, wide flat vertical outer surface, short inner thumb, tin/ultramarine/orange palette. Do not make it a third claw or extra walking leg. EXACT 3 walking legs on each body side, 6 total, separate from both pincer forearms. Keep other shell, eyes, smile, pose, white background and three views unchanged. No text.
+CORRECTION PASS 2:
+Fix ONLY walking-leg count, preserve both claws and plate design. In the MIDDLE REAR THREE-QUARTER VIEW, the near side below the large left plate claw currently shows only TWO walking legs. Add the missing THIRD walking leg on that same near body side, immediately behind/under the plate-claw's arm root: a separate silver bent leg with ultramarine pointed foot, reaching down-left with a visible white gap from the two existing near walking legs. Keep all THREE existing far-side walking legs. Result middle view must clearly show SIX walking legs (three near + three far) PLUS TWO claw arms, one giant plate and one small pincer. Reflect the same 3-per-side leg anatomy in the other views using natural occlusion; the side view already shows three near legs and must retain all three. Do not change shell, claw sides, colors, eyes, mouth, layout, white background or add text.
+CORRECTION PASS 3:
+One tiny count correction ONLY to MIDDLE rear-view crab. There are now three clear near-side walking legs (keep all three) and FOUR far-side pointed feet. REMOVE the tiny extra ultramarine triangular foot dangling directly from under the middle-right belly edge, just to the left of the three full silver-jointed far-side legs. It is the short isolated dark-blue point with no visible silver upper leg, closest to the belly center. Erase only that extra isolated foot to white background/clean belly outline. Keep the three complete silver/blue far-side legs, the three complete near-side legs, both claw arms, and all front/side drawings unchanged. Final rear has exactly three near + three far walking legs and two claws. No text.
