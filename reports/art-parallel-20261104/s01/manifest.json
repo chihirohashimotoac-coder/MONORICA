@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 13,
-    "incomplete": 17
+    "saved_verified": 14,
+    "incomplete": 16
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -450,12 +450,13 @@
         "前図は正面に近い浅い3/4角度。肩葉の縁の微細一致はユーザー確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1387817,
+        "sha256": "e05bb7e7b4f99b8aee5b94c2656c94d45ef9bbe3cc6aeffd61e796f8b00bb91b"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "6773cb0d4424f07e0f8707634dcce77ecc0f49de",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
