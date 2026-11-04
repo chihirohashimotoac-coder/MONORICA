@@ -7,11 +7,11 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 0,
+    "generated": 1,
     "saved_verified": 0,
     "incomplete": 28
   },
-  "blocker": "cloud_checkout_executor_not_available",
+  "blocker": null,
   "entries": [
     {
       "dex_number": 74,
@@ -21,28 +21,27 @@
       "stage": 1,
       "stage_count": 1,
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_instruction_file": null,
-      "image_path": null,
+      "generation_instruction_file": "reports/art-parallel-20261104/s03/prompts/wild_coolant_slug_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s03/wild_coolant_slug_01/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s03/wild_coolant_slug_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks_performed": [],
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1281113,
+      "sha256": "b2877dde75c9fe5f08701e6bbc1af6d173ab6fd7912d87004ab204d89580e4c8",
+      "visual_checks_performed": [
+        "生成画像を目視。前3/4・後3/4・横の3ビュー、背ひだ3枚、触角2本、腹足1面、脚・翼・殻なし、全身枠内を確認。"
+      ],
       "unverified_items": [
-        "参照原画本体取得・目視",
-        "画像生成",
-        "寸法・モード・ハッシュ測定",
-        "三面の整合・器官数・接続・全身確認",
-        "GitHub画像本体読み戻し"
+        "ユーザーによる美術採用",
+        "厳密な正投影形状の一致は未測定"
       ],
       "github_readback": {
         "status": "not_performed",
         "reason": "画像未生成"
       },
       "saved_image_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
