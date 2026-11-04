@@ -9,7 +9,7 @@
 |048|wild_spring_steam_01 ユケポン|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png)|保存確認済み：奥側脚は胴に重なるため4本すべての目視計数は未確認 / ユーザーの美術採用は未実施|
 |049|wild_spring_steam_02 ホウユラ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.2.png)|保存確認済み：奥脚すべての付け根と4本の全数は重なりで直接見えない / 弁は成長差を確認。後方への傾きの強さはユーザー確認対象 / ユーザーの美術採用は未実施|
 |050|wild_bell_beetle_01 カネコツ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png)|保存確認済み：飛翔翅2枚は殻内に隠れ直接目視できない / 背殻上の釣り輪と銅模様は生成上の意匠、ユーザー採用前 / ユーザーの美術採用は未実施|
-|051|wild_bell_beetle_02 ドウガロン|未制作|未着手：|
+|051|wild_bell_beetle_02 ドウガロン|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_02/model_sheet_v0.1.png)|生成済み未保存：響き溝と背殻の合わせ目が同じ縦線へまとまっており、描き分けはユーザー確認対象 / 飛翔翅は閉殻内部に隠れるため2枚を直接目視できない / ユーザーの美術採用は未実施|
 |052|wild_sun_sprout_01 ヒマルネ|未制作|未着手：|
 |053|wild_sun_sprout_02 ヒノサラナ|未制作|未着手：|
 |054|wild_sulfur_toad_01 イオプク|未制作|未着手：|

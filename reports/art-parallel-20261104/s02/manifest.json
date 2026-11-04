@@ -190,19 +190,30 @@
       "species_id": "wild_bell_beetle_02",
       "name_ja": "ドウガロン",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_bell_beetle_02_v0.1_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1538641,
+      "sha256": "b313f5a4dd25255a241c9813b7d9aecd59c2a29bdd9d63720add4701e6573533",
+      "visual_checks": [
+        "進化前より広い銅の裾・低い六脚姿勢・大鐘の輪郭を確認",
+        "前後図で脚先6本、触角2本。横は奥側脚と触角が重なる",
+        "鉄紺/銅/生成り、殻の整った縦線、全身枠内を確認"
+      ],
+      "unverified": [
+        "響き溝と背殻の合わせ目が同じ縦線へまとまっており、描き分けはユーザー確認対象",
+        "飛翔翅は閉殻内部に隠れるため2枚を直接目視できない",
+        "ユーザーの美術採用は未実施"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "status": "生成済み未保存",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png"
+      ]
     },
     {
       "dex_number": 52,
