@@ -8,8 +8,8 @@
   "counts": {
     "assigned": 28,
     "generated": 1,
-    "saved_verified": 0,
-    "incomplete": 28
+    "saved_verified": 1,
+    "incomplete": 27
   },
   "blocker": null,
   "entries": [
@@ -37,11 +37,14 @@
         "厳密な正投影形状の一致は未測定"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "reason": "画像未生成"
+        "status": "verified",
+        "method": "fresh cloud git fetch followed by git show of remote FETCH_HEAD image blob; exact byte and SHA-256 equality",
+        "commit": "88cd64e1c2cf7747c9071915bf4249d35ce06dc3",
+        "bytes": 1281113,
+        "sha256": "b2877dde75c9fe5f08701e6bbc1af6d173ab6fd7912d87004ab204d89580e4c8"
       },
-      "saved_image_commit": null,
-      "status": "生成済み未保存",
+      "saved_image_commit": "88cd64e1c2cf7747c9071915bf4249d35ce06dc3",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
