@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 17,
-    "incomplete": 13
+    "saved_verified": 18,
+    "incomplete": 12
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -574,12 +574,13 @@
         "溝の周回接続の微細な立体整合は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1438754,
+        "sha256": "8433e9c437f232e49575f65039f76f7d7d1942b2326c5697805084ba82978e68"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "b410f88cc82f64a05e078331c055d08cd37cf885",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
