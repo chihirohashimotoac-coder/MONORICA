@@ -10,22 +10,18 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 0,
+    "generated": 1,
     "github_image_readback_verified": 0,
     "incomplete": 28
   },
-  "status": "blocked_before_first_generation",
+  "status": "in_progress",
   "next_species_id": "wild_umbra_civet_01",
   "constraints": [
     "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
     "既存画像・runtime・共通設計・共通台帳は変更しない。",
     "候補の採用、runtime昇格、統合、マージ、公開は禁止。"
   ],
-  "blockers": [
-    "クラウド実行・一時チェックアウト用ツールが現セッションの公開ツールにない。node_repl確認結果はwin32・OneDrive配下のcwd。PC内プロジェクトは読み書きしていない。",
-    "参照PNGのGitHub fetch_blobはUnicodeDecodeError。fetch_file(base64)はcontentが空。GitHub fetch(API blob URL)もUTF-8以外を拒否。既存原画の画像本体は取得・目視できていない。",
-    "生成→画像本体取得→GitHub保存→本体読み戻しの経路は未成立・未検証。大量生成へ進まない。"
-  ],
+  "blockers": [],
   "model_setting": {
     "requested_model": "GPT-6.1 Sol",
     "requested_effort": "高",
@@ -34,7 +30,7 @@
   },
   "image_generation_tool": {
     "available": true,
-    "invoked": false,
+    "invoked": true,
     "paid_api_used": false
   },
   "species": [
@@ -46,18 +42,22 @@
       "stage": 1,
       "family_stages": 2,
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_prompt_file": null,
-      "image_path": null,
+      "generation_prompt_file": "reports/art-parallel-20261104/s04/prompts/wild_umbra_civet_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_01/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1226618,
+      "sha256": "3f3f0d54a5c5704c1c5bdecc9c34751ca0b9f07314e13c8ed5d0d224bfc552eb",
+      "visual_checks": [
+        "前3/4・後3/4・横の3ビュー、全身の枠内収まりを目視。",
+        "四脚と長尾1本、各ビューの尾縞2つ、金眼・淡い鼻筋・葉形肩毛2束を目視。",
+        "配色・付け根に明確な不一致なし。"
+      ],
       "unverified": [
-        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
-        "GitHub画像保存と画像本体の再取得照合は未実施。"
+        "美術採用はユーザー確認待ち。",
+        "GitHub本体読み戻しは次の処理で実施。"
       ],
       "github_readback": {
         "status": "not_attempted",
@@ -65,7 +65,7 @@
         "byte_count_match": null
       },
       "image_save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
@@ -878,5 +878,12 @@
       "status": "未着手",
       "adoption_status": "pending_user_review"
     }
-  ]
+  ],
+  "resume_environment": {
+    "os": "Linux",
+    "cloud_checkout": true,
+    "git_read": "success",
+    "git_push": "failed: authentication username unavailable",
+    "reference_png_bytes_and_visual": "success"
+  }
 }
