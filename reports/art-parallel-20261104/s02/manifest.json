@@ -156,19 +156,28 @@
       "species_id": "wild_bell_beetle_01",
       "name_ja": "カネコツ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_bell_beetle_01_v0.1_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1521342,
+      "sha256": "b5cf884c40f6dff665c215a3a7e540f79a98ad7847906048eeb10b5b13dd6766",
+      "visual_checks": [
+        "前後3/4で脚先6本、触角2本を確認。横は奥側の脚・触角が重なる",
+        "釣鐘形の鉄紺の閉じた背殻・銅の縁・裾の小さな2眼を確認",
+        "飛翔翅は閉じた殻の内部に隠す設計。全身枠内・三面の色面と中央合わせ目を確認"
+      ],
+      "unverified": [
+        "飛翔翅2枚は殻内に隠れ直接目視できない",
+        "背殻上の釣り輪と銅模様は生成上の意匠、ユーザー採用前",
+        "ユーザーの美術採用は未実施"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "status": "生成済み未保存",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
     },
     {
       "dex_number": 51,
