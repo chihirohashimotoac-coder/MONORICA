@@ -774,22 +774,21 @@
       "name": "ホコロン",
       "species_id": "wild_kiln_pup_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_kiln_pup_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_01/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1265617,
+      "sha256": "4f6019cbf190ab5b213670fcd64ca3dbe58cdad9740df16087dfb9a480c28c06",
+      "visual_checks": [
+        "保存本体の3ビューを目視。四脚、垂れ耳2、腰尾1、背の皮膚に密着する丸い土塊1を確認。",
+        "赤土の丸背と墨色の足、乳白/橙、丸鼻と上がった眉を確認。翼/角なし。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "横図の尾先余白が小さい。橙の土斑の微細一致は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -797,7 +796,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
