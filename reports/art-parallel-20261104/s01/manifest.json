@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 5,
-    "incomplete": 25
+    "saved_verified": 6,
+    "incomplete": 24
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -193,12 +193,13 @@
         "横図の反対側四肢は重なりで隠れる。毛先の細部は美術確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1486806,
+        "sha256": "00378f167b00e885a2dcd0c854827fccfc389989cf35229b11f30b2207210400"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "c86267e43ec90025306ff2a983d2af2f6db1300a",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {

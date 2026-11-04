@@ -1,6 +1,6 @@
 # s01 レビュー一覧
 
-担当30種／保存確認済み5種／未完了25種。すべてpending_user_review。
+担当30種／保存確認済み6種／未完了24種。すべてpending_user_review。
 
 | 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
@@ -9,7 +9,7 @@
 | 015 | wild_breeze_bird_02 | オウギル | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_breeze_bird_02/model_sheet_v0.1.png) |
 | 017 | wild_stream_otter_02 | カワミオ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png) |
 | 019 | wild_coil_dormouse_02 | マキデン | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png) |
-| 021 | wild_dusk_glider_02 | ヨイトバリ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_dusk_glider_02/model_sheet_v0.1.png) |
+| 021 | wild_dusk_glider_02 | ヨイトバリ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_dusk_glider_02/model_sheet_v0.1.png) |
 | 022 | wild_reed_crane_01 | アシピナ | 未着手 | 未生成 |
 | 023 | wild_reed_crane_02 | ササナギ | 未着手 | 未生成 |
 | 024 | wild_reed_crane_03 | ミナツルネ | 未着手 | 未生成 |
