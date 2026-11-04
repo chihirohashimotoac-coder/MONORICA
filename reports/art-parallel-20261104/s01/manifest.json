@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 23,
-    "incomplete": 7
+    "saved_verified": 24,
+    "incomplete": 6
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -760,12 +760,13 @@
         "横図の遠側脚と翅は重なる。泡斑の細かな数/位置と腹部の前背色の立体整合は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1932594,
+        "sha256": "ee15a1871c6617a2efb27e2cbbc97fb0168f01d2db3bc04630a04185784cbe7a"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "e51fd4ecbe218be34e11c534a73602603ef333e3",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
