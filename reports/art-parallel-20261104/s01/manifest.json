@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 24,
-    "incomplete": 6
+    "saved_verified": 25,
+    "incomplete": 5
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -791,12 +791,13 @@
         "横図の尾先余白が小さい。橙の土斑の微細一致は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1265617,
+        "sha256": "4f6019cbf190ab5b213670fcd64ca3dbe58cdad9740df16087dfb9a480c28c06"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "acbcbe3e12865a9e76f74ea3512f560a9763ba82",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
