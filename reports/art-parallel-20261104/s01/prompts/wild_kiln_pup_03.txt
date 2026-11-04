@@ -1,0 +1,98 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_kiln_pup_03 ロカマルド
+{
+  "motifs_ja": "炉床を温める焼土の子犬",
+  "full_body_silhouette_ja": "肩から腰へ炉床を載せた低重心の四足",
+  "palette_main": [
+    "赤土",
+    "墨"
+  ],
+  "palette_accents": [
+    "乳白",
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。 識別点：炉床状の背と短い太尾",
+    "back_ja": "背面でも保つ輪郭：肩から腰へ炉床を載せた低重心の四足。胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+    "side_ja": "横面の接続：胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。。炉床を低く広げる。人造の建物をそのまま背負わせない。"
+  },
+  "evolution_changes_ja": "炉床を低く広げる。人造の建物をそのまま背負わせない。",
+  "family_retained_features_ja": "炉床を温める焼土の子犬。丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "sprite_96px_ja": "肩から腰へ炉床を載せた低重心の四足。炉床状の背と短い太尾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "炉床状の背と短い太尾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "ホノルの翼と角ではなく四足と窯床形の背。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
+Final mature evolution ロカマルド must look decisively larger, broader and LOWER to ground than juvenile/middle: sturdy short four legs, heavy broad shoulders and thick low body. Dorsal ceramic-earth protective shell spreads as a LOW WIDE KILN-HEARTH shape from shoulders to hips, smoothly integrated flush to healthy body, no house/building prop and no tall oven. Tail becomes SHORT THICK single tail at central rump. Keep friendly eyes, round nose, floppy ears2, red-earth/charcoal/cream/orange. Ceramic shell may show soft warm orange vent accents, never injuries, cuts or exposed anatomy. No horns or wings.
+
+FIRST CALL: moderation_blocked at output, no image delivered. Request 674c18e3-a388-4a7d-9100-7d002db1ce47.
+RETRY PROMPT:
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_kiln_pup_03 ロカマルド
+{
+  "motifs_ja": "炉床を温める焼土の子犬",
+  "full_body_silhouette_ja": "肩から腰へ炉床を載せた低重心の四足",
+  "palette_main": [
+    "赤土",
+    "墨"
+  ],
+  "palette_accents": [
+    "乳白",
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。 識別点：炉床状の背と短い太尾",
+    "back_ja": "背面でも保つ輪郭：肩から腰へ炉床を載せた低重心の四足。胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+    "side_ja": "横面の接続：胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。。炉床を低く広げる。人造の建物をそのまま背負わせない。"
+  },
+  "evolution_changes_ja": "炉床を低く広げる。人造の建物をそのまま背負わせない。",
+  "family_retained_features_ja": "炉床を温める焼土の子犬。丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "sprite_96px_ja": "肩から腰へ炉床を載せた低重心の四足。炉床状の背と短い太尾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "炉床状の背と短い太尾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "ホノルの翼と角ではなく四足と窯床形の背。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+カマテラの最終進化「ロカマルド」。可愛く頼もしい架空の犬モンスター。大きな横幅の胴、太く短い四脚、肩から腰まで低く広がる炉床形の陶土の背殻。背殻は滑らかに体へ沿う一体の自然な形で、建物や道具を載せた形にしない。全体を低重心でがっしりした成体へ育てる。赤土の主色、墨色の足、乳白の胸と口元、橙の差し色。丸鼻、優しい丸目、柔らかな垂れ耳2枚、腰中央の短い太尾1本。初期形より顔は胴に対して小さめ。翼や角なし。全身を余白に収め、同じ個体の前3/4、後3/4、横を横一列に並べる。背景は白。可愛い明確な輪郭とセル塗り、文字なし。

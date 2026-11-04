@@ -836,22 +836,21 @@
       "name": "ロカマルド",
       "species_id": "wild_kiln_pup_03",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_kiln_pup_03.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_03/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_03/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1267863,
+      "sha256": "34aaf57cfd3d0b9d4ca7ffc9fb1948102f5fe5a2b0b6ee236ce5f76df218f1c8",
+      "visual_checks": [
+        "保存本体全身3ビューを確認。低重心の広い胴・太い四脚、肩腰間の低い炉床状背殻、垂れ耳2・短い太尾1を目視。",
+        "中間カマテラ原画を参照。顔に対して大きい胴と低く広がった背の成長差、赤土/墨/乳白/橙の同一性を確認。初回出力拒否と再試行を指示記録へ保存。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "背殻の通気形状は中間形を強く継承。反対側の通気口詳細は未確認。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -859,7 +858,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
