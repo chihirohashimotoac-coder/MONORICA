@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 14,
-    "incomplete": 16
+    "saved_verified": 15,
+    "incomplete": 15
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -481,12 +481,13 @@
         "腹側の口は図の姿勢で隠れており本体の描写を直接確認できない。斑の微細一致は確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1158811,
+        "sha256": "09be7acab5e30929845641dbe4439ea9c93245be0171c7da116cef4f19a1dc31"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "f934b5059ea2ad1f0e1f1c5c2b1151e839b4b78a",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
