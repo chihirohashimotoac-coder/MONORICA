@@ -13,30 +13,30 @@
     "github_bytes_verified": 0,
     "incomplete": 30
   },
-  "status": "blocked_cloud_checkout_unavailable",
-  "blocker_ja": "利用可能なexecとnode_replはWindows側でcwdがOneDrive配下。接続済みクラウド実行環境の状態確認・シェル・独立チェックアウト作成ツールを今回のツール一覧に発見できず、ユーザー指定のクラウド内チェックアウトを用意していない。内蔵画像生成ツールは公開されているが未呼出。画像バイナリのGitHub保存能力を失敗確認したという意味ではない。",
+  "status": "in_progress",
+  "blocker_ja": null,
   "entries": [
     {
       "dex": 11,
       "name": "コノミリア",
       "species_id": "wild_seed_squirrel_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_seed_squirrel_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_seed_squirrel_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_seed_squirrel_02/model_sheet_v0.1.png",
+      "width": 1923,
+      "height": 818,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1512965,
+      "sha256": "9341ad3a02c36c215cbbffcd6961ac7ffd18d55d7de38e6365bfb1cf5f1da449",
+      "visual_checks": [
+        "保存した画像本体を開いて目視。前3/4・後3/4・横の3ビュー、全身枠内。",
+        "腕2・脚2・独立翼0・中央の尾1、尾の3種房・貯蔵口3・緑の先端、琥珀/象牙の色面を確認。",
+        "初期リスコロ原画の本体を開き、配色・顔・尾の成長変化を参照。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "美術採用はユーザー確認待ち。抱えた実の扱いは接続文に従い維持。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -44,7 +44,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
@@ -946,5 +946,6 @@
       "status": "未着手",
       "adoption_status": "pending_user_review"
     }
-  ]
+  ],
+  "execution_environment_ja": "Linuxクラウド内の独立チェックアウト。モデル・エフォートはUI操作で確認/変更できず、指定済みとは報告しない。内蔵画像生成ツール使用。"
 }
