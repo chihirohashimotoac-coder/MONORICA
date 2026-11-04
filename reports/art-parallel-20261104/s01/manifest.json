@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 26,
-    "incomplete": 4
+    "saved_verified": 27,
+    "incomplete": 3
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -853,12 +853,13 @@
         "背殻の通気形状は中間形を強く継承。反対側の通気口詳細は未確認。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1267863,
+        "sha256": "34aaf57cfd3d0b9d4ca7ffc9fb1948102f5fe5a2b0b6ee236ce5f76df218f1c8"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "e499dc01c4a85e530e2c1429e0f46508abc854a4",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
