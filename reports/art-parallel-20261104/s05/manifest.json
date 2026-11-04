@@ -5,9 +5,9 @@
   "art_state": "pending_user_review",
   "counts": {
     "assigned": 27,
-    "generated": 1,
-    "saved_confirmed": 0,
-    "incomplete": 27
+    "generated": 2,
+    "saved_confirmed": 1,
+    "incomplete": 26
   },
   "species": [
     {
@@ -29,16 +29,15 @@
         "修正後は横の背板7枚と手前脚7本を目視。三面で石灰・青緑の色面と低い外形を維持"
       ],
       "unconfirmed": [
-        "反対側の脚は重なりがあり14本全ての個別描き分けは確認しにくい",
-        "GitHub画像本体読み戻し"
+        "遠側脚の一部は重なりのため全14本の個別描き分けを目視しにくい"
       ],
       "github_readback": {
-        "status": "未実行",
-        "sha256_match": null,
-        "bytes_match": null
+        "status": "画像本体をraw.githubusercontent.comから取得しSHA-256・バイト数一致",
+        "sha256_match": true,
+        "bytes_match": true
       },
-      "saved_commit": null,
-      "status": "生成済み未保存",
+      "saved_commit": "6560402b53d3c710bcf90c30e6eae13918b10c98",
+      "status": "保存確認済み",
       "adoption_state": "pending_user_review",
       "revision_prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_metro_isopod_01_fix01.txt"
     },
@@ -48,21 +47,21 @@
       "name": "イシワタリ",
       "stage": "2/2",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_metro_isopod_02.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_02/model_sheet_v0.1.png",
       "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_02/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checked": [],
+      "width": 1997,
+      "height": 787,
+      "mode": "RGB",
+      "bytes": 1279261,
+      "sha256": "6e50e90c1bb3b036fd1e1aca621e335718aec8e6e441e753f6049bfb37c0ec43",
+      "visual_checked": [
+        "3ビュー・全身・白地・文字なし、横ビューの背板7枚と手前脚7本を確認",
+        "基礎形と配色・顔を維持し、縁の張り出した低い橋形へ成長"
+      ],
       "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
+        "斜めビューの後端背節と遠側脚は重なり、全数の個別識別が難しい",
+        "GitHub画像本体読み戻し"
       ],
       "github_readback": {
         "status": "未実行",
@@ -70,7 +69,7 @@
         "bytes_match": null
       },
       "saved_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_state": "pending_user_review"
     },
     {

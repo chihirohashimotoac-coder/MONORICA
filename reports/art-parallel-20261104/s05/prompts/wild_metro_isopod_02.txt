@@ -1,0 +1,46 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 131, "id": "wild_metro_isopod_02", "name_ja": "イシワタリ", "family_id": "wild_metro_isopod", "evolution_stage": 2, "family_stage_count": 2, "evolves_from": "wild_metro_isopod_01", "evolves_to": null}
+Design: {
+  "motifs_ja": "段差を渡す敷石甲羅の等脚類",
+  "full_body_silhouette_ja": "背板の縁が広がり薄い橋形の輪郭になる",
+  "palette_main": [
+    "石灰",
+    "青緑"
+  ],
+  "palette_accents": [
+    "墨"
+  ],
+  "face_expression_ja": "頭の丸い目2つ、短い触角2本。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 14,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 2,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "歩脚14本は左右7本。背節7枚は低い板で、車輪に置換しない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：頭の丸い目2つ、短い触角2本。 識別点：橋形の長い背と7節",
+    "back_ja": "背面でも保つ輪郭：背板の縁が広がり薄い橋形の輪郭になる。歩脚14本は左右7本。背節7枚は低い板で、車輪に置換しない。",
+    "side_ja": "横面の接続：歩脚14本は左右7本。背節7枚は低い板で、車輪に置換しない。。背の両縁が広がるが節は7。"
+  },
+  "evolution_changes_ja": "背の両縁が広がるが節は7。",
+  "family_retained_features_ja": "段差を渡す敷石甲羅の等脚類。頭の丸い目2つ、短い触角2本。",
+  "sprite_96px_ja": "背板の縁が広がり薄い橋形の輪郭になる。橋形の長い背と7節を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "橋形に張り出した長い背と青緑の縁を優先。7節や14脚の全数描き分けより外形を残す。",
+  "differentiation_ja": "遺構の丸まる石種と違い、細長く平らな背。",
+  "production_difficulty_ja": "高：14脚を三面で確認。96pxでは脚先を整理、32pxは背の7節より橋形を優先。"
+}
+Ecology context (do not draw scenery): 徒歩の高架下。狭い隙間へ並んで湿気を保つ。列車を模倣する機械生物にはしない。
+Additional structure check: Adult of the supplied juvenile isopod. Exactly seven transverse limestone slabs from head to tail, six teal seams, seven walking legs per side, fourteen total. Show all seven near-side legs separately in side view. Broader lateral shell rims form a thin, wide, low BRIDGE outline. Maintain long flat back; no train, wheels, domed pillbug, extra plates or head counted as plate.
+
+Revision used:
+Correct this adult paving-slab isopod turnaround's shell count: ALL THREE views must have exactly SEVEN pale limestone transverse dorsal plates, separated by SIX teal seams, not six plates. The rightmost side view currently has six pale plates: add one extra plate in the central torso. The first head-facing broad slab is plate one; the little posterior tapering slab is plate seven; the head is separate. Keep exactly SEVEN near-side legs and SEVEN far-side legs, FOURTEEN total. Do not add legs, only correct plates and their corresponding position. Broaden the adult's lateral teal shell rims outward more into a thin flat BRIDGE silhouette, so it clearly differs from its juvenile. Preserve the cute face, two short antennae, limestone and teal palette, three complete views, white background, no text.
