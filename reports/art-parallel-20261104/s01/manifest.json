@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 19,
-    "incomplete": 11
+    "saved_verified": 20,
+    "incomplete": 10
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -636,12 +636,13 @@
         "後/横の触腕根の一部が重なる。透け方の微細一致は確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1446154,
+        "sha256": "c0716b0fccc43b43e6ac8a0959eff298a63cb4ef750d66470c0a1ddfff9806e3"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "75dc6bfeab638dc8f937d35841becd9a30962cca",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
