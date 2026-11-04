@@ -21,9 +21,15 @@
         "胸の一部の付け根は翅・毛で隠れる。透視図ではない",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "新規git cloneから画像本体を取得し元台帳のSHA-256・バイト数と照合",
+        "sha256": "03e9a5d2cecd94a17a5e54c6275246732a71203b0ebd991c57f9f91ac93b6bc5",
+        "bytes": 1661067,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T16:12:59.173631+00:00"
+      },
+      "image_commit": "2dadc4635621b76c7e97ccc840ed550c8f6b9baa",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review"
     },
     {
@@ -539,5 +545,13 @@
       "status": "未着手",
       "art_adoption": "pending_user_review"
     }
-  ]
+  ],
+  "session": {
+    "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+    "source_latest_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+    "source_difference": "差分なし",
+    "resumed_at_jst": "2026-11-05",
+    "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
+    "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
+  }
 }
