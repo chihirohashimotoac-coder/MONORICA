@@ -10,7 +10,7 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 3,
+    "generated": 4,
     "github_image_readback_verified": 3,
     "incomplete": 25
   },
@@ -151,18 +151,21 @@
       "stage": 2,
       "family_stages": 2,
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_prompt_file": null,
-      "image_path": null,
+      "generation_prompt_file": "reports/art-parallel-20261104/s04/prompts/wild_amber_weevil_02.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_02/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_02/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "width": 1922,
+      "height": 818,
+      "mode": "RGB",
+      "bytes": 1424567,
+      "sha256": "c601f9799c9b8f1e80128d33a561326098ab10bf5229a451ed09d4979f3b5fc5",
+      "visual_checks": [
+        "三面の実殻・太い木目筋・地面へ届く吻、同系列の丸目と浅緑色面を確認。",
+        "胸側の左右各3脚構造。遠側脚の一部は胴と近側脚に重なる。"
+      ],
       "unverified": [
-        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
-        "GitHub画像保存と画像本体の再取得照合は未実施。"
+        "美術採用はユーザー確認待ち。96px/32px・実機は対象外。",
+        "閉殻下の飛翔翅2枚と重なった遠側脚の全数は外観だけでは確定できない。"
       ],
       "github_readback": {
         "status": "not_attempted",
@@ -170,8 +173,11 @@
         "byte_count_match": null
       },
       "image_save_commit": null,
-      "status": "未着手",
-      "adoption_status": "pending_user_review"
+      "status": "生成済み未保存",
+      "adoption_status": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png"
+      ]
     },
     {
       "dex": 106,
