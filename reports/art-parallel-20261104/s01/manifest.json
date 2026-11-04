@@ -650,22 +650,21 @@
       "name": "ペタリム",
       "species_id": "wild_bog_leech_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_bog_leech_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1262212,
+      "sha256": "a84c5fb1b5ccf289681699e72b046f955f023c2031f53d99f57889c212c2bda4",
+      "visual_checks": [
+        "保存本体で全身3ビューを確認。分節豆形胴1、両端の桃色吸盤各1、前端目2、牙列なし。",
+        "葡萄/薄桃と淡緑背筋の位置、脚/翼/尾/触角なしを目視。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "前背で胴の重なりによる分節の見え方が異なる。細かな節間隔の立体一致は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -673,7 +672,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
