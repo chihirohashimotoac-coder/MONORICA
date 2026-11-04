@@ -619,22 +619,21 @@
       "name": "ミナランプ",
       "species_id": "wild_lantern_jelly_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lantern_jelly_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_02/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1446154,
+      "sha256": "c0716b0fccc43b43e6ac8a0959eff298a63cb4ef750d66470c0a1ddfff9806e3",
+      "visual_checks": [
+        "保存本体の3ビューを目視。縦長傘1、下面の触腕4、傘内に縦2灯が組織で連なる構造を確認。",
+        "初期ホヤリネを参照し、傘の伸長と1灯→2灯の段階差、眼点2と乳白/藤/琥珀の同一性を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "後/横の触腕根の一部が重なる。透け方の微細一致は確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -642,7 +641,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
