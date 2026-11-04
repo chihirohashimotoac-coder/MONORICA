@@ -557,22 +557,21 @@
       "name": "キリマイム",
       "species_id": "wild_mist_snail_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_mist_snail_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1438754,
+      "sha256": "8433e9c437f232e49575f65039f76f7d7d1942b2326c5697805084ba82978e68",
+      "visual_checks": [
+        "保存画像の全身3ビューを目視。目付き触角2・背殻1・連続腹足、脚/尾/翼なし。",
+        "初期ツユマキ原画を参照し、丸殻から腹足を覆う段丘殻と藍の水路溝への成長差を確認。霞青/真珠白の色面と薄霧を維持。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "溝の周回接続の微細な立体整合は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -580,7 +579,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {

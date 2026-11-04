@@ -21,7 +21,7 @@
 | 030 | wild_silt_skate_01 | ドロヒラ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_silt_skate_01/model_sheet_v0.1.png) |
 | 031 | wild_silt_skate_02 | スナミオ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_silt_skate_02/model_sheet_v0.1.png) |
 | 032 | wild_mist_snail_01 | ツユマキ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png) |
-| 033 | wild_mist_snail_02 | キリマイム | 未着手 | 未生成 |
+| 033 | wild_mist_snail_02 | キリマイム | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_mist_snail_02/model_sheet_v0.1.png) |
 | 034 | wild_lantern_jelly_01 | ホヤリネ | 未着手 | 未生成 |
 | 035 | wild_lantern_jelly_02 | ミナランプ | 未着手 | 未生成 |
 | 036 | wild_bog_leech_01 | ペタリム | 未着手 | 未生成 |
