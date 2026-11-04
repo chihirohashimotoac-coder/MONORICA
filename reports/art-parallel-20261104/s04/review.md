@@ -1,6 +1,6 @@
 # s04 三面設定画レビュー一覧
 
-2026-11-05。担当28種、保存確認済み4種、未完了24種。すべて pending_user_review。
+2026-11-05。担当28種、保存確認済み5種、未完了23種。すべて pending_user_review。
 
 | 番号 | 種ID | 名前 | 状態 | 実画像 | 確認事項 |
 |---|---|---|---|---|---|
@@ -8,7 +8,7 @@
 | 103 | wild_umbra_civet_02 | ヨミノラ | 保存確認済み | [PNG](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s04-20261104/assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_02/model_sheet_v0.1.png) | 美術採用はユーザー確認待ち。96px/32px出力・ゲーム動作は今回対象外。 |
 | 104 | wild_amber_weevil_01 | コハコツ | 保存確認済み | [PNG](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s04-20261104/assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png) | 美術採用待ち。閉殻下の翅2枚は外観で全数確認できない。 |
 | 105 | wild_amber_weevil_02 | ジュシバル | 保存確認済み | [PNG](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s04-20261104/assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_02/model_sheet_v0.1.png) | 美術採用はユーザー確認待ち。96px/32px・実機は対象外。 / 閉殻下の飛翔翅2枚と重なった遠側脚の全数は外観だけでは確定できない。 |
-| 106 | wild_bloom_siphon_01 | ミツポネ | 未着手 | 未制作 | 画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。 / GitHub画像保存と画像本体の再取得照合は未実施。 |
+| 106 | wild_bloom_siphon_01 | ミツポネ | 保存確認済み | [PNG](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s04-20261104/assets/source/monsters/parallel_20261104/s04/wild_bloom_siphon_01/model_sheet_v0.1.png) | 美術採用はユーザー確認待ち。96px/32px・実機は対象外。 |
 | 107 | wild_bloom_siphon_02 | ミツクラリ | 未着手 | 未制作 | 画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。 / GitHub画像保存と画像本体の再取得照合は未実施。 |
 | 108 | wild_storm_sail_01 | ハタチル | 未着手 | 未制作 | 画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。 / GitHub画像保存と画像本体の再取得照合は未実施。 |
 | 109 | wild_storm_sail_02 | ライハタル | 未着手 | 未制作 | 画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。 / GitHub画像保存と画像本体の再取得照合は未実施。 |
