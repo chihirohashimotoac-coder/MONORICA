@@ -1,10 +1,15 @@
-# 最新の引き継ぎ
+# MONORICA 最新Handoff
 
-[HANDOFF_MONORICA_2026-11-02_v0.13.md](HANDOFF_MONORICA_2026-11-02_v0.13.md)を最初に読む。開始文は[NEXT_SESSION_START_v0.13.txt](NEXT_SESSION_START_v0.13.txt)。v0.12以前は履歴として保持。
+更新日：2026-11-04（日本時間）
 
-- 全156種の詳細文字設計案を作成。[一覧](docs/SPECIES_CATALOG_v0.1.md)・[詳細](docs/SPECIES_DESIGN_DETAILS_v0.1.md)・[JSON](content/planning/species-catalog_v0.1.json)を参照。
-- 元の地域配分・12属性・15カード・御三家Lv16/36を維持。追加内容は制作案。美術の採用状態は変更していない。
-- runtime19PNGは採用済みのまま。ミズッタv0.1・ココイルv0.1・ヨルミルv0.2の新三面設定は確認待ち。旧ヨルミルv0.1は不採用。
-- [検査レポート](reports/species-catalog-check_v0.1.json)：件数・参照・抽象入手順・既存データ不変を検査。バランス・面白さ・実プレイは未検証。
-- 次は設計レビュー。画像生成・ドット制作・ゲーム実装・Git操作・公開は明示依頼まで開始しない。
-- 継続ルールはAGENTS.md・CLAUDE.md・docs/SESSION_CONTINUITY.md。コンテキストが増えたらHandoffとZIPを保存して新しいセッションへ案内する。
+[最新Handoff：画像制作の再開調査・復旧待ち](docs/handoffs/HANDOFF_2026-11-04_IMAGE_RECOVERY.md)
+
+- 再開ブランチ `work/species-review-v013-20261103`
+- Draft PR https://github.com/chihirohashimotoac-coder/MONORICA/pull/2
+- PRベース `work/preproduction-v013-import`
+- 制作方針：全156種を通しで制作後、ユーザーがまとめて確認・個別修正。
+- 新画像6種の永続保存登録を確認し、[ファイル参照・Git素材SHAの照合記録](reports/image-recovery-inventory_2026-11-04.json)を追加。画像バイトの回収・GitHubへの追加登録は未実施。
+- 前回発言の「別の131種」は実体・種別一覧・生成ログ・保存先を今回確認できず、画像制作の続行は復旧待ち。消失確定とは断定しない。
+- 既存画像・採用状態・設計データは保持。今回の変更は復旧記録と入口のみ。
+- [次セッション用開始文](NEXT_SESSION_START_2026-11-04_IMAGE_RECOVERY.txt)
+- [前Handoff：全156種の文字設計レビュー](docs/handoffs/HANDOFF_2026-11-04_SPECIES_REVIEW.md)

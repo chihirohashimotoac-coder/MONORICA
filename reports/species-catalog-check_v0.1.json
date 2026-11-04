@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "created_date_jst": "2026-11-02",
+  "created_date_jst": "2026-11-04",
   "status": "pass",
   "scope_ja": "設計表の件数・参照・抽象の入手依存・既存素材不変の検査。実ゲーム・面白さ・バランスの検証ではない。",
   "schema_engine_ja": "同梱スキーマが使用する型・必須・anyOf・参照・列挙・定数・範囲・配列長・文字列長・パターンをローカル実装で検査。外部JSON Schema実装は未導入。",
@@ -54,16 +54,16 @@
       "post_meguri": 9
     },
     "role_counts": {
-      "swift_special": 9,
+      "swift_special": 8,
       "breaker": 8,
       "counter_tank": 13,
       "allround": 9,
       "physical_wall": 19,
-      "pivot": 12,
-      "physical_attacker": 14,
+      "pivot": 13,
+      "physical_attacker": 13,
       "disruptor": 14,
       "healer": 11,
-      "special_wall": 12,
+      "special_wall": 13,
       "special_attacker": 14,
       "attrition": 9,
       "double_support": 12
@@ -76,10 +76,10 @@
     "runtime_ready_png_count": 19
   },
   "source_audit": {
-    "bundle_name": "MONORICA_preproduction_v0.12.zip",
-    "bundle_sha256": "e0e9965ef3d05e88723572eea20b07ac9c75e348eb642f9a428711814f83c612",
-    "hash_source_ja": "元ZIP展開直後の計測を同梱baselineへ保存。検査の再実行に元ZIPを要求しない。",
-    "documents_read": [
+    "baseline_bundle_name": "MONORICA_preproduction_v0.12.zip",
+    "baseline_bundle_sha256": "e0e9965ef3d05e88723572eea20b07ac9c75e348eb642f9a428711814f83c612",
+    "hash_source_ja": "元202ファイルのハッシュを同梱baselineと比較。素材・15カード・相性表等の保護は継続。",
+    "document_paths_checked_for_availability": [
       "AGENTS.md",
       "CLAUDE.md",
       "LATEST_HANDOFF.md",
@@ -102,7 +102,7 @@
       "tools/validate_assets.py",
       "tools/validate_preproduction.py"
     ],
-    "images_visually_inspected": [
+    "image_paths_checked_for_availability": [
       "brief/starter_concepts_v0.4.png",
       "brief/starter_middle_concepts_v0.1.png",
       "brief/wild_monsters_concepts_v0.1.png",
@@ -117,7 +117,9 @@
       "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png"
     ],
     "unavailable_required_sources": [],
-    "note_ja": "最初は取得に失敗したが、ユーザーがWindows作業フォルダーへ配置したZIPを展開して必要資料を読んだ。初回失敗を資料読了へ読み替えていない。"
+    "documents_read_verified_by_validator": false,
+    "images_visually_inspected_verified_by_validator": false,
+    "note_ja": "この検査器はファイルの存在・構造・ハッシュを確認する。本文読了・画像目視・156種レビューの実施は別の実行記録とHandoffを参照。旧Windows作業・旧目視実績を再実行の実績へ流用しない。"
   },
   "checks": [
     {
@@ -144,6 +146,11 @@
       "id": "unique_names",
       "pass": true,
       "details": null
+    },
+    {
+      "id": "cross_family_names_more_than_one_edit",
+      "pass": true,
+      "details": []
     },
     {
       "id": "existing_15_exactly_once",
@@ -253,6 +260,11 @@
       "details": 1872
     },
     {
+      "id": "explicit_prose_type_multipliers",
+      "pass": true,
+      "details": []
+    },
+    {
       "id": "honoru_family_6_limbs",
       "pass": true,
       "details": null
@@ -294,6 +306,21 @@
     },
     {
       "id": "field_relearn_preserved_on_evolution",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "explicit_gate_prerequisites",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "glider_access_matches_opened_vine",
+      "pass": true,
+      "details": null
+    },
+    {
+      "id": "stage_geometry_and_icon_regressions",
       "pass": true,
       "details": null
     },
@@ -342,15 +369,29 @@
         "original_files": 202,
         "missing": [],
         "changed": [
+          "AGENTS.md",
+          "CLAUDE.md",
           "LATEST_HANDOFF.md",
           "README.md",
-          "docs/DECISIONS.md"
+          "docs/DECISIONS.md",
+          "docs/SESSION_CONTINUITY.md"
         ],
         "allowed_document_updates": [
           "LATEST_HANDOFF.md",
           "README.md",
-          "docs/DECISIONS.md"
-        ]
+          "docs/DECISIONS.md",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "docs/SESSION_CONTINUITY.md"
+        ],
+        "document_update_reasons": {
+          "LATEST_HANDOFF.md": "最新のGitHubブランチ・実検査・再開情報への入口を更新",
+          "README.md": "GitHub登録済みの現状と最新Handoffを案内",
+          "docs/DECISIONS.md": "GitHub正本方針・採用状態と2026-11-04の文字レビュー工程を記録",
+          "AGENTS.md": "GitHub正本運用を維持し、文字レビュー未実施の状態を今回の完了位置へ更新",
+          "CLAUDE.md": "同じGitHub正本運用と文字レビュー後の再開位置をClaude Codeへ引き継ぐ",
+          "docs/SESSION_CONTINUITY.md": "ZIP中心の継続手順をGitHubの実在ブランチからの再開へ更新"
+        }
       }
     },
     {
@@ -392,6 +433,21 @@
       "id": "art_batches_no_family_split",
       "pass": true,
       "details": null
+    },
+    {
+      "id": "all_generated_outputs_reproducible",
+      "pass": true,
+      "details": {
+        "files": [
+          "content/planning/species-catalog_v0.1.json",
+          "content/planning/species-catalog_v0.1.csv",
+          "docs/SPECIES_CATALOG_v0.1.md",
+          "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+          "content/planning/species-art-batches_v0.1.json",
+          "docs/SPECIES_ART_BATCHES_v0.1.md"
+        ],
+        "mismatched": []
+      }
     },
     {
       "id": "negative_control_detection",
@@ -436,6 +492,31 @@
           "id": "six_leg_glider_regression",
           "detected": true,
           "expected_check": "yorumiru_family_4_limbs"
+        },
+        {
+          "id": "missing_glider_gate",
+          "detected": true,
+          "expected_check": "glider_access_matches_opened_vine"
+        },
+        {
+          "id": "self_dependent_ember_lesson",
+          "detected": true,
+          "expected_check": "acquisition_and_field_dependency_acyclic"
+        },
+        {
+          "id": "stale_coil_stage_bands",
+          "detected": true,
+          "expected_check": "stage_geometry_and_icon_regressions"
+        },
+        {
+          "id": "confusable_ray_name",
+          "detected": true,
+          "expected_check": "cross_family_names_more_than_one_edit"
+        },
+        {
+          "id": "incorrect_crown_electric_prose",
+          "detected": true,
+          "expected_check": "explicit_prose_type_multipliers"
         }
       ]
     },
@@ -445,7 +526,7 @@
       "details": null
     }
   ],
-  "passed_check_count": 46,
+  "passed_check_count": 52,
   "failed_check_count": 0,
   "starter_choice_simulations": {
     "starter_flower_hare": {
@@ -6327,5 +6408,5 @@
   "playthrough_verified": false,
   "image_generation_performed": false,
   "game_implementation_performed": false,
-  "git_commit_push_or_publish_performed": false
+  "git_operations_are_outside_validation_scope": true
 }

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "checked_at_jst": "2026-11-03T00:48:38+09:00",
+  "status": "blocked_pending_japaneast_destination_allowlist",
+  "repository": "https://github.com/chihirohashimotoac-coder/MONORICA",
+  "branch": "work/github-migration-preflight-20261102",
+  "source_commit": "037f36c834fb22686127aa203cd53b86f640a5c0",
+  "main_commit": "32680058a1d4f66a37e9fb2eb07832f5c6e29623",
+  "pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/1",
+  "source": {
+    "file_id": "1g5Wt0afmoWK9YFIEXNkUjP-DCLao_-nU",
+    "filename": "MONORICA_preproduction_v0.13_species-catalog (1).zip",
+    "mime_type": "application/x-zip-compressed",
+    "size_bytes": 36372679,
+    "metadata_read": true,
+    "new_authenticated_download_reference_obtained": true,
+    "expected_sha256_from_request": "548d7c87d5b0fad25a8a179ded85f9607ca41406bc37768cb4b2cfcaf031235c",
+    "archive_saved_in_cloud": false,
+    "sha256_verified": false,
+    "archive_extracted": false,
+    "file_count_verified": false
+  },
+  "environment": {
+    "observations_current": true,
+    "observed_phase": "running",
+    "network_policy_state": "enforced",
+    "network_policy_mode": "restricted",
+    "additional_allowed_hosts": [
+      "sdmntpraustraliaeast.oaiusercontent.com"
+    ],
+    "network_policy_file_checked": true,
+    "previous_destination_now_allowed": true,
+    "new_reference_destination_host": "sdmntprjapaneast.oaiusercontent.com",
+    "new_destination_allowed": false,
+    "outbound_identities": [],
+    "configured_secrets": []
+  },
+  "download_attempt": {
+    "method": "Python urllib through inherited HTTPS proxy; network-enabled execution",
+    "success": false,
+    "connect_tunnel_http_status": 403,
+    "observed_error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+    "proxy_preserved": true,
+    "tls_verification_preserved": true,
+    "target_tls_handshake_completed": false,
+    "direct_connection_or_proxy_bypass_attempted": false,
+    "short_lived_url_or_signature_saved_to_repository": false
+  },
+  "workspace": {
+    "fresh_clone_from_github": true,
+    "existing_pc_project_used": false,
+    "git_ls_remote_succeeded": true,
+    "git_clone_succeeded": true
+  },
+  "alternate_materialization": {
+    "sediment_download_tool_limit_bytes": 33554432,
+    "source_exceeds_limit": true,
+    "sediment_download_attempted": false,
+    "reason": "Documented 32 MiB limit is smaller than the source ZIP; no other sufficient file materialization or environment configuration tool is available."
+  },
+  "validation": {
+    "required_four_checks_rerun": false,
+    "reason": "Source archive and validation scripts remain unavailable in the GitHub branch.",
+    "species_review_complete": false,
+    "structural_validation_success_claimed": false,
+    "prior_46_checks_reused": false,
+    "documentation_checks": {
+      "json_files_parsed": 3,
+      "relative_markdown_file_links_checked": 19,
+      "signed_download_urls_in_repository": 0,
+      "original_request_unchanged": true,
+      "git_diff_check_passed": true
+    }
+  },
+  "previous_report": "reports/drive-acquisition_2026-11-03.json",
+  "next_action": "Add sdmntprjapaneast.oaiusercontent.com to the managed environment allowlist, save and republish; start a new task using that configuration. Read LATEST_HANDOFF.md, fetch a fresh Drive reference, compare its actual host with the active policy, then download and verify SHA-256 before import."
+}

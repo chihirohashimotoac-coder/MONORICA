@@ -1,0 +1,6 @@
+MONORICAを停止位置から再開してください。日本語で作業し、生成済み画像を欠損させないでください。
+正本 https://github.com/chihirohashimotoac-coder/MONORICA
+ブランチ work/species-review-v013-20261103 / Draft PR #2
+最新GitHub参照を確認し、LATEST_HANDOFF.md、docs/handoffs/HANDOFF_2026-11-04_IMAGE_RECOVERY.md、reports/image-recovery-inventory_2026-11-04.jsonを読んでください。
+停止位置は新画像の回収待ちです。6種の永続保存登録は確認済み。前回アシスタントが述べた別の131種について、今回実体・ログ・保存先を確認できていません。生成済み・保存済み・消失確定と断定しないでください。前回クラウドの生成画像・ログ・ZIPを回収し、全ファイルを別パスで保全してGitHubへ保存・照合した後に未制作分を続行してください。未発見分を黙って再生成・置換しないでください。
+制作方針は全156種を通しで制作→ユーザーがまとめて確認→気になる部分を個別修正。3体ごとの承認待ちへ戻さないでください。採用済み19PNGと既存設定画・設計データは保持。main直接更新・force push・PRマージ・本体実装・公開は禁止です。

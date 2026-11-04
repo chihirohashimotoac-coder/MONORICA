@@ -1,0 +1,58 @@
+{
+  "date_jst": "2026-11-04",
+  "source_commit": "87308e0a0b9df51284bf07489b45cb17dce6a655",
+  "branch": "work/species-review-v013-20261103",
+  "execution_environment": "cloud Linux temporary GitHub checkout",
+  "python_version": "3.12.14",
+  "commands": [
+    {
+      "command": "python tools/build_species_catalog_v01.py",
+      "started_at_utc": "2026-11-04T03:02:25.497441+00:00",
+      "elapsed_seconds": 0.095,
+      "exit_code": 0,
+      "stdout": "{\"species\": 156, \"families\": 79}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_species_catalog_v01.py",
+      "started_at_utc": "2026-11-04T03:02:25.592968+00:00",
+      "elapsed_seconds": 0.851,
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"checks\": 52,\n  \"passed\": 52,\n  \"failed\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_assets.py",
+      "started_at_utc": "2026-11-04T03:02:26.443614+00:00",
+      "elapsed_seconds": 0.066,
+      "exit_code": 0,
+      "stdout": "{\n  \"recorded_file_check\": \"pass\",\n  \"files_checked\": 49,\n  \"catalog_complete\": false,\n  \"runtime_images\": 19,\n  \"audio_tracks\": 0,\n  \"pending_categories\": [\n    \"full_species_catalog\",\n    \"monster_runtime_art\",\n    \"character_sprites\",\n    \"map_tiles_and_layouts\",\n    \"complete_moves_items_abilities\",\n    \"complete_story_events\",\n    \"audio\",\n    \"ui_art\"\n  ],\n  \"errors\": [],\n  \"scope\": \"file existence, hashes and PNG header dimensions only\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_preproduction.py",
+      "started_at_utc": "2026-11-04T03:02:26.510118+00:00",
+      "elapsed_seconds": 0.029,
+      "exit_code": 0,
+      "stdout": "{\n  \"planning_check\": \"pass\",\n  \"species_slots\": 156,\n  \"known_production_cards\": 15,\n  \"main_regions\": 8,\n  \"postgame_regions\": 2,\n  \"representatives\": 8,\n  \"music_cues_not_generated\": 28,\n  \"queued_assets_not_created\": 3,\n  \"runtime_image_count\": 19,\n  \"runtime_ready_images\": 19,\n  \"errors\": [],\n  \"scope\": \"planning counts and references, not playthrough or complete content\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "catalog_check_count": 52,
+  "catalog_passed_count": 52,
+  "catalog_failed_count": 0,
+  "negative_control_cases": 13,
+  "original_protected_file_count": 94,
+  "changed_original_protected_paths": [],
+  "line_ending_note_ja": "初回の補助git diff --checkは既存CRLFを末尾空白と判定。元の改行を維持し、cr-at-eolを明示して再確認した。指定4コマンドは初回からすべてexit 0。",
+  "git_diff_check": {
+    "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "previous_session_results_reused": false,
+  "game_balance_verified": false,
+  "playthrough_verified": false,
+  "status": "pass"
+}

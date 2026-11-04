@@ -1,0 +1,15 @@
+MONORICAの続きを、日本語・クラウド環境で進めてください。
+正本は https://github.com/chihirohashimotoac-coder/MONORICA 。再開ブランチは work/species-review-v013-20261103 、Draft PRは https://github.com/chihirohashimotoac-coder/MONORICA/pull/2 、baseは work/preproduction-v013-import です。
+
+GitHubの最新参照を取得し、AGENTS.md、CLAUDE.md、LATEST_HANDOFF.mdとリンク先Handoff、docs/DECISIONS.md、docs/SPECIES_REVIEW_v0.1.mdを読んでください。過去SHAへのresetはせず、後続更新を保持してください。PC内フォルダー・OneDriveへ依存しないでください。
+
+2026-11-04に全79系列・156種の文字設計レビューと制作案修正を行いました。オロヒラをユラオロへ変更し、段階別接続19種・アイコン方針14種・役割2種などを修正。種レコードの差分94件には講習前提の配列追加だけの変更も含みます。生成元からJSON・CSV・Markdownを再生成し、検査器を46項目から52項目へ強化しました。実行結果はreports/species-review-validation_2026-11-04.jsonを確認してください。
+
+採用原画3枚・最新三面設定9枚・runtime19PNGを今回目視しました。新規141種・既存種の詳細追加は制作案、後続3体の三面設定は確認待ちのままです。文字レビュー完了と全156体の絵の最終採用を区別してください。数値バランス・面白さ・実機・通しプレイは未検証です。
+
+次工程の依頼を確認し、全種の文字レビューを最初からやり直さず、SPECIES_REVIEWの修正・保留と最新Handoffから続けてください。画像制作が明示的に依頼されたらdocs/SPECIES_ART_BATCHES_v0.1.mdの12バッチ案から進めます。この開始文だけで画像生成・ドット制作・ゲーム本体実装・公開へ着手しないでください。
+
+156種・元地域配分・既存15カード・御三家Lv16/36・12属性表・探索技の戦闘4枠と習得個体手持ち・全種一人用入手を維持してください。ホノル系列は腕2・脚2・背翼2、ヨルミル系列は四肢と手首〜足首の飛膜です。採用済み画像と確認待ち画像を維持してください。
+
+変更後は指定4コマンドを今回の実績として実行し、検査結果・Handoff・次回開始文を作業ブランチへコミット・pushしてGitHubから再確認してください。main直接更新・force push・履歴置換・PRマージ・公開・デプロイは禁止です。
+コンテキストが増えたら安全にGitHubへ保存し、新しいセッションへ案内してください。

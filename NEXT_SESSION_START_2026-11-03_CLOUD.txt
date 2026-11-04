@@ -1,0 +1,26 @@
+MONORICAの設計レビューを続けてください。日本語で作業・報告し、GitHubへアクセスできるPython 3・Git付きのクラウド実行環境を使ってください。PC内の作業フォルダーやOneDriveには依存しないでください。
+
+正本：https://github.com/chihirohashimotoac-coder/MONORICA
+再開ブランチ：work/species-review-v013-20261103
+Draft PR：https://github.com/chihirohashimotoac-coder/MONORICA/pull/2
+PRベース：work/preproduction-v013-import
+
+最初にクラウド実行環境を利用できることを確認し、GitHubの最新参照から再開ブランチをクラウドへ取得してください。過去SHAへのresetはせず、後続更新を保持してください。
+
+AGENTS.md、CLAUDE.md、LATEST_HANDOFF.mdとリンク先の最新Handoff、docs/DECISIONS.md、docs/requests/MONORICA_Work_GitHub_prompt_v0.1.mdを読み、この開始文を優先してください。
+
+直前のセッションではGitHub連携のみ利用でき、クラウド実行接続がなかったため、クラウドチェックアウト・全156種内容レビュー・制作案修正・再生成・指定4検査は未実施です。Handoffと環境確認記録だけをGitHub API経由で保存しました。前セッションの46項目成功を今回の検査へ流用しないでください。元ZIPの取得・照合・217ファイル登録は既に完了しているため、展開済みGitHubを正本にしてください。
+
+元指示書の全資料・全156種・採用画像と最新三面設定を実際に読み、名前・モチーフ・進化・器官接続・96px/32pxの識別点・地域や役割の偏り・一人用入手・探索技依存関係・相性説明を具体的にレビューしてください。安全な制作案はtools/species_drafts_v01.pyとtools/build_species_catalog_v01.pyで修正し、JSON・CSV・Markdownを再生成してください。docs/SPECIES_REVIEW_v0.1.md等へ指摘・理由・差分・未決事項を記録してください。重大な確定条件の矛盾以外、定型工程の再確認は不要です。
+
+156種・元地域配分・既存15カード・御三家Lv16/36・12属性表・探索技の戦闘4枠と習得個体の手持ち必須・全種一人用入手を維持してください。採用済みruntime19PNGと確認待ち三面設定の扱いを変えず、新規141種と詳細追加は制作案のままにしてください。詳細な固定条件は元指示書を参照してください。
+
+変更後に次の4コマンドを実行し、既存素材・15カード・相性表の保護とハッシュ検査を維持してください。
+python tools/build_species_catalog_v01.py
+python tools/validate_species_catalog_v01.py
+python tools/validate_assets.py
+python tools/validate_preproduction.py
+
+変更・実検査結果・最新Handoff・次セッション用開始文を作業ブランチへコミット・pushし、GitHubから主要ファイルと最新SHAを再確認してDraft PR #2を更新してください。main直接更新・force push・履歴置換・マージ・画像生成・ドット制作・ゲーム本体実装・公開・デプロイは禁止です。
+
+コンテキストが増えたら、安全にGitHubへ保存した区切りでHandoffを更新し、新しいセッションへの移行を案内してください。

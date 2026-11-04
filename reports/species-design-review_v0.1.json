@@ -1,0 +1,4531 @@
+{
+  "date_jst": "2026-11-04",
+  "source_commit": "87308e0a0b9df51284bf07489b45cb17dce6a655",
+  "scope_ja": "156種の文字設計を人が確認。JSON/CSV/Markdownの全項目は生成元の再現比較で照合。画像目視は列挙する既存画像に限定。",
+  "species_reviewed": 156,
+  "families_reviewed": 79,
+  "changed_species_count": 94,
+  "sources_used": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "LATEST_HANDOFF.md",
+    "docs/DECISIONS.md",
+    "docs/requests/MONORICA_Work_GitHub_prompt_v0.1.md",
+    "docs/handoffs/HANDOFF_2026-11-03_CLOUD_EXECUTION_BLOCKED.md",
+    "docs/handoffs/HANDOFF_2026-11-03_INITIAL_IMPORT.md",
+    "docs/SPECIES_ALLOCATION_v0.1.md",
+    "docs/SPECIES_CATALOG_v0.1.md",
+    "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+    "content/planning/species-catalog_v0.1.json",
+    "content/planning/species-catalog_v0.1.schema.json",
+    "content/planning/species-catalog_v0.1.csv",
+    "docs/SPECIES_ART_BATCHES_v0.1.md",
+    "content/planning/species-art-batches_v0.1.json",
+    "reports/species-catalog-check_v0.1.json",
+    "docs/WORLD_OUTLINE_v0.1.md",
+    "docs/STORY_CONFLICT_B_v0.1.md",
+    "content/planning/world-outline.json",
+    "content/planning/known-species.json",
+    "content/type-chart.json",
+    "docs/STARTER_MODEL_SHEETS_v0.1.md",
+    "docs/EARLY_WILD_MODEL_SHEETS_v0.1.md",
+    "docs/LATER_WILD_MODEL_SHEETS_v0.1.md",
+    "brief/06_starter_signature_design_brief_v0.2.md",
+    "brief/07_starter_evolution_plan_v0.1.md",
+    "brief/10_starter_playstyle_proposal_v0.2.md",
+    "brief/11_field_moves_and_opening_v0.2.md",
+    "brief/12_first_region_proposal_v0.3.md",
+    "brief/14_early_wild_creatures_v0.2.md",
+    "docs/HANAMIMI_SPRITES_v0.1.md",
+    "docs/STARTER_SPRITES_v0.1.md",
+    "docs/EARLY_WILD_SPRITES_v0.1.md",
+    "docs/ASSET_SPEC_v0.1.md",
+    "tools/species_drafts_v01.py",
+    "tools/build_species_catalog_v01.py",
+    "tools/validate_species_catalog_v01.py"
+  ],
+  "images_visually_reviewed": [
+    "brief/starter_concepts_v0.4.png",
+    "brief/starter_middle_concepts_v0.1.png",
+    "brief/wild_monsters_concepts_v0.1.png",
+    "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
+    "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
+    "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
+    "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
+    "assets/runtime/monsters/starter_ember_wyvern_01/back.png",
+    "assets/runtime/monsters/starter_ember_wyvern_01/front.png",
+    "assets/runtime/monsters/starter_ember_wyvern_01/icon.png",
+    "assets/runtime/monsters/starter_flower_hare_01/back.png",
+    "assets/runtime/monsters/starter_flower_hare_01/front.png",
+    "assets/runtime/monsters/starter_flower_hare_01/icon.png",
+    "assets/runtime/monsters/starter_tide_bear_01/back.png",
+    "assets/runtime/monsters/starter_tide_bear_01/front.png",
+    "assets/runtime/monsters/starter_tide_bear_01/icon.png",
+    "assets/runtime/monsters/wild_breeze_bird_01/back.png",
+    "assets/runtime/monsters/wild_breeze_bird_01/front.png",
+    "assets/runtime/monsters/wild_breeze_bird_01/icon.png",
+    "assets/runtime/monsters/wild_seed_squirrel_01/back.png",
+    "assets/runtime/monsters/wild_seed_squirrel_01/front.png",
+    "assets/runtime/monsters/wild_seed_squirrel_01/icon.png",
+    "assets/runtime/monsters/wild_vine_mole_01/back.png",
+    "assets/runtime/monsters/wild_vine_mole_01/front.png",
+    "assets/runtime/monsters/wild_vine_mole_01/icon.png",
+    "assets/runtime/ui/battle/frame.png"
+  ],
+  "global_changes": [
+    {
+      "path": "field_moves",
+      "before": [
+        {
+          "id": "field_vine",
+          "name_ja": "つたうち",
+          "type_id": "grass",
+          "learn_rank": 12,
+          "gate_rank": 13,
+          "region_id": "region_kazami",
+          "teacher": "森の入口の徒歩の講習場所",
+          "gate": "森の崖の支点",
+          "battle": "草の攻撃と速さを下げる追加効果の案",
+          "primary_provider": "wild_vine_mole_01",
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_wave",
+          "name_ja": "なみわたり",
+          "type_id": "water",
+          "learn_rank": 21,
+          "gate_rank": 22,
+          "region_id": "region_minase",
+          "teacher": "水門手前の徒歩の船着場の講習",
+          "gate": "水郷の指定の岸から渡る水路",
+          "battle": "水の攻撃。2対2では複数相手への攻撃候補",
+          "primary_provider": "wild_stream_otter_01",
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_break",
+          "name_ja": "いわくだき",
+          "type_id": "earth",
+          "learn_rank": 31,
+          "gate_rank": 32,
+          "region_id": "region_hinowa",
+          "teacher": "地熱洞手前の徒歩の工房講習",
+          "gate": "地熱洞のひび岩",
+          "battle": "地の攻撃と防御を下げる追加効果の案",
+          "primary_provider": "wild_vine_mole_01",
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_ember",
+          "name_ja": "ともしび",
+          "type_id": "fire",
+          "learn_rank": 33,
+          "gate_rank": 34,
+          "region_id": "region_hinowa",
+          "teacher": "岩の講習後の徒歩の灯火広場",
+          "gate": "地熱洞奥の灯火",
+          "battle": "炎の攻撃とやけどの追加効果の案",
+          "primary_provider": "wild_kiln_pup_01",
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        }
+      ],
+      "after": [
+        {
+          "id": "field_vine",
+          "name_ja": "つたうち",
+          "type_id": "grass",
+          "learn_rank": 12,
+          "gate_rank": 13,
+          "region_id": "region_kazami",
+          "teacher": "森の入口の徒歩の講習場所",
+          "gate": "森の崖の支点",
+          "battle": "草の攻撃と速さを下げる追加効果の案",
+          "primary_provider": "wild_vine_mole_01",
+          "required_gate_ids": [],
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_wave",
+          "name_ja": "なみわたり",
+          "type_id": "water",
+          "learn_rank": 21,
+          "gate_rank": 22,
+          "region_id": "region_minase",
+          "teacher": "水門手前の徒歩の船着場の講習",
+          "gate": "水郷の指定の岸から渡る水路",
+          "battle": "水の攻撃。2対2では複数相手への攻撃候補",
+          "primary_provider": "wild_stream_otter_01",
+          "required_gate_ids": [],
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_break",
+          "name_ja": "いわくだき",
+          "type_id": "earth",
+          "learn_rank": 31,
+          "gate_rank": 32,
+          "region_id": "region_hinowa",
+          "teacher": "地熱洞手前の徒歩の工房講習",
+          "gate": "地熱洞のひび岩",
+          "battle": "地の攻撃と防御を下げる追加効果の案",
+          "primary_provider": "wild_vine_mole_01",
+          "required_gate_ids": [],
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        },
+        {
+          "id": "field_ember",
+          "name_ja": "ともしび",
+          "type_id": "fire",
+          "learn_rank": 33,
+          "gate_rank": 34,
+          "region_id": "region_hinowa",
+          "teacher": "岩の講習後の徒歩の灯火広場",
+          "gate": "地熱洞奥の灯火",
+          "battle": "炎の攻撃とやけどの追加効果の案",
+          "primary_provider": "wild_kiln_pup_01",
+          "required_gate_ids": [
+            "field_break"
+          ],
+          "status": "production_proposal",
+          "source_path": "brief/11_field_moves_and_opening_v0.2.md",
+          "slot_rule": "対応技が現在の戦闘4枠にあり、その個体が手持ちにいる。",
+          "relearn_rule": "無償・繰り返し講習と回復施設の思い出し。進化で自動消去しない。",
+          "field_usage_rule_proposal": "探索時は戦闘用使用回数を消費せず、0でも使用可。戦闘不能時は安全地で回復してから使用する案。"
+        }
+      ]
+    },
+    {
+      "path": "return_safety_policy.rules_ja",
+      "before": [
+        "つた・岩の仕掛けは帰路の開通を保持する。",
+        "水上で最後のなみわたりを失う忘却・預け入れ・逃がす操作を不可にする。",
+        "技のない個体や預かりからの遠隔探索は許可しない。",
+        "非常帰還は到達済み入口のみ。未開通の先へ進む代替手段にしない。",
+        "回復施設で必要な通常種の再捕獲と無償再習得へ戻れる。",
+        "複数の探索技を要する必須区間は最大2種類を目標とする。実マップ未制作。"
+      ],
+      "after": [
+        "つた・岩の仕掛けは帰路の開通を保持する。",
+        "水上と水路で隔てられた岸で、最後のなみわたりを失う忘却・預け入れ・逃がす操作を不可にする。",
+        "技のない個体や預かりからの遠隔探索は許可しない。",
+        "非常帰還は到達済み入口のみ。未開通の先へ進む代替手段にしない。",
+        "回復施設で必要な通常種の再捕獲と無償再習得へ戻れる。",
+        "複数の探索技を要する必須区間は最大2種類を目標とする。実マップ未制作。",
+        "灯火は帰路に必要な状態を保存する。中断再開後も帰路の岩・つた・灯火の開通状態と到達済み入口を復元する。",
+        "孤立した岸・全手持ち戦闘不能・技忘却・手持ち変更後は、到達済みの安全な入口へ非常帰還できる案。帰還先を保存し、そこから回復施設へ徒歩で戻れる配置にする。"
+      ]
+    }
+  ],
+  "species": [
+    {
+      "dex_number": 1,
+      "id": "starter_flower_hare_01",
+      "name_ja": "ハナミミ",
+      "text_design_reviewed": true,
+      "review_note_ja": "四足から二足、つぼみから半開き・3房へ段階がある。各段階の接続を独立記述し、最終背面の花尾基部は補完案として残す。",
+      "stage_focus_ja": "基準形。花尾はまだ開かない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "前脚2本は胸、後脚2本は腰。葉耳2枚は頭頂、閉じた花尾1本は腰中央。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：頭と葉耳が大きい低い四足、腰に閉じたつぼみ。初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "背面でも保つ輪郭：頭と葉耳が大きい低い四足、腰に閉じたつぼみ。前脚2本は胸、後脚2本は腰。葉耳2枚は頭頂、閉じた花尾1本は腰中央。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。。基準形。花尾はまだ開かない。",
+          "after": "横面の接続：前脚2本は胸、後脚2本は腰。葉耳2枚は頭頂、閉じた花尾1本は腰中央。。基準形。花尾はまだ開かない。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 2,
+      "id": "starter_flower_hare_02",
+      "name_ja": "ハナリット",
+      "text_design_reviewed": true,
+      "review_note_ja": "四足から二足、つぼみから半開き・3房へ段階がある。各段階の接続を独立記述し、最終背面の花尾基部は補完案として残す。",
+      "stage_focus_ja": "脚が伸び、耳元に花1輪。尾は最終形の3房まで広げない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "腕2本は肩、脚2本は骨盤。葉耳2枚は頭頂、耳元の花1輪と腰中央の半開き花尾1本を分ける。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：細身の二足、耳元に一輪、半開きの短い花尾。初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "背面でも保つ輪郭：細身の二足、耳元に一輪、半開きの短い花尾。腕2本は肩、脚2本は骨盤。葉耳2枚は頭頂、耳元の花1輪と腰中央の半開き花尾1本を分ける。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。。脚が伸び、耳元に花1輪。尾は最終形の3房まで広げない。",
+          "after": "横面の接続：腕2本は肩、脚2本は骨盤。葉耳2枚は頭頂、耳元の花1輪と腰中央の半開き花尾1本を分ける。。脚が伸び、耳元に花1輪。尾は最終形の3房まで広げない。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 3,
+      "id": "starter_flower_hare_03",
+      "name_ja": "フロレーヌ",
+      "text_design_reviewed": true,
+      "review_note_ja": "四足から二足、つぼみから半開き・3房へ段階がある。各段階の接続を独立記述し、最終背面の花尾基部は補完案として残す。",
+      "stage_focus_ja": "花冠と花尾が大きくなる。花弁3房は1本の尾の基部から分かれる構造案。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "腕2本は肩、脚2本は骨盤。葉耳2枚を保持し、腰中央の尾1本の基部から花弁3房が分かれる補完案。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：長い四肢で立つ精霊獣、腰から流れる花弁3房。初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。",
+          "after": "背面でも保つ輪郭：長い四肢で立つ精霊獣、腰から流れる花弁3房。腕2本は肩、脚2本は骨盤。葉耳2枚を保持し、腰中央の尾1本の基部から花弁3房が分かれる補完案。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：初期は四足。耳2枚は頭頂、花尾1本は腰中央。中間以降は前肢を腕として使う二足姿勢へ。。花冠と花尾が大きくなる。花弁3房は1本の尾の基部から分かれる構造案。",
+          "after": "横面の接続：腕2本は肩、脚2本は骨盤。葉耳2枚を保持し、腰中央の尾1本の基部から花弁3房が分かれる補完案。。花冠と花尾が大きくなる。花弁3房は1本の尾の基部から分かれる構造案。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 4,
+      "id": "starter_ember_wyvern_01",
+      "name_ja": "ホノル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小翼・中翼・大翼と胸の発達で成長を示す。腕2・脚2・背翼2を全段階で維持し、胸の太陽印を背へ複製しない。",
+      "stage_focus_ja": "基準形。翼膜は橙、角の先も橙。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 5,
+      "id": "starter_ember_wyvern_02",
+      "name_ja": "フレイガ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小翼・中翼・大翼と胸の発達で成長を示す。腕2・脚2・背翼2を全段階で維持し、胸の太陽印を背へ複製しない。",
+      "stage_focus_ja": "角と脚が伸び、翼は中型に。最終形の輪郭へ先走らない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 6,
+      "id": "starter_ember_wyvern_03",
+      "name_ja": "グレンヴァル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小翼・中翼・大翼と胸の発達で成長を示す。腕2・脚2・背翼2を全段階で維持し、胸の太陽印を背へ複製しない。",
+      "stage_focus_ja": "翼・胸・脚を発達。採用原画の方向を保ち、見えにくい腕と翼根は6肢指定に合わせる構造案。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 7,
+      "id": "starter_tide_bear_01",
+      "name_ja": "ミオマル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小波・小盾・重い波盾で成長差がある。原画の大肩と丸耳を維持し、反撃の対象交代・多段処理は実装前の検討事項。",
+      "stage_focus_ja": "基準形。盾を巨大化せず、背中へ胸の波を写さない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 8,
+      "id": "starter_tide_bear_02",
+      "name_ja": "ナミグマ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小波・小盾・重い波盾で成長差がある。原画の大肩と丸耳を維持し、反撃の対象交代・多段処理は実装前の検討事項。",
+      "stage_focus_ja": "肩幅と前腕を増す。盾は手を隠し切らない大きさ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 9,
+      "id": "starter_tide_bear_03",
+      "name_ja": "タイドガル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小波・小盾・重い波盾で成長差がある。原画の大肩と丸耳を維持し、反撃の対象交代・多段処理は実装前の検討事項。",
+      "stage_focus_ja": "波器官が大きな防壁形へ。左右の腕に各1器官という接続は構造案。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 10,
+      "id": "wild_seed_squirrel_01",
+      "name_ja": "リスコロ",
+      "text_design_reviewed": true,
+      "review_note_ja": "抱える実から尾の3貯蔵口への機能変化を持つ。コイル尾とは詰まった種房と空洞で区別できる。",
+      "stage_focus_ja": "基準形。持った実を背中に重複させない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 11,
+      "id": "wild_seed_squirrel_02",
+      "name_ja": "コノミリア",
+      "text_design_reviewed": true,
+      "review_note_ja": "抱える実から尾の3貯蔵口への機能変化を持つ。コイル尾とは詰まった種房と空洞で区別できる。",
+      "stage_focus_ja": "種房に貯蔵口3つができる。実は尾へ蓄え、抱える前腕は短いまま。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 12,
+      "id": "wild_vine_mole_01",
+      "name_ja": "ツルモグ",
+      "text_design_reviewed": true,
+      "review_note_ja": "掘る前足から支点を結ぶ尾へ機能が増す。草と岩の講習を進化前から担当でき、後発の樽胴バクとは大前足で区別。",
+      "stage_focus_ja": "基準形。追加腕を生やさない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 13,
+      "id": "wild_vine_mole_02",
+      "name_ja": "ネヅナグ",
+      "text_design_reviewed": true,
+      "review_note_ja": "掘る前足から支点を結ぶ尾へ機能が増す。草と岩の講習を進化前から担当でき、後発の樽胴バクとは大前足で区別。",
+      "stage_focus_ja": "前足が幅広に、尾が支点を結ぶ長さへ。根状の筋は模様で追加脚ではない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 14,
+      "id": "wild_breeze_bird_01",
+      "name_ja": "ハネリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "短脚の小扇から半円の大扇へ発展。長脚鶴・長翼鳥・皿顔梟・喉袋鳩と輪郭が異なる。",
+      "stage_focus_ja": "基準形。尾羽の重なりを別尾と数えない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 15,
+      "id": "wild_breeze_bird_02",
+      "name_ja": "オウギル",
+      "text_design_reviewed": true,
+      "review_note_ja": "短脚の小扇から半円の大扇へ発展。長脚鶴・長翼鳥・皿顔梟・喉袋鳩と輪郭が異なる。",
+      "stage_focus_ja": "尾を一続きの大きな扇の輪郭へ。肩の珊瑚色は位置を維持。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 16,
+      "id": "wild_stream_otter_01",
+      "name_ja": "ミズッタ",
+      "text_design_reviewed": true,
+      "review_note_ja": "横長の平尾から舵尾へ変化。水熊と体格が異なる。カワミオは速い交代役の能力傾向へ合わせた。",
+      "stage_focus_ja": "基準形。新設定画の背面・横面は確認待ち。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 17,
+      "id": "wild_stream_otter_02",
+      "name_ja": "カワミオ",
+      "text_design_reviewed": true,
+      "review_note_ja": "横長の平尾から舵尾へ変化。水熊と体格が異なる。カワミオは速い交代役の能力傾向へ合わせた。",
+      "stage_focus_ja": "尾が横広に育ち、足は短いまま。肩を熊の盾形へ変えない。",
+      "changes": [
+        {
+          "path": "battle.ability_trends.attack",
+          "before": "高め",
+          "after": "標準"
+        },
+        {
+          "path": "battle.ability_trends.defense",
+          "before": "標準",
+          "after": "控えめ"
+        },
+        {
+          "path": "battle.ability_trends.special_attack",
+          "before": "控えめ",
+          "after": "標準"
+        },
+        {
+          "path": "battle.ability_trends.speed",
+          "before": "標準",
+          "after": "高め"
+        },
+        {
+          "path": "battle.role_id",
+          "before": "physical_attacker",
+          "after": "pivot"
+        },
+        {
+          "path": "battle.role_ja",
+          "before": "物理攻撃",
+          "after": "速い交代と対面調整"
+        },
+        {
+          "path": "battle.strengths_ja",
+          "before": "物理技の選択で攻撃範囲を作る。素早い物理水役。長期の受け合いより流れを作る。",
+          "after": "先に動いて有利な仲間へつなぐ。素早い物理水役。長期の受け合いより流れを作る。"
+        },
+        {
+          "path": "battle.weaknesses_ja",
+          "before": "物理の壁や攻撃を下げる妨害が苦手",
+          "after": "受け続ける耐久や単独の大火力は控えめ"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 18,
+      "id": "wild_coil_dormouse_01",
+      "name_ja": "ココイル",
+      "text_design_reviewed": true,
+      "review_note_ja": "初期3帯ずつと進化後4帯ずつの文章矛盾を修正。32pxは帯の全数より渦の白い中心と低い胴を優先。",
+      "stage_focus_ja": "基準形。背面・横面の新設定画は確認待ち。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。",
+          "after": "腰の尾1本が白い隙間を残す渦を描く。銅3帯・水色3帯は尾に連続する。初期形v0.1の確認待ち設定を参照。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：低く座る丸い胴、体外に大きな1巻きの渦尾。腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。",
+          "after": "背面でも保つ輪郭：低く座る丸い胴、体外に大きな1巻きの渦尾。腰の尾1本が白い隙間を残す渦を描く。銅3帯・水色3帯は尾に連続する。初期形v0.1の確認待ち設定を参照。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。。基準形。背面・横面の新設定画は確認待ち。",
+          "after": "横面の接続：腰の尾1本が白い隙間を残す渦を描く。銅3帯・水色3帯は尾に連続する。初期形v0.1の確認待ち設定を参照。。基準形。背面・横面の新設定画は確認待ち。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 19,
+      "id": "wild_coil_dormouse_02",
+      "name_ja": "マキデン",
+      "text_design_reviewed": true,
+      "review_note_ja": "初期3帯ずつと進化後4帯ずつの文章矛盾を修正。32pxは帯の全数より渦の白い中心と低い胴を優先。",
+      "stage_focus_ja": "尾の径と巻きを増す。帯は銅4・水色4へ増す構造案で、初期の帯数を変更しない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。",
+          "after": "腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。"
+        },
+        {
+          "path": "art.icon_32px_ja",
+          "before": "連続する渦尾と増えた発光帯を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "渦尾の白い中心と低い胴を優先。帯は太い銅・水色面としてまとめ、4帯ずつの確認は96pxと設定画で行う。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：尾の渦を横に立てて、体は低く支える。腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。",
+          "after": "背面でも保つ輪郭：尾の渦を横に立てて、体は低く支える。腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：腰から尾1本が隙間を残して渦を描く。銅3帯と水色3帯は同じ尾区間へ連続。。尾の径と巻きを増す。帯は銅4・水色4へ増す構造案で、初期の帯数を変更しない。",
+          "after": "横面の接続：腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。。尾の径と巻きを増す。帯は銅4・水色4へ増す構造案で、初期の帯数を変更しない。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 20,
+      "id": "wild_dusk_glider_01",
+      "name_ja": "ヨルミル",
+      "text_design_reviewed": true,
+      "review_note_ja": "4肢・手首から足首への飛膜を維持。森のつた開通後という入手条件をデータへ明記し、イベント後も夜の通常入手を残す。",
+      "stage_focus_ja": "基準形はv0.2の四肢。旧6肢案は不採用。",
+      "changes": [
+        {
+          "path": "acquisition.methods",
+          "before": [
+            {
+              "method": "wild_capture",
+              "region_id": "region_kazami",
+              "story_rank": 14,
+              "required_field_move_ids": [],
+              "solo": true,
+              "repeatable": true,
+              "external_requirement": false,
+              "encounter_time": "night",
+              "text_ja": "徒歩で到達する生息地で繰り返し捕獲。捕獲道具は通常店・講習の再補充から取得。"
+            }
+          ],
+          "after": [
+            {
+              "method": "wild_capture",
+              "region_id": "region_kazami",
+              "story_rank": 14,
+              "required_field_move_ids": [
+                "field_vine"
+              ],
+              "solo": true,
+              "repeatable": true,
+              "external_requirement": false,
+              "encounter_time": "night",
+              "text_ja": "徒歩で到達する生息地で繰り返し捕獲。捕獲道具は通常店・講習の再補充から取得。"
+            }
+          ]
+        },
+        {
+          "path": "habitat.wild_locations",
+          "before": [
+            {
+              "region_id": "region_kazami",
+              "environment_ja": "こもれびの森の木陰。夜に枝間を滑空し、昼は樹洞で休む。",
+              "access": "on_foot_before_local_required_gate"
+            }
+          ],
+          "after": [
+            {
+              "region_id": "region_kazami",
+              "environment_ja": "こもれびの森の木陰。夜に枝間を滑空し、昼は樹洞で休む。",
+              "access": "on_foot_after_required_gates"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 21,
+      "id": "wild_dusk_glider_02",
+      "name_ja": "ヨイトバリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "4肢・手首から足首への飛膜を維持。森のつた開通後という入手条件をデータへ明記し、イベント後も夜の通常入手を残す。",
+      "stage_focus_ja": "膜の幅と尾の舵面が育つ。四肢4・独立翼0のまま。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 22,
+      "id": "wild_reed_crane_01",
+      "name_ja": "アシピナ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い雛・S字首・水平薄翼の3段階。脚環の細線だけへ識別を頼らず、長脚と胴の比率を32pxで優先。",
+      "stage_focus_ja": "雛。翼は小さく首もまだ短い。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "長脚の葦色の環を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "長脚と丸い雛胴の比率を優先。脚の細い葦環より、二足で歩く葦笛との胴の違いを残す。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 23,
+      "id": "wild_reed_crane_02",
+      "name_ja": "ササナギ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い雛・S字首・水平薄翼の3段階。脚環の細線だけへ識別を頼らず、長脚と胴の比率を32pxで優先。",
+      "stage_focus_ja": "首が伸び、胸羽が葦房形に。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 24,
+      "id": "wild_reed_crane_03",
+      "name_ja": "ミナツルネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い雛・S字首・水平薄翼の3段階。脚環の細線だけへ識別を頼らず、長脚と胴の比率を32pxで優先。",
+      "stage_focus_ja": "胸羽を束ねたまま翼幅が増す。脚数は増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 25,
+      "id": "wild_lock_crab_01",
+      "name_ja": "カチコバ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い鋏から片側止水板・両板鋏へ変化。進化後の大鋏を個体基準の左へ統一し、前背の反転に注意。歩脚は6本。",
+      "stage_focus_ja": "小殻の入口。はさみは丸く安全な輪郭。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "胸前の丸いはさみ2本は左右同形。歩脚6本は胴の左右各3本。尾・独立翼なし。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：小さな四角い殻の横から細脚、丸いはさみ。はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "背面でも保つ輪郭：小さな四角い殻の横から細脚、丸いはさみ。胸前の丸いはさみ2本は左右同形。歩脚6本は胴の左右各3本。尾・独立翼なし。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。。小殻の入口。はさみは丸く安全な輪郭。",
+          "after": "横面の接続：胸前の丸いはさみ2本は左右同形。歩脚6本は胴の左右各3本。尾・独立翼なし。。小殻の入口。はさみは丸く安全な輪郭。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 26,
+      "id": "wild_lock_crab_02",
+      "name_ja": "セキバサミ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い鋏から片側止水板・両板鋏へ変化。進化後の大鋏を個体基準の左へ統一し、前背の反転に注意。歩脚は6本。",
+      "stage_focus_ja": "片はさみが止水板形へ。左右差は全視点で固定。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。"
+        },
+        {
+          "path": "art.icon_32px_ja",
+          "before": "角殻と左右差のあるはさみを最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "左右差のあるはさみの外形と角殻を残す。個体の左を広くし、脚は接地側をまとめて表す。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：横長の殻と片側が厚いはさみ。はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "背面でも保つ輪郭：横長の殻と片側が厚いはさみ。個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。。片はさみが止水板形へ。左右差は全視点で固定。",
+          "after": "横面の接続：個体の左はさみ1本を広い止水板形、右1本を細い形とする。歩脚6本は左右各3本。正面対向時の左はさみは画面右、背面では画面左。。片はさみが止水板形へ。左右差は全視点で固定。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 27,
+      "id": "wild_lock_crab_03",
+      "name_ja": "ミトガニス",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い鋏から片側止水板・両板鋏へ変化。進化後の大鋏を個体基準の左へ統一し、前背の反転に注意。歩脚は6本。",
+      "stage_focus_ja": "両はさみが板形になるが左を広く残す。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。"
+        },
+        {
+          "path": "art.icon_32px_ja",
+          "before": "板はさみと横長の殻を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "横長の水門殻と前で組む板はさみを残す。広い左はさみの左右を保ち、板の細い溝は省く。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：厚い水門形の殻、二つの板はさみを前で組む。はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。",
+          "after": "背面でも保つ輪郭：厚い水門形の殻、二つの板はさみを前で組む。板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：はさみ2本は胸の前、歩脚6本は胴の左右各3本。尾・独立翼なし。。両はさみが板形になるが左を広く残す。",
+          "after": "横面の接続：板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。。両はさみが板形になるが左を広く残す。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 28,
+      "id": "wild_lotus_frog_01",
+      "name_ja": "ハスプク",
+      "text_design_reviewed": true,
+      "review_note_ja": "2肩葉が開いて水を貯める機能変化。蓮の花を頭上へ置く後日種、鉢葉1枚の雨庭種と位置・枚数で分ける。",
+      "stage_focus_ja": "葉はまだ折り畳む。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 29,
+      "id": "wild_lotus_frog_02",
+      "name_ja": "ウキハスネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "2肩葉が開いて水を貯める機能変化。蓮の花を頭上へ置く後日種、鉢葉1枚の雨庭種と位置・枚数で分ける。",
+      "stage_focus_ja": "葉が開いて水を貯める。成体でも四脚・尾なし。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 30,
+      "id": "wild_silt_skate_01",
+      "name_ja": "ドロヒラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "接地する厚い平胴と櫂尾で空泳ぎエイから分ける。同じエイの1文字違い名称は空泳ぎ側を改名して解消。",
+      "stage_focus_ja": "小型で円い鰭。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 31,
+      "id": "wild_silt_skate_02",
+      "name_ja": "スナミオ",
+      "text_design_reviewed": true,
+      "review_note_ja": "接地する厚い平胴と櫂尾で空泳ぎエイから分ける。同じエイの1文字違い名称は空泳ぎ側を改名して解消。",
+      "stage_focus_ja": "胸鰭が角張り、尾が櫂形へ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 32,
+      "id": "wild_mist_snail_01",
+      "name_ja": "ツユマキ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い渦殻から段丘殻へ変化。工業林の裸の3ひだ蛞蝓、熱い円錐貝とは殻形と生態が異なる。",
+      "stage_focus_ja": "溝は太く少数に。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 33,
+      "id": "wild_mist_snail_02",
+      "name_ja": "キリマイム",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い渦殻から段丘殻へ変化。工業林の裸の3ひだ蛞蝓、熱い円錐貝とは殻形と生態が異なる。",
+      "stage_focus_ja": "殻の溝が水を回す段丘形へ。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 34,
+      "id": "wild_lantern_jelly_01",
+      "name_ja": "ホヤリネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "縦長の傘と内灯1から2の変化。潮ベールの左右襟膜・イカの前方6触腕と方向が異なる。",
+      "stage_focus_ja": "小さい一灯。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 35,
+      "id": "wild_lantern_jelly_02",
+      "name_ja": "ミナランプ",
+      "text_design_reviewed": true,
+      "review_note_ja": "縦長の傘と内灯1から2の変化。潮ベールの左右襟膜・イカの前方6触腕と方向が異なる。",
+      "stage_focus_ja": "傘が伸び内灯が縦に2つ連なる器官案。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 36,
+      "id": "wild_bog_leech_01",
+      "name_ja": "ペタリム",
+      "text_design_reviewed": true,
+      "review_note_ja": "豆胴からS字濾過帯へ変化。両端吸盤を移動器官として扱い、尾や脚を付け足さない。",
+      "stage_focus_ja": "基準形。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 37,
+      "id": "wild_bog_leech_02",
+      "name_ja": "シブネリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "豆胴からS字濾過帯へ変化。両端吸盤を移動器官として扱い、尾や脚を付け足さない。",
+      "stage_focus_ja": "体が伸び、背の濾過帯が太くなる。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 38,
+      "id": "wild_reed_whistle_01",
+      "name_ja": "アシフエラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "斜めの葦束と二足・笛穴を持つ単独種。浮遊鐘の舌とは接地姿勢で区別し、1対1用攻撃も残す。",
+      "stage_focus_ja": "単独種。成長差分で種数を増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 39,
+      "id": "wild_bubble_moth_01",
+      "name_ja": "アワハリカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸い横広4翅と泡斑で独立。レンズ蛾の縦長窓との差を32pxへ明記。氷4倍・炎2倍の説明は表と一致。",
+      "stage_focus_ja": "単独種。泡数の違いを別種へ数えない。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "丸翅と大きな泡斑を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "横へ丸く開いた翅と大きな白い泡斑を残す。レンズ蛾の縦長の円窓と外形で分ける。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 40,
+      "id": "wild_kiln_pup_01",
+      "name_ja": "ホコロン",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸土塊から浅い窯・低い炉床へ機能形が変わる。通常炎の提供元として灯火より前に入手できる。",
+      "stage_focus_ja": "背の土は1つの丸塊。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 41,
+      "id": "wild_kiln_pup_02",
+      "name_ja": "カマテラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸土塊から浅い窯・低い炉床へ機能形が変わる。通常炎の提供元として灯火より前に入手できる。",
+      "stage_focus_ja": "背の塊が浅い空洞の弧へ。穴は器官の通気口。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 42,
+      "id": "wild_kiln_pup_03",
+      "name_ja": "ロカマルド",
+      "text_design_reviewed": true,
+      "review_note_ja": "丸土塊から浅い窯・低い炉床へ機能形が変わる。通常炎の提供元として灯火より前に入手できる。",
+      "stage_focus_ja": "炉床を低く広げる。人造の建物をそのまま背負わせない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 43,
+      "id": "wild_glass_gecko_01",
+      "name_ja": "スナペト",
+      "text_design_reviewed": true,
+      "review_note_ja": "背板1枚から3枚・扇状反射へ成長。各段階の枚数と付け根を明記し、鏡鹿の角・雲母の全身板と分ける。",
+      "stage_focus_ja": "尾はまだ短く背板1片。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "脚4本と腰の尾1本。背の皮膚から中央のガラス板1枚が立つ。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：壁へ貼りつく平胴、小さな背の透明片。脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "背面でも保つ輪郭：壁へ貼りつく平胴、小さな背の透明片。脚4本と腰の尾1本。背の皮膚から中央のガラス板1枚が立つ。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。。尾はまだ短く背板1片。",
+          "after": "横面の接続：脚4本と腰の尾1本。背の皮膚から中央のガラス板1枚が立つ。各足の吸着指は大形3つ。。尾はまだ短く背板1片。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 44,
+      "id": "wild_glass_gecko_02",
+      "name_ja": "ハクスリカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "背板1枚から3枚・扇状反射へ成長。各段階の枚数と付け根を明記し、鏡鹿の角・雲母の全身板と分ける。",
+      "stage_focus_ja": "背板が3枚へ増え、尾が伸びる。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "脚4本と腰の尾1本。中央の背板3枚は頭側から腰側へ一列に直結。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：長い尾で均衡を取り、背板3枚を起こす。脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "背面でも保つ輪郭：長い尾で均衡を取り、背板3枚を起こす。脚4本と腰の尾1本。中央の背板3枚は頭側から腰側へ一列に直結。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。。背板が3枚へ増え、尾が伸びる。",
+          "after": "横面の接続：脚4本と腰の尾1本。中央の背板3枚は頭側から腰側へ一列に直結。各足の吸着指は大形3つ。。背板が3枚へ増え、尾が伸びる。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 45,
+      "id": "wild_glass_gecko_03",
+      "name_ja": "ルミガレス",
+      "text_design_reviewed": true,
+      "review_note_ja": "背板1枚から3枚・扇状反射へ成長。各段階の枚数と付け根を明記し、鏡鹿の角・雲母の全身板と分ける。",
+      "stage_focus_ja": "背板は3枚のまま大型化し光を曲げる。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "脚4本と腰の尾1本。中央の背板3枚は一列の付け根から扇状に傾く。独立した翼へ変えない。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：透明な背板が扇状に重なる細身の四足。脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。",
+          "after": "背面でも保つ輪郭：透明な背板が扇状に重なる細身の四足。脚4本と腰の尾1本。中央の背板3枚は一列の付け根から扇状に傾く。独立した翼へ変えない。各足の吸着指は大形3つ。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：脚4本は胴側面、尾1本は腰。ガラス板は背の皮膚から1列。吸着指は各足3つの大形。。背板は3枚のまま大型化し光を曲げる。",
+          "after": "横面の接続：脚4本と腰の尾1本。中央の背板3枚は一列の付け根から扇状に傾く。独立した翼へ変えない。各足の吸着指は大形3つ。。背板は3枚のまま大型化し光を曲げる。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 46,
+      "id": "wild_soot_moth_01",
+      "name_ja": "スミモフ",
+      "text_design_reviewed": true,
+      "review_note_ja": "煤の屋根翅から二層断熱翅へ。高い速さ傾向と「速さより」の文が競合したため、素早い妨害という表現へ合わせた。",
+      "stage_focus_ja": "翅は閉じ気味。",
+      "changes": [
+        {
+          "path": "battle.move_direction_ja",
+          "before": "速さより相手の手順を崩す。",
+          "after": "素早い妨害の入口。攻撃の威力より相手の手順を崩す。"
+        },
+        {
+          "path": "battle.strengths_ja",
+          "before": "相手の決まった勝ち筋をずらす。速さより相手の手順を崩す。",
+          "after": "相手の決まった勝ち筋をずらす。素早い妨害の入口。攻撃の威力より相手の手順を崩す。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 47,
+      "id": "wild_soot_moth_02",
+      "name_ja": "クロハモラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "煤の屋根翅から二層断熱翅へ。高い速さ傾向と「速さより」の文が競合したため、素早い妨害という表現へ合わせた。",
+      "stage_focus_ja": "前翅の折り目が厚くなる。翅4枚を追加翼へ増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 48,
+      "id": "wild_spring_steam_01",
+      "name_ja": "ユケポン",
+      "text_design_reviewed": true,
+      "review_note_ja": "袋胴と2排気弁、襟状の冷却部で水熊・水獺から分ける。水と炎が打ち消す受け相性を積で確認する。",
+      "stage_focus_ja": "弁は小さな穴。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 49,
+      "id": "wild_spring_steam_02",
+      "name_ja": "ホウユラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "袋胴と2排気弁、襟状の冷却部で水熊・水獺から分ける。水と炎が打ち消す受け相性を積で確認する。",
+      "stage_focus_ja": "弁の周囲が襟状に育ち蒸気を整える。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 50,
+      "id": "wild_bell_beetle_01",
+      "name_ja": "カネコツ",
+      "text_design_reviewed": true,
+      "review_note_ja": "釣鐘の裾と意図した響き溝で変化。6脚・飛翔翅2枚と外被を区別し、鎌腕のあるカマキリへ寄せない。",
+      "stage_focus_ja": "飛翔翅は隠す。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 51,
+      "id": "wild_bell_beetle_02",
+      "name_ja": "ドウガロン",
+      "text_design_reviewed": true,
+      "review_note_ja": "釣鐘の裾と意図した響き溝で変化。6脚・飛翔翅2枚と外被を区別し、鎌腕のあるカマキリへ寄せない。",
+      "stage_focus_ja": "殻に意図した響き溝1本。損傷表現にしない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 52,
+      "id": "wild_sun_sprout_01",
+      "name_ja": "ヒマルネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "球根上の日輪葉1枚が傘状へ開く。花兎や氷蓮の花弁と異なり、葉1枚の枚数を変えない。",
+      "stage_focus_ja": "葉は浅い皿形。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 53,
+      "id": "wild_sun_sprout_02",
+      "name_ja": "ヒノサラナ",
+      "text_design_reviewed": true,
+      "review_note_ja": "球根上の日輪葉1枚が傘状へ開く。花兎や氷蓮の花弁と異なり、葉1枚の枚数を変えない。",
+      "stage_focus_ja": "葉の縁が深く刻まれるが枚数は1。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 54,
+      "id": "wild_sulfur_toad_01",
+      "name_ja": "イオプク",
+      "text_design_reviewed": true,
+      "review_note_ja": "浅い孔から窯蓋形の背へ成長。蓮蛙とは肩葉・乾いた気孔背で区別。毒炎の地4倍を受け一覧で確認。",
+      "stage_focus_ja": "孔は浅く丸い。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 55,
+      "id": "wild_sulfur_toad_02",
+      "name_ja": "ユガマド",
+      "text_design_reviewed": true,
+      "review_note_ja": "浅い孔から窯蓋形の背へ成長。蓮蛙とは肩葉・乾いた気孔背で区別。毒炎の地4倍を受け一覧で確認。",
+      "stage_focus_ja": "背が盛り上がり気孔の縁が橙になる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 56,
+      "id": "wild_spark_mica_01",
+      "name_ja": "キラシグ",
+      "text_design_reviewed": true,
+      "review_note_ja": "全身一体の3薄板を固定。ガラスヤモリの背板と異なり脚がなく、物理地役へ特殊攻撃の選択肢を補う。",
+      "stage_focus_ja": "単独種。層の数をランダムに増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 57,
+      "id": "wild_ash_tumble_01",
+      "name_ja": "ハイコロネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "足のない4大房の灰球。球根や結晶球と表面材質・転がる姿で区別し、房を細かく増やさない。",
+      "stage_focus_ja": "単独種。発光は割れ目だけ。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 58,
+      "id": "wild_cable_marten_01",
+      "name_ja": "ヒモテン",
+      "text_design_reviewed": true,
+      "review_note_ja": "長胴で走り、尾の組紐が3大節へ育つ。座るココイルの空洞渦と姿勢が異なり、雷鋼の地4倍へ交代を残す。",
+      "stage_focus_ja": "尾はまだ細い1本。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 59,
+      "id": "wild_cable_marten_02",
+      "name_ja": "アミラチ",
+      "text_design_reviewed": true,
+      "review_note_ja": "長胴で走り、尾の組紐が3大節へ育つ。座るココイルの空洞渦と姿勢が異なり、雷鋼の地4倍へ交代を残す。",
+      "stage_focus_ja": "絶縁毛が太くなり尾の節が読める。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 60,
+      "id": "wild_cable_marten_03",
+      "name_ja": "ケイラトス",
+      "text_design_reviewed": true,
+      "review_note_ja": "長胴で走り、尾の組紐が3大節へ育つ。座るココイルの空洞渦と姿勢が異なり、雷鋼の地4倍へ交代を残す。",
+      "stage_focus_ja": "肩を低く保ち、尾の編み目を3つの大節へ整理。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 61,
+      "id": "wild_hinge_mantis_01",
+      "name_ja": "ツギハサ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小鎌から葉鎌・大蝶番へ発展。歩脚4・鎌腕2・飛翔翅2で人型へ変えず、鋼草の炎4倍を保持。",
+      "stage_focus_ja": "鎌の刃は短く丸い。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 62,
+      "id": "wild_hinge_mantis_02",
+      "name_ja": "カナトギ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小鎌から葉鎌・大蝶番へ発展。歩脚4・鎌腕2・飛翔翅2で人型へ変えず、鋼草の炎4倍を保持。",
+      "stage_focus_ja": "鎌の面が葉形へ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 63,
+      "id": "wild_hinge_mantis_03",
+      "name_ja": "ヒンジルド",
+      "text_design_reviewed": true,
+      "review_note_ja": "小鎌から葉鎌・大蝶番へ発展。歩脚4・鎌腕2・飛翔翅2で人型へ変えず、鋼草の炎4倍を保持。",
+      "stage_focus_ja": "関節と鎌の比率を増す。二足の人型へ変えない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 64,
+      "id": "wild_lattice_lichen_01",
+      "name_ja": "アミゴケ",
+      "text_design_reviewed": true,
+      "review_note_ja": "薄い格子板から籠背へ立体化。根脚は四隅4本、樽胴バクと異なる。籠の隙間は96pxで面として整理する。",
+      "stage_focus_ja": "小板の入口。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 65,
+      "id": "wild_lattice_lichen_02",
+      "name_ja": "ネリカゴ",
+      "text_design_reviewed": true,
+      "review_note_ja": "薄い格子板から籠背へ立体化。根脚は四隅4本、樽胴バクと異なる。籠の隙間は96pxで面として整理する。",
+      "stage_focus_ja": "板の両縁が上がり籠形へ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 66,
+      "id": "wild_seal_gel_01",
+      "name_ja": "パチュル",
+      "text_design_reviewed": true,
+      "review_note_ja": "閉じた平ゲルから貫通輪へ変化。中心の空洞と体表の小孔2つを区別する文章へ直した。",
+      "stage_focus_ja": "輪はまだ閉じた円。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。",
+          "after": "一続きの平たいゲル胴と外周の吸着縁。中心は薄いゲルで閉じ、上面の小孔2つと区別。脚・触腕なし。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：平たい丸ゲル、周囲に太い吸着縁。一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。",
+          "after": "背面でも保つ輪郭：平たい丸ゲル、周囲に太い吸着縁。一続きの平たいゲル胴と外周の吸着縁。中心は薄いゲルで閉じ、上面の小孔2つと区別。脚・触腕なし。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。。輪はまだ閉じた円。",
+          "after": "横面の接続：一続きの平たいゲル胴と外周の吸着縁。中心は薄いゲルで閉じ、上面の小孔2つと区別。脚・触腕なし。。輪はまだ閉じた円。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 67,
+      "id": "wild_seal_gel_02",
+      "name_ja": "シメグル",
+      "text_design_reviewed": true,
+      "review_note_ja": "閉じた平ゲルから貫通輪へ変化。中心の空洞と体表の小孔2つを区別する文章へ直した。",
+      "stage_focus_ja": "中心が抜けた輪になる。別の尾にはしない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。",
+          "after": "一続きの太い輪状ゲル胴。中心は貫通した空洞、上面の小孔2つは輪体上に残す。脚・触腕・尾なし。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：厚い輪状ゲルが一部を起こして立つ。一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。",
+          "after": "背面でも保つ輪郭：厚い輪状ゲルが一部を起こして立つ。一続きの太い輪状ゲル胴。中心は貫通した空洞、上面の小孔2つは輪体上に残す。脚・触腕・尾なし。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：一続きのゲル体。吸着縁は1周、上面の孔は2つ。脚や触腕として伸ばさない。。中心が抜けた輪になる。別の尾にはしない。",
+          "after": "横面の接続：一続きの太い輪状ゲル胴。中心は貫通した空洞、上面の小孔2つは輪体上に残す。脚・触腕・尾なし。。中心が抜けた輪になる。別の尾にはしない。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 68,
+      "id": "wild_draught_chime_01",
+      "name_ja": "スズフワ",
+      "text_design_reviewed": true,
+      "review_note_ja": "浮く丸鐘から縦鐘と2短冊へ変化。葦笛は二足、本種は浮遊舌。雷4倍の複合受けを編成で補う候補。",
+      "stage_focus_ja": "短冊は短い。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 69,
+      "id": "wild_draught_chime_02",
+      "name_ja": "フウリンカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "浮く丸鐘から縦鐘と2短冊へ変化。葦笛は二足、本種は浮遊舌。雷4倍の複合受けを編成で補う候補。",
+      "stage_focus_ja": "鐘が縦へ伸び、短冊幅が増える。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 70,
+      "id": "wild_shade_hedgehog_01",
+      "name_ja": "カゲハリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い板針から半球の重なりへ変化。小尾と5大束の背で大尾リスと区別し、ゲーム内夜の待機で取得する。",
+      "stage_focus_ja": "板針は低い。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 71,
+      "id": "wild_shade_hedgehog_02",
+      "name_ja": "ヨロトゲ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い板針から半球の重なりへ変化。小尾と5大束の背で大尾リスと区別し、ゲーム内夜の待機で取得する。",
+      "stage_focus_ja": "板針が厚く重なり、腹まで金属で覆わない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 72,
+      "id": "wild_lens_moth_01",
+      "name_ja": "マドリネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "細長い透明窓が楕円・導電縁へ発展。泡蛾との32px差を縦横の外形で明確化した。",
+      "stage_focus_ja": "窓は各翅1つ。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "細長い翅と円窓を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "縦に細長い翅と一つの大きな透明窓を優先。泡蛾の丸い横幅を持たせない。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 73,
+      "id": "wild_lens_moth_02",
+      "name_ja": "レンズィア",
+      "text_design_reviewed": true,
+      "review_note_ja": "細長い透明窓が楕円・導電縁へ発展。泡蛾との32px差を縦横の外形で明確化した。",
+      "stage_focus_ja": "翅の縁に導電帯が現れる。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "楕円窓と紺の細縁を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "立てた細長い前翅と楕円の透明窓、紺の縁を優先。細い導電帯の本数は省略する。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 74,
+      "id": "wild_coolant_slug_01",
+      "name_ja": "ヒエフリル",
+      "text_design_reviewed": true,
+      "review_note_ja": "裸胴の3冷却ひだを固定。殻貝・横皿ひだ蛞蝓と異なり、氷鋼は炎4倍・雷2倍の受けを持つ。",
+      "stage_focus_ja": "単独種。ひだを大量の羽へ増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 75,
+      "id": "wild_parcel_golem_01",
+      "name_ja": "ハコバル",
+      "text_design_reviewed": true,
+      "review_note_ja": "箱胴と短腕脚の運搬姿勢で単独種として独立。泥太鼓の円筒打面や巻守衛の脚なし柱とは異なる。",
+      "stage_focus_ja": "単独種。箱の中へ別の顔を増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 76,
+      "id": "wild_snow_ibex_01",
+      "name_ja": "ユキポル",
+      "text_design_reviewed": true,
+      "review_note_ja": "1節角から3節の後湾角・高い肩へ発展。鏡鹿の直立板角と区別し、胸毛を第三の脚にしない。",
+      "stage_focus_ja": "角の節は1つ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 77,
+      "id": "wild_snow_ibex_02",
+      "name_ja": "セッカラン",
+      "text_design_reviewed": true,
+      "review_note_ja": "1節角から3節の後湾角・高い肩へ発展。鏡鹿の直立板角と区別し、胸毛を第三の脚にしない。",
+      "stage_focus_ja": "角は後湾し節3つに。背へ氷柱を足さない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 78,
+      "id": "wild_snow_ibex_03",
+      "name_ja": "ハクレイゴ",
+      "text_design_reviewed": true,
+      "review_note_ja": "1節角から3節の後湾角・高い肩へ発展。鏡鹿の直立板角と区別し、胸毛を第三の脚にしない。",
+      "stage_focus_ja": "肩と蹄が大きくなり、角の節を太く保つ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 79,
+      "id": "wild_star_larva_01",
+      "name_ja": "ホシモル",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼虫・繭・成虫の器官を段階別に分離。繭の外肢は0とし、役割も特殊受けへ合わせ、成虫は6脚4翅へ戻す。",
+      "stage_focus_ja": "幼虫。腹脚のような追加突起は描かない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "胸脚6本と頭の触角2本。翅0、尾0。腹下面は連続した接地面で追加腹脚なし。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：短い雫形の幼虫に細い反射筋。幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "背面でも保つ輪郭：短い雫形の幼虫に細い反射筋。胸脚6本と頭の触角2本。翅0、尾0。腹下面は連続した接地面で追加腹脚なし。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。。幼虫。腹脚のような追加突起は描かない。",
+          "after": "横面の接続：胸脚6本と頭の触角2本。翅0、尾0。腹下面は連続した接地面で追加腹脚なし。。幼虫。腹脚のような追加突起は描かない。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 80,
+      "id": "wild_star_larva_02",
+      "name_ja": "マユシラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼虫・繭・成虫の器官を段階別に分離。繭の外肢は0とし、役割も特殊受けへ合わせ、成虫は6脚4翅へ戻す。",
+      "stage_focus_ja": "殻へ包まれ脚・触角は内側へ。繭には育成用の攻撃と補助を残す。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "繭殻1つの内部へ脚・触角を収納。外へ出る脚0・触角0・翅0。額の薄金点は殻表面に残る模様。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：白い菱形の繭が枝へ密着する。幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "背面でも保つ輪郭：白い菱形の繭が枝へ密着する。繭殻1つの内部へ脚・触角を収納。外へ出る脚0・触角0・翅0。額の薄金点は殻表面に残る模様。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。。殻へ包まれ脚・触角は内側へ。繭には育成用の攻撃と補助を残す。",
+          "after": "横面の接続：繭殻1つの内部へ脚・触角を収納。外へ出る脚0・触角0・翅0。額の薄金点は殻表面に残る模様。。殻へ包まれ脚・触角は内側へ。繭には育成用の攻撃と補助を残す。"
+        },
+        {
+          "path": "battle.ability_trends.hp",
+          "before": "控えめ",
+          "after": "高め"
+        },
+        {
+          "path": "battle.ability_trends.special_attack",
+          "before": "高め",
+          "after": "標準"
+        },
+        {
+          "path": "battle.ability_trends.special_defense",
+          "before": "標準",
+          "after": "高め"
+        },
+        {
+          "path": "battle.ability_trends.speed",
+          "before": "高め",
+          "after": "控えめ"
+        },
+        {
+          "path": "battle.role_id",
+          "before": "swift_special",
+          "after": "special_wall"
+        },
+        {
+          "path": "battle.role_ja",
+          "before": "速い特殊攻撃と立て直し",
+          "after": "特殊受け"
+        },
+        {
+          "path": "battle.strengths_ja",
+          "before": "速さと特殊攻撃で先に仕事をする。繭で足止めを強いすぎず育成を続けられる。",
+          "after": "特殊攻撃を受けて味方へつなぐ。繭で足止めを強いすぎず育成を続けられる。"
+        },
+        {
+          "path": "battle.weaknesses_ja",
+          "before": "重い物理の一撃や先手を奪う妨害に弱い",
+          "after": "強い物理攻撃と継続的な補助妨害が苦手"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 81,
+      "id": "wild_star_larva_03",
+      "name_ja": "セイラミル",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼虫・繭・成虫の器官を段階別に分離。繭の外肢は0とし、役割も特殊受けへ合わせ、成虫は6脚4翅へ戻す。",
+      "stage_focus_ja": "繭から成虫へ。翅の先を4方向へ伸ばし6脚は胸へ。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "胸へ脚6本と翅4枚、頭へ触角2本を接続。尾0。4翅の反射斑を胸から外へ伸ばす。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：細長い4翅が十字の星を作る成虫。幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。",
+          "after": "背面でも保つ輪郭：細長い4翅が十字の星を作る成虫。胸へ脚6本と翅4枚、頭へ触角2本を接続。尾0。4翅の反射斑を胸から外へ伸ばす。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼虫は胸脚6本と腹側の接地面。繭は表面の殻へ包み、成虫は6脚と4翅を胸へ接続。。繭から成虫へ。翅の先を4方向へ伸ばし6脚は胸へ。",
+          "after": "横面の接続：胸へ脚6本と翅4枚、頭へ触角2本を接続。尾0。4翅の反射斑を胸から外へ伸ばす。。繭から成虫へ。翅の先を4方向へ伸ばし6脚は胸へ。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 82,
+      "id": "wild_frost_kite_01",
+      "name_ja": "シモハリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "直線長翼の白端から霜縁へ変化。扇尾鳥とは長翼・小尾が主差。単なる色替えへ戻さない。",
+      "stage_focus_ja": "翼端だけ白い。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 83,
+      "id": "wild_frost_kite_02",
+      "name_ja": "フブキサ",
+      "text_design_reviewed": true,
+      "review_note_ja": "直線長翼の白端から霜縁へ変化。扇尾鳥とは長翼・小尾が主差。単なる色替えへ戻さない。",
+      "stage_focus_ja": "翼縁が霜形に育つ。尾を扇形へ広げない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 84,
+      "id": "wild_thermal_marmot_01",
+      "name_ja": "ホカマロ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小石を抱く直立獣から雪壁胸毛へ変化。小石は道具で器官に加算せず、炎氷の鋼受け等倍を確認。",
+      "stage_focus_ja": "胸毛は浅い。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 85,
+      "id": "wild_thermal_marmot_02",
+      "name_ja": "ユキネツム",
+      "text_design_reviewed": true,
+      "review_note_ja": "小石を抱く直立獣から雪壁胸毛へ変化。小石は道具で器官に加算せず、炎氷の鋼受け等倍を確認。",
+      "stage_focus_ja": "毛の厚みが増す。氷の装甲を外付けしない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 86,
+      "id": "wild_granite_pika_01",
+      "name_ja": "イワピリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小平石2斑から3段の背へ変化。丸耳・短尾の岩場獣として葉耳花尾の相棒と区別。",
+      "stage_focus_ja": "小さな平石斑2つ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 87,
+      "id": "wild_granite_pika_02",
+      "name_ja": "ツミリゴ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小平石2斑から3段の背へ変化。丸耳・短尾の岩場獣として葉耳花尾の相棒と区別。",
+      "stage_focus_ja": "肩から背へ3段の石模様が連続。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 88,
+      "id": "wild_aurora_ray_01",
+      "name_ja": "ユラオロ",
+      "text_design_reviewed": true,
+      "review_note_ja": "薄い浮遊鰭から垂れるカーテンひだへ変化。ドロヒラと1文字差だった基礎名をユラオロへ変更。地2倍・鋼等倍の文へ明確化。",
+      "stage_focus_ja": "発光帯は1筋。",
+      "changes": [
+        {
+          "path": "name_ja",
+          "before": "オロヒラ",
+          "after": "ユラオロ"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 89,
+      "id": "wild_aurora_ray_02",
+      "name_ja": "テンオリカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "薄い浮遊鰭から垂れるカーテンひだへ変化。ドロヒラと1文字差だった基礎名をユラオロへ変更。地2倍・鋼等倍の文へ明確化。",
+      "stage_focus_ja": "胸鰭のひだが深くなり氷霧を保つ。",
+      "changes": [
+        {
+          "path": "acquisition.methods",
+          "before": [
+            {
+              "method": "evolution",
+              "source_species_id": "wild_aurora_ray_01",
+              "condition": {
+                "method": "level",
+                "level": 43,
+                "status": "production_proposal",
+                "text_ja": "Lv43以上でレベルアップ。延期した場合は次のレベルアップで再判定。",
+                "unlock_story_rank": 0
+              },
+              "region_id": null,
+              "story_rank": 50,
+              "required_field_move_ids": [],
+              "solo": true,
+              "repeatable": true,
+              "encounter_time": null,
+              "external_requirement": false,
+              "text_ja": "オロヒラから進化：Lv43以上でレベルアップ。延期した場合は次のレベルアップで再判定。"
+            }
+          ],
+          "after": [
+            {
+              "method": "evolution",
+              "source_species_id": "wild_aurora_ray_01",
+              "condition": {
+                "method": "level",
+                "level": 43,
+                "status": "production_proposal",
+                "text_ja": "Lv43以上でレベルアップ。延期した場合は次のレベルアップで再判定。",
+                "unlock_story_rank": 0
+              },
+              "region_id": null,
+              "story_rank": 50,
+              "required_field_move_ids": [],
+              "solo": true,
+              "repeatable": true,
+              "encounter_time": null,
+              "external_requirement": false,
+              "text_ja": "ユラオロから進化：Lv43以上でレベルアップ。延期した場合は次のレベルアップで再判定。"
+            }
+          ]
+        },
+        {
+          "path": "battle.move_direction_ja",
+          "before": "草・風へも攻めるが地や鋼の攻撃を受けない。",
+          "after": "草・風へも攻める。地×2・鋼×1の受け倍率を踏まえ、重い攻撃は交代で避ける。"
+        },
+        {
+          "path": "battle.strengths_ja",
+          "before": "物理の壁を特殊で攻める。草・風へも攻めるが地や鋼の攻撃を受けない。",
+          "after": "物理の壁を特殊で攻める。草・風へも攻める。地×2・鋼×1の受け倍率を踏まえ、重い攻撃は交代で避ける。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 90,
+      "id": "wild_twilight_wolf_01",
+      "name_ja": "ヨアケル",
+      "text_design_reviewed": true,
+      "review_note_ja": "短い銀襟から大襟・長脚の疾走へ。低い長縞尾のジャコウネコと体高・首毛で分ける。",
+      "stage_focus_ja": "子の段階でも尾は1本。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 91,
+      "id": "wild_twilight_wolf_02",
+      "name_ja": "ハクヤロウ",
+      "text_design_reviewed": true,
+      "review_note_ja": "短い銀襟から大襟・長脚の疾走へ。低い長縞尾のジャコウネコと体高・首毛で分ける。",
+      "stage_focus_ja": "襟毛が霜を含むが角にはしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 92,
+      "id": "wild_lichen_spool_01",
+      "name_ja": "イトシモネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "縦糸巻きと白い端房、2根脚の単独種。32pxで細線を減らし、横長の糸蚕との輪郭差を明記。",
+      "stage_focus_ja": "単独種。糸の細線を描き込みすぎない。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "糸巻きと氷白の端房を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "縦長の糸巻き胴と白い上下端房を優先。細線を減らし、後日の横長の蚕と分ける。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 93,
+      "id": "wild_alpine_newt_01",
+      "name_ja": "シモヌメリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "外鰓のない成体形と桃の首帯。噴水の6外鰓種とは頭周りが異なり、4脚と平尾を固定。",
+      "stage_focus_ja": "単独種。体表のしずくは器官ではない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 94,
+      "id": "wild_root_tapir_01",
+      "name_ja": "ネムバク",
+      "text_design_reviewed": true,
+      "review_note_ja": "根帯1から2・網目と幅広鼻への発展。モグラは大前足、本種は短鼻と樽胴。氷4倍が継続受けの弱点。",
+      "stage_focus_ja": "根帯は1本。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 95,
+      "id": "wild_root_tapir_02",
+      "name_ja": "ネホグル",
+      "text_design_reviewed": true,
+      "review_note_ja": "根帯1から2・網目と幅広鼻への発展。モグラは大前足、本種は短鼻と樽胴。氷4倍が継続受けの弱点。",
+      "stage_focus_ja": "鼻の可動が増え、根帯が2本へ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 96,
+      "id": "wild_root_tapir_03",
+      "name_ja": "モリネハム",
+      "text_design_reviewed": true,
+      "review_note_ja": "根帯1から2・網目と幅広鼻への発展。モグラは大前足、本種は短鼻と樽胴。氷4倍が継続受けの弱点。",
+      "stage_focus_ja": "鼻先が広くなり根帯が網目に連なる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 97,
+      "id": "wild_spore_cicada_01",
+      "name_ja": "キンコロ",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼体は6脚0翅、羽化後は6脚4翅へ接続文を分けた。星の変態系列とは菌縁・網脈・色面が異なる。",
+      "stage_focus_ja": "幼体。翅はない。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "胸へ脚6本、頭へ触角2本。翅0・尾0。背の菌膜は体表へ密着する。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：豆形の幼体が6脚で根を歩く。幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "背面でも保つ輪郭：豆形の幼体が6脚で根を歩く。胸へ脚6本、頭へ触角2本。翅0・尾0。背の菌膜は体表へ密着する。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。。幼体。翅はない。",
+          "after": "横面の接続：胸へ脚6本、頭へ触角2本。翅0・尾0。背の菌膜は体表へ密着する。。幼体。翅はない。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 98,
+      "id": "wild_spore_cicada_02",
+      "name_ja": "ネムセミ",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼体は6脚0翅、羽化後は6脚4翅へ接続文を分けた。星の変態系列とは菌縁・網脈・色面が異なる。",
+      "stage_focus_ja": "羽化して4翅が現れる。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "胸へ脚6本と短い翅4枚、頭へ触角2本。尾0。翅の網脈と菌膜の縁を分ける。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：太い胸に短い4翅を畳み、幹へ止まる。幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "背面でも保つ輪郭：太い胸に短い4翅を畳み、幹へ止まる。胸へ脚6本と短い翅4枚、頭へ触角2本。尾0。翅の網脈と菌膜の縁を分ける。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。。羽化して4翅が現れる。",
+          "after": "横面の接続：胸へ脚6本と短い翅4枚、頭へ触角2本。尾0。翅の網脈と菌膜の縁を分ける。。羽化して4翅が現れる。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 99,
+      "id": "wild_spore_cicada_03",
+      "name_ja": "キンバネラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "幼体は6脚0翅、羽化後は6脚4翅へ接続文を分けた。星の変態系列とは菌縁・網脈・色面が異なる。",
+      "stage_focus_ja": "翅幅を増し、菌膜は翅の縁だけに残る。",
+      "changes": [
+        {
+          "path": "art.anatomy_connections_ja",
+          "before": "幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "胸へ脚6本と大きな翅4枚、頭へ触角2本。尾0。菌膜は翅縁へ連続し、独立した翼を加えない。"
+        },
+        {
+          "path": "art.view_invariants.back_ja",
+          "before": "背面でも保つ輪郭：透ける4翅の網脈を大きく広げる。幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。",
+          "after": "背面でも保つ輪郭：透ける4翅の網脈を大きく広げる。胸へ脚6本と大きな翅4枚、頭へ触角2本。尾0。菌膜は翅縁へ連続し、独立した翼を加えない。"
+        },
+        {
+          "path": "art.view_invariants.side_ja",
+          "before": "横面の接続：幼体6脚。羽化後は胸に4翅と6脚。頭の触角2本、尾なし。菌膜は背の薄い外被。。翅幅を増し、菌膜は翅の縁だけに残る。",
+          "after": "横面の接続：胸へ脚6本と大きな翅4枚、頭へ触角2本。尾0。菌膜は翅縁へ連続し、独立した翼を加えない。。翅幅を増し、菌膜は翅の縁だけに残る。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 100,
+      "id": "wild_fen_slug_01",
+      "name_ja": "ヌマミュル",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い腹足から横皿ひだへ変化。縦の3冷却ひだや渦殻と区別し、必須水技を後から再習得できる。",
+      "stage_focus_ja": "ひだは浅い。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 101,
+      "id": "wild_fen_slug_02",
+      "name_ja": "トロミゼル",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い腹足から横皿ひだへ変化。縦の3冷却ひだや渦殻と区別し、必須水技を後から再習得できる。",
+      "stage_focus_ja": "側面が広がり濾過皿になる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 102,
+      "id": "wild_umbra_civet_01",
+      "name_ja": "カゲミノ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い長胴と2から3の草色尾縞。夜狼の長脚・銀襟と区別し、闇でも穏やかな果実食の生態を持つ。",
+      "stage_focus_ja": "尾縞は2つ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 103,
+      "id": "wild_umbra_civet_02",
+      "name_ja": "ヨミノラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い長胴と2から3の草色尾縞。夜狼の長脚・銀襟と区別し、闇でも穏やかな果実食の生態を持つ。",
+      "stage_focus_ja": "尾縞3つへ増し、葉毛が長くなる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 104,
+      "id": "wild_amber_weevil_01",
+      "name_ja": "コハコツ",
+      "text_design_reviewed": true,
+      "review_note_ja": "透明球殻から木実形の樹脂殻・長吻へ発展。鐘甲虫の短顔や方位甲虫の菱殻と区別。",
+      "stage_focus_ja": "殻内に顔を増やさない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 105,
+      "id": "wild_amber_weevil_02",
+      "name_ja": "ジュシバル",
+      "text_design_reviewed": true,
+      "review_note_ja": "透明球殻から木実形の樹脂殻・長吻へ発展。鐘甲虫の短顔や方位甲虫の菱殻と区別。",
+      "stage_focus_ja": "殻に木目の太い筋が入り、口が地面へ届く。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 106,
+      "id": "wild_bloom_siphon_01",
+      "name_ja": "ミツポネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小筒花から王冠花縁・蜜管へ変化。管は花筒側面の1本で腰尾ではない。毒を生態の分配へ結び付ける。",
+      "stage_focus_ja": "花口は小さく円形。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 107,
+      "id": "wild_bloom_siphon_02",
+      "name_ja": "ミツクラリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小筒花から王冠花縁・蜜管へ変化。管は花筒側面の1本で腰尾ではない。毒を生態の分配へ結び付ける。",
+      "stage_focus_ja": "管は花筒の側面から1本。尾として腰へ付けない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 108,
+      "id": "wild_storm_sail_01",
+      "name_ja": "ハタチル",
+      "text_design_reviewed": true,
+      "review_note_ja": "背中央の三角帆から尾元へ続く大帆へ。四肢間の飛膜や尾だけの帆と接続が異なる。",
+      "stage_focus_ja": "帆は浅い三角。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 109,
+      "id": "wild_storm_sail_02",
+      "name_ja": "ライハタル",
+      "text_design_reviewed": true,
+      "review_note_ja": "背中央の三角帆から尾元へ続く大帆へ。四肢間の飛膜や尾だけの帆と接続が異なる。",
+      "stage_focus_ja": "帆の弧が大きくなり風を受ける。足を膜で結ばない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 110,
+      "id": "wild_mire_drum_01",
+      "name_ja": "ヌマドロン",
+      "text_design_reviewed": true,
+      "review_note_ja": "円筒の打面と2腕2脚の単独種。箱運搬種と外形・音の機能が異なり、補助役にも単体攻撃を残す。",
+      "stage_focus_ja": "単独種。膜の上に別顔を描かない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 111,
+      "id": "wild_rot_kiln_01",
+      "name_ja": "ムレカマネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "密着した葉山の4根脚と小さな発酵熱。四足の窯犬とは材質・外周の崩れ方で分ける。",
+      "stage_focus_ja": "単独種。常時の大炎は出さない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 112,
+      "id": "wild_mirror_fawn_01",
+      "name_ja": "テリコル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小板角・円板角・盾板角への3段階。各角1枚で枝分かれせず、山羊の節角と別の輪郭。",
+      "stage_focus_ja": "角は丸みのある小板。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 113,
+      "id": "wild_mirror_fawn_02",
+      "name_ja": "カガシカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小板角・円板角・盾板角への3段階。各角1枚で枝分かれせず、山羊の節角と別の輪郭。",
+      "stage_focus_ja": "角の反射面が円形に育つ。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 114,
+      "id": "wild_mirror_fawn_03",
+      "name_ja": "リフレノア",
+      "text_design_reviewed": true,
+      "review_note_ja": "小板角・円板角・盾板角への3段階。各角1枚で枝分かれせず、山羊の節角と別の輪郭。",
+      "stage_focus_ja": "反射板が金属質に。角を枝分かれさせず2枚を維持。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 115,
+      "id": "wild_tablet_pillbug_01",
+      "name_ja": "イシメモ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い楕円から丸まる金属縁殻へ。14脚と7節は設定画で確認し、32pxでは朱目盛と丸まり外形へ優先順位を付けた。",
+      "stage_focus_ja": "節は大きく整理する。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "7節殻と朱の一本目盛を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "低い丸い楕円殻と朱の大きな目盛を優先。7節と14脚の確認は96pxと設定画で行う。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 116,
+      "id": "wild_tablet_pillbug_02",
+      "name_ja": "コクメジル",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い楕円から丸まる金属縁殻へ。14脚と7節は設定画で確認し、32pxでは朱目盛と丸まり外形へ優先順位を付けた。",
+      "stage_focus_ja": "殻縁が厚くなり、球形に丸まれる。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "金属縁の7節と朱目盛を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "丸まる球形の厚い殻縁と朱の一本目盛を優先。14脚は殻内に収まり外へ増やさない。"
+        },
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 117,
+      "id": "wild_wound_sentry_01",
+      "name_ja": "マキモリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い巻柱から伸びる柱へ変化。全身が一体の巻胴で、ヤマネの独立した渦尾と区別する。",
+      "stage_focus_ja": "巻きは低い。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 118,
+      "id": "wild_wound_sentry_02",
+      "name_ja": "ラセンガル",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い巻柱から伸びる柱へ変化。全身が一体の巻胴で、ヤマネの独立した渦尾と区別する。",
+      "stage_focus_ja": "胴を伸ばしても一体のまま。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 119,
+      "id": "wild_echo_owl_01",
+      "name_ja": "コエフク",
+      "text_design_reviewed": true,
+      "review_note_ja": "浅い顔皿から二重縁顔皿と丸翼へ。夜幕鳥の顔盤なし長幕羽と顔・胴比率が異なる。",
+      "stage_focus_ja": "顔皿は浅い。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 120,
+      "id": "wild_echo_owl_02",
+      "name_ja": "ヒビキュラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "浅い顔皿から二重縁顔皿と丸翼へ。夜幕鳥の顔盤なし長幕羽と顔・胴比率が異なる。",
+      "stage_focus_ja": "顔皿の縁が二重になる。耳を角にしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 121,
+      "id": "wild_ink_cuttle_01",
+      "name_ja": "スミリル",
+      "text_design_reviewed": true,
+      "review_note_ja": "短胴から横菱胴と前方6触腕へ。傘から下垂するクラゲと向きが異なり、腕本数は6に固定。",
+      "stage_focus_ja": "鰭は小さな耳形。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 122,
+      "id": "wild_ink_cuttle_02",
+      "name_ja": "ヨスミカ",
+      "text_design_reviewed": true,
+      "review_note_ja": "短胴から横菱胴と前方6触腕へ。傘から下垂するクラゲと向きが異なり、腕本数は6に固定。",
+      "stage_focus_ja": "鰭が大きくなり、触腕は6本のまま。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 123,
+      "id": "wild_sunwheel_01",
+      "name_ja": "ヒノコマ",
+      "text_design_reviewed": true,
+      "review_note_ja": "滑らかな根環から6丸突起の日輪環へ。浮遊環や球の転がりと異なり、中央の根軸が識別点。水受け4倍を確認。",
+      "stage_focus_ja": "環の縁は滑らか。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 124,
+      "id": "wild_sunwheel_02",
+      "name_ja": "ヨウリンガ",
+      "text_design_reviewed": true,
+      "review_note_ja": "滑らかな根環から6丸突起の日輪環へ。浮遊環や球の転がりと異なり、中央の根軸が識別点。水受け4倍を確認。",
+      "stage_focus_ja": "外縁へ丸突起6つ。尖った刃にしない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 125,
+      "id": "wild_static_scarab_01",
+      "name_ja": "シンラコガ",
+      "text_design_reviewed": true,
+      "review_note_ja": "菱形の青銅殻と金の矢筋の単独種。長吻の樹脂甲虫や釣鐘甲虫と形・視線が異なる。",
+      "stage_focus_ja": "単独種。磁気が操作できる万能能力にしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 126,
+      "id": "wild_cold_well_01",
+      "name_ja": "イドシズラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "触腕も脚もない垂れる大雫。輪ゲル・灯傘・潮襟の水生系と外形で分け、鋼2倍を確認。",
+      "stage_focus_ja": "単独種。周囲の水滴はエフェクトで別個体ではない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 127,
+      "id": "wild_signal_pigeon_01",
+      "name_ja": "トモハト",
+      "text_design_reviewed": true,
+      "review_note_ja": "喉点・二段帯・縦灯列へ合図機能が育つ。短尾・丸胸で扇尾、長脚、顔皿鳥と区別。",
+      "stage_focus_ja": "喉袋は小さい。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 128,
+      "id": "wild_signal_pigeon_02",
+      "name_ja": "シグナリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "喉点・二段帯・縦灯列へ合図機能が育つ。短尾・丸胸で扇尾、長脚、顔皿鳥と区別。",
+      "stage_focus_ja": "喉の帯が2本へ。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 129,
+      "id": "wild_signal_pigeon_03",
+      "name_ja": "コウロリア",
+      "text_design_reviewed": true,
+      "review_note_ja": "喉点・二段帯・縦灯列へ合図機能が育つ。短尾・丸胸で扇尾、長脚、顔皿鳥と区別。",
+      "stage_focus_ja": "喉帯が縦列に整理され光を使う。ランプ機械を外付けしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 130,
+      "id": "wild_metro_isopod_01",
+      "name_ja": "ミチコロ",
+      "text_design_reviewed": true,
+      "review_note_ja": "平たい7節から橋形背へ変化。丸まる遺構種との差を32pxの外形へ反映し、14脚の設定は維持。",
+      "stage_focus_ja": "節の縁はまだ柔らかい。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "平たい7節と青緑の目地を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "低く細長い平背と青緑の縁を優先。背節・14脚の描き分けは96pxと設定画で確認する。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 131,
+      "id": "wild_metro_isopod_02",
+      "name_ja": "イシワタリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "平たい7節から橋形背へ変化。丸まる遺構種との差を32pxの外形へ反映し、14脚の設定は維持。",
+      "stage_focus_ja": "背の両縁が広がるが節は7。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "橋形の長い背と7節を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "橋形に張り出した長い背と青緑の縁を優先。7節や14脚の全数描き分けより外形を残す。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 132,
+      "id": "wild_rooftop_sail_01",
+      "name_ja": "ハタモチ",
+      "text_design_reviewed": true,
+      "review_note_ja": "尾先だけの葉帆が横広へ育つ。手首足首膜と背中央帆から接続を分ける。氷4倍・炎2倍の説明を確認。",
+      "stage_focus_ja": "帆は縦長の葉1面。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 133,
+      "id": "wild_rooftop_sail_02",
+      "name_ja": "ソラハコビ",
+      "text_design_reviewed": true,
+      "review_note_ja": "尾先だけの葉帆が横広へ育つ。手首足首膜と背中央帆から接続を分ける。氷4倍・炎2倍の説明を確認。",
+      "stage_focus_ja": "尾先の膜が横広に。独立翼は増やさない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 134,
+      "id": "wild_fountain_axolotl_01",
+      "name_ja": "ミナプル",
+      "text_design_reviewed": true,
+      "review_note_ja": "左右各3本の外鰓を小型から薄膜房へ発展。高山イモリの首帯を鰓へ取り違えない。",
+      "stage_focus_ja": "鰓は短い。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 135,
+      "id": "wild_fountain_axolotl_02",
+      "name_ja": "ニジエルム",
+      "text_design_reviewed": true,
+      "review_note_ja": "左右各3本の外鰓を小型から薄膜房へ発展。高山イモリの首帯を鰓へ取り違えない。",
+      "stage_focus_ja": "外鰓は各3本のまま薄膜が育つ。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 136,
+      "id": "wild_night_curtain_01",
+      "name_ja": "ヨルカーテ",
+      "text_design_reviewed": true,
+      "review_note_ja": "顔盤なしの長い幕羽、朱の裾の単独種。顔皿梟との識別は顔だけでなく縦の翼外形にも置く。",
+      "stage_focus_ja": "単独種。幕を人の服にしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 137,
+      "id": "wild_thermal_fan_01",
+      "name_ja": "ネツハオラ",
+      "text_design_reviewed": true,
+      "review_note_ja": "2脚の小胴と密着した背ひだ5枚。鳥の扇尾、植物の円盤葉とは付け根・材質で分ける。",
+      "stage_focus_ja": "単独種。扇を身体から離さない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 138,
+      "id": "wild_rain_garden_01",
+      "name_ja": "アマウツワ",
+      "text_design_reviewed": true,
+      "review_note_ja": "4根脚と背の鉢葉1枚の単独種。2肩葉の蛙、2根脚の氷蓮との位置・枚数が異なり、毒受け4倍を確認。",
+      "stage_focus_ja": "単独種。水面を顔へしない。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_vine",
+              "name_ja": "つたうち",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 12,
+              "teacher_region_id": "region_kazami",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "森の入口の徒歩の講習場所。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 139,
+      "id": "wild_tide_veil_01",
+      "name_ja": "シオフリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "小襟・横広襟・折れた二層波へ発展。左右2鰭が折れて見える構造で、4枚の別鰭へ増やさない。",
+      "stage_focus_ja": "襟は小さな半円。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 140,
+      "id": "wild_tide_veil_02",
+      "name_ja": "ナギヴェル",
+      "text_design_reviewed": true,
+      "review_note_ja": "小襟・横広襟・折れた二層波へ発展。左右2鰭が折れて見える構造で、4枚の別鰭へ増やさない。",
+      "stage_focus_ja": "襟の縁に太い波筋が現れる。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 141,
+      "id": "wild_tide_veil_03",
+      "name_ja": "シオルミア",
+      "text_design_reviewed": true,
+      "review_note_ja": "小襟・横広襟・折れた二層波へ発展。左右2鰭が折れて見える構造で、4枚の別鰭へ増やさない。",
+      "stage_focus_ja": "左右2枚の襟がそれぞれ折れて二層に見える。鰭4枚へ増やさない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 142,
+      "id": "wild_reef_kiln_01",
+      "name_ja": "サンゴロネ",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い熱い円錐貝から高い温水溝殻へ変化。冷たい段丘貝と殻形・孔・色温度で分ける。",
+      "stage_focus_ja": "殻は低い円錐。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 143,
+      "id": "wild_reef_kiln_02",
+      "name_ja": "ユサンゴル",
+      "text_design_reviewed": true,
+      "review_note_ja": "低い熱い円錐貝から高い温水溝殻へ変化。冷たい段丘貝と殻形・孔・色温度で分ける。",
+      "stage_focus_ja": "殻に太い温水溝が生じる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_ember",
+              "name_ja": "ともしび",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 33,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [
+                "field_break"
+              ],
+              "status": "production_proposal",
+              "text_ja": "岩の講習後の徒歩の灯火広場。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            },
+            {
+              "move_id": "field_wave",
+              "name_ja": "なみわたり",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 21,
+              "teacher_region_id": "region_minase",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "水門手前の徒歩の船着場の講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 144,
+      "id": "wild_shell_harp_01",
+      "name_ja": "カイネリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "少し開く貝から縦片殻と扇状の3膜弦へ。32pxは弦の本数より縦貝の外形を優先する記述へ修正。",
+      "stage_focus_ja": "小さい殻の入口。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 145,
+      "id": "wild_shell_harp_02",
+      "name_ja": "ナギハープ",
+      "text_design_reviewed": true,
+      "review_note_ja": "少し開く貝から縦片殻と扇状の3膜弦へ。32pxは弦の本数より縦貝の外形を優先する記述へ修正。",
+      "stage_focus_ja": "弦は3本のまま長くなる。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "縦貝と薄金の膜弦3本を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "縦長の片殻と開いた二枚貝の外形を優先。3本の弦はまとめた明色面とし、本数は設定画で確認する。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 146,
+      "id": "wild_brine_orb_01",
+      "name_ja": "シオムクリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "六面の結晶球と朱点目の単独種。灰球4毛房・雲母3薄板と外周・表面材質が異なる。",
+      "stage_focus_ja": "単独種。結晶片を浮く子供にしない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 147,
+      "id": "wild_reef_crown_01",
+      "name_ja": "カンショル",
+      "text_design_reviewed": true,
+      "review_note_ja": "四脚中央胴に4点直結の環冠を持つ希少種。鋼水の地2倍・雷4倍を明記し、敗北・撃破・捕獲後も再入手経路を持つ。",
+      "stage_focus_ja": "単独希少種。固定イベントは観察後に繰り返し挑戦可。",
+      "changes": [
+        {
+          "path": "battle.move_direction_ja",
+          "before": "収集の到達点だが全能力は上げない。地・雷が苦手。",
+          "after": "収集の到達点。地から2倍・雷から4倍を受けるため、物理受けでも交代先を用意する。"
+        },
+        {
+          "path": "battle.strengths_ja",
+          "before": "物理を受けて交代と反撃の余地を作る。収集の到達点だが全能力は上げない。地・雷が苦手。",
+          "after": "物理を受けて交代と反撃の余地を作る。収集の到達点。地から2倍・雷から4倍を受けるため、物理受けでも交代先を用意する。"
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 148,
+      "id": "wild_memory_seed_01",
+      "name_ja": "タネリコ",
+      "text_design_reviewed": true,
+      "review_note_ja": "溝種・開く種皮・背でつながる環へ発展。輪尾獣とは背環・2根脚が差。場所進化は無償反復可能。",
+      "stage_focus_ja": "種皮の記録溝は1筋。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 149,
+      "id": "wild_memory_seed_02",
+      "name_ja": "メグルコ",
+      "text_design_reviewed": true,
+      "review_note_ja": "溝種・開く種皮・背でつながる環へ発展。輪尾獣とは背環・2根脚が差。場所進化は無償反復可能。",
+      "stage_focus_ja": "種皮の縁が左右に開くが体から外れない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 150,
+      "id": "wild_memory_seed_03",
+      "name_ja": "ワノリオン",
+      "text_design_reviewed": true,
+      "review_note_ja": "溝種・開く種皮・背でつながる環へ発展。輪尾獣とは背環・2根脚が差。場所進化は無償反復可能。",
+      "stage_focus_ja": "種皮の左右が背でつながる構造案。別個体や装備ではない。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 151,
+      "id": "wild_frost_lotus_01",
+      "name_ja": "ヒエツボミ",
+      "text_design_reviewed": true,
+      "review_note_ja": "閉じたつぼみから6弁の氷花へ開く。日輪葉1枚と花兎の腰花尾から、器官の位置と枚数で分ける。",
+      "stage_focus_ja": "花弁は閉じて1つのつぼみを作る。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 152,
+      "id": "wild_frost_lotus_02",
+      "name_ja": "ハクリエナ",
+      "text_design_reviewed": true,
+      "review_note_ja": "閉じたつぼみから6弁の氷花へ開く。日輪葉1枚と花兎の腰花尾から、器官の位置と枚数で分ける。",
+      "stage_focus_ja": "花弁が開く。数は6枚を維持。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 153,
+      "id": "wild_hollow_loam_01",
+      "name_ja": "ホロツチ",
+      "text_design_reviewed": true,
+      "review_note_ja": "半球殻から横穴2つの筒殻へ変化。大前足モグラと異なり背の空洞が主役。四脚と短尾を維持。",
+      "stage_focus_ja": "殻は小さな半球。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 154,
+      "id": "wild_hollow_loam_02",
+      "name_ja": "ドウロム",
+      "text_design_reviewed": true,
+      "review_note_ja": "半球殻から横穴2つの筒殻へ変化。大前足モグラと異なり背の空洞が主役。四脚と短尾を維持。",
+      "stage_focus_ja": "殻が筒へ伸び、穴の縁が墨色になる。",
+      "changes": [
+        {
+          "path": "exploration.learn_methods",
+          "before": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ],
+          "after": [
+            {
+              "move_id": "field_break",
+              "name_ja": "いわくだき",
+              "method": "reusable_free_lesson",
+              "unlock_story_rank": 31,
+              "teacher_region_id": "region_hinowa",
+              "required_gate_ids": [],
+              "status": "production_proposal",
+              "text_ja": "地熱洞手前の徒歩の工房講習。無償・再受講可。進化後も再習得でき、4技から1つ入れ替える。"
+            }
+          ]
+        }
+      ],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 155,
+      "id": "wild_dusk_compass_01",
+      "name_ja": "ヨイシルベ",
+      "text_design_reviewed": true,
+      "review_note_ja": "四脚と尾先の輪を持つ希少種。背環の種子獣と付け根が異なり、夕方はゲーム内待機で再現可能。",
+      "stage_focus_ja": "単独希少種。固定観察戦は失敗・撃破後も再挑戦可。",
+      "changes": [],
+      "new_art_approved": false
+    },
+    {
+      "dex_number": 156,
+      "id": "wild_filament_worm_01",
+      "name_ja": "イトツムリ",
+      "text_design_reviewed": true,
+      "review_note_ja": "横長の太胴と口の1糸の単独幼形成熟種。縦糸巻き苔との差を32pxへ明記し、6胸脚以外の腹脚を増やさない。",
+      "stage_focus_ja": "単独種。繭・成虫を別種として追加しない。",
+      "changes": [
+        {
+          "path": "art.icon_32px_ja",
+          "before": "薄藤の太胴と銅の一本糸を最優先。細部を省略しても付け根と本数の設計は変えない。",
+          "after": "横長の太い幼虫胴と口元の銅の糸を優先。糸巻き苔の縦長外形にしない。"
+        }
+      ],
+      "new_art_approved": false
+    }
+  ],
+  "user_decision_required_now": [],
+  "game_balance_verified": false,
+  "playthrough_verified": false,
+  "new_image_generation_performed": false,
+  "limits_ja": [
+    "新規種の96px/32pxは文字設計の識別方針。未制作画像の可読性は実測していない。",
+    "入手経路は抽象進行モデル。実マップ・技忘却・中断再開のプレイテストは後工程。",
+    "全種の既存作品照合・商標調査は今回の対象外。"
+  ]
+}
