@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 7,
-    "incomplete": 23
+    "saved_verified": 8,
+    "incomplete": 22
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -255,12 +255,13 @@
         "遠側の翼・脚は横図で重なる。胸羽の細部は美術採用前の確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1327990,
+        "sha256": "560acc53226907573a5759b2e6bd13b1ca75ba5aff2023aed042e0b383f8a03d"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "8d57ac10a0eaf83200b25500baca3fd2786819b2",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
