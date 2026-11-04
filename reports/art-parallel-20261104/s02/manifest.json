@@ -37,19 +37,37 @@
       "species_id": "wild_soot_moth_02",
       "name_ja": "クロハモラ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_soot_moth_02_v0.2_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.2.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "bytes": 1388320,
+      "sha256": "261dcb4ce43962bc6f79deda60d23215d641568ca9aefc20c07283867b87f970",
+      "visual_checks": [
+        "前3/4・後3/4・横の全身を確認",
+        "6脚の先端・頭の櫛触角2本・胸からの4翅を確認。横は奥翅が重なる",
+        "進化前と異なる開いた二層翅・厚い折り目・煤紫/灰/柿を確認"
+      ],
+      "unverified": [
+        "奥翅の付け根と一部の脚根は毛・重なりで隠れる",
+        "外側の翅と画面端の余白は狭いが欠けなし",
+        "ユーザーの美術採用は未実施"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "status": "生成済み未保存",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png"
+      ],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "進化前と同じ閉じた翅だったためv0.2へ修正"
+        }
+      ]
     },
     {
       "dex_number": 48,
