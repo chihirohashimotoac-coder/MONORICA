@@ -96,9 +96,15 @@
         "奥側脚は胴に重なるため4本すべての目視計数は未確認",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "04f8d93eb8e7d78571dbb28bf096e159de50afea9e88a305f4fdf006a3a68475",
+        "bytes": 1367978,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:18:27.896691+00:00"
+      },
+      "image_commit": "b121bcb0f0e1fbfb6c8e0952f77ec2865894550d",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review",
       "reference_images": []
     },
@@ -586,6 +592,6 @@
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
   },
-  "last_image_commit": "0d00a52c7fadec080fc8b0a0a2418efe2ac53d77",
+  "last_image_commit": "b121bcb0f0e1fbfb6c8e0952f77ec2865894550d",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
