@@ -173,9 +173,15 @@
         "背殻上の釣り輪と銅模様は生成上の意匠、ユーザー採用前",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "b5cf884c40f6dff665c215a3a7e540f79a98ad7847906048eeb10b5b13dd6766",
+        "bytes": 1521342,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:24:54.121838+00:00"
+      },
+      "image_commit": "167fada4f7681248e89296387bb34a97f7324d6b",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review",
       "reference_images": []
     },
@@ -625,6 +631,6 @@
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
   },
-  "last_image_commit": "ffc41865ec00f9e53cd38181cdfc91bc67326901",
+  "last_image_commit": "167fada4f7681248e89296387bb34a97f7324d6b",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
