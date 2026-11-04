@@ -1,0 +1,46 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_reed_whistle_01 アシフエラ
+{
+  "motifs_ja": "風鳴りする葦笛の精",
+  "full_body_silhouette_ja": "細い葦束が斜めに二足歩行、上端が笛口",
+  "palette_main": [
+    "生成り",
+    "葦緑"
+  ],
+  "palette_accents": [
+    "空青"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "節の穴2つが目、下の横穴が口。穏やかな音へ変わる。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "束ねた葦の脚2本は胴下、頭と胴は連続。左右の葉2枚は腕ではない。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：節の穴2つが目、下の横穴が口。穏やかな音へ変わる。 識別点：笛穴2つと斜めの葦束",
+    "back_ja": "背面でも保つ輪郭：細い葦束が斜めに二足歩行、上端が笛口。束ねた葦の脚2本は胴下、頭と胴は連続。左右の葉2枚は腕ではない。",
+    "side_ja": "横面の接続：束ねた葦の脚2本は胴下、頭と胴は連続。左右の葉2枚は腕ではない。。単独種。成長差分で種数を増やさない。"
+  },
+  "evolution_changes_ja": "単独種。成長差分で種数を増やさない。",
+  "family_retained_features_ja": "風鳴りする葦笛の精。節の穴2つが目、下の横穴が口。穏やかな音へ変わる。",
+  "sprite_96px_ja": "細い葦束が斜めに二足歩行、上端が笛口。笛穴2つと斜めの葦束を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "笛穴2つと斜めの葦束を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "工業林の金属風鈴とは材質・足運び・音の出所で分ける。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
