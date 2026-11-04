@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 12,
-    "incomplete": 18
+    "saved_verified": 11,
+    "incomplete": 19
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -332,20 +332,20 @@
       "species_id": "wild_lock_crab_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
       "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lock_crab_02.txt",
-      "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png",
-      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png",
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.2.png",
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.2.png",
       "width": 2172,
       "height": 724,
       "mode": "RGB",
       "has_transparency": false,
-      "size_bytes": 1873648,
-      "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f",
+      "size_bytes": 1854643,
+      "sha256": "e48d0d3a1416f866343f05f94bf25b00f528fbe6405f14276606be1cf74d5f81",
       "visual_checks": [
-        "保存本体の全身3ビューを目視。背3/4で歩脚3+3=6、鋏2の接続を確認。余剰の孤立脚を修正済み。",
-        "広い止水板形の大鋏を個体左に固定。前図の画面右/背図の画面左、横図の近側大鋏を確認。右小鋏の追加と板形への修正を実施。"
+        "v0.2保存画像の3ビュー・全身を確認。歩脚は背3/4で3+3=6、鋏2、個体左大板鋏の向きを維持。",
+        "横図の右小鋏を後端から胸前へ修正。近側大板の前に小鋏先端が重なって見える。v0.1は別ファイルとして保持。"
       ],
       "unverified": [
-        "前図の遠側歩脚の一部が小鋏や殻で隠れる。細い付け根の最終美術確認待ち。"
+        "横図では右小鋏の腕根が大板鋏で隠れる。"
       ],
       "github_readback": {
         "status": "verified",
@@ -354,8 +354,17 @@
         "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f"
       },
       "save_commit": "ab5ba40921dddcbc4dfd7f0135ffed2c8e4ed791",
-      "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "status": "生成済み未保存",
+      "adoption_status": "pending_user_review",
+      "previous_versions": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.1.png",
+          "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f",
+          "size_bytes": 1873648,
+          "save_commit": "ab5ba40921dddcbc4dfd7f0135ffed2c8e4ed791",
+          "note": "横図の小鋏が後端に見えるため接続を修正。旧画像保持。"
+        }
+      ]
     },
     {
       "dex": 27,
