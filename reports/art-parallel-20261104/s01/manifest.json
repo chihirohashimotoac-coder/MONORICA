@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 25,
-    "incomplete": 5
+    "saved_verified": 26,
+    "incomplete": 4
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -822,12 +822,13 @@
         "胸の成長差は小さめ。通気口の反対側の数と細部は重なりで未確認。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1323881,
+        "sha256": "b0baab59bd33e6cca788e2811cef287f5b1090e3d85cfa255dd26f23801a3e28"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "02a14b6af6888511d9524e9daa6a0f4ddc2be27c",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
