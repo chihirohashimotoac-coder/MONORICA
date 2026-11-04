@@ -54,9 +54,15 @@
         "外側の翅と画面端の余白は狭いが欠けなし",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "261dcb4ce43962bc6f79deda60d23215d641568ca9aefc20c07283867b87f970",
+        "bytes": 1388320,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:14:58.826151+00:00"
+      },
+      "image_commit": "0d00a52c7fadec080fc8b0a0a2418efe2ac53d77",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review",
       "reference_images": [
         "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png"
@@ -571,5 +577,7 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
-  }
+  },
+  "last_image_commit": "0d00a52c7fadec080fc8b0a0a2418efe2ac53d77",
+  "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }

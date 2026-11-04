@@ -1,11 +1,11 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み1種／未完了27種。全種 pending_user_review。
+担当28種／保存確認済み2種／未完了26種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
 |046|wild_soot_moth_01 スミモフ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png)|保存確認済み：胸の一部の付け根は翅・毛で隠れる。透視図ではない / ユーザーの美術採用は未実施|
-|047|wild_soot_moth_02 クロハモラ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.2.png)|生成済み未保存：奥翅の付け根と一部の脚根は毛・重なりで隠れる / 外側の翅と画面端の余白は狭いが欠けなし / ユーザーの美術採用は未実施|
+|047|wild_soot_moth_02 クロハモラ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.2.png)|保存確認済み：奥翅の付け根と一部の脚根は毛・重なりで隠れる / 外側の翅と画面端の余白は狭いが欠けなし / ユーザーの美術採用は未実施|
 |048|wild_spring_steam_01 ユケポン|未制作|未着手：|
 |049|wild_spring_steam_02 ホウユラ|未制作|未着手：|
 |050|wild_bell_beetle_01 カネコツ|未制作|未着手：|
