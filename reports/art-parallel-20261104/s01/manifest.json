@@ -805,22 +805,21 @@
       "name": "カマテラ",
       "species_id": "wild_kiln_pup_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_kiln_pup_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_02/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1323881,
+      "sha256": "b0baab59bd33e6cca788e2811cef287f5b1090e3d85cfa255dd26f23801a3e28",
+      "visual_checks": [
+        "保存本体全身3ビューを確認。四脚、垂れ耳2、腰尾1、密着した浅い窯アーチ背殻と橙の通気口を目視。",
+        "初期ホコロンを参照し背塊→通気する浅いアーチへの変化を確認。初回出力拒否は画像未取得として指示記録へ残し、健康な陶土殻の設定を明示した再試行で生成。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "胸の成長差は小さめ。通気口の反対側の数と細部は重なりで未確認。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -828,7 +827,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
