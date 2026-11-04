@@ -1,0 +1,46 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 136, "id": "wild_night_curtain_01", "name_ja": "ヨルカーテ", "family_id": "wild_night_curtain", "evolution_stage": 1, "family_stage_count": 1, "evolves_from": null, "evolves_to": null}
+Design: {
+  "motifs_ja": "窓辺の夜幕に似た羽毛獣",
+  "full_body_silhouette_ja": "長い幕の翼を体へ巻き、脚先だけを出す",
+  "palette_main": [
+    "夜紫",
+    "生成り"
+  ],
+  "palette_accents": [
+    "朱"
+  ],
+  "face_expression_ja": "生成りの頬に丸い目、短い嘴。怖い仮面へ寄せない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 2,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "翼2枚は肩、脚2本と小尾1束は腰。翼先の房は長い羽で別腕なし。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：生成りの頬に丸い目、短い嘴。怖い仮面へ寄せない。 識別点：夜紫の縦幕と朱の裾",
+    "back_ja": "背面でも保つ輪郭：長い幕の翼を体へ巻き、脚先だけを出す。翼2枚は肩、脚2本と小尾1束は腰。翼先の房は長い羽で別腕なし。",
+    "side_ja": "横面の接続：翼2枚は肩、脚2本と小尾1束は腰。翼先の房は長い羽で別腕なし。。単独種。幕を人の服にしない。"
+  },
+  "evolution_changes_ja": "単独種。幕を人の服にしない。",
+  "family_retained_features_ja": "窓辺の夜幕に似た羽毛獣。生成りの頬に丸い目、短い嘴。怖い仮面へ寄せない。",
+  "sprite_96px_ja": "長い幕の翼を体へ巻き、脚先だけを出す。夜紫の縦幕と朱の裾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "夜紫の縦幕と朱の裾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "皿顔の梟とは顔盤なし・長い幕羽。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の劇場裏。長い前羽で街灯を遮り、休む仲間へ日陰を作る。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.
+
+Revision used:
+Edit only the FACE of this three-view purple feathered creature. It must have a short, unmistakable BIRD BEAK, not a mammalian nose plus separate smiling mouth. Replace the red nose and lower mammal mouth with a small vermilion upper and lower beak meeting at a subtle friendly beak seam, shown consistently in front, rear three-quarter and side. Its cream cheeks are soft feathers, no circular owl facial disk and no mask. Preserve every other part exactly: two shoulder-attached long curtain-like feather wings wrapped around the body, purple feathers with vermilion hems, exactly two feet, one small feather tail, all three complete views, plain white background and no text. Keep it cute, gentle and original.

@@ -5,9 +5,9 @@
   "art_state": "pending_user_review",
   "counts": {
     "assigned": 27,
-    "generated": 6,
-    "saved_confirmed": 5,
-    "incomplete": 22
+    "generated": 7,
+    "saved_confirmed": 6,
+    "incomplete": 21
   },
   "species": [
     {
@@ -186,7 +186,39 @@
         "三面で全身・付け根・尾縁の色を確認、文字なし"
       ],
       "unconfirmed": [
-        "透明鰓膜の重なりは細部が多く、小サイズでの可読性は未検証",
+        "透明鰓膜の重なりは細部が多く、小サイズでの可読性は未検証"
+      ],
+      "github_readback": {
+        "status": "GitHub rawから画像本体を再取得しSHA-256・バイト数一致",
+        "sha256_match": true,
+        "bytes_match": true,
+        "commit": "0848e7452a4a643ae82ae17e71b5729652ea9fe1"
+      },
+      "saved_commit": "0848e7452a4a643ae82ae17e71b5729652ea9fe1",
+      "status": "保存確認済み",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 136,
+      "species_id": "wild_night_curtain_01",
+      "name": "ヨルカーテ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_night_curtain_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s05/wild_night_curtain_01/model_sheet_v0.1.png",
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_night_curtain_01/model_sheet_v0.1.png",
+      "width": 1997,
+      "height": 788,
+      "mode": "RGB",
+      "bytes": 1663766,
+      "sha256": "5b891f35b2b1818cc16be3ce09d04185e34a94d6dc391f3fce423318458d1ea5",
+      "visual_checked": [
+        "顔を短い朱の嘴へ修正し、生成りの頬・丸目を確認",
+        "肩から巻きつく長い幕羽の翼2枚、脚2本、小尾1束、別腕なし",
+        "夜紫・生成り・朱裾を三面で維持、全身・文字なし"
+      ],
+      "unconfirmed": [
+        "翼を閉じた姿勢のため肩の付け根の一部は羽毛の下に隠れる",
         "GitHub画像本体読み戻し"
       ],
       "github_readback": {
@@ -196,37 +228,6 @@
       },
       "saved_commit": null,
       "status": "生成済み未保存",
-      "adoption_state": "pending_user_review"
-    },
-    {
-      "dex_number": 136,
-      "species_id": "wild_night_curtain_01",
-      "name": "ヨルカーテ",
-      "stage": "1/1",
-      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_night_curtain_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checked": [],
-      "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
-      ],
-      "github_readback": {
-        "status": "未実行",
-        "sha256_match": null,
-        "bytes_match": null
-      },
-      "saved_commit": null,
-      "status": "未着手",
       "adoption_state": "pending_user_review"
     },
     {
