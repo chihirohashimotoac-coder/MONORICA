@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 154, "id": "wild_hollow_loam_02", "name_ja": "ドウロム", "family_id": "wild_hollow_loam", "evolution_stage": 2, "family_stage_count": 2, "evolves_from": "wild_hollow_loam_01", "evolves_to": null}
+Design: {
+  "motifs_ja": "空洞の土殻を持つ掘進獣",
+  "full_body_silhouette_ja": "空洞殻が太い筒へ伸び、短脚を四隅へ置く",
+  "palette_main": [
+    "土茶",
+    "墨"
+  ],
+  "palette_accents": [
+    "生成り"
+  ],
+  "face_expression_ja": "前面に丸い目と小口。土殻の穴を追加目へしない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "四脚と短尾1本。背の土殻1つは胴へ連続、殻の横穴2つは空洞で腕ではない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：前面に丸い目と小口。土殻の穴を追加目へしない。 識別点：筒形の土殻と横穴2つ",
+    "back_ja": "背面でも保つ輪郭：空洞殻が太い筒へ伸び、短脚を四隅へ置く。四脚と短尾1本。背の土殻1つは胴へ連続、殻の横穴2つは空洞で腕ではない。",
+    "side_ja": "横面の接続：四脚と短尾1本。背の土殻1つは胴へ連続、殻の横穴2つは空洞で腕ではない。。殻が筒へ伸び、穴の縁が墨色になる。"
+  },
+  "evolution_changes_ja": "殻が筒へ伸び、穴の縁が墨色になる。",
+  "family_retained_features_ja": "空洞の土殻を持つ掘進獣。前面に丸い目と小口。土殻の穴を追加目へしない。",
+  "sprite_96px_ja": "空洞殻が太い筒へ伸び、短脚を四隅へ置く。筒形の土殻と横穴2つを太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "筒形の土殻と横穴2つを最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "モグラは大前足。本種は背の空洞殻と回転する体。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の盆地の土壁。丸い体を回して土をほぐす。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.

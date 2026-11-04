@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 150, "id": "wild_memory_seed_03", "name_ja": "ワノリオン", "family_id": "wild_memory_seed", "evolution_stage": 3, "family_stage_count": 3, "evolves_from": "wild_memory_seed_02", "evolves_to": null}
+Design: {
+  "motifs_ja": "観測環の振動を記す種子獣",
+  "full_body_silhouette_ja": "縦胴の種皮が背へ円い環を作る",
+  "palette_main": [
+    "生成り",
+    "焦茶"
+  ],
+  "palette_accents": [
+    "淡金"
+  ],
+  "face_expression_ja": "殻の前の丸い黒目と柔らかい口。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "種胴下へ根脚2本。殻の溝は模様で、表皮を別殻として浮かせない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：殻の前の丸い黒目と柔らかい口。 識別点：背の種皮環と2根脚",
+    "back_ja": "背面でも保つ輪郭：縦胴の種皮が背へ円い環を作る。種胴下へ根脚2本。殻の溝は模様で、表皮を別殻として浮かせない。",
+    "side_ja": "横面の接続：種胴下へ根脚2本。殻の溝は模様で、表皮を別殻として浮かせない。。種皮の左右が背でつながる構造案。別個体や装備ではない。"
+  },
+  "evolution_changes_ja": "種皮の左右が背でつながる構造案。別個体や装備ではない。",
+  "family_retained_features_ja": "観測環の振動を記す種子獣。殻の前の丸い黒目と柔らかい口。",
+  "sprite_96px_ja": "縦胴の種皮が背へ円い環を作る。背の種皮環と2根脚を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "背の種皮環と2根脚を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "リスの持つ実と違い、自分の体が種。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の育成牧場の花畑。硬い種皮に育った振動筋が残る。記憶を読む超能力にはしない。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.

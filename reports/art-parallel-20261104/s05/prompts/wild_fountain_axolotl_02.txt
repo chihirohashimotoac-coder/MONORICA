@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 135, "id": "wild_fountain_axolotl_02", "name_ja": "ニジエルム", "family_id": "wild_fountain_axolotl", "evolution_stage": 2, "family_stage_count": 2, "evolves_from": "wild_fountain_axolotl_01", "evolves_to": null}
+Design: {
+  "motifs_ja": "噴水の光を散らす外鰓の幼形成熟種",
+  "full_body_silhouette_ja": "外鰓が透ける房状に広がり尾で光を扇ぐ",
+  "palette_main": [
+    "淡桃",
+    "乳白"
+  ],
+  "palette_accents": [
+    "水色"
+  ],
+  "face_expression_ja": "黒い点目と幅広の微笑。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "四脚と扁平尾1本。頭左右に外鰓各3本、計6本。鰓を手や角へ変えない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：黒い点目と幅広の微笑。 識別点：6本の透ける外鰓と水色尾縁",
+    "back_ja": "背面でも保つ輪郭：外鰓が透ける房状に広がり尾で光を扇ぐ。四脚と扁平尾1本。頭左右に外鰓各3本、計6本。鰓を手や角へ変えない。",
+    "side_ja": "横面の接続：四脚と扁平尾1本。頭左右に外鰓各3本、計6本。鰓を手や角へ変えない。。外鰓は各3本のまま薄膜が育つ。"
+  },
+  "evolution_changes_ja": "外鰓は各3本のまま薄膜が育つ。",
+  "family_retained_features_ja": "噴水の光を散らす外鰓の幼形成熟種。黒い点目と幅広の微笑。",
+  "sprite_96px_ja": "外鰓が透ける房状に広がり尾で光を扇ぐ。6本の透ける外鰓と水色尾縁を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "6本の透ける外鰓と水色尾縁を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "高山イモリの首帯とは違い6本の外鰓。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の公共噴水の水受け。鰓の薄い膜で水中の光を散らす。
+Additional structure check: Exactly THREE external gill stalks on EACH side of head, SIX total. Thin translucent pale pink membranes grow on these same six stalks, not extra roots. Four legs, one flat tail with sky blue edge.

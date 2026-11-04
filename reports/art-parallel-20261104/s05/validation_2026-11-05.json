@@ -1,0 +1,136 @@
+{
+  "date_jst": "2026-11-05",
+  "baseline_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "latest_design_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "design_diff": 0,
+  "image_check_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+  "assigned_count": 27,
+  "saved_confirmed": 7,
+  "incomplete": 20,
+  "unique_species_ids": 27,
+  "unique_image_sha256": 7,
+  "family_count": 16,
+  "families_not_split": true,
+  "catalog_id_name_stage_match": true,
+  "original_git_blobs_count": 243,
+  "original_git_blobs_preserved": true,
+  "image_body_readback": [
+    {
+      "species_id": "wild_metro_isopod_01",
+      "image_commit": "6560402b53d3c710bcf90c30e6eae13918b10c98",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1538855,
+      "sha256": "32c0f14a8413cd4054cbf564430cc473d6284101def5e8b5bf1a7f4156ab7cd1",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1995,
+        788
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_metro_isopod_02",
+      "image_commit": "eb54b2ab8699b3cd13744aaf2c0347485469798e",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1279261,
+      "sha256": "6e50e90c1bb3b036fd1e1aca621e335718aec8e6e441e753f6049bfb37c0ec43",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1997,
+        787
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_rooftop_sail_01",
+      "image_commit": "c981e82aa2a1d1a969b5ebafa07f5a6e48b04d03",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1338816,
+      "sha256": "5c41be494476238b9a625f73907d44ef882965ea34525658d44595b5c0ca088e",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1995,
+        788
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_rooftop_sail_02",
+      "image_commit": "3d71566eb654729f17e9ce5f2169a44e79895062",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1373726,
+      "sha256": "1937197ccf7a7e30c15a006bc0c6b340799e1d8e1728a8e6676f2f8ef621d703",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1995,
+        788
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_fountain_axolotl_01",
+      "image_commit": "f4f0277ca4555cfc354a0eb2dddb5a92bc61dbf3",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1220347,
+      "sha256": "3918eb618de61a82ad4b02dec895cac4b1adae3a0bb4ca06a436fa2c6f39954d",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1995,
+        788
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_fountain_axolotl_02",
+      "image_commit": "0848e7452a4a643ae82ae17e71b5729652ea9fe1",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1257054,
+      "sha256": "01c4d1e8f7f8463b98ae51e566a3a3aeb90dcb8d8173f49a9d8b009fcd1f267a",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1996,
+        788
+      ],
+      "mode": "RGB"
+    },
+    {
+      "species_id": "wild_night_curtain_01",
+      "image_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "checked_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "bytes": 1663766,
+      "sha256": "5b891f35b2b1818cc16be3ce09d04185e34a94d6dc391f3fce423318458d1ea5",
+      "sha256_match": true,
+      "bytes_match": true,
+      "local_match": true,
+      "size": [
+        1997,
+        788
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "runtime_validation_note": "既存runtime台帳の検査。今回の候補画像7枚のruntime適合・小サイズ可読性・採用を意味しない。",
+  "checks": {
+    "validate-assets_2026-11-05.txt": "{\n  \"recorded_file_check\": \"pass\",\n  \"files_checked\": 49,\n  \"catalog_complete\": false,\n  \"runtime_images\": 19,\n  \"audio_tracks\": 0,\n  \"pending_categories\": [\n    \"full_species_catalog\",\n    \"monster_runtime_art\",\n    \"character_sprites\",\n    \"map_tiles_and_layouts\",\n    \"complete_moves_items_abilities\",\n    \"complete_story_events\",\n    \"audio\",\n    \"ui_art\"\n  ],\n  \"errors\": [],\n  \"scope\": \"file existence, hashes and PNG header dimensions only\"\n}\n",
+    "validate-preproduction_2026-11-05.txt": "{\n  \"planning_check\": \"pass\",\n  \"species_slots\": 156,\n  \"known_production_cards\": 15,\n  \"main_regions\": 8,\n  \"postgame_regions\": 2,\n  \"representatives\": 8,\n  \"music_cues_not_generated\": 28,\n  \"queued_assets_not_created\": 3,\n  \"runtime_image_count\": 19,\n  \"runtime_ready_images\": 19,\n  \"errors\": [],\n  \"scope\": \"planning counts and references, not playthrough or complete content\"\n}\n"
+  },
+  "not_run": [
+    "tools/build_species_catalog_v01.py",
+    "tools/validate_species_catalog_v01.py",
+    "96px/32px出力",
+    "ゲーム・実機検証",
+    "モデル・エフォートのUI選択確認"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "dex": 137,
+    "stage": "output",
+    "error": "HTTP400 moderation_blocked other",
+    "request_id": "d584b56b-aa9c-4032-b80c-eaf724b89dd7",
+    "image_returned": false,
+    "action": "same authorized benign design retry once"
+  },
+  {
+    "dex": 137,
+    "stage": "output",
+    "error": "HTTP400 moderation_blocked other",
+    "request_id": "a9798f57-9ce7-4587-80b3-32a3e03d136c",
+    "image_returned": false,
+    "action": "No further retries; leave 137 incomplete and continue separately authorized other species"
+  },
+  {
+    "dex": 138,
+    "stage": "output",
+    "error": "HTTP400 moderation_blocked other",
+    "request_id": "6b1a4568-3a05-48e9-bd94-7b9785eb3ce2",
+    "image_returned": false,
+    "action": "stop generation after consecutive output refusals across different species"
+  }
+]
