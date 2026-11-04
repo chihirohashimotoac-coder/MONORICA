@@ -130,9 +130,15 @@
         "弁は成長差を確認。後方への傾きの強さはユーザー確認対象",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "391417f13964c6eed70c481a8340ad3121d032c3ea65609e00f594a0cde18041",
+        "bytes": 1434001,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:22:49.555989+00:00"
+      },
+      "image_commit": "ffc41865ec00f9e53cd38181cdfc91bc67326901",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review",
       "reference_images": [
         "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png"
@@ -610,6 +616,6 @@
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
   },
-  "last_image_commit": "b121bcb0f0e1fbfb6c8e0952f77ec2865894550d",
+  "last_image_commit": "ffc41865ec00f9e53cd38181cdfc91bc67326901",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
