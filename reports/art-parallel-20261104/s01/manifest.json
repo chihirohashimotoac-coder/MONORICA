@@ -588,22 +588,21 @@
       "name": "ホヤリネ",
       "species_id": "wild_lantern_jelly_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lantern_jelly_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_01/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1453068,
+      "sha256": "d6bc37a1afd46722d5d929c0234c0489a4a376356ea519f6d43fbdb98aa37a4a",
+      "visual_checks": [
+        "保存本体で3ビュー全身を目視。傘1、下面につながる短い触腕4、独立した灯球なし。",
+        "傘内部の琥珀灯と眼点2、乳白/藤色の色面と透け感を確認。背面に眼を重複させていない。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "後/横では触腕の付け根が一部重なる。傘の透け方と襞の微細一致は確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -611,7 +610,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
