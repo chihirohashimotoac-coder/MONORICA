@@ -1,0 +1,48 @@
+{
+  "date_jst": "2026-11-04",
+  "baseline_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "source_branch_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "source_branch_diff_from_baseline": 0,
+  "available_image_generation_tool": "image_gen__imagegen（未呼び出し）",
+  "model_effort_ui": "設定操作・確認とも未実施。指定モデル／エフォートへの切替済みと主張しない",
+  "managed_cloud_environment_status_tool_exposed": false,
+  "cloud_checkout_created": false,
+  "execution_probe": {
+    "platform": "win32",
+    "cwd": "C:\\Users\\pliii\\OneDrive\\ドキュメント\\ChatGPT\\MonsterRPG 2",
+    "tmpDir": "C:\\Users\\pliii\\AppData\\Local\\Temp",
+    "networkPolicyPresent": false
+  },
+  "shell_probe": {
+    "attempted_workdir": "C:\\workspace",
+    "result": "Failed to create unified exec process: ディレクトリ名が無効です。 (os error 267)"
+  },
+  "blocker": "クラウド実行端末がツールとして公開されておらず、確認できた実行先はWindows/OneDrive配下。ユーザー指定のクラウド内独立一時チェックアウトと画像実ファイル検査・認証済みGit保存・本体読み戻しの経路を確立できない。PC側の作業フォルダー・OneDriveへの書込みや代替制作は行わず、生成前に停止。",
+  "read_sources_at_baseline": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "LATEST_HANDOFF.md",
+    "docs/DECISIONS.md"
+  ],
+  "not_yet_read_sources": [
+    "docs/SPECIES_REVIEW_v0.1.md",
+    "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+    "content/planning/species-catalog_v0.1.json またはCSV",
+    "docs/SPECIES_ART_BATCHES_v0.1.md",
+    "reports/image-recovery-inventory_2026-11-04.json",
+    "docs/ASSET_SPEC_v0.1.md",
+    "担当系列の既存設定画・比較原画"
+  ],
+  "generated_images": 0,
+  "verified_saved_images": 0,
+  "remaining": 27,
+  "validation": {
+    "roster_count": 27,
+    "unique_species_ids": 27,
+    "roster_validation": "今回のユーザー表から台帳を作り件数・種ID重複を検査。設計カタログとの照合は未実施。",
+    "validate_assets": "未実行",
+    "validate_preproduction": "未実行",
+    "visual_qa": "未実行",
+    "image_github_readback": "対象画像なし・未実行"
+  }
+}

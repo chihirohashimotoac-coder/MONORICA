@@ -1,0 +1,851 @@
+{
+  "session": "s05",
+  "baseline_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "branch": "work/art-parallel-s05-20261104",
+  "art_state": "pending_user_review",
+  "counts": {
+    "assigned": 27,
+    "generated": 0,
+    "saved_confirmed": 0,
+    "incomplete": 27
+  },
+  "species": [
+    {
+      "dex_number": 130,
+      "species_id": "wild_metro_isopod_01",
+      "name": "ミチコロ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 131,
+      "species_id": "wild_metro_isopod_02",
+      "name": "イシワタリ",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_metro_isopod_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 132,
+      "species_id": "wild_rooftop_sail_01",
+      "name": "ハタモチ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rooftop_sail_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 133,
+      "species_id": "wild_rooftop_sail_02",
+      "name": "ソラハコビ",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rooftop_sail_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 134,
+      "species_id": "wild_fountain_axolotl_01",
+      "name": "ミナプル",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_fountain_axolotl_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 135,
+      "species_id": "wild_fountain_axolotl_02",
+      "name": "ニジエルム",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_fountain_axolotl_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 136,
+      "species_id": "wild_night_curtain_01",
+      "name": "ヨルカーテ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_night_curtain_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 137,
+      "species_id": "wild_thermal_fan_01",
+      "name": "ネツハオラ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_thermal_fan_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 138,
+      "species_id": "wild_rain_garden_01",
+      "name": "アマウツワ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rain_garden_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 139,
+      "species_id": "wild_tide_veil_01",
+      "name": "シオフリ",
+      "stage": "1/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_tide_veil_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 140,
+      "species_id": "wild_tide_veil_02",
+      "name": "ナギヴェル",
+      "stage": "2/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_tide_veil_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 141,
+      "species_id": "wild_tide_veil_03",
+      "name": "シオルミア",
+      "stage": "3/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_tide_veil_03/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 142,
+      "species_id": "wild_reef_kiln_01",
+      "name": "サンゴロネ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_reef_kiln_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 143,
+      "species_id": "wild_reef_kiln_02",
+      "name": "ユサンゴル",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_reef_kiln_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 144,
+      "species_id": "wild_shell_harp_01",
+      "name": "カイネリ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_shell_harp_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 145,
+      "species_id": "wild_shell_harp_02",
+      "name": "ナギハープ",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_shell_harp_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 146,
+      "species_id": "wild_brine_orb_01",
+      "name": "シオムクリ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_brine_orb_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 147,
+      "species_id": "wild_reef_crown_01",
+      "name": "カンショル",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_reef_crown_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 148,
+      "species_id": "wild_memory_seed_01",
+      "name": "タネリコ",
+      "stage": "1/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_memory_seed_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 149,
+      "species_id": "wild_memory_seed_02",
+      "name": "メグルコ",
+      "stage": "2/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_memory_seed_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 150,
+      "species_id": "wild_memory_seed_03",
+      "name": "ワノリオン",
+      "stage": "3/3",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_memory_seed_03/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 151,
+      "species_id": "wild_frost_lotus_01",
+      "name": "ヒエツボミ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_frost_lotus_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 152,
+      "species_id": "wild_frost_lotus_02",
+      "name": "ハクリエナ",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_frost_lotus_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 153,
+      "species_id": "wild_hollow_loam_01",
+      "name": "ホロツチ",
+      "stage": "1/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_hollow_loam_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 154,
+      "species_id": "wild_hollow_loam_02",
+      "name": "ドウロム",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_hollow_loam_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 155,
+      "species_id": "wild_dusk_compass_01",
+      "name": "ヨイシルベ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_dusk_compass_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 156,
+      "species_id": "wild_filament_worm_01",
+      "name": "イトツムリ",
+      "stage": "1/1",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_filament_worm_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checked": [],
+      "unconfirmed": [
+        "設計詳細・参照原画の取得と確認",
+        "画像生成",
+        "三面の同一性・器官数・接続・欠け",
+        "実ファイル測定",
+        "GitHub保存と画像本体読み戻し"
+      ],
+      "github_readback": {
+        "status": "未実行",
+        "sha256_match": null,
+        "bytes_match": null
+      },
+      "saved_commit": null,
+      "status": "未着手",
+      "adoption_state": "pending_user_review"
+    }
+  ]
+}
