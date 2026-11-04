@@ -5,9 +5,9 @@
   "art_state": "pending_user_review",
   "counts": {
     "assigned": 27,
-    "generated": 5,
-    "saved_confirmed": 4,
-    "incomplete": 23
+    "generated": 6,
+    "saved_confirmed": 5,
+    "incomplete": 22
   },
   "species": [
     {
@@ -154,7 +154,39 @@
         "三面・全身・欠けなし・文字なし"
       ],
       "unconfirmed": [
-        "後3/4の遠側下鰓は胴との重なりがある",
+        "後3/4の遠側下鰓は胴との重なりがある"
+      ],
+      "github_readback": {
+        "status": "GitHub rawから画像本体を再取得しSHA-256・バイト数一致",
+        "sha256_match": true,
+        "bytes_match": true,
+        "commit": "f4f0277ca4555cfc354a0eb2dddb5a92bc61dbf3"
+      },
+      "saved_commit": "f4f0277ca4555cfc354a0eb2dddb5a92bc61dbf3",
+      "status": "保存確認済み",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 135,
+      "species_id": "wild_fountain_axolotl_02",
+      "name": "ニジエルム",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_fountain_axolotl_02.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s05/wild_fountain_axolotl_02/model_sheet_v0.1.png",
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_fountain_axolotl_02/model_sheet_v0.1.png",
+      "width": 1996,
+      "height": 788,
+      "mode": "RGB",
+      "bytes": 1257054,
+      "sha256": "01c4d1e8f7f8463b98ae51e566a3a3aeb90dcb8d8173f49a9d8b009fcd1f267a",
+      "visual_checked": [
+        "左右各3本の外鰓の根元を維持し、各鰓に薄膜が育つ進化差を確認",
+        "四脚・扁平尾1本・点目と微笑、基礎形の淡桃・乳白・水色を維持",
+        "三面で全身・付け根・尾縁の色を確認、文字なし"
+      ],
+      "unconfirmed": [
+        "透明鰓膜の重なりは細部が多く、小サイズでの可読性は未検証",
         "GitHub画像本体読み戻し"
       ],
       "github_readback": {
@@ -164,37 +196,6 @@
       },
       "saved_commit": null,
       "status": "生成済み未保存",
-      "adoption_state": "pending_user_review"
-    },
-    {
-      "dex_number": 135,
-      "species_id": "wild_fountain_axolotl_02",
-      "name": "ニジエルム",
-      "stage": "2/2",
-      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_fountain_axolotl_02/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checked": [],
-      "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
-      ],
-      "github_readback": {
-        "status": "未実行",
-        "sha256_match": null,
-        "bytes_match": null
-      },
-      "saved_commit": null,
-      "status": "未着手",
       "adoption_state": "pending_user_review"
     },
     {
