@@ -300,22 +300,21 @@
       "name": "カチコバ",
       "species_id": "wild_lock_crab_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lock_crab_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1467676,
+      "sha256": "6020e20cfeac63e381fc1054b52f88ac55dc961505ce2ab45ec4739cac131be9",
+      "visual_checks": [
+        "保存本体を開き3ビュー・全身を目視。背3/4で歩脚左右3本ずつ計6、丸鋏2を確認。",
+        "四角い留め金形の錫灰殻、群青・橙、殻上の眼2と口元、尾/独立翼なし。初期は鋏左右同形。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "前/横では一部の歩脚と遠側鋏が殻や手前鋏に重なる。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -323,7 +322,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
