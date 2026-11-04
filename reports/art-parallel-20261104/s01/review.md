@@ -1,6 +1,6 @@
 # s01 レビュー一覧
 
-担当30種／保存確認済み16種／未完了14種。すべてpending_user_review。
+担当30種／保存確認済み17種／未完了13種。すべてpending_user_review。
 
 | 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@
 | 029 | wild_lotus_frog_02 | ウキハスネ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_02/model_sheet_v0.1.png) |
 | 030 | wild_silt_skate_01 | ドロヒラ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_silt_skate_01/model_sheet_v0.1.png) |
 | 031 | wild_silt_skate_02 | スナミオ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_silt_skate_02/model_sheet_v0.1.png) |
-| 032 | wild_mist_snail_01 | ツユマキ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png) |
+| 032 | wild_mist_snail_01 | ツユマキ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png) |
 | 033 | wild_mist_snail_02 | キリマイム | 未着手 | 未生成 |
 | 034 | wild_lantern_jelly_01 | ホヤリネ | 未着手 | 未生成 |
 | 035 | wild_lantern_jelly_02 | ミナランプ | 未着手 | 未生成 |

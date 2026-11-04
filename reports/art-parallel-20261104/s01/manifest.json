@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 16,
-    "incomplete": 14
+    "saved_verified": 17,
+    "incomplete": 13
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -543,12 +543,13 @@
         "殻の渦の立体的な巻き方向の完全一致と霧の微細な形は最終確認待ち。横図の遠側触角は重なる。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1424955,
+        "sha256": "53dafac6e67053b5b742b68039e7c45fc48432cef866c1543d4e88fe7960e6a8"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "8f6a39093ad0a7c867e46451d11b66624e650df9",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
