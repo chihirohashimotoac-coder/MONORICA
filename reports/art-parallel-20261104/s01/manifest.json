@@ -362,22 +362,21 @@
       "name": "ミトガニス",
       "species_id": "wild_lock_crab_03",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_lock_crab_03.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_03/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_03/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1784432,
+      "sha256": "a4789cd4488c7107fb3261b9f126c2358c5086dd1a8da2fa8cbe3516d6711a9f",
+      "visual_checks": [
+        "保存本体3ビュー・全身を確認。歩脚左右3本計6、胸前の板鋏2、個体左が広い状態を前背で照合。",
+        "両鋏が板形へ成長、厚く横広な水門殻を確認。横図の後端に誤っていた小鋏を除去し胸前側へ修正。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "遠側小板鋏は殻や近側大鋏で大部分が隠れる。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -385,7 +384,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
