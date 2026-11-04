@@ -145,22 +145,21 @@
       "name": "マキデン",
       "species_id": "wild_coil_dormouse_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_coil_dormouse_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png",
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1680644,
+      "sha256": "d8ed978e4d746ea3ed84e6ba4584739587d2dccf254b614bb8f19a99a1b686e5",
+      "visual_checks": [
+        "保存画像で3ビュー、四肢4・尾1・空洞渦・象牙頬・銅耳内側を確認。初期原画参照。",
+        "帯数修正2回。銅4帯を確認、渦内側の余剰帯は除去。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "水色は4帯の設計指定だが、胴で隠れる箇所があり各ビューで全4帯を直接数え切れていない。帯数の最終目視確認が必要。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -168,7 +167,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
