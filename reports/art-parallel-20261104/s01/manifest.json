@@ -269,22 +269,21 @@
       "name": "ミナツルネ",
       "species_id": "wild_reed_crane_03",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_reed_crane_03.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_03/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_03/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1420971,
+      "sha256": "b0b2397b1875a1efbc3080ebf1c33e973e5d7fbfd33904dd1414d007dd5b31cf",
+      "visual_checks": [
+        "保存本体の3ビューを目視。肩からの翼2を水平に張り、長首・脚2・小尾1束、胸葦房・脚環模様・朱眉を確認。",
+        "直前ササナギ原画を参照し翼幅と胸羽が成長、初期雛との段階差を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "広げた翼端の余白が小さい。横図は翼を畳んで示している。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -292,7 +291,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
