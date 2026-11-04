@@ -11,11 +11,11 @@
   "counts": {
     "assigned": 28,
     "generated": 4,
-    "github_image_readback_verified": 3,
-    "incomplete": 25
+    "github_image_readback_verified": 4,
+    "incomplete": 24
   },
   "status": "in_progress",
-  "next_species_id": "wild_amber_weevil_02",
+  "next_species_id": "wild_bloom_siphon_01",
   "constraints": [
     "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
     "既存画像・runtime・共通設計・共通台帳は変更しない。",
@@ -168,12 +168,16 @@
         "閉殻下の飛翔翅2枚と重なった遠側脚の全数は外観だけでは確定できない。"
       ],
       "github_readback": {
-        "status": "not_attempted",
-        "sha256_match": null,
-        "byte_count_match": null
+        "status": "verified_from_github_fetched_commit_blob",
+        "sha256_match": true,
+        "byte_count_match": true,
+        "commit": "33fdd6ace2c4919811332052f46d35fe33204c75",
+        "bytes": 1424567,
+        "sha256": "c601f9799c9b8f1e80128d33a561326098ab10bf5229a451ed09d4979f3b5fc5",
+        "date_jst": "2026-11-05"
       },
-      "image_save_commit": null,
-      "status": "生成済み未保存",
+      "image_save_commit": "33fdd6ace2c4919811332052f46d35fe33204c75",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review",
       "reference_images": [
         "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png"
