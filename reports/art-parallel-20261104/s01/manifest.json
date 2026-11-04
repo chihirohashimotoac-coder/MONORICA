@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 11,
-    "incomplete": 19
+    "saved_verified": 12,
+    "incomplete": 18
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -350,11 +350,11 @@
       "github_readback": {
         "status": "verified",
         "method": "HTTPS full image body from GitHub pinned commit",
-        "size_bytes": 1873648,
-        "sha256": "1a71891253bbde396af07039c927ba6c72e0644ac3a35bed0e2c0986cb3b672f"
+        "size_bytes": 1854643,
+        "sha256": "e48d0d3a1416f866343f05f94bf25b00f528fbe6405f14276606be1cf74d5f81"
       },
-      "save_commit": "ab5ba40921dddcbc4dfd7f0135ffed2c8e4ed791",
-      "status": "生成済み未保存",
+      "save_commit": "446e314ab04ac894a27e3267287832f4289f6e7b",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review",
       "previous_versions": [
         {
