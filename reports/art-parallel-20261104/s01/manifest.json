@@ -238,22 +238,21 @@
       "name": "ササナギ",
       "species_id": "wild_reed_crane_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_reed_crane_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_02/model_sheet_v0.1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1327990,
+      "sha256": "560acc53226907573a5759b2e6bd13b1ca75ba5aff2023aed042e0b383f8a03d",
+      "visual_checks": [
+        "保存画像を開き全身3ビューを確認。翼2・脚2・尾羽1束・脚環模様・朱眉を目視。",
+        "アシピナ原画から首がS字に伸び、胸羽が葦房形となる成長差を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "遠側の翼・脚は横図で重なる。胸羽の細部は美術採用前の確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -261,7 +260,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
