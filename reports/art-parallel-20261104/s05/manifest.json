@@ -5,9 +5,9 @@
   "art_state": "pending_user_review",
   "counts": {
     "assigned": 27,
-    "generated": 3,
-    "saved_confirmed": 2,
-    "incomplete": 25
+    "generated": 4,
+    "saved_confirmed": 3,
+    "incomplete": 24
   },
   "species": [
     {
@@ -91,7 +91,38 @@
         "四脚、細い耳2つ、尾1本の先端に縦長葉帆1面、四肢への膜接続なし",
         "浅緑・灰白系と珊瑚の差し色を三面で確認"
       ],
+      "unconfirmed": [],
+      "github_readback": {
+        "status": "GitHub rawから画像本体を再取得しSHA-256・バイト数一致",
+        "sha256_match": true,
+        "bytes_match": true,
+        "commit": "c981e82aa2a1d1a969b5ebafa07f5a6e48b04d03"
+      },
+      "saved_commit": "c981e82aa2a1d1a969b5ebafa07f5a6e48b04d03",
+      "status": "保存確認済み",
+      "adoption_state": "pending_user_review"
+    },
+    {
+      "dex_number": 133,
+      "species_id": "wild_rooftop_sail_02",
+      "name": "ソラハコビ",
+      "stage": "2/2",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_rooftop_sail_02.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s05/wild_rooftop_sail_02/model_sheet_v0.1.png",
+      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rooftop_sail_02/model_sheet_v0.1.png",
+      "width": 1995,
+      "height": 788,
+      "mode": "RGB",
+      "bytes": 1373726,
+      "sha256": "1937197ccf7a7e30c15a006bc0c6b340799e1d8e1728a8e6676f2f8ef621d703",
+      "visual_checked": [
+        "三面・全身・文字なし、四脚と耳2つ、尾1本を目視",
+        "尾先の帆が横へ広がり基礎形の縦長葉と区別、四肢への膜なし",
+        "基礎形の顔・浅緑・灰白・珊瑚色を継承"
+      ],
       "unconfirmed": [
+        "横広帆の中央のくぼみは二葉状に見えるが、尾先1か所への連続膜として表現",
         "GitHub画像本体読み戻し"
       ],
       "github_readback": {
@@ -101,37 +132,6 @@
       },
       "saved_commit": null,
       "status": "生成済み未保存",
-      "adoption_state": "pending_user_review"
-    },
-    {
-      "dex_number": 133,
-      "species_id": "wild_rooftop_sail_02",
-      "name": "ソラハコビ",
-      "stage": "2/2",
-      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rooftop_sail_02/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checked": [],
-      "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
-      ],
-      "github_readback": {
-        "status": "未実行",
-        "sha256_match": null,
-        "bytes_match": null
-      },
-      "saved_commit": null,
-      "status": "未着手",
       "adoption_state": "pending_user_review"
     },
     {

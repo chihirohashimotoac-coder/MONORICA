@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 133, "id": "wild_rooftop_sail_02", "name_ja": "ソラハコビ", "family_id": "wild_rooftop_sail", "evolution_stage": 2, "family_stage_count": 2, "evolves_from": "wild_rooftop_sail_01", "evolves_to": null}
+Design: {
+  "motifs_ja": "屋上の種を運ぶ帆尾の小獣",
+  "full_body_silhouette_ja": "帆尾が横へ広がり腰の後ろに弧を描く",
+  "palette_main": [
+    "浅緑",
+    "灰白"
+  ],
+  "palette_accents": [
+    "珊瑚"
+  ],
+  "face_expression_ja": "丸目と短い鼻、細い耳2つ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "四脚と尾1本。尾の先の帆膜は尾にだけ接続し、四肢へつながない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸目と短い鼻、細い耳2つ。 識別点：幅広の尾帆と珊瑚の鼻",
+    "back_ja": "背面でも保つ輪郭：帆尾が横へ広がり腰の後ろに弧を描く。四脚と尾1本。尾の先の帆膜は尾にだけ接続し、四肢へつながない。",
+    "side_ja": "横面の接続：四脚と尾1本。尾の先の帆膜は尾にだけ接続し、四肢へつながない。。尾先の膜が横広に。独立翼は増やさない。"
+  },
+  "evolution_changes_ja": "尾先の膜が横広に。独立翼は増やさない。",
+  "family_retained_features_ja": "屋上の種を運ぶ帆尾の小獣。丸目と短い鼻、細い耳2つ。",
+  "sprite_96px_ja": "帆尾が横へ広がり腰の後ろに弧を描く。幅広の尾帆と珊瑚の鼻を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "幅広の尾帆と珊瑚の鼻を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "ヨルミルは手首足首の膜、本種は尾だけの帆。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の屋上庭園。体を跳ねさせ大きな尾で風を受ける。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.
