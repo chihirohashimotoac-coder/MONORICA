@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 18,
-    "incomplete": 12
+    "saved_verified": 19,
+    "incomplete": 11
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -605,12 +605,13 @@
         "後/横では触腕の付け根が一部重なる。傘の透け方と襞の微細一致は確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1453068,
+        "sha256": "d6bc37a1afd46722d5d929c0234c0489a4a376356ea519f6d43fbdb98aa37a4a"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "9e9d5bdc7fc137dfa7bac96373270a1a8011485e",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
