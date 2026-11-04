@@ -10,7 +10,7 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 4,
+    "generated": 5,
     "github_image_readback_verified": 4,
     "incomplete": 24
   },
@@ -191,18 +191,20 @@
       "stage": 1,
       "family_stages": 2,
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_prompt_file": null,
-      "image_path": null,
+      "generation_prompt_file": "reports/art-parallel-20261104/s04/prompts/wild_bloom_siphon_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s04/wild_bloom_siphon_01/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_bloom_siphon_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "width": 1922,
+      "height": 818,
+      "mode": "RGB",
+      "bytes": 1385303,
+      "sha256": "b7349deccd7cf393ba5e62fd7f544cc620df6337e94c72a33b5d4e746cde1e32",
+      "visual_checks": [
+        "三面の白い筒花・桃縁・紫模様、顔と捕虫口の分離を確認。",
+        "根脚2・側葉2・側面からの蜜管1本を確認。"
+      ],
       "unverified": [
-        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
-        "GitHub画像保存と画像本体の再取得照合は未実施。"
+        "美術採用はユーザー確認待ち。96px/32px・実機は対象外。"
       ],
       "github_readback": {
         "status": "not_attempted",
@@ -210,8 +212,11 @@
         "byte_count_match": null
       },
       "image_save_commit": null,
-      "status": "未着手",
-      "adoption_status": "pending_user_review"
+      "status": "生成済み未保存",
+      "adoption_status": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png"
+      ]
     },
     {
       "dex": 107,

@@ -1,0 +1,83 @@
+Use case: illustration-story. Create ONE high-resolution landscape full-color original MONORICA creature model sheet. Exactly THREE separated full-body views of the SAME individual in a horizontal row: front three-quarter, rear three-quarter, true side. Pure white background. Cute approachable Japanese creature RPG concept art. Clean dark colored outlines, broad readable cel-shaded color masses, restrained shading. All bodies, feet, antennae, wings, horns, tails fully inside the image with generous margins. No text, letters, numbers, labels, logo, watermark, UI, scenery, props. This is NOT pixel art. Use attached reference for rendering style only, except when it is explicitly this same family: then preserve the family traits. No extra organs. Near and far limbs must be staggered to allow counting, with coherent occlusion. Anatomical left/right and marking placement stay consistent across all three views. Follow this exact species design from baseline b6c1d875e3f624bb77d1e632bfed561380d7ed19:
+## 106 ミツポネ
+
+`wild_bloom_siphon_01`／系列 `wild_bloom_siphon`／1/2段階／光（属性案）
+
+進化元：なし。基礎形。進化先：ミツクラリ。
+
+**戦闘**：攻撃できる回復補佐。攻撃を残しつつ味方や自分を立て直す。闇・毒へ攻めながら回復する。 苦手：回復を妨げる圧力と重い物理攻撃が苦手。能力傾向：hp=標準、attack=控えめ、defense=標準、special_attack=標準、special_defense=高め、speed=標準。数値は未設定。
+受け相性：弱点 水×2、鋼×2、闇×2／耐性・無効 毒×0.5、光×0.5。既存相性表のみの計算。
+
+技案「みつひかり」：光の攻撃と小回復。威力・命中・使用回数は未設定。
+
+**入手**：サナギ原生域到達後。昼夜共通。 方法：徒歩で到達する生息地で繰り返し捕獲。捕獲道具は通常店・講習の再補充から取得。。やや少ない。昼夜共通。天候・現実日付・期間限定条件なし。。
+生態：徒歩の菌床庭の周縁。余分な虫だけを捕え、蜜を他の生物へ分ける。 生息場所は制作案。実マップの接続は未検証。
+探索：必須探索技の担当なし。生態の観察と任意の発見を担う。。
+
+**外見**：蜜管を共有する食虫花の精。白い筒花を2根脚で支え、蜜管が短く垂れる。配色：薄桃／白、差し色：紫。
+顔：花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。
+器官数：independent_arms=0、legs=2、independent_wings=0、tails=0、horns=0、antennae=0、fins=0、tentacles=0。接続：根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。
+前面：顔・前側の色面：花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。 識別点：筒花と桃の縁
+背面：背面でも保つ輪郭：白い筒花を2根脚で支え、蜜管が短く垂れる。根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。
+横面：横面の接続：根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。。花口は小さく円形。
+進化変化：花口は小さく円形。
+引継点：蜜管を共有する食虫花の精。花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。
+96px：白い筒花を2根脚で支え、蜜管が短く垂れる。筒花と桃の縁を太い色面で残し、細い陰影より器官の重なりを優先。
+32px：筒花と桃の縁を最優先。細部を省略しても付け根と本数の設計は変えない。
+差別化：日輪球根と違い、筒状花と垂れる蜜管。
+制作難度・注意：中：器官の付け根と色面を三面で一致させる。
+構造の扱い：全構造が今回の制作案。未制作の画像で確認済みとは扱わない。
+
+**状態**：出自=new_production_proposal、名前=production_proposal、属性=production_proposal、ゲーム設計=production_proposal。美術方向=production_proposal、設定画=not_created、静止素材=not_created。今回の文字設計のみ。画像未制作・未採用。
+
+参照：`docs/SPECIES_ALLOCATION_v0.1.md`、`docs/WORLD_OUTLINE_v0.1.md`、`content/planning/world-outline.json`、`content/type-chart.json`、`tools/species_drafts_v01.py`
+
+
+Structured art specification:
+{
+  "motifs_ja": "蜜管を共有する食虫花の精",
+  "full_body_silhouette_ja": "白い筒花を2根脚で支え、蜜管が短く垂れる",
+  "palette_main": [
+    "薄桃",
+    "白"
+  ],
+  "palette_accents": [
+    "紫"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。 識別点：筒花と桃の縁",
+    "back_ja": "背面でも保つ輪郭：白い筒花を2根脚で支え、蜜管が短く垂れる。根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。",
+    "side_ja": "横面の接続：根脚2本、上の捕虫花筒1つ。横の葉2枚は腕ではない。。花口は小さく円形。"
+  },
+  "evolution_changes_ja": "花口は小さく円形。",
+  "family_retained_features_ja": "蜜管を共有する食虫花の精。花筒の下に丸目、短い口。捕虫口と表情の口を分けて見せる。",
+  "sprite_96px_ja": "白い筒花を2根脚で支え、蜜管が短く垂れる。筒花と桃の縁を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "筒花と桃の縁を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "日輪球根と違い、筒状花と垂れる蜜管。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Do not print any of this text in the image.
+
+Specific staging:
+Small juvenile carnivorous pitcher flower sprite. One WHITE tubular flower with a small circular open trap at top, PALE PINK rim, tiny PURPLE accents. Two round eyes and a short expressive mouth on body BELOW flower tube; trap opening is separate from face mouth. EXACTLY TWO root legs, no arms. Two side leaves, not hands. ONE short nectar tube droops from SIDE of flower tube, never from rump. Same side attachment in all three views. Small simple circular flower mouth. Rendering reference only; no squirrel anatomy.
