@@ -1,17 +1,15 @@
 # s01 レビュー一覧
 
-担当30種／生成0種／GitHub画像本体の保存確認0種／未完了30種。
+担当30種／保存確認済み5種／未完了25種。すべてpending_user_review。
 
-クラウド内チェックアウトを用意できず制作前に停止。画像閲覧リンクはまだありません。台帳作成を画像制作完了として数えません。
-
-| 図鑑番号 | 種ID | 名前 | 状態 | 実画像 |
+| 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
-| 011 | wild_seed_squirrel_02 | コノミリア | 未着手 | 未生成 |
-| 013 | wild_vine_mole_02 | ネヅナグ | 未着手 | 未生成 |
-| 015 | wild_breeze_bird_02 | オウギル | 未着手 | 未生成 |
-| 017 | wild_stream_otter_02 | カワミオ | 未着手 | 未生成 |
-| 019 | wild_coil_dormouse_02 | マキデン | 未着手 | 未生成 |
-| 021 | wild_dusk_glider_02 | ヨイトバリ | 未着手 | 未生成 |
+| 011 | wild_seed_squirrel_02 | コノミリア | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_seed_squirrel_02/model_sheet_v0.1.png) |
+| 013 | wild_vine_mole_02 | ネヅナグ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_vine_mole_02/model_sheet_v0.1.png) |
+| 015 | wild_breeze_bird_02 | オウギル | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_breeze_bird_02/model_sheet_v0.1.png) |
+| 017 | wild_stream_otter_02 | カワミオ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png) |
+| 019 | wild_coil_dormouse_02 | マキデン | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png) |
+| 021 | wild_dusk_glider_02 | ヨイトバリ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_dusk_glider_02/model_sheet_v0.1.png) |
 | 022 | wild_reed_crane_01 | アシピナ | 未着手 | 未生成 |
 | 023 | wild_reed_crane_02 | ササナギ | 未着手 | 未生成 |
 | 024 | wild_reed_crane_03 | ミナツルネ | 未着手 | 未生成 |
@@ -36,5 +34,3 @@
 | 043 | wild_glass_gecko_01 | スナペト | 未着手 | 未生成 |
 | 044 | wild_glass_gecko_02 | ハクスリカ | 未着手 | 未生成 |
 | 045 | wild_glass_gecko_03 | ルミガレス | 未着手 | 未生成 |
-
-既存15種の本体保全も未完了。[既存画像参照](preservation-status.json)は基準SHA内の台帳からの引継ぎです。今回の本体取得・寸法・ハッシュ・目視の検証実績ではありません。
