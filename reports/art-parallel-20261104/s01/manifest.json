@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 4,
-    "incomplete": 26
+    "saved_verified": 5,
+    "incomplete": 25
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -162,12 +162,13 @@
         "水色は4帯の設計指定だが、胴で隠れる箇所があり各ビューで全4帯を直接数え切れていない。帯数の最終目視確認が必要。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1680644,
+        "sha256": "d8ed978e4d746ea3ed84e6ba4584739587d2dccf254b614bb8f19a99a1b686e5"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "7d56bee6648daecb347184eadb761b4da752014d",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
