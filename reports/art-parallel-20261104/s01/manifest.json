@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 11,
-    "incomplete": 19
+    "saved_verified": 12,
+    "incomplete": 18
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -379,12 +379,13 @@
         "遠側小板鋏は殻や近側大鋏で大部分が隠れる。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1784432,
+        "sha256": "a4789cd4488c7107fb3261b9f126c2358c5086dd1a8da2fa8cbe3516d6711a9f"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "3e001a948089aa0426bc42f5476847e9ec2323d6",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
