@@ -10,7 +10,7 @@
   "adoption_status": "pending_user_review",
   "counts": {
     "assigned": 28,
-    "generated": 2,
+    "generated": 3,
     "github_image_readback_verified": 2,
     "incomplete": 26
   },
@@ -115,18 +115,20 @@
       "stage": 1,
       "family_stages": 2,
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "generation_prompt_file": null,
-      "image_path": null,
+      "generation_prompt_file": "reports/art-parallel-20261104/s04/prompts/wild_amber_weevil_01.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png",
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "width": 1923,
+      "height": 818,
+      "mode": "RGB",
+      "bytes": 1290637,
+      "sha256": "d1d034f2b6dbc533d420f558bd132db16aece7e15082e475a6989c07e609d691",
+      "visual_checks": [
+        "三面全身の収まり、琥珀球殻・長吻・頭部触角2本、六脚の胸側接続を確認。横面では遠側脚は近側に重なる。",
+        "飛翔翅2枚は閉殻下に隠れ、外観からの枚数確認はできない。"
+      ],
       "unverified": [
-        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
-        "GitHub画像保存と画像本体の再取得照合は未実施。"
+        "美術採用待ち。閉殻下の翅2枚は外観で全数確認できない。"
       ],
       "github_readback": {
         "status": "not_attempted",
@@ -134,7 +136,7 @@
         "byte_count_match": null
       },
       "image_save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
