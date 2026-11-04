@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 15,
-    "incomplete": 15
+    "saved_verified": 16,
+    "incomplete": 14
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -512,12 +512,13 @@
         "腹側の口は接地姿勢のため見えない。乳白斑の細かい位置の一致は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1162943,
+        "sha256": "6a5dd3c93f2610c452c4cd1cdd7980a6fa66ed7bc73328b34b1dff84f1f1fbf0"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "9675726671d2640833d39ff458e7270e5f9b54ec",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
