@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "date_jst": "2026-11-04",
+  "date_jst": "2026-11-05",
   "session": "s04",
   "repository": "chihirohashimotoac-coder/MONORICA",
   "branch": "work/art-parallel-s04-20261104",
@@ -11,11 +11,11 @@
   "counts": {
     "assigned": 28,
     "generated": 2,
-    "github_image_readback_verified": 1,
-    "incomplete": 27
+    "github_image_readback_verified": 2,
+    "incomplete": 26
   },
   "status": "in_progress",
-  "next_species_id": "wild_umbra_civet_02",
+  "next_species_id": "wild_amber_weevil_01",
   "constraints": [
     "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
     "既存画像・runtime・共通設計・共通台帳は変更しない。",
@@ -92,16 +92,19 @@
         "初期形との顔・配色の継承、上向き弧尾と肩毛の成長差を目視。"
       ],
       "unverified": [
-        "美術採用はユーザー確認待ち。",
-        "GitHub本体読み戻し待ち。"
+        "美術採用はユーザー確認待ち。96px/32px出力・ゲーム動作は今回対象外。"
       ],
       "github_readback": {
-        "status": "not_attempted",
-        "sha256_match": null,
-        "byte_count_match": null
+        "status": "verified_from_fresh_github_clone",
+        "sha256_match": true,
+        "byte_count_match": true,
+        "bytes": 1328620,
+        "sha256": "2bc7831b333d2591ccbc91f05048192977360c5499726f016720839310068417",
+        "commit": "e42f6969d2d48031b3af2898babe517c6db13c99",
+        "date_jst": "2026-11-05"
       },
-      "image_save_commit": null,
-      "status": "生成済み未保存",
+      "image_save_commit": "e42f6969d2d48031b3af2898babe517c6db13c99",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
