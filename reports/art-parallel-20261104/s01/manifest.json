@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 8,
-    "incomplete": 22
+    "saved_verified": 9,
+    "incomplete": 21
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -286,12 +286,13 @@
         "広げた翼端の余白が小さい。横図は翼を畳んで示している。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1420971,
+        "sha256": "b0b2397b1875a1efbc3080ebf1c33e973e5d7fbfd33904dd1414d007dd5b31cf"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "92ed8ca0a53c3f379f67cfa7c20a5b1dcf660808",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
