@@ -1,6 +1,6 @@
 # s01 レビュー一覧
 
-担当30種／保存確認済み22種／未完了8種。すべてpending_user_review。
+担当30種／保存確認済み23種／未完了7種。すべてpending_user_review。
 
 | 図鑑 | 種ID | 名前 | 状態 | 画像 |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@
 | 035 | wild_lantern_jelly_02 | ミナランプ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_02/model_sheet_v0.1.png) |
 | 036 | wild_bog_leech_01 | ペタリム | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png) |
 | 037 | wild_bog_leech_02 | シブネリ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_bog_leech_02/model_sheet_v0.1.png) |
-| 038 | wild_reed_whistle_01 | アシフエラ | 生成済み未保存 | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_reed_whistle_01/model_sheet_v0.1.png) |
+| 038 | wild_reed_whistle_01 | アシフエラ | 保存確認済み | [設定画](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s01-20261104/assets/source/monsters/parallel_20261104/s01/wild_reed_whistle_01/model_sheet_v0.1.png) |
 | 039 | wild_bubble_moth_01 | アワハリカ | 未着手 | 未生成 |
 | 040 | wild_kiln_pup_01 | ホコロン | 未着手 | 未生成 |
 | 041 | wild_kiln_pup_02 | カマテラ | 未着手 | 未生成 |

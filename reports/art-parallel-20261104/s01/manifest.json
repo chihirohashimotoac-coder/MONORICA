@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 22,
-    "incomplete": 8
+    "saved_verified": 23,
+    "incomplete": 7
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -729,12 +729,13 @@
         "葉の表裏と束の重なりの微細整合は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1488148,
+        "sha256": "d3dc622bda6105f928cb1c5b38dde5e1ff8db19aa78345a276404e75ccbd5b17"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "83d0b9e4eabcb4a5692855b0840e2cfd649526a2",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
