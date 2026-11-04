@@ -1,0 +1,47 @@
+Use case: stylized-concept. MONORICA original monster character design reference sheet. Make EXACTLY ONE species, SAME individual in three full-body views in one wide horizontal row: front three-quarter, rear three-quarter, exact side profile, left to right. Cute approachable Japanese creature RPG concept art; clear dark colored outlines, simple large readable cel shaded color shapes, matching the reference art style. Pure white background. No labels, text, numbers, logos, watermark, UI, frame, landscape or unrelated props. All bodies and appendages fully in frame, ample margins, no inter-view overlaps. Retain individual left/right, appendage counts and attachments, identical color areas and markings across all three views. Natural occlusion may hide far-side parts, never invent or detach parts. High resolution full color concept art, not pixel art, no sprites.
+The following authoritative species design is in Japanese; follow it exactly, especially species-specific anatomy_connections and evolution_changes over generic family descriptions. 96px/32px text describes identifying features only, DO NOT render pixel sprites. Existing reference image, if supplied, is a style and family continuity anchor, not permission to copy the juvenile without its evolution.
+Species: wild_vine_mole_02 ネヅナグ
+{
+  "motifs_ja": "葉前髪とつた尾のモグラ",
+  "full_body_silhouette_ja": "平たい胴の下で前足が根の支点を囲む",
+  "palette_main": [
+    "苔緑",
+    "象牙"
+  ],
+  "palette_accents": [
+    "土茶"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "穏やかな黒茶の目、桃色の小鼻。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "前脚2本は胸の低い位置、後脚2本は腰。頭の葉2枚と腰のつた尾1本を分け、尾先だけ小葉2枚。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：穏やかな黒茶の目、桃色の小鼻。 識別点：大前足と二股葉のつた尾",
+    "back_ja": "背面でも保つ輪郭：平たい胴の下で前足が根の支点を囲む。前脚2本は胸の低い位置、後脚2本は腰。頭の葉2枚と腰のつた尾1本を分け、尾先だけ小葉2枚。",
+    "side_ja": "横面の接続：前脚2本は胸の低い位置、後脚2本は腰。頭の葉2枚と腰のつた尾1本を分け、尾先だけ小葉2枚。。前足が幅広に、尾が支点を結ぶ長さへ。根状の筋は模様で追加脚ではない。"
+  },
+  "evolution_changes_ja": "前足が幅広に、尾が支点を結ぶ長さへ。根状の筋は模様で追加脚ではない。",
+  "family_retained_features_ja": "葉前髪とつた尾のモグラ。穏やかな黒茶の目、桃色の小鼻。",
+  "sprite_96px_ja": "平たい胴の下で前足が根の支点を囲む。大前足と二股葉のつた尾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "大前足と二股葉のつた尾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "後発の根バクは鼻と歩行が主役。本種は大前足とつた尾。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference: juvenile ツルモグ. Evolve to a visibly wider, flatter mature body with larger front paws and longer single vine tail. Exactly two head leaves and exactly two tiny leaves only on tail tip. Root-like lines are surface pattern, never extra limbs. Four legs total. No scenery or separate roots.

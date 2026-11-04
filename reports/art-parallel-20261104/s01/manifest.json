@@ -9,9 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "generated": 0,
-    "github_bytes_verified": 0,
-    "incomplete": 30
+    "saved_verified": 1,
+    "incomplete": 29
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -39,12 +38,13 @@
         "美術採用はユーザー確認待ち。抱えた実の扱いは接続文に従い維持。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "GitHub raw image body HTTP GET pinned to commit",
+        "sha256": "9341ad3a02c36c215cbbffcd6961ac7ffd18d55d7de38e6365bfb1cf5f1da449",
+        "size_bytes": 1512965
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "d83b393196516c405b61ac102c854a1db833f4e1",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
@@ -52,22 +52,21 @@
       "name": "ネヅナグ",
       "species_id": "wild_vine_mole_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_vine_mole_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_vine_mole_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_vine_mole_02/model_sheet_v0.1.png",
+      "width": 1995,
+      "height": 788,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1366128,
+      "sha256": "5984a540b0f23c7e1de6387d8937e0a5fc5bcfd28473d3b15b10ea93d9c88f08",
+      "visual_checks": [
+        "保存画像を開いて目視。全身3ビュー、四脚・頭葉2・尾1・尾先小葉2。",
+        "基礎形原画を参照。平たい成体の胴と幅広前足、土茶の根状模様が四肢と区別される。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "根状模様の細かな枝分かれはビュー間で完全一致までは確認できない。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -75,7 +74,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
