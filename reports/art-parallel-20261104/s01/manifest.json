@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 9,
-    "incomplete": 21
+    "saved_verified": 10,
+    "incomplete": 20
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -317,12 +317,13 @@
         "前/横では一部の歩脚と遠側鋏が殻や手前鋏に重なる。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1467676,
+        "sha256": "6020e20cfeac63e381fc1054b52f88ac55dc961505ce2ab45ec4739cac131be9"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "a80c54e24a2baf4b85986b4cce722c7ab6c3c3a8",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
