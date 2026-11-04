@@ -1,0 +1,155 @@
+{
+  "date_jst": "2026-11-04",
+  "status": "not_materialized_this_session",
+  "github_existing_9": [
+    {
+      "path": "assets/source/monsters/starter_ember_wyvern_01/model_sheet_v0.2.png",
+      "prior_inventory_blob_sha": "6a4664a48c6d9d053efb9f49d2d33e1ce3673d23",
+      "prior_inventory_bytes": 1537212,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/starter_flower_hare_01/model_sheet_v0.2.png",
+      "prior_inventory_blob_sha": "8f9dfa250f908db4f24a10e1ea6d7fcddde24d52",
+      "prior_inventory_bytes": 1695990,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/starter_tide_bear_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "60b5aafb1070318483af793fc3c16fac0efd6cfb",
+      "prior_inventory_bytes": 1353713,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_breeze_bird_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "51d5135a5fcd42cb8ae31b59c00efaa8530ee2b0",
+      "prior_inventory_bytes": 1409564,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_coil_dormouse_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "7534ca13cc64bd7f4f616c0221ba07e5da51693f",
+      "prior_inventory_bytes": 1367280,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
+      "prior_inventory_blob_sha": "22898185e82a95d4dae1e493d730cdf1e9b417d7",
+      "prior_inventory_bytes": 1667088,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_seed_squirrel_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "53075f45e4fd38ad044ad239cf70840383a0602a",
+      "prior_inventory_bytes": 1455056,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_stream_otter_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "a7f82d9467d94716fe09154bbaed504ba529b242",
+      "prior_inventory_bytes": 1286685,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    },
+    {
+      "path": "assets/source/monsters/wild_vine_mole_01/model_sheet_v0.1.png",
+      "prior_inventory_blob_sha": "55a5addc7233088bbb8f77ac8c42af7f2cf790b3",
+      "prior_inventory_bytes": 1333012,
+      "current_session_body_fetched": false,
+      "current_session_visual_check": false,
+      "copied_to_preserved": false,
+      "note_ja": "元画像を変更していない。値は基準SHA内の過去台帳から転載した参照情報で、今回の画像バイト検証実績ではない。"
+    }
+  ],
+  "library_existing_6": [
+    {
+      "dex": 2,
+      "species_id": "starter_flower_hare_02",
+      "name_ja": "ハナリット",
+      "library_file_id": "libfile_ef9f7ab2bb6081918b6d1488e0983e27",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 3,
+      "species_id": "starter_flower_hare_03",
+      "name_ja": "フロレーヌ",
+      "library_file_id": "libfile_ec098fd6840881918cf6ced883672dfa",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 5,
+      "species_id": "starter_ember_wyvern_02",
+      "name_ja": "フレイガ",
+      "library_file_id": "libfile_6b650159b7048191b16783af7493204c",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 6,
+      "species_id": "starter_ember_wyvern_03",
+      "name_ja": "グレンヴァル",
+      "library_file_id": "libfile_d105a36a262881918e568c3a15b419fd",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 8,
+      "species_id": "starter_tide_bear_02",
+      "name_ja": "ナミグマ",
+      "library_file_id": "libfile_3ab69295b1e0819188ef9c7b06681f08",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 9,
+      "species_id": "starter_tide_bear_03",
+      "name_ja": "タイドガル",
+      "library_file_id": "libfile_0cdca3869db8819190f00ef336734d9b",
+      "status": "保存登録あり・本体未確認",
+      "metadata_source": "b6c1d875e3f624bb77d1e632bfed561380d7ed19:reports/image-recovery-inventory_2026-11-04.json",
+      "current_session_materialization_attempted": false,
+      "copied_to_preserved": false,
+      "adoption_status": "pending_user_review"
+    }
+  ]
+}
