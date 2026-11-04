@@ -1,0 +1,15 @@
+{
+  "errors": [
+    {
+      "species_id": "wild_spring_steam_01",
+      "attempt": 1,
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spring_steam_01_production_v0.1.txt",
+      "error": "image generation failed: HTTP 400 moderation_blocked",
+      "stage": "output",
+      "categories": ["other"],
+      "request_id": "75a2cb71-4969-412d-a479-8bae580ba138",
+      "image_returned": false,
+      "note": "依頼内容は温泉の水袋獣の設定画。画像は返されず。設計内容を保持した平文の指示で再試行する。"
+    }
+  ]
+}
