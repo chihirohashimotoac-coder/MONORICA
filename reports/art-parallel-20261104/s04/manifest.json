@@ -1,0 +1,882 @@
+{
+  "schema_version": "0.1",
+  "date_jst": "2026-11-04",
+  "session": "s04",
+  "repository": "chihirohashimotoac-coder/MONORICA",
+  "branch": "work/art-parallel-s04-20261104",
+  "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "latest_design_commit_at_start": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "latest_reference_difference": "同一SHA。差分なし。",
+  "adoption_status": "pending_user_review",
+  "counts": {
+    "assigned": 28,
+    "generated": 0,
+    "github_image_readback_verified": 0,
+    "incomplete": 28
+  },
+  "status": "blocked_before_first_generation",
+  "next_species_id": "wild_umbra_civet_01",
+  "constraints": [
+    "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
+    "既存画像・runtime・共通設計・共通台帳は変更しない。",
+    "候補の採用、runtime昇格、統合、マージ、公開は禁止。"
+  ],
+  "blockers": [
+    "クラウド実行・一時チェックアウト用ツールが現セッションの公開ツールにない。node_repl確認結果はwin32・OneDrive配下のcwd。PC内プロジェクトは読み書きしていない。",
+    "参照PNGのGitHub fetch_blobはUnicodeDecodeError。fetch_file(base64)はcontentが空。GitHub fetch(API blob URL)もUTF-8以外を拒否。既存原画の画像本体は取得・目視できていない。",
+    "生成→画像本体取得→GitHub保存→本体読み戻しの経路は未成立・未検証。大量生成へ進まない。"
+  ],
+  "model_setting": {
+    "requested_model": "GPT-6.1 Sol",
+    "requested_effort": "高",
+    "ui_selection_performed": false,
+    "note": "このセッションのツールからモデル・エフォート選択UIは操作できていない。設定済みとは報告しない。"
+  },
+  "image_generation_tool": {
+    "available": true,
+    "invoked": false,
+    "paid_api_used": false
+  },
+  "species": [
+    {
+      "dex": 102,
+      "species_id": "wild_umbra_civet_01",
+      "name_ja": "カゲミノ",
+      "family_id": "wild_umbra_civet",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 103,
+      "species_id": "wild_umbra_civet_02",
+      "name_ja": "ヨミノラ",
+      "family_id": "wild_umbra_civet",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_umbra_civet_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 104,
+      "species_id": "wild_amber_weevil_01",
+      "name_ja": "コハコツ",
+      "family_id": "wild_amber_weevil",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 105,
+      "species_id": "wild_amber_weevil_02",
+      "name_ja": "ジュシバル",
+      "family_id": "wild_amber_weevil",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_amber_weevil_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 106,
+      "species_id": "wild_bloom_siphon_01",
+      "name_ja": "ミツポネ",
+      "family_id": "wild_bloom_siphon",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_bloom_siphon_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 107,
+      "species_id": "wild_bloom_siphon_02",
+      "name_ja": "ミツクラリ",
+      "family_id": "wild_bloom_siphon",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_bloom_siphon_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 108,
+      "species_id": "wild_storm_sail_01",
+      "name_ja": "ハタチル",
+      "family_id": "wild_storm_sail",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_storm_sail_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 109,
+      "species_id": "wild_storm_sail_02",
+      "name_ja": "ライハタル",
+      "family_id": "wild_storm_sail",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_storm_sail_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 110,
+      "species_id": "wild_mire_drum_01",
+      "name_ja": "ヌマドロン",
+      "family_id": "wild_mire_drum",
+      "stage": 1,
+      "family_stages": 1,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_mire_drum_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 111,
+      "species_id": "wild_rot_kiln_01",
+      "name_ja": "ムレカマネ",
+      "family_id": "wild_rot_kiln",
+      "stage": 1,
+      "family_stages": 1,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_rot_kiln_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 112,
+      "species_id": "wild_mirror_fawn_01",
+      "name_ja": "テリコル",
+      "family_id": "wild_mirror_fawn",
+      "stage": 1,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_mirror_fawn_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 113,
+      "species_id": "wild_mirror_fawn_02",
+      "name_ja": "カガシカ",
+      "family_id": "wild_mirror_fawn",
+      "stage": 2,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_mirror_fawn_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 114,
+      "species_id": "wild_mirror_fawn_03",
+      "name_ja": "リフレノア",
+      "family_id": "wild_mirror_fawn",
+      "stage": 3,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_mirror_fawn_03/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 115,
+      "species_id": "wild_tablet_pillbug_01",
+      "name_ja": "イシメモ",
+      "family_id": "wild_tablet_pillbug",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_tablet_pillbug_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 116,
+      "species_id": "wild_tablet_pillbug_02",
+      "name_ja": "コクメジル",
+      "family_id": "wild_tablet_pillbug",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_tablet_pillbug_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 117,
+      "species_id": "wild_wound_sentry_01",
+      "name_ja": "マキモリ",
+      "family_id": "wild_wound_sentry",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_wound_sentry_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 118,
+      "species_id": "wild_wound_sentry_02",
+      "name_ja": "ラセンガル",
+      "family_id": "wild_wound_sentry",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_wound_sentry_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 119,
+      "species_id": "wild_echo_owl_01",
+      "name_ja": "コエフク",
+      "family_id": "wild_echo_owl",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_echo_owl_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 120,
+      "species_id": "wild_echo_owl_02",
+      "name_ja": "ヒビキュラ",
+      "family_id": "wild_echo_owl",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_echo_owl_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 121,
+      "species_id": "wild_ink_cuttle_01",
+      "name_ja": "スミリル",
+      "family_id": "wild_ink_cuttle",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_ink_cuttle_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 122,
+      "species_id": "wild_ink_cuttle_02",
+      "name_ja": "ヨスミカ",
+      "family_id": "wild_ink_cuttle",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_ink_cuttle_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 123,
+      "species_id": "wild_sunwheel_01",
+      "name_ja": "ヒノコマ",
+      "family_id": "wild_sunwheel",
+      "stage": 1,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_sunwheel_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 124,
+      "species_id": "wild_sunwheel_02",
+      "name_ja": "ヨウリンガ",
+      "family_id": "wild_sunwheel",
+      "stage": 2,
+      "family_stages": 2,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_sunwheel_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 125,
+      "species_id": "wild_static_scarab_01",
+      "name_ja": "シンラコガ",
+      "family_id": "wild_static_scarab",
+      "stage": 1,
+      "family_stages": 1,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_static_scarab_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 126,
+      "species_id": "wild_cold_well_01",
+      "name_ja": "イドシズラ",
+      "family_id": "wild_cold_well",
+      "stage": 1,
+      "family_stages": 1,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_cold_well_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 127,
+      "species_id": "wild_signal_pigeon_01",
+      "name_ja": "トモハト",
+      "family_id": "wild_signal_pigeon",
+      "stage": 1,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_signal_pigeon_01/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 128,
+      "species_id": "wild_signal_pigeon_02",
+      "name_ja": "シグナリ",
+      "family_id": "wild_signal_pigeon",
+      "stage": 2,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_signal_pigeon_02/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    },
+    {
+      "dex": 129,
+      "species_id": "wild_signal_pigeon_03",
+      "name_ja": "コウロリア",
+      "family_id": "wild_signal_pigeon",
+      "stage": 3,
+      "family_stages": 3,
+      "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "generation_prompt_file": null,
+      "image_path": null,
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s04/wild_signal_pigeon_03/model_sheet_v0.1.png",
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "画像未生成。三面整合・器官数・付け根・欠けの目視は未実施。",
+        "GitHub画像保存と画像本体の再取得照合は未実施。"
+      ],
+      "github_readback": {
+        "status": "not_attempted",
+        "sha256_match": null,
+        "byte_count_match": null
+      },
+      "image_save_commit": null,
+      "status": "未着手",
+      "adoption_status": "pending_user_review"
+    }
+  ]
+}

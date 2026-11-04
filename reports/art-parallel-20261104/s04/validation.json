@@ -1,0 +1,69 @@
+{
+  "date_jst": "2026-11-04",
+  "baseline": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "branch": "work/art-parallel-s04-20261104",
+  "latest_design_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "design_difference": "none",
+  "baseline_retrievable": true,
+  "branch_absent_at_start": true,
+  "source_reads": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "LATEST_HANDOFF.md",
+    "docs/DECISIONS.md",
+    "docs/SPECIES_REVIEW_v0.1.md",
+    "docs/SPECIES_DESIGN_DETAILS_v0.1.md",
+    "docs/SPECIES_ART_BATCHES_v0.1.md",
+    "reports/image-recovery-inventory_2026-11-04.json",
+    "docs/ASSET_SPEC_v0.1.md"
+  ],
+  "catalog": {
+    "json_content_empty": true,
+    "fallback": "content/planning/species-catalog_v0.1.csv",
+    "csv_rows": 156,
+    "assigned_rows": 28,
+    "unique_assigned_species": 28,
+    "complete_assigned_families": true,
+    "note": "CSVを解析し102〜129の種ID・名前を依頼表と照合。最初の系列2種の詳細を抽出。残り各種の作画確認は未着手。"
+  },
+  "reference_attempts": [
+    {
+      "tool": "github.fetch_blob",
+      "blob_sha": "22898185e82a95d4dae1e493d730cdf1e9b417d7",
+      "result": {
+        "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "error_code": "UNKNOWN"
+      }
+    },
+    {
+      "tool": "github.fetch_file",
+      "path": "assets/source/monsters/wild_dusk_glider_01/model_sheet_v0.2.png",
+      "ref": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "encoding": "base64",
+      "returned_content_length": 0,
+      "result": "画像本体なし。メタデータのみ。"
+    },
+    {
+      "tool": "github.fetch",
+      "url": "https://api.github.com/repos/chihirohashimotoac-coder/MONORICA/git/blobs/22898185e82a95d4dae1e493d730cdf1e9b417d7",
+      "result": {
+        "error": "HTTPError: 400: GitHub Fetch only accepts UTF-8 text. (Response: None)",
+        "error_code": "INVALID_ARGUMENT"
+      }
+    }
+  ],
+  "runtime_probe": {
+    "platform": "win32",
+    "cwd_is_onedrive": true,
+    "cloud_executor_tool_exposed": false,
+    "project_files_read_or_written": false
+  },
+  "checks": {
+    "assignment_csv": "28種・重複なし・系列分断なし",
+    "validate_assets": "未実行",
+    "validate_preproduction": "未実行",
+    "image_visual_review": "未実施",
+    "image_byte_readback": "未実施"
+  },
+  "changes": "専用記録・専用Handoffの新規追加のみ。画像なし。"
+}
