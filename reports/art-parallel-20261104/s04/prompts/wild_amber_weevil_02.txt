@@ -1,0 +1,83 @@
+Use case: illustration-story. Create ONE high-resolution landscape full-color original MONORICA creature model sheet. Exactly THREE separated full-body views of the SAME individual in a horizontal row: front three-quarter, rear three-quarter, true side. Pure white background. Cute approachable Japanese creature RPG concept art. Clean dark colored outlines, broad readable cel-shaded color masses, restrained shading. All bodies, feet, antennae, wings, horns, tails fully inside the image with generous margins. No text, letters, numbers, labels, logo, watermark, UI, scenery, props. This is NOT pixel art. Use attached reference for rendering style only, except when it is explicitly this same family: then preserve the family traits. No extra organs. Near and far limbs must be staggered to allow counting, with coherent occlusion. Anatomical left/right and marking placement stay consistent across all three views. Follow this exact species design from baseline b6c1d875e3f624bb77d1e632bfed561380d7ed19:
+## 105 ジュシバル
+
+`wild_amber_weevil_02`／系列 `wild_amber_weevil`／2/2段階／地・草（属性案）
+
+進化元：コハコツ。Lv46以上でレベルアップ。延期した場合は次のレベルアップで再判定。。進化先：なし。
+
+**戦闘**：物理受け。物理を受けて交代と反撃の余地を作る。遅い壁。氷への大きな弱点を残す。 苦手：特殊の集中攻撃と継続的な妨害が苦手。能力傾向：hp=高め、attack=標準、defense=高め、special_attack=控えめ、special_defense=控えめ、speed=控えめ。数値は未設定。
+受け相性：弱点 氷×4、風×2／耐性・無効 無×0.5、地×0.5、光×0.5、雷×0。既存相性表のみの計算。
+
+技案「じゅしのへき」：地・草の攻撃と受け。威力・命中・使用回数は未設定。
+
+**入手**：進化元を入手した後、Lv46以上でレベルアップ。延期した場合は次のレベルアップで再判定。 方法：コハコツから進化：Lv46以上でレベルアップ。延期した場合は次のレベルアップで再判定。。進化のみ（野生出現なし）。野生出現なし。進化条件を参照。。
+生態：徒歩の倒木の樹脂溜まり。長い口で古い樹脂をほぐす。 進化のみの種の地域は系列の生態・制作配分であり、野生出現場所を意味しない。
+探索：いわくだきの習得候補。実際に覚えた個体を手持ちへ。。
+
+**外見**：琥珀樹脂を丸めるゾウムシ。殻が木の実形へ育ち、吻を低く構える。配色：琥珀／焦茶、差し色：浅緑。
+顔：長い吻の根元に丸目2つ。鼻を手へ変えない。
+器官数：independent_arms=0、legs=6、independent_wings=2、tails=0、horns=0、antennae=2、fins=0、tentacles=0。接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。
+前面：顔・前側の色面：長い吻の根元に丸目2つ。鼻を手へ変えない。 識別点：樹脂の実殻と長吻
+背面：背面でも保つ輪郭：殻が木の実形へ育ち、吻を低く構える。6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。
+横面：横面の接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。。殻に木目の太い筋が入り、口が地面へ届く。
+進化変化：殻に木目の太い筋が入り、口が地面へ届く。
+引継点：琥珀樹脂を丸めるゾウムシ。長い吻の根元に丸目2つ。鼻を手へ変えない。
+96px：殻が木の実形へ育ち、吻を低く構える。樹脂の実殻と長吻を太い色面で残し、細い陰影より器官の重なりを優先。
+32px：樹脂の実殻と長吻を最優先。細部を省略しても付け根と本数の設計は変えない。
+差別化：釣鐘甲虫より前へ伸びる吻と透明な球殻。
+制作難度・注意：中：器官の付け根と色面を三面で一致させる。
+構造の扱い：全構造が今回の制作案。未制作の画像で確認済みとは扱わない。
+
+**状態**：出自=new_production_proposal、名前=production_proposal、属性=production_proposal、ゲーム設計=production_proposal。美術方向=production_proposal、設定画=not_created、静止素材=not_created。今回の文字設計のみ。画像未制作・未採用。
+
+参照：`docs/SPECIES_ALLOCATION_v0.1.md`、`docs/WORLD_OUTLINE_v0.1.md`、`content/planning/world-outline.json`、`content/type-chart.json`、`tools/species_drafts_v01.py`
+
+
+Structured art specification:
+{
+  "motifs_ja": "琥珀樹脂を丸めるゾウムシ",
+  "full_body_silhouette_ja": "殻が木の実形へ育ち、吻を低く構える",
+  "palette_main": [
+    "琥珀",
+    "焦茶"
+  ],
+  "palette_accents": [
+    "浅緑"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "長い吻の根元に丸目2つ。鼻を手へ変えない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 6,
+    "independent_wings": 2,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 2,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：長い吻の根元に丸目2つ。鼻を手へ変えない。 識別点：樹脂の実殻と長吻",
+    "back_ja": "背面でも保つ輪郭：殻が木の実形へ育ち、吻を低く構える。6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。",
+    "side_ja": "横面の接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。。殻に木目の太い筋が入り、口が地面へ届く。"
+  },
+  "evolution_changes_ja": "殻に木目の太い筋が入り、口が地面へ届く。",
+  "family_retained_features_ja": "琥珀樹脂を丸めるゾウムシ。長い吻の根元に丸目2つ。鼻を手へ変えない。",
+  "sprite_96px_ja": "殻が木の実形へ育ち、吻を低く構える。樹脂の実殻と長吻を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "樹脂の実殻と長吻を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "釣鐘甲虫より前へ伸びる吻と透明な球殻。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Do not print any of this text in the image.
+
+Specific staging:
+Evolve the reference weevil into a larger broad nut-shaped AMBER RESIN shell with thick wood-grain bands, same dark-brown face, light green accents and round eyes at the root of one long snout. Snout curves down nearly to ground. SIX legs total, three attached per thorax side; stagger and splay to expose feet. Two antennae on head. Two flight wings folded under closed resin shell, not extra visible limbs. No faces inside shell. Preserve family appearance; larger sturdier silhouette than spherical juvenile.

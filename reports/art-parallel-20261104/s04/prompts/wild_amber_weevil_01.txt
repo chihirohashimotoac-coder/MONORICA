@@ -1,0 +1,82 @@
+Use case: illustration-story. Create ONE high-resolution landscape full-color original MONORICA creature model sheet. Exactly THREE separated full-body views of the SAME individual in a horizontal row: front three-quarter, rear three-quarter, true side. Pure white background. Cute approachable Japanese creature RPG concept art. Clean dark colored outlines, broad readable cel-shaded color masses, restrained shading. All bodies, feet, antennae, wings, horns, tails fully inside the image with generous margins. No text, letters, numbers, labels, logo, watermark, UI, scenery, props. This is NOT pixel art. Use attached reference for rendering style only, except when it is explicitly this same family: then preserve the family traits. No extra organs. Near and far limbs must be staggered to allow counting, with coherent occlusion. Anatomical left/right and marking placement stay consistent across all three views. Follow this exact species design from baseline b6c1d875e3f624bb77d1e632bfed561380d7ed19:
+## 104 コハコツ
+
+`wild_amber_weevil_01`／系列 `wild_amber_weevil`／1/2段階／地（属性案）
+
+進化元：なし。基礎形。進化先：ジュシバル。
+
+**戦闘**：物理受け。物理を受けて交代と反撃の余地を作る。物理受けの補完。 苦手：特殊の集中攻撃と継続的な妨害が苦手。能力傾向：hp=高め、attack=標準、defense=高め、special_attack=控えめ、special_defense=控えめ、speed=控えめ。数値は未設定。
+受け相性：弱点 草×2、水×2、氷×2／耐性・無効 無×0.5、炎×0.5、毒×0.5、雷×0。既存相性表のみの計算。
+
+技案「こはくがため」：地の攻撃と物理の守り。威力・命中・使用回数は未設定。
+
+**入手**：サナギ原生域到達後。昼夜共通。 方法：徒歩で到達する生息地で繰り返し捕獲。捕獲道具は通常店・講習の再補充から取得。。やや少ない。昼夜共通。天候・現実日付・期間限定条件なし。。
+生態：徒歩の倒木の樹脂溜まり。長い口で古い樹脂をほぐす。 生息場所は制作案。実マップの接続は未検証。
+探索：いわくだきの習得候補。実際に覚えた個体を手持ちへ。。
+
+**外見**：琥珀樹脂を丸めるゾウムシ。透明感のある丸殻から長い吻が出る。配色：琥珀／焦茶、差し色：浅緑。
+顔：長い吻の根元に丸目2つ。鼻を手へ変えない。
+器官数：independent_arms=0、legs=6、independent_wings=2、tails=0、horns=0、antennae=2、fins=0、tentacles=0。接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。
+前面：顔・前側の色面：長い吻の根元に丸目2つ。鼻を手へ変えない。 識別点：琥珀の球殻と前へ出る吻
+背面：背面でも保つ輪郭：透明感のある丸殻から長い吻が出る。6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。
+横面：横面の接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。。殻内に顔を増やさない。
+進化変化：殻内に顔を増やさない。
+引継点：琥珀樹脂を丸めるゾウムシ。長い吻の根元に丸目2つ。鼻を手へ変えない。
+96px：透明感のある丸殻から長い吻が出る。琥珀の球殻と前へ出る吻を太い色面で残し、細い陰影より器官の重なりを優先。
+32px：琥珀の球殻と前へ出る吻を最優先。細部を省略しても付け根と本数の設計は変えない。
+差別化：釣鐘甲虫より前へ伸びる吻と透明な球殻。
+制作難度・注意：中：器官の付け根と色面を三面で一致させる。
+構造の扱い：全構造が今回の制作案。未制作の画像で確認済みとは扱わない。
+
+**状態**：出自=new_production_proposal、名前=production_proposal、属性=production_proposal、ゲーム設計=production_proposal。美術方向=production_proposal、設定画=not_created、静止素材=not_created。今回の文字設計のみ。画像未制作・未採用。
+
+参照：`docs/SPECIES_ALLOCATION_v0.1.md`、`docs/WORLD_OUTLINE_v0.1.md`、`content/planning/world-outline.json`、`content/type-chart.json`、`tools/species_drafts_v01.py`
+
+
+Structured art specification:
+{
+  "motifs_ja": "琥珀樹脂を丸めるゾウムシ",
+  "full_body_silhouette_ja": "透明感のある丸殻から長い吻が出る",
+  "palette_main": [
+    "琥珀",
+    "焦茶"
+  ],
+  "palette_accents": [
+    "浅緑"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "長い吻の根元に丸目2つ。鼻を手へ変えない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 6,
+    "independent_wings": 2,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 2,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：長い吻の根元に丸目2つ。鼻を手へ変えない。 識別点：琥珀の球殻と前へ出る吻",
+    "back_ja": "背面でも保つ輪郭：透明感のある丸殻から長い吻が出る。6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。",
+    "side_ja": "横面の接続：6脚は胸、飛翔翅2枚は硬殻の下。吻1本と触角2本は頭。。殻内に顔を増やさない。"
+  },
+  "evolution_changes_ja": "殻内に顔を増やさない。",
+  "family_retained_features_ja": "琥珀樹脂を丸めるゾウムシ。長い吻の根元に丸目2つ。鼻を手へ変えない。",
+  "sprite_96px_ja": "透明感のある丸殻から長い吻が出る。琥珀の球殻と前へ出る吻を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "琥珀の球殻と前へ出る吻を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "釣鐘甲虫より前へ伸びる吻と透明な球殻。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Do not print any of this text in the image.
+
+Specific staging: compact juvenile weevil. Near-spherical translucent amber resin shell, dark brown head, thorax, six legs, long forward rostrum, two round eyes at its base, two antennae. Pale green small accents. Exactly THREE legs per side on thorax; all six traceable. Two flight wings folded and occluded under the closed shell; no added exposed wing pair. No extra face inside resin. Keep the rostrum a mouthpart, never an arm. Layout provides separation between six legs.

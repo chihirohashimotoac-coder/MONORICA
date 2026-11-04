@@ -1,0 +1,46 @@
+Use case: stylized-concept. ONE high-resolution landscape full-color MONORICA model sheet, exactly 3 separated full-body views of the SAME individual: front three-quarter, rear three-quarter, true side. White background, clean colored outlines, broad readable cel-shaded colors, cute approachable original Japanese creature RPG style. All body and organs in frame with generous margins. No text, numbers, labels, logo, watermark, UI, scenery or props. Match reference rendering, do not copy a different species anatomy. Every organ count, attachment and color marking is consistent across the 3 views. Offset near/far limbs to permit counting; hidden parts are occluded, never removed. This is a model sheet, NOT pixel art.
+Subject: ヨミノラ / wild_umbra_civet_02, evolution 2/2.
+{
+  "motifs_ja": "木陰の実を選ぶジャコウネコ",
+  "full_body_silhouette_ja": "長尾を上へ弧にし肩葉毛が後ろへ流れる",
+  "palette_main": [
+    "深紫",
+    "若草"
+  ],
+  "palette_accents": [
+    "象牙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "眠そうな金の目と淡い鼻筋。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "四脚と長尾1本。葉形の肩毛2束は器官ではなく毛。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：眠そうな金の目と淡い鼻筋。 識別点：草色の尾縞と肩葉毛",
+    "back_ja": "背面でも保つ輪郭：長尾を上へ弧にし肩葉毛が後ろへ流れる。四脚と長尾1本。葉形の肩毛2束は器官ではなく毛。",
+    "side_ja": "横面の接続：四脚と長尾1本。葉形の肩毛2束は器官ではなく毛。。尾縞3つへ増し、葉毛が長くなる。"
+  },
+  "evolution_changes_ja": "尾縞3つへ増し、葉毛が長くなる。",
+  "family_retained_features_ja": "木陰の実を選ぶジャコウネコ。眠そうな金の目と淡い鼻筋。",
+  "sprite_96px_ja": "長尾を上へ弧にし肩葉毛が後ろへ流れる。草色の尾縞と肩葉毛を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "草色の尾縞と肩葉毛を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "夜狼の長脚と襟でなく、低い体と長い縞尾。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Specific direction: Evolve the reference civet: keep the same family face, low quadruped anatomy and palette. Larger graceful elongated body; long tail arcs UP above rump with exactly THREE green bands. Shoulder fur tufts grow longer and sweep backward. No flying membrane, wings, real leaves, horns or additional limbs. Four legs clearly traceable in each view.
