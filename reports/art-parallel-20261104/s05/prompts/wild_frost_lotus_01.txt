@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 151, "id": "wild_frost_lotus_01", "name_ja": "ヒエツボミ", "family_id": "wild_frost_lotus", "evolution_stage": 1, "family_stage_count": 2, "evolves_from": null, "evolves_to": {"id": "wild_frost_lotus_02", "method": "site_interaction", "site_id": "site_frost_pool", "text_ja": "ヒエツボミで徒歩の地下湖岸の冷水台を調べる。無償・繰り返し可能。", "status": "production_proposal", "unlock_story_rank": 101}}
+Design: {
+  "motifs_ja": "地下湖の氷蓮",
+  "full_body_silhouette_ja": "丸い球根に小さな氷青の閉じたつぼみ",
+  "palette_main": [
+    "氷青",
+    "乳白"
+  ],
+  "palette_accents": [
+    "薄桃"
+  ],
+  "face_expression_ja": "球根に点目2つ、短い口。花に別顔を増やさない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "球根下へ根脚2本、頭上の花1輪。花弁6枚は花托へ同じ位置で接続。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：球根に点目2つ、短い口。花に別顔を増やさない。 識別点：氷青のつぼみと根脚2本",
+    "back_ja": "背面でも保つ輪郭：丸い球根に小さな氷青の閉じたつぼみ。球根下へ根脚2本、頭上の花1輪。花弁6枚は花托へ同じ位置で接続。",
+    "side_ja": "横面の接続：球根下へ根脚2本、頭上の花1輪。花弁6枚は花托へ同じ位置で接続。。花弁は閉じて1つのつぼみを作る。"
+  },
+  "evolution_changes_ja": "花弁は閉じて1つのつぼみを作る。",
+  "family_retained_features_ja": "地下湖の氷蓮。球根に点目2つ、短い口。花に別顔を増やさない。",
+  "sprite_96px_ja": "丸い球根に小さな氷青の閉じたつぼみ。氷青のつぼみと根脚2本を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "氷青のつぼみと根脚2本を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "日輪球根は葉1枚。本種は花弁6枚の氷花。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩で行ける地下湖岸。花の薄膜で水温差を受け、浮かずに根で歩く。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.

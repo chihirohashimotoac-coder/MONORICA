@@ -6,8 +6,8 @@
   "counts": {
     "assigned": 27,
     "generated": 7,
-    "saved_confirmed": 6,
-    "incomplete": 21
+    "saved_confirmed": 7,
+    "incomplete": 20
   },
   "species": [
     {
@@ -218,16 +218,16 @@
         "夜紫・生成り・朱裾を三面で維持、全身・文字なし"
       ],
       "unconfirmed": [
-        "翼を閉じた姿勢のため肩の付け根の一部は羽毛の下に隠れる",
-        "GitHub画像本体読み戻し"
+        "翼を閉じた姿勢のため肩の付け根の一部は羽毛の下に隠れる"
       ],
       "github_readback": {
-        "status": "未実行",
-        "sha256_match": null,
-        "bytes_match": null
+        "status": "GitHub rawから画像本体を再取得しSHA-256・バイト数一致",
+        "sha256_match": true,
+        "bytes_match": true,
+        "commit": "d7b50f6327dffe0169465f00c9c935f93d419058"
       },
-      "saved_commit": null,
-      "status": "生成済み未保存",
+      "saved_commit": "d7b50f6327dffe0169465f00c9c935f93d419058",
+      "status": "保存確認済み",
       "adoption_state": "pending_user_review"
     },
     {
@@ -236,7 +236,7 @@
       "name": "ネツハオラ",
       "stage": "1/1",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_thermal_fan_01.txt",
       "image_path": null,
       "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_thermal_fan_01/model_sheet_v0.1.png",
       "width": null,
@@ -246,11 +246,8 @@
       "sha256": null,
       "visual_checked": [],
       "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
+        "画像生成が2回とも出力段階で拒否。画像は返されていない。",
+        "以降の画像検査・保存は未実行"
       ],
       "github_readback": {
         "status": "未実行",
@@ -267,7 +264,7 @@
       "name": "アマウツワ",
       "stage": "1/1",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s05/prompts/wild_rain_garden_01.txt",
       "image_path": null,
       "expected_image_path": "assets/source/monsters/parallel_20261104/s05/wild_rain_garden_01/model_sheet_v0.1.png",
       "width": null,
@@ -277,11 +274,8 @@
       "sha256": null,
       "visual_checked": [],
       "unconfirmed": [
-        "設計詳細・参照原画の取得と確認",
-        "画像生成",
-        "三面の同一性・器官数・接続・欠け",
-        "実ファイル測定",
-        "GitHub保存と画像本体読み戻し"
+        "画像生成が出力段階で拒否。画像は返されていない。",
+        "画像検査・保存は未実行"
       ],
       "github_readback": {
         "status": "未実行",
@@ -850,5 +844,10 @@
       "status": "未着手",
       "adoption_state": "pending_user_review"
     }
-  ]
+  ],
+  "updated_jst": "2026-11-05",
+  "generation_state": "blocked_on_imagegen_output_refusal",
+  "next_species_id": "wild_thermal_fan_01",
+  "model_effort_ui": "UIでのモデル・エフォート選択と検証は未実施。使用済みとは報告しない。",
+  "save_route": "Git clone/fetch読取、通常Git pushは認証不可。GitHub連携でbase64 blob→tree→commit→expected_sha付きref更新、GitHub rawから画像本体再取得。"
 }

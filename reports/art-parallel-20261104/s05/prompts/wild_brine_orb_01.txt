@@ -1,0 +1,43 @@
+Use case: stylized-concept.
+Asset type: MONORICA original monster full-color high-resolution turnaround design reference.
+Create ONE sheet of ONE species. Three separated full-body views horizontally: front three-quarter, rear three-quarter, exact side. Same individual, matching proportions, color regions, organ counts, anatomical left/right and attachment roots. Complete bodies and all appendages inside frame, generous white margins, no overlaps. Plain white background. No text, labels, names, numbers, logo, watermark, UI, scenery, swatches or extra panels. Not pixel art.
+Style reference is the existing MONORICA illustration: cute approachable Japanese monster RPG creature, confident clean dark contours, large readable color areas, restrained cel shading, expressive appealing face. Use reference solely for drawing style, not its anatomy. When an evolution reference is supplied, preserve that family's specific character identity, face and palette while implementing the stated stage's silhouette change. Do not simply reuse the previous stage.
+The following is authoritative species design data, NOT text to print. Read every field; use the current species attachment statement, not a generalized family statement. Render the depicted anatomical organs literally; invent no extra organs. Hidden far-side organs remain consistently attached behind the body, not removed.
+
+Species identity: {"dex_number": 146, "id": "wild_brine_orb_01", "name_ja": "シオムクリ", "family_id": "wild_brine_orb", "evolution_stage": 1, "family_stage_count": 1, "evolves_from": null, "evolves_to": null}
+Design: {
+  "motifs_ja": "塩の結晶をまとう球形生物",
+  "full_body_silhouette_ja": "六つの結晶面を持つ丸球がごろりと動く",
+  "palette_main": [
+    "乳白",
+    "薄紫"
+  ],
+  "palette_accents": [
+    "朱"
+  ],
+  "face_expression_ja": "球体の前へ丸目2つ、小さな丸口。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 0,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "球体1つの下面が接地。塩結晶は表皮の大きな6面で、角・脚には数えない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：球体の前へ丸目2つ、小さな丸口。 識別点：薄紫の六面球と朱の点目",
+    "back_ja": "背面でも保つ輪郭：六つの結晶面を持つ丸球がごろりと動く。球体1つの下面が接地。塩結晶は表皮の大きな6面で、角・脚には数えない。",
+    "side_ja": "横面の接続：球体1つの下面が接地。塩結晶は表皮の大きな6面で、角・脚には数えない。。単独種。結晶片を浮く子供にしない。"
+  },
+  "evolution_changes_ja": "単独種。結晶片を浮く子供にしない。",
+  "family_retained_features_ja": "塩の結晶をまとう球形生物。球体の前へ丸目2つ、小さな丸口。",
+  "sprite_96px_ja": "六つの結晶面を持つ丸球がごろりと動く。薄紫の六面球と朱の点目を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "薄紫の六面球と朱の点目を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "雲母の薄板や灰玉の毛房でなく、六面の結晶球。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。"
+}
+Ecology context (do not draw scenery): 徒歩の干潟の端。塩分を体外へ結晶化し、塩生植物へ栄養を回す。
+Additional structure check: Count every specified organ and check matching attachment roots in all three views.
