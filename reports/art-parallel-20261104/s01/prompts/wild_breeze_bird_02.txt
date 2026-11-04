@@ -1,0 +1,48 @@
+Use case: stylized-concept. MONORICA original monster character design reference sheet. Make EXACTLY ONE species, SAME individual in three full-body views in one wide horizontal row: front three-quarter, rear three-quarter, exact side profile, left to right. Cute approachable Japanese creature RPG concept art; clear dark colored outlines, simple large readable cel shaded color shapes, matching the reference art style. Pure white background. No labels, text, numbers, logos, watermark, UI, frame, landscape or unrelated props. All bodies and appendages fully in frame, ample margins, no inter-view overlaps. Retain individual left/right, appendage counts and attachments, identical color areas and markings across all three views. Natural occlusion may hide far-side parts, never invent or detach parts. High resolution full color concept art, not pixel art, no sprites.
+The following authoritative species design is in Japanese; follow it exactly, especially species-specific anatomy_connections and evolution_changes over generic family descriptions. 96px/32px text describes identifying features only, DO NOT render pixel sprites. Existing reference image, if supplied, is a style and family continuity anchor, not permission to copy the juvenile without its evolution.
+Species: wild_breeze_bird_02 オウギル
+{
+  "motifs_ja": "扇尾と冠羽の小鳥",
+  "full_body_silhouette_ja": "翼より大きい半円の扇尾を掲げる鳥",
+  "palette_main": [
+    "青緑",
+    "象牙"
+  ],
+  "palette_accents": [
+    "珊瑚",
+    "黄"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "茶色の大きな目と黄色の短いくちばし。好奇心のある顔。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 2,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "翼2枚は肩、脚2本は腰、扇尾1束は腰の後ろ中央。別腕なし。冠羽は頭頂から後方へ。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：茶色の大きな目と黄色の短いくちばし。好奇心のある顔。 識別点：半円の交互色扇尾と後流冠羽",
+    "back_ja": "背面でも保つ輪郭：翼より大きい半円の扇尾を掲げる鳥。翼2枚は肩、脚2本は腰、扇尾1束は腰の後ろ中央。別腕なし。冠羽は頭頂から後方へ。",
+    "side_ja": "横面の接続：翼2枚は肩、脚2本は腰、扇尾1束は腰の後ろ中央。別腕なし。冠羽は頭頂から後方へ。。尾を一続きの大きな扇の輪郭へ。肩の珊瑚色は位置を維持。"
+  },
+  "evolution_changes_ja": "尾を一続きの大きな扇の輪郭へ。肩の珊瑚色は位置を維持。",
+  "family_retained_features_ja": "扇尾と冠羽の小鳥。茶色の大きな目と黄色の短いくちばし。好奇心のある顔。",
+  "sprite_96px_ja": "翼より大きい半円の扇尾を掲げる鳥。半円の交互色扇尾と後流冠羽を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "半円の交互色扇尾と後流冠羽を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "後発の葦鶴は長脚。本種は短脚と扇尾の横幅。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference is juvenile ハネリ. Make a mature evolution with one LARGE continuous semicircular fan tail, larger than wings, alternating teal/ivory feather sectors, swept-back crest, coral patches remain on both shoulders. Short legs. Not a long-legged crane.

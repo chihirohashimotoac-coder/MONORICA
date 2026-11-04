@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 1,
-    "incomplete": 29
+    "saved_verified": 2,
+    "incomplete": 28
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -69,12 +69,13 @@
         "根状模様の細かな枝分かれはビュー間で完全一致までは確認できない。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS raw full image body, commit-pinned",
+        "sha256": "5984a540b0f23c7e1de6387d8937e0a5fc5bcfd28473d3b15b10ea93d9c88f08",
+        "size_bytes": 1366128
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "7c6d4598ec0e6492af4f24f8389810999ae00729",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
@@ -82,22 +83,21 @@
       "name": "オウギル",
       "species_id": "wild_breeze_bird_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_breeze_bird_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_breeze_bird_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_breeze_bird_02/model_sheet_v0.1.png",
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1488548,
+      "sha256": "c0edc6bd2d9517e14c4dc3ee4407d6cac2ef8831f2c13834ee3fa764a87ea17f",
+      "visual_checks": [
+        "保存本体で3ビュー・全身を目視。翼2・脚2・扇尾1束、冠羽の後流と肩の珊瑚色を確認。",
+        "ハネリ原画を参照し、尾が翼より大きい連続した半円へ成長したことを確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "扇の奥行き・羽根の重なりは最終的な美術確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -105,7 +105,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
