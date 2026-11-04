@@ -113,19 +113,37 @@
       "species_id": "wild_spring_steam_02",
       "name_ja": "ホウユラ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spring_steam_02_v0.2_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1434001,
+      "sha256": "391417f13964c6eed70c481a8340ad3121d032c3ea65609e00f594a0cde18041",
+      "visual_checks": [
+        "三面で成長した襟状の背弁2つと乳白の腹帯を確認",
+        "青灰の高い袋胴・桃の弁/脚/尾・乳白の模様を3ビューで確認",
+        "短脚と尾1本の接続位置は整合。奥脚は胴に隠れる"
+      ],
+      "unverified": [
+        "奥脚すべての付け根と4本の全数は重なりで直接見えない",
+        "弁は成長差を確認。後方への傾きの強さはユーザー確認対象",
+        "ユーザーの美術採用は未実施"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "status": "生成済み未保存",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png"
+      ],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "腹帯が桃色だったため乳白へ修正"
+        }
+      ]
     },
     {
       "dex_number": 50,

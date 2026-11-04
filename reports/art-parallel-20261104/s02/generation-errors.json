@@ -6,10 +6,24 @@
       "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spring_steam_01_production_v0.1.txt",
       "error": "image generation failed: HTTP 400 moderation_blocked",
       "stage": "output",
-      "categories": ["other"],
+      "categories": [
+        "other"
+      ],
       "request_id": "75a2cb71-4969-412d-a479-8bae580ba138",
       "image_returned": false,
       "note": "依頼内容は温泉の水袋獣の設定画。画像は返されず。設計内容を保持した平文の指示で再試行する。"
+    },
+    {
+      "species_id": "wild_spring_steam_02",
+      "attempt": 2,
+      "error": "HTTP 400 moderation_blocked",
+      "stage": "output",
+      "categories": [
+        "other"
+      ],
+      "request_id": "55d7d696-a5eb-4047-86c2-c315d11a55fe",
+      "image_returned": false,
+      "prompt": "この三面設定画のホウユラについて、3ビューすべてで下腹の幅広い桃色の帯を乳白色に変更してください。脚・頬・尾・背の襟状弁は桃色のまま。胴は青灰のまま。乳白の腹帯は胴の最下部をぐるりと連続して包む幅広い色面にし、上の乳白の湯気形模様は保持。背の弁2つは厚い襟のついた開口で、後方へ傾ける。袋胴は現在より縦に少し高く育て、進化前より堂々とした高い輪郭に。脚の数は4本、尾は1本、弁は2つ、眠たげな半月目・小さな丸口を保持。前3/4・後3/4・横の配置と同一個体としての整合を保持。全身・尾・弁を枠内に収めた白地で、文字等を追加しない。"
     }
   ]
 }
