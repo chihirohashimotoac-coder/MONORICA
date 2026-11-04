@@ -207,9 +207,15 @@
         "飛翔翅は閉殻内部に隠れるため2枚を直接目視できない",
         "ユーザーの美術採用は未実施"
       ],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "生成済み未保存",
+      "github_readback": {
+        "method": "GitHub raw URLから保存コミットを指定して画像本体をHTTPS取得",
+        "sha256": "b313f5a4dd25255a241c9813b7d9aecd59c2a29bdd9d63720add4701e6573533",
+        "bytes": 1538641,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:27:27.098885+00:00"
+      },
+      "image_commit": "6c91beaecd4e6135944dfee1368131eb58793b20",
+      "status": "保存確認済み",
       "art_adoption": "pending_user_review",
       "reference_images": [
         "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png"
@@ -642,6 +648,6 @@
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
   },
-  "last_image_commit": "167fada4f7681248e89296387bb34a97f7324d6b",
+  "last_image_commit": "6c91beaecd4e6135944dfee1368131eb58793b20",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
