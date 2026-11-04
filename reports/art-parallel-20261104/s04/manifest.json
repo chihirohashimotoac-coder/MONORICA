@@ -11,11 +11,11 @@
   "counts": {
     "assigned": 28,
     "generated": 1,
-    "github_image_readback_verified": 0,
-    "incomplete": 28
+    "github_image_readback_verified": 1,
+    "incomplete": 27
   },
   "status": "in_progress",
-  "next_species_id": "wild_umbra_civet_01",
+  "next_species_id": "wild_umbra_civet_02",
   "constraints": [
     "画像生成は明示的に許可済み。旧復旧待ちは開始条件としない。",
     "既存画像・runtime・共通設計・共通台帳は変更しない。",
@@ -56,16 +56,18 @@
         "配色・付け根に明確な不一致なし。"
       ],
       "unverified": [
-        "美術採用はユーザー確認待ち。",
-        "GitHub本体読み戻しは次の処理で実施。"
+        "美術採用はユーザー確認待ち。96px/32px出力・ゲーム動作は今回対象外。"
       ],
       "github_readback": {
-        "status": "not_attempted",
-        "sha256_match": null,
-        "byte_count_match": null
+        "status": "verified_from_github_fetched_commit_blob",
+        "sha256_match": true,
+        "byte_count_match": true,
+        "bytes": 1226618,
+        "sha256": "3f3f0d54a5c5704c1c5bdecc9c34751ca0b9f07314e13c8ed5d0d224bfc552eb",
+        "commit": "0323925409f9c97df01a4fa613b6a818176ab984"
       },
-      "image_save_commit": null,
-      "status": "生成済み未保存",
+      "image_save_commit": "0323925409f9c97df01a4fa613b6a818176ab984",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
