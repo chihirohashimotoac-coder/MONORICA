@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 6,
-    "incomplete": 24
+    "saved_verified": 7,
+    "incomplete": 23
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -224,12 +224,13 @@
         "正面寄りの前3/4、横では遠側脚が重なる。好みの造形調整は未実施。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body from GitHub pinned commit",
+        "size_bytes": 1395130,
+        "sha256": "65c7fdb90fa9b67d14077f9eec7bd4d15667376ce8cf59bdeddcb71be1cf2c8e"
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "330196bd0881d37f73c113bae5bc48472f482143",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
