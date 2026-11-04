@@ -681,22 +681,21 @@
       "name": "シブネリ",
       "species_id": "wild_bog_leech_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_bog_leech_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1313635,
+      "sha256": "d9df91ff0b44ecc6c6e0e16b12615f0561e3423eff556220fbfa77290cb79cce",
+      "visual_checks": [
+        "保存本体全身3ビューを確認。長いS字分節胴1、両端吸盤各1、前端の目2、追加肢/尾/翼なし。",
+        "初期ペタリムの原画を参照し胴伸長と淡緑濾過帯の拡幅、葡萄/薄桃の継承を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "各ビューの分節間隔とS字の曲げ具合の厳密な対応は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -704,7 +703,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {

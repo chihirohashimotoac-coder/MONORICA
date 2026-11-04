@@ -1,0 +1,47 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_bog_leech_02 シブネリ
+{
+  "motifs_ja": "葦の成分を濾す吸盤虫",
+  "full_body_silhouette_ja": "長いS字胴、背筋が太い濾過帯へ",
+  "palette_main": [
+    "葡萄",
+    "薄桃"
+  ],
+  "palette_accents": [
+    "淡緑"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "前端に目2つと丸い吸盤口。牙列は描かない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 0,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "分節胴1つ、両端に吸盤各1つ。脚・翼・尾なし。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：前端に目2つと丸い吸盤口。牙列は描かない。 識別点：S字の胴と両端吸盤",
+    "back_ja": "背面でも保つ輪郭：長いS字胴、背筋が太い濾過帯へ。分節胴1つ、両端に吸盤各1つ。脚・翼・尾なし。",
+    "side_ja": "横面の接続：分節胴1つ、両端に吸盤各1つ。脚・翼・尾なし。。体が伸び、背の濾過帯が太くなる。"
+  },
+  "evolution_changes_ja": "体が伸び、背の濾過帯が太くなる。",
+  "family_retained_features_ja": "葦の成分を濾す吸盤虫。前端に目2つと丸い吸盤口。牙列は描かない。",
+  "sprite_96px_ja": "長いS字胴、背筋が太い濾過帯へ。S字の胴と両端吸盤を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "S字の胴と両端吸盤を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "菌蝉は翅と6脚、本種は吸盤で伸縮する。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
+Evolution must be visibly longer and S-shaped: grow from short bean juvenile to long flexible leech with two broad gentle S bends in the ONE segmented torso; make the pale-green DORSAL FILTER STRIPE much wider. Two pink end suckers, front eye pair only; no teeth, tentacles, limbs, wings, tail or antennae. Preserve family purple/pink palette and friendly face. Do not just reproduce the short reference.
