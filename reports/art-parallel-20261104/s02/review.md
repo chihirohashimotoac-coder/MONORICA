@@ -19,9 +19,9 @@
 |058|wild_cable_marten_01 ヒモテン|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png)|保存確認済み：側面の尾先余白は狭いが欠けなし / 体側の青緑模様は生成意匠。奥脚の付け根は胴と重なる / ユーザーの美術採用は未実施|
 |059|wild_cable_marten_02 アミラチ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png)|保存確認済み：体格・姿勢の変化は少なく、進化差は尾の太さを中心とする / 奥脚の一部の付け根は胴に隠れる / ユーザーの美術採用は未実施|
 |060|wild_cable_marten_03 ケイラトス|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_cable_marten_03/model_sheet_v0.1.png)|保存確認済み：尾のS字は浅く、強調度と3大節の読み取りやすさはユーザー確認 / 横図の奥脚の付け根は胴に重なる / ユーザーの美術採用は未実施|
-|061|wild_hinge_mantis_01 ツギハサ|未制作|未着手：|
-|062|wild_hinge_mantis_02 カナトギ|未制作|未着手：|
-|063|wild_hinge_mantis_03 ヒンジルド|未制作|未着手：|
+|061|wild_hinge_mantis_01 ツギハサ|未制作|生成拒否：内蔵画像生成がHTTP400 moderation_blocked（output、other）で拒否。画像なし。拒否の回避・再試行は未実施|
+|062|wild_hinge_mantis_02 カナトギ|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
+|063|wild_hinge_mantis_03 ヒンジルド|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
 |064|wild_lattice_lichen_01 アミゴケ|未制作|未着手：|
 |065|wild_lattice_lichen_02 ネリカゴ|未制作|未着手：|
 |066|wild_seal_gel_01 パチュル|未制作|未着手：|

@@ -545,7 +545,7 @@
       "species_id": "wild_hinge_mantis_01",
       "name_ja": "ツギハサ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_hinge_mantis_01_v0.1.txt",
       "image_path": null,
       "width": null,
       "height": null,
@@ -553,10 +553,12 @@
       "bytes": null,
       "sha256": null,
       "visual_checks": [],
-      "unverified": [],
+      "unverified": [
+        "内蔵画像生成がHTTP400 moderation_blocked（output、other）で拒否。画像なし。拒否の回避・再試行は未実施"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
+      "status": "生成拒否",
       "art_adoption": "pending_user_review"
     },
     {
@@ -572,10 +574,12 @@
       "bytes": null,
       "sha256": null,
       "visual_checks": [],
-      "unverified": [],
+      "unverified": [
+        "進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
+      "status": "参照待ち",
       "art_adoption": "pending_user_review"
     },
     {
@@ -591,10 +595,12 @@
       "bytes": null,
       "sha256": null,
       "visual_checks": [],
-      "unverified": [],
+      "unverified": [
+        "進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留"
+      ],
       "github_readback": null,
       "image_commit": null,
-      "status": "未着手",
+      "status": "参照待ち",
       "art_adoption": "pending_user_review"
     },
     {
