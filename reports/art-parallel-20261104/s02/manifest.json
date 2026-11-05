@@ -678,19 +678,41 @@
       "species_id": "wild_seal_gel_01",
       "name_ja": "パチュル",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_seal_gel_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1213299,
+      "sha256": "6c4ac9c73231e82f18427ba83c997786e17a5030f7a63051bc2d2ac7869d4fc8",
+      "visual_checks": [
+        "閉じた平円ゲルと浅緑の太い吸着縁、葡萄灰の胴・銀の粒を三面で確認",
+        "上面の丸目とU字口、縁のある小孔2つを確認。中央の貫通孔なし",
+        "脚・触腕・尾なし、白地・文字なし・全身枠内"
+      ],
+      "unverified": [
+        "背面の2孔の上に淡い小斑が残る。孔に見えるかはユーザー確認（縁付きの明確な孔は2つ）",
+        "胴の盛り上がりの平たさはユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "6c4ac9c73231e82f18427ba83c997786e17a5030f7a63051bc2d2ac7869d4fc8",
+        "bytes": 1213299,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:40:33.323622+00:00"
+      },
+      "image_commit": "b332edfaf0397773f0a3f0258cc23e3042caaabb",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "背面図の小孔付近に第三の孔状斑が生成されたため、2孔のみへ修正。"
+        }
+      ]
     },
     {
       "dex_number": 67,
@@ -833,14 +855,13 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 17,
-    "remaining_count": 11,
-    "next_species_id": "wild_hinge_mantis_01",
+    "latest_verified_count": 18,
+    "remaining_count": 10,
+    "next_species_id": "wild_seal_gel_02",
     "remaining_ids": [
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
       "wild_hinge_mantis_03",
-      "wild_seal_gel_01",
       "wild_seal_gel_02",
       "wild_draught_chime_01",
       "wild_draught_chime_02",
@@ -851,6 +872,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "b240713f4ba1d44406aa7e26ffb108031d097cdb",
+  "last_image_commit": "b332edfaf0397773f0a3f0258cc23e3042caaabb",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
