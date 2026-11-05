@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 27,
-    "incomplete": 3
+    "saved_verified": 28,
+    "incomplete": 2
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -885,12 +885,13 @@
         "遠側の足は重なりで全指を直接数えられない。細かな斑点配置の立体一致と美術採用はユーザー確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body pinned to save commit",
+        "sha256": "4024c59122322bdc347b3c1192a022730147ca34b62a035b9ec32cbb33c4f451",
+        "size_bytes": 1299503
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "733a8ef7d391d166dfef97dacc52026c129955d1",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
