@@ -1,0 +1,354 @@
+{
+  "checked_at_utc": "2026-11-05T04:18:05.998805+00:00",
+  "checked_head": "5f02a60c105119775489a1a532a03e6a809495bd",
+  "resume_baseline": "b8ae00e3fe1a8b604734d3c51a1cf5ef305ab066",
+  "assigned": 28,
+  "saved_verified": 25,
+  "remaining": [
+    {
+      "dex": 61,
+      "id": "wild_hinge_mantis_01",
+      "status": "生成拒否"
+    },
+    {
+      "dex": 62,
+      "id": "wild_hinge_mantis_02",
+      "status": "参照待ち"
+    },
+    {
+      "dex": 63,
+      "id": "wild_hinge_mantis_03",
+      "status": "参照待ち"
+    }
+  ],
+  "all_candidates_pending_user_review": true,
+  "unique_species_ids": 28,
+  "unique_current_images": 25,
+  "unique_current_image_hashes": 25,
+  "png_files_including_old_versions": 32,
+  "old_version_pngs_not_double_counted": 7,
+  "existing_21_rows_and_image_bytes_unchanged": true,
+  "all_previous_pngs_preserved_byte_for_byte": true,
+  "holds_061_063_unchanged": true,
+  "newly_completed_dex": [
+    70,
+    71,
+    72,
+    73
+  ],
+  "070_recovered_not_regenerated": true,
+  "new_072_original_and_fixed_versions_preserved": true,
+  "only_authorized_s02_paths_changed": true,
+  "changed_paths_since_resume": [
+    "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.1.png",
+    "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png",
+    "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png",
+    "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png",
+    "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_02/model_sheet_v0.1.png",
+    "docs/handoffs/art-parallel-20261104/s02.md",
+    "reports/art-parallel-20261104/s02/manifest.json",
+    "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_01_v0.1.txt",
+    "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_01_v0.2.txt",
+    "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_02_v0.1.txt",
+    "reports/art-parallel-20261104/s02/prompts/wild_shade_hedgehog_01_v0.1.txt",
+    "reports/art-parallel-20261104/s02/prompts/wild_shade_hedgehog_02_v0.1.txt",
+    "reports/art-parallel-20261104/s02/review.md"
+  ],
+  "image_checks": [
+    {
+      "dex": 46,
+      "id": "wild_soot_moth_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png",
+      "sha256": "03e9a5d2cecd94a17a5e54c6275246732a71203b0ebd991c57f9f91ac93b6bc5",
+      "bytes": 1661067,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 47,
+      "id": "wild_soot_moth_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.2.png",
+      "sha256": "261dcb4ce43962bc6f79deda60d23215d641568ca9aefc20c07283867b87f970",
+      "bytes": 1388320,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 48,
+      "id": "wild_spring_steam_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png",
+      "sha256": "04f8d93eb8e7d78571dbb28bf096e159de50afea9e88a305f4fdf006a3a68475",
+      "bytes": 1367978,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 49,
+      "id": "wild_spring_steam_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.2.png",
+      "sha256": "391417f13964c6eed70c481a8340ad3121d032c3ea65609e00f594a0cde18041",
+      "bytes": 1434001,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 50,
+      "id": "wild_bell_beetle_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png",
+      "sha256": "b5cf884c40f6dff665c215a3a7e540f79a98ad7847906048eeb10b5b13dd6766",
+      "bytes": 1521342,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 51,
+      "id": "wild_bell_beetle_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_02/model_sheet_v0.1.png",
+      "sha256": "b313f5a4dd25255a241c9813b7d9aecd59c2a29bdd9d63720add4701e6573533",
+      "bytes": 1538641,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 52,
+      "id": "wild_sun_sprout_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_01/model_sheet_v0.1.png",
+      "sha256": "805530104dadd4795aa37ff14bb2e475c030a18ff30a7a5bc4a0d7434260fe5e",
+      "bytes": 1257766,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 53,
+      "id": "wild_sun_sprout_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_02/model_sheet_v0.1.png",
+      "sha256": "b0b872dd70a0e11dc1140e904ff7e32218b07cabf1798a4e407e02d252adb3c8",
+      "bytes": 1320381,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 54,
+      "id": "wild_sulfur_toad_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.2.png",
+      "sha256": "8a161932dee0157c985592e0efe0d8f3c21eb48850d777dcca105eb9849810a2",
+      "bytes": 1286248,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 55,
+      "id": "wild_sulfur_toad_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_02/model_sheet_v0.1.png",
+      "sha256": "f25901198cd985923cbbe9288a3e1428116986ab2687911306306fe641806083",
+      "bytes": 1312417,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 56,
+      "id": "wild_spark_mica_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_spark_mica_01/model_sheet_v0.1.png",
+      "sha256": "5cb3f2a8eb2a1643d6663c642243ec6b3d0edf7c65ff85740bd50dfc3923e9f5",
+      "bytes": 1228982,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 57,
+      "id": "wild_ash_tumble_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_ash_tumble_01/model_sheet_v0.1.png",
+      "sha256": "1d252a3f9124606f0009711d43dc60626cc729e02924cc122139b938ff57d95f",
+      "bytes": 1386341,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 58,
+      "id": "wild_cable_marten_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png",
+      "sha256": "f8bdc459e1035af318cca25b124a40c4b710077af2d244ab9d5402de3b444048",
+      "bytes": 1170744,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 59,
+      "id": "wild_cable_marten_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png",
+      "sha256": "b0e138329430c11f14653aca4409dea3c01004d847d14698c532a5da23600676",
+      "bytes": 1175141,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 60,
+      "id": "wild_cable_marten_03",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_03/model_sheet_v0.1.png",
+      "sha256": "42fef6d876f10144144cc280f38ed9468bdb6c9ea0f7c0dca4183fd824fc1ef1",
+      "bytes": 1193685,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 64,
+      "id": "wild_lattice_lichen_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png",
+      "sha256": "40a783816038e3e405d3f1eecb8e9be6f3d15dd269a75c103d72d1f2f7c7cf76",
+      "bytes": 1337675,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 65,
+      "id": "wild_lattice_lichen_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_02/model_sheet_v0.1.png",
+      "sha256": "23a7b7f09699f198b38f42844781635d5157d07aa295d89465c110217312683a",
+      "bytes": 1423395,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 66,
+      "id": "wild_seal_gel_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png",
+      "sha256": "6c4ac9c73231e82f18427ba83c997786e17a5030f7a63051bc2d2ac7869d4fc8",
+      "bytes": 1213299,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 67,
+      "id": "wild_seal_gel_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_02/model_sheet_v0.1.png",
+      "sha256": "d9364f9e7fece2fcb2c6c419a75416ac22e5bed3f727c86fc63ccf189b5b660c",
+      "bytes": 1303146,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 68,
+      "id": "wild_draught_chime_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_draught_chime_01/model_sheet_v0.1.png",
+      "sha256": "b3a57bae598bd19f9128bbf5612c8d3e277024a57d1fea6def7e6510aa64174e",
+      "bytes": 1402934,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 69,
+      "id": "wild_draught_chime_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_draught_chime_02/model_sheet_v0.1.png",
+      "sha256": "5bb47a10c25cab2e547a6a92eec77a0569c8126061597bc898173cf5c46d8818",
+      "bytes": 1383435,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 70,
+      "id": "wild_shade_hedgehog_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png",
+      "sha256": "43e7f7229ee19a77d6f5675de954f0acfb7e1fcf3f452dbb7a663bc75d593dde",
+      "bytes": 1333094,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 71,
+      "id": "wild_shade_hedgehog_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_02/model_sheet_v0.1.png",
+      "sha256": "251bf4ed5ee02a082e262e99f14ef7ceabcd04d7901fda5dd2cf2f9a241fc624",
+      "bytes": 1346607,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 72,
+      "id": "wild_lens_moth_01",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png",
+      "sha256": "65d5ae8be382885b515f7011c0896c565e62af729fad857d353d6131c864f39f",
+      "bytes": 1505952,
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    },
+    {
+      "dex": 73,
+      "id": "wild_lens_moth_02",
+      "path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png",
+      "sha256": "527e068c3a5e2ea3738f2de0d70bc18c48be6cf515a939ede1b6f931a976f5e0",
+      "bytes": 1548035,
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "latest_head_and_fixed_image_commit_match": true
+    }
+  ],
+  "repository_checks": [
+    {
+      "command": "python3 tools/validate_assets.py",
+      "returncode": 0,
+      "stdout": "{\n  \"recorded_file_check\": \"pass\",\n  \"files_checked\": 49,\n  \"catalog_complete\": false,\n  \"runtime_images\": 19,\n  \"audio_tracks\": 0,\n  \"pending_categories\": [\n    \"full_species_catalog\",\n    \"monster_runtime_art\",\n    \"character_sprites\",\n    \"map_tiles_and_layouts\",\n    \"complete_moves_items_abilities\",\n    \"complete_story_events\",\n    \"audio\",\n    \"ui_art\"\n  ],\n  \"errors\": [],\n  \"scope\": \"file existence, hashes and PNG header dimensions only\"\n}\n",
+      "stderr": "",
+      "log_path": "reports/art-parallel-20261104/s02/validate_assets_20261105.txt"
+    },
+    {
+      "command": "python3 tools/validate_preproduction.py",
+      "returncode": 0,
+      "stdout": "{\n  \"planning_check\": \"pass\",\n  \"species_slots\": 156,\n  \"known_production_cards\": 15,\n  \"main_regions\": 8,\n  \"postgame_regions\": 2,\n  \"representatives\": 8,\n  \"music_cues_not_generated\": 28,\n  \"queued_assets_not_created\": 3,\n  \"runtime_image_count\": 19,\n  \"runtime_ready_images\": 19,\n  \"errors\": [],\n  \"scope\": \"planning counts and references, not playthrough or complete content\"\n}\n",
+      "stderr": "",
+      "log_path": "reports/art-parallel-20261104/s02/validate_preproduction_20261105.txt"
+    }
+  ],
+  "runtime_promotion": false,
+  "user_art_adoption": false,
+  "merged": false,
+  "published": false
+}

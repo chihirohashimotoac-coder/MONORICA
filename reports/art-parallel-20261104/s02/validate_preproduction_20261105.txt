@@ -1,0 +1,14 @@
+{
+  "planning_check": "pass",
+  "species_slots": 156,
+  "known_production_cards": 15,
+  "main_regions": 8,
+  "postgame_regions": 2,
+  "representatives": 8,
+  "music_cues_not_generated": 28,
+  "queued_assets_not_created": 3,
+  "runtime_image_count": 19,
+  "runtime_ready_images": 19,
+  "errors": [],
+  "scope": "planning counts and references, not playthrough or complete content"
+}

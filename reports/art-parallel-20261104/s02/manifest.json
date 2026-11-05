@@ -1,0 +1,996 @@
+{
+  "species": [
+    {
+      "dex_number": 46,
+      "species_id": "wild_soot_moth_01",
+      "name_ja": "スミモフ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_soot_moth_01_v0.3.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "bytes": 1661067,
+      "sha256": "03e9a5d2cecd94a17a5e54c6275246732a71203b0ebd991c57f9f91ac93b6bc5",
+      "visual_checks": [
+        "前3/4・後3/4・横の3ビュー、全身と付属器官の枠内配置",
+        "各ビューで脚6本の先端を確認",
+        "三角屋根形4翅の重なり、煤紫・灰・柿の配色、触角2本の重なりを確認"
+      ],
+      "unverified": [
+        "胸の一部の付け根は翅・毛で隠れる。透視図ではない",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "新規git cloneから画像本体を取得し元台帳のSHA-256・バイト数と照合",
+        "sha256": "03e9a5d2cecd94a17a5e54c6275246732a71203b0ebd991c57f9f91ac93b6bc5",
+        "bytes": 1661067,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T16:12:59.173631+00:00"
+      },
+      "image_commit": "2dadc4635621b76c7e97ccc840ed550c8f6b9baa",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review"
+    },
+    {
+      "dex_number": 47,
+      "species_id": "wild_soot_moth_02",
+      "name_ja": "クロハモラ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_soot_moth_02_v0.2_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.2.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "bytes": 1388320,
+      "sha256": "261dcb4ce43962bc6f79deda60d23215d641568ca9aefc20c07283867b87f970",
+      "visual_checks": [
+        "前3/4・後3/4・横の全身を確認",
+        "6脚の先端・頭の櫛触角2本・胸からの4翅を確認。横は奥翅が重なる",
+        "進化前と異なる開いた二層翅・厚い折り目・煤紫/灰/柿を確認"
+      ],
+      "unverified": [
+        "奥翅の付け根と一部の脚根は毛・重なりで隠れる",
+        "外側の翅と画面端の余白は狭いが欠けなし",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "261dcb4ce43962bc6f79deda60d23215d641568ca9aefc20c07283867b87f970",
+        "bytes": 1388320,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:14:58.826151+00:00"
+      },
+      "image_commit": "0d00a52c7fadec080fc8b0a0a2418efe2ac53d77",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_01/model_sheet_v0.3.png"
+      ],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_soot_moth_02/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "進化前と同じ閉じた翅だったためv0.2へ修正"
+        }
+      ]
+    },
+    {
+      "dex_number": 48,
+      "species_id": "wild_spring_steam_01",
+      "name_ja": "ユケポン",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spring_steam_01_v0.1_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1367978,
+      "sha256": "04f8d93eb8e7d78571dbb28bf096e159de50afea9e88a305f4fdf006a3a68475",
+      "visual_checks": [
+        "三面の全身・袋状の丸胴・青灰/桃/乳白の色面を確認",
+        "背の穴状弁2つ・短尾1本・眠たげな半月目と丸口を確認",
+        "前後脚の位置は整合。奥脚は体で隠れ、各4本すべての付け根は見えない"
+      ],
+      "unverified": [
+        "奥側脚は胴に重なるため4本すべての目視計数は未確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "04f8d93eb8e7d78571dbb28bf096e159de50afea9e88a305f4fdf006a3a68475",
+        "bytes": 1367978,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:18:27.896691+00:00"
+      },
+      "image_commit": "b121bcb0f0e1fbfb6c8e0952f77ec2865894550d",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 49,
+      "species_id": "wild_spring_steam_02",
+      "name_ja": "ホウユラ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spring_steam_02_v0.2_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1434001,
+      "sha256": "391417f13964c6eed70c481a8340ad3121d032c3ea65609e00f594a0cde18041",
+      "visual_checks": [
+        "三面で成長した襟状の背弁2つと乳白の腹帯を確認",
+        "青灰の高い袋胴・桃の弁/脚/尾・乳白の模様を3ビューで確認",
+        "短脚と尾1本の接続位置は整合。奥脚は胴に隠れる"
+      ],
+      "unverified": [
+        "奥脚すべての付け根と4本の全数は重なりで直接見えない",
+        "弁は成長差を確認。後方への傾きの強さはユーザー確認対象",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "391417f13964c6eed70c481a8340ad3121d032c3ea65609e00f594a0cde18041",
+        "bytes": 1434001,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:22:49.555989+00:00"
+      },
+      "image_commit": "ffc41865ec00f9e53cd38181cdfc91bc67326901",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png"
+      ],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_02/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "腹帯が桃色だったため乳白へ修正"
+        }
+      ]
+    },
+    {
+      "dex_number": 50,
+      "species_id": "wild_bell_beetle_01",
+      "name_ja": "カネコツ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_bell_beetle_01_v0.1_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1521342,
+      "sha256": "b5cf884c40f6dff665c215a3a7e540f79a98ad7847906048eeb10b5b13dd6766",
+      "visual_checks": [
+        "前後3/4で脚先6本、触角2本を確認。横は奥側の脚・触角が重なる",
+        "釣鐘形の鉄紺の閉じた背殻・銅の縁・裾の小さな2眼を確認",
+        "飛翔翅は閉じた殻の内部に隠す設計。全身枠内・三面の色面と中央合わせ目を確認"
+      ],
+      "unverified": [
+        "飛翔翅2枚は殻内に隠れ直接目視できない",
+        "背殻上の釣り輪と銅模様は生成上の意匠、ユーザー採用前",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch origin後、保存コミットのgit showで画像本体取得",
+        "sha256": "b5cf884c40f6dff665c215a3a7e540f79a98ad7847906048eeb10b5b13dd6766",
+        "bytes": 1521342,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:24:54.121838+00:00"
+      },
+      "image_commit": "167fada4f7681248e89296387bb34a97f7324d6b",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 51,
+      "species_id": "wild_bell_beetle_02",
+      "name_ja": "ドウガロン",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_bell_beetle_02_v0.1_actual.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1538641,
+      "sha256": "b313f5a4dd25255a241c9813b7d9aecd59c2a29bdd9d63720add4701e6573533",
+      "visual_checks": [
+        "進化前より広い銅の裾・低い六脚姿勢・大鐘の輪郭を確認",
+        "前後図で脚先6本、触角2本。横は奥側脚と触角が重なる",
+        "鉄紺/銅/生成り、殻の整った縦線、全身枠内を確認"
+      ],
+      "unverified": [
+        "響き溝と背殻の合わせ目が同じ縦線へまとまっており、描き分けはユーザー確認対象",
+        "飛翔翅は閉殻内部に隠れるため2枚を直接目視できない",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "GitHub raw URLから保存コミットを指定して画像本体をHTTPS取得",
+        "sha256": "b313f5a4dd25255a241c9813b7d9aecd59c2a29bdd9d63720add4701e6573533",
+        "bytes": 1538641,
+        "matched": true,
+        "checked_at_utc": "2026-11-04T17:27:27.098885+00:00"
+      },
+      "image_commit": "6c91beaecd4e6135944dfee1368131eb58793b20",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_bell_beetle_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 52,
+      "species_id": "wild_sun_sprout_01",
+      "name_ja": "ヒマルネ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sun_sprout_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1257766,
+      "sha256": "805530104dadd4795aa37ff14bb2e475c030a18ff30a7a5bc4a0d7434260fe5e",
+      "visual_checks": [
+        "三面全身・文字なし・白地、単一の浅い皿形円盤葉と根脚2本を確認",
+        "薄金球根・緑葉・焦茶の点目、背面に顔なしを確認。腕・尾・翼なし"
+      ],
+      "unverified": [
+        "頬の桃色と胴の装飾曲線は設計外の生成意匠。採用時確認",
+        "横図の奥脚は少しずらして描かれる。全付け根の透視確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "805530104dadd4795aa37ff14bb2e475c030a18ff30a7a5bc4a0d7434260fe5e",
+        "bytes": 1257766,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:12:59.648451+00:00"
+      },
+      "image_commit": "03a1512e11abb5061132ad5dfdad00255cea9495",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 53,
+      "species_id": "wild_sun_sprout_02",
+      "name_ja": "ヒノサラナ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sun_sprout_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1320381,
+      "sha256": "b0b872dd70a0e11dc1140e904ff7e32218b07cabf1798a4e407e02d252adb3c8",
+      "visual_checks": [
+        "三面の全身・白地・文字なしを確認。太くなった薄金球根・根脚2本・顔位置を維持",
+        "円盤葉は1枚のまま大型化し縁が深く刻まれる。前段階との差を確認"
+      ],
+      "unverified": [
+        "桃色の頬は進化前候補由来の生成意匠。採用時確認",
+        "横図の奥脚は少しずれて見える。隠れた付け根の透視確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "b0b872dd70a0e11dc1140e904ff7e32218b07cabf1798a4e407e02d252adb3c8",
+        "bytes": 1320381,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:15:41.403207+00:00"
+      },
+      "image_commit": "54d7eb6970dd99ae76cfed320673236776405ac6",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 54,
+      "species_id": "wild_sulfur_toad_01",
+      "name_ja": "イオプク",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sulfur_toad_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1286248,
+      "sha256": "8a161932dee0157c985592e0efe0d8f3c21eb48850d777dcca105eb9849810a2",
+      "visual_checks": [
+        "四足の蟾蜍形・丸い橙の頬袋・横長瞳を三面で確認",
+        "背面で浅い気孔6つを計数。鈍黄の背と灰紫の下部、尾なしを確認",
+        "全身・白地・文字なし、前段階の形として保持"
+      ],
+      "unverified": [
+        "横面では奥側脚と奥側気孔が重なる。全付け根の透視確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "8a161932dee0157c985592e0efe0d8f3c21eb48850d777dcca105eb9849810a2",
+        "bytes": 1286248,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:19:06.207759+00:00"
+      },
+      "image_commit": "27038e8c3334c1fb33ed017ee846a3fda1a62065",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "背面の気孔が設計6つに対して7つだったため、v0.2で6つへ修正。"
+        }
+      ]
+    },
+    {
+      "dex_number": 55,
+      "species_id": "wild_sulfur_toad_02",
+      "name_ja": "ユガマド",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sulfur_toad_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1312417,
+      "sha256": "f25901198cd985923cbbe9288a3e1428116986ab2687911306306fe641806083",
+      "visual_checks": [
+        "背面の橙縁の気孔6つと四足・尾なしを確認",
+        "鈍黄の盛り上がった背、灰紫の下部、横長瞳・丸い橙頬袋を三面で維持",
+        "白地・文字なし・全身枠内を確認"
+      ],
+      "unverified": [
+        "進化前との体格差は控えめ。窯蓋形の背の強調度はユーザー確認",
+        "奥側脚と一部気孔は投影で隠れる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "f25901198cd985923cbbe9288a3e1428116986ab2687911306306fe641806083",
+        "bytes": 1312417,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:21:15.042928+00:00"
+      },
+      "image_commit": "5a2cc94a87e91b02bd75cb9857cb2e477371a51b",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.2.png"
+      ]
+    },
+    {
+      "dex_number": 56,
+      "species_id": "wild_spark_mica_01",
+      "name_ja": "キラシグ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spark_mica_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_spark_mica_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1228982,
+      "sha256": "5cb3f2a8eb2a1643d6663c642243ec6b3d0edf7c65ff85740bd50dfc3923e9f5",
+      "visual_checks": [
+        "3ビューで錆銅の薄板3層・青白い継ぎ目・灰色の差し色を確認",
+        "上板の縁の目2つ・細い口、背面に顔なし、脚・翼・尾なし",
+        "一体のくさび形で板間を継ぎ目が連結し、独立浮遊なし。全身枠内"
+      ],
+      "unverified": [
+        "灰色パッチと目の大きさは生成意匠としてユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "5cb3f2a8eb2a1643d6663c642243ec6b3d0edf7c65ff85740bd50dfc3923e9f5",
+        "bytes": 1228982,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:23:33.782706+00:00"
+      },
+      "image_commit": "ffcdca2fa4066dda13cdbc64e97df1c0b0a07dc8",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 57,
+      "species_id": "wild_ash_tumble_01",
+      "name_ja": "ハイコロネ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_ash_tumble_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_ash_tumble_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1386341,
+      "sha256": "1d252a3f9124606f0009711d43dc60626cc729e02924cc122139b938ff57d95f",
+      "visual_checks": [
+        "灰白の球状藻体に大きな4毛房、割れ目の橙、焦茶の輪郭を確認",
+        "前面の丸目2つ・下の小口、背面に顔なし。脚・手・尾なし",
+        "三面の全身と房の連なりを確認。白地・文字なし"
+      ],
+      "unverified": [
+        "横図は奥の房が重なり、4房すべての境界の直接確認はできない",
+        "灰色がやや暖色寄り。配色の採否はユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "1d252a3f9124606f0009711d43dc60626cc729e02924cc122139b938ff57d95f",
+        "bytes": 1386341,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:25:53.109426+00:00"
+      },
+      "image_commit": "e9802fd673c0155e962b29f835fc21ee3b820484",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 58,
+      "species_id": "wild_cable_marten_01",
+      "name_ja": "ヒモテン",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_cable_marten_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1170744,
+      "sha256": "f8bdc459e1035af318cca25b124a40c4b710077af2d244ab9d5402de3b444048",
+      "visual_checks": [
+        "長胴・四足・丸耳・細鼻・琥珀の目を確認。錆赤/墨/青緑の配色を維持",
+        "腰から1本の細い編み尾が直線状に伸びる。尾先まで3ビューの枠内",
+        "前後図で四足を計数。白地・文字なし"
+      ],
+      "unverified": [
+        "側面の尾先余白は狭いが欠けなし",
+        "体側の青緑模様は生成意匠。奥脚の付け根は胴と重なる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "f8bdc459e1035af318cca25b124a40c4b710077af2d244ab9d5402de3b444048",
+        "bytes": 1170744,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:27:55.524336+00:00"
+      },
+      "image_commit": "7a16c0f1bd6334dfaf61691e0bc48fce24b718bc",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 59,
+      "species_id": "wild_cable_marten_02",
+      "name_ja": "アミラチ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_cable_marten_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1175141,
+      "sha256": "b0e138329430c11f14653aca4409dea3c01004d847d14698c532a5da23600676",
+      "visual_checks": [
+        "進化前と同じ長胴・四足・丸耳・琥珀目・錆赤/墨/青緑を維持",
+        "尾1本の外被が太い編み節へ成長したことを前段階と比較確認",
+        "3ビュー全身・尾先・白地・文字なしを確認"
+      ],
+      "unverified": [
+        "体格・姿勢の変化は少なく、進化差は尾の太さを中心とする",
+        "奥脚の一部の付け根は胴に隠れる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "b0e138329430c11f14653aca4409dea3c01004d847d14698c532a5da23600676",
+        "bytes": 1175141,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:30:02.493093+00:00"
+      },
+      "image_commit": "a39b92b37b1420fb5c02f2d7b30e91a4512526cc",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 60,
+      "species_id": "wild_cable_marten_03",
+      "name_ja": "ケイラトス",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_cable_marten_03_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_03/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1193685,
+      "sha256": "42fef6d876f10144144cc280f38ed9468bdb6c9ea0f7c0dca4183fd824fc1ef1",
+      "visual_checks": [
+        "低い長胴・四足・丸耳・琥珀目と3配色を継承",
+        "一本尾の編み目が大きな3節へ整理され、上下へ湾曲した形を確認",
+        "三面の尾と全身が枠内、文字なし・白地を確認"
+      ],
+      "unverified": [
+        "尾のS字は浅く、強調度と3大節の読み取りやすさはユーザー確認",
+        "横図の奥脚の付け根は胴に重なる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "42fef6d876f10144144cc280f38ed9468bdb6c9ea0f7c0dca4183fd824fc1ef1",
+        "bytes": 1193685,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:32:12.930704+00:00"
+      },
+      "image_commit": "0b40e04d725501f0b6c9e5e07beb28b615d4d66e",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 61,
+      "species_id": "wild_hinge_mantis_01",
+      "name_ja": "ツギハサ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_hinge_mantis_01_v0.1.txt",
+      "image_path": null,
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "内蔵画像生成がHTTP400 moderation_blocked（output、other）で拒否。画像なし。拒否の回避・再試行は未実施"
+      ],
+      "github_readback": null,
+      "image_commit": null,
+      "status": "生成拒否",
+      "art_adoption": "pending_user_review"
+    },
+    {
+      "dex_number": 62,
+      "species_id": "wild_hinge_mantis_02",
+      "name_ja": "カナトギ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留"
+      ],
+      "github_readback": null,
+      "image_commit": null,
+      "status": "参照待ち",
+      "art_adoption": "pending_user_review"
+    },
+    {
+      "dex_number": 63,
+      "species_id": "wild_hinge_mantis_03",
+      "name_ja": "ヒンジルド",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": null,
+      "image_path": null,
+      "width": null,
+      "height": null,
+      "mode": null,
+      "bytes": null,
+      "sha256": null,
+      "visual_checks": [],
+      "unverified": [
+        "進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留"
+      ],
+      "github_readback": null,
+      "image_commit": null,
+      "status": "参照待ち",
+      "art_adoption": "pending_user_review"
+    },
+    {
+      "dex_number": 64,
+      "species_id": "wild_lattice_lichen_01",
+      "name_ja": "アミゴケ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lattice_lichen_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1337675,
+      "sha256": "40a783816038e3e405d3f1eecb8e9be6f3d15dd269a75c103d72d1f2f7c7cf76",
+      "visual_checks": [
+        "薄い四角格子板1枚・苔緑と錆茶/生成り・苔面の点目と細口を確認",
+        "根脚は四隅から下へ接続する構造。三面で薄板形を維持、腕・尾なし",
+        "白地・文字なし・全身と根脚が枠内"
+      ],
+      "unverified": [
+        "前後図の奥隅の根脚は板・苔に隠れ、4本すべての付け根は直接目視できない",
+        "生成りの苔斑と根の三叉先端は生成意匠",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "40a783816038e3e405d3f1eecb8e9be6f3d15dd269a75c103d72d1f2f7c7cf76",
+        "bytes": 1337675,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:35:31.843594+00:00"
+      },
+      "image_commit": "1d5dd00384fa11bc977334e306f922dbd6e85502",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 65,
+      "species_id": "wild_lattice_lichen_02",
+      "name_ja": "ネリカゴ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lattice_lichen_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1423395,
+      "sha256": "23a7b7f09699f198b38f42844781635d5157d07aa295d89465c110217312683a",
+      "visual_checks": [
+        "背の格子板の縁が立ち上がり籠状へ変化。前段階の薄板との差を確認",
+        "苔面の点目・細口、苔緑/錆茶/生成り、四隅の根脚構造を維持",
+        "三面で籠の空間と格子を確認。白地・文字なし・枠内"
+      ],
+      "unverified": [
+        "奥隅の根脚は籠と重なり、4本の全付け根の直接目視は未確認",
+        "格子穴の細かな配置と生成り斑は美術採用時に確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "23a7b7f09699f198b38f42844781635d5157d07aa295d89465c110217312683a",
+        "bytes": 1423395,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:37:34.350049+00:00"
+      },
+      "image_commit": "b240713f4ba1d44406aa7e26ffb108031d097cdb",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 66,
+      "species_id": "wild_seal_gel_01",
+      "name_ja": "パチュル",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_seal_gel_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1213299,
+      "sha256": "6c4ac9c73231e82f18427ba83c997786e17a5030f7a63051bc2d2ac7869d4fc8",
+      "visual_checks": [
+        "閉じた平円ゲルと浅緑の太い吸着縁、葡萄灰の胴・銀の粒を三面で確認",
+        "上面の丸目とU字口、縁のある小孔2つを確認。中央の貫通孔なし",
+        "脚・触腕・尾なし、白地・文字なし・全身枠内"
+      ],
+      "unverified": [
+        "背面の2孔の上に淡い小斑が残る。孔に見えるかはユーザー確認（縁付きの明確な孔は2つ）",
+        "胴の盛り上がりの平たさはユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "6c4ac9c73231e82f18427ba83c997786e17a5030f7a63051bc2d2ac7869d4fc8",
+        "bytes": 1213299,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:40:33.323622+00:00"
+      },
+      "image_commit": "b332edfaf0397773f0a3f0258cc23e3042caaabb",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "背面図の小孔付近に第三の孔状斑が生成されたため、2孔のみへ修正。"
+        }
+      ]
+    },
+    {
+      "dex_number": 67,
+      "species_id": "wild_seal_gel_02",
+      "name_ja": "シメグル",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_seal_gel_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1303146,
+      "sha256": "d9364f9e7fece2fcb2c6c419a75416ac22e5bed3f727c86fc63ccf189b5b660c",
+      "visual_checks": [
+        "閉じた初期形から中央が白く抜けた貫通輪へ変化し、一部を起こす姿勢を確認",
+        "葡萄灰の太いゲル体・浅緑の吸着縁・銀粒・U字口を継承",
+        "輪体上の縁付き小孔2つと中央大孔を区別。脚・触腕・尾なし、白地文字なし"
+      ],
+      "unverified": [
+        "背面の2小孔の上に淡い小斑が残る。孔に見えるかはユーザー確認",
+        "側面は上面も見える角度。完全な水平投影ではない",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "d9364f9e7fece2fcb2c6c419a75416ac22e5bed3f727c86fc63ccf189b5b660c",
+        "bytes": 1303146,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:42:55.733652+00:00"
+      },
+      "image_commit": "b2a9235d6c16ebde20db8bda7e9d7f57447cd046",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png"
+      ]
+    },
+    {
+      "dex_number": 68,
+      "species_id": "wild_draught_chime_01",
+      "name_ja": "スズフワ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_draught_chime_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_draught_chime_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1402934,
+      "sha256": "b3a57bae598bd19f9128bbf5612c8d3e277024a57d1fea6def7e6510aa64174e",
+      "visual_checks": [
+        "浮遊する丸い鐘胴・下の舌1本・下縁から対称につながる短冊2枚を確認",
+        "鐘の穴目2つと細い切れ目口、背面に顔なし。青緑/鈍銀/朱を維持",
+        "脚・翼なし、全身と短冊が枠内。三面・白地・文字なし"
+      ],
+      "unverified": [
+        "銀の渦模様・朱の菱形・上端の小蓋は生成意匠として採用時確認",
+        "横図はわずかに前側も見える角度",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "b3a57bae598bd19f9128bbf5612c8d3e277024a57d1fea6def7e6510aa64174e",
+        "bytes": 1402934,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:45:01.491073+00:00"
+      },
+      "image_commit": "aa60de72128123afdf9fa95d97ac11a0e374749f",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 69,
+      "species_id": "wild_draught_chime_02",
+      "name_ja": "フウリンカ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_draught_chime_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_draught_chime_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1383435,
+      "sha256": "5bb47a10c25cab2e547a6a92eec77a0569c8126061597bc898173cf5c46d8818",
+      "visual_checks": [
+        "丸い初期鐘から縦長鐘へ成長し、短冊2枚の幅が増したことを比較確認",
+        "舌1本・穴目2つ・細口・青緑/鈍銀/朱を維持。背面に顔なし",
+        "浮遊形・脚翼なし・全身枠内・三面白地文字なし"
+      ],
+      "unverified": [
+        "風向きへの傾きは控えめで、短冊は左右へ開く。ユーザー確認",
+        "渦模様・菱形・小蓋は初期候補由来の生成意匠",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "5bb47a10c25cab2e547a6a92eec77a0569c8126061597bc898173cf5c46d8818",
+        "bytes": 1383435,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:47:12.889896+00:00"
+      },
+      "image_commit": "1be104bbd9f84a1534178172894361ca1617e605",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_draught_chime_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 70,
+      "species_id": "wild_shade_hedgehog_01",
+      "name_ja": "カゲハリ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_shade_hedgehog_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1333094,
+      "sha256": "43e7f7229ee19a77d6f5675de954f0acfb7e1fcf3f452dbb7a663bc75d593dde",
+      "visual_checks": [
+        "回収した既存生成結果を開き、墨紫の板針5大束・乳白の四足胴・短尾1本を確認",
+        "細鼻・小黒目・淡い丸目縁と鈍銅の板縁を三面で維持",
+        "前後図で脚先4本、横は奥脚が重なる。白地・文字なし・全身枠内。再生成なし"
+      ],
+      "unverified": [
+        "板束の下縁に小さな重なりがあり、5大束の可読性はユーザー確認",
+        "背図は顔の輪郭が少し見える後3/4角度。奥脚の根は隠れる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "43e7f7229ee19a77d6f5675de954f0acfb7e1fcf3f452dbb7a663bc75d593dde",
+        "bytes": 1333094,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:08:19.060270+00:00"
+      },
+      "image_commit": "9b1da76760bc397014dfa0a9537ff32536a6dc6c",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
+    },
+    {
+      "dex_number": 71,
+      "species_id": "wild_shade_hedgehog_02",
+      "name_ja": "ヨロトゲ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_shade_hedgehog_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1346607,
+      "sha256": "251bf4ed5ee02a082e262e99f14ef7ceabcd04d7901fda5dd2cf2f9a241fc624",
+      "visual_checks": [
+        "墨紫の板針5大束が厚く重なった半球形へ変化し、070の低い屋根形と比較確認",
+        "乳白の腹を金属で覆わず、四足・短尾1本・細鼻・小黒目と淡い目縁を維持",
+        "三面の全身・白地・文字なし。前後図で脚先4本、横は奥脚が重なる"
+      ],
+      "unverified": [
+        "板束境界の重なりと半球の強調度はユーザー採用時に確認",
+        "一部の奥脚付け根は胴に隠れる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "251bf4ed5ee02a082e262e99f14ef7ceabcd04d7901fda5dd2cf2f9a241fc624",
+        "bytes": 1346607,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:10:34.651323+00:00"
+      },
+      "image_commit": "8cb4f6caaf35768a29b85c0fdec8b279304972d6",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png"
+      ]
+    },
+    {
+      "dex_number": 72,
+      "species_id": "wild_lens_moth_01",
+      "name_ja": "マドリネ",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png",
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "bytes": 1505952,
+      "sha256": "65d5ae8be382885b515f7011c0896c565e62af729fad857d353d6131c864f39f",
+      "visual_checks": [
+        "修正版の前後3/4図で脚先6本・細長い翅4枚・各翅1つの透明円窓を計数",
+        "短い羽毛触角2本・白い頬・大きな黒目、淡藤/紺/水色を三面で維持",
+        "胸から脚と翅、頭から触角の構造を確認。全身枠内・白地・文字なし"
+      ],
+      "unverified": [
+        "横図の奥側2翅と一部脚は自然な重なりで隠れる",
+        "胸の毛で一部付け根は隠れるため透視的な接続確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "65d5ae8be382885b515f7011c0896c565e62af729fad857d353d6131c864f39f",
+        "bytes": 1505952,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:14:13.578607+00:00"
+      },
+      "image_commit": "84040be0c817c8ca89e883a1324276102b4c3dfb",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "前後図で4翅のうち奥側の後翅が隠れて3枚しか判別できなかったため、翅の開き方と後図の脚の見え方を修正。"
+        }
+      ]
+    },
+    {
+      "dex_number": 73,
+      "species_id": "wild_lens_moth_02",
+      "name_ja": "レンズィア",
+      "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png",
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "bytes": 1548035,
+      "sha256": "527e068c3a5e2ea3738f2de0d70bc18c48be6cf515a939ede1b6f931a976f5e0",
+      "visual_checks": [
+        "前後3/4で4翅・各翅1つの楕円透明窓・6脚を計数。短い羽毛触角2本を確認",
+        "072の円窓から楕円窓へ伸び、紺の細縁に沿う水色の導電帯を確認",
+        "白い頬・大黒目・淡藤/紺/水色、胸と頭の器官接続を継承。三面全身・白地・文字なし"
+      ],
+      "unverified": [
+        "横図は奥側翅・脚が重なる。毛に隠れる一部付け根の透視確認は未実施",
+        "前翅を立てる姿勢の前段階との差は控えめで、主な進化差は楕円窓と導電帯",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "527e068c3a5e2ea3738f2de0d70bc18c48be6cf515a939ede1b6f931a976f5e0",
+        "bytes": 1548035,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:16:35.220730+00:00"
+      },
+      "image_commit": "38dd92f322bc75154888e6f1e1dce784b68d82bc",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png"
+      ]
+    }
+  ],
+  "session": {
+    "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+    "source_latest_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+    "source_difference": "差分なし",
+    "resumed_at_jst": "2026-11-05",
+    "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
+    "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
+    "latest_verified_count": 25,
+    "remaining_count": 3,
+    "next_species_id": null,
+    "remaining_ids": [
+      "wild_hinge_mantis_01",
+      "wild_hinge_mantis_02",
+      "wild_hinge_mantis_03"
+    ],
+    "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。",
+    "resumed_after_interruption_jst": "2026-11-05",
+    "resume_verification_ja": "長時間停止後にGitHub最新headを再照合。既存21種は新規cloneの画像実体でSHA-256・サイズ・寸法・モードを再確認。070の未保存生成結果を保持された画像データから復元して保存。061生成拒否・062/063参照待ちを維持。",
+    "priority_070_073_complete": true,
+    "unsaved_generated_images": 0,
+    "final_validation_file": "reports/art-parallel-20261104/s02/validation_20261105.json",
+    "completion_state": "25種保存確認済み、061生成拒否・062/063参照待ち。優先070〜073は完了"
+  },
+  "last_image_commit": "38dd92f322bc75154888e6f1e1dce784b68d82bc",
+  "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
+}
