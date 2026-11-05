@@ -931,22 +931,22 @@
       "name": "ルミガレス",
       "species_id": "wild_glass_gecko_03",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_glass_gecko_03.txt",
+      "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.2.png",
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1791254,
+      "sha256": "263ee51d9c0f2934ea8ac8fe31b0ae80a487880ef1a1336b65ba97d8f1a077cc",
+      "visual_checks": [
+        "保存画像本体を開き全身3ビューを目視。初回v0.1の横図背板4枚を検出し、内蔵画像編集で3枚へ修正したv0.2を候補とする。",
+        "前3/4・後3/4・横のそれぞれで背板3枚を確認。背中央の一列付け根から角度を変えた扇形であり、翼ではない。",
+        "四脚・腰尾1、長い吸着指と各足の3パッド、細身の長胴、黒目と細口、砂金/薄青/乳白を目視。中間原画からの背板大型化・指伸長を確認。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "背板の重なりと屈折帯、細かな皮膚斑点の三面での厳密一致は最終確認待ち。遠側足の指は部分的に重なる。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -954,8 +954,14 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
-      "adoption_status": "pending_user_review"
+      "status": "生成済み未保存",
+      "adoption_status": "pending_user_review",
+      "superseded_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.1.png",
+          "reason": "横図の背板が4枚のため不採用。元出力は保全。"
+        }
+      ]
     }
   ],
   "execution_environment_ja": "Linuxクラウド内の独立チェックアウト。モデル・エフォートはUI操作で確認/変更できず、指定済みとは報告しない。内蔵画像生成ツール使用。"
