@@ -9,8 +9,8 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 28,
-    "incomplete": 2
+    "saved_verified": 29,
+    "incomplete": 1
   },
   "status": "in_progress",
   "blocker_ja": null,
@@ -917,12 +917,13 @@
         "遠側の足の指は重なりで全数を直接数えられない。背の小斑点位置・尾上面の斑点の厳密な三面対応は最終確認待ち。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body pinned to save commit",
+        "sha256": "0e9eeefa97588ad1c7c85a8a7f5225396c75f4b983982e5b920c5f4e22b1cd94",
+        "size_bytes": 1242502
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "e507e84edd1913acdad5dc16ff5a2548e9ae8201",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review"
     },
     {
