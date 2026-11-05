@@ -32,3 +32,7 @@
 |071|wild_shade_hedgehog_02 ヨロトゲ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_02/model_sheet_v0.1.png)|保存確認済み：板束境界の重なりと半球の強調度はユーザー採用時に確認 / 一部の奥脚付け根は胴に隠れる / ユーザーの美術採用は未実施|
 |072|wild_lens_moth_01 マドリネ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png)|保存確認済み：横図の奥側2翅と一部脚は自然な重なりで隠れる / 胸の毛で一部付け根は隠れるため透視的な接続確認は未実施 / ユーザーの美術採用は未実施|
 |073|wild_lens_moth_02 レンズィア|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png)|保存確認済み：横図は奥側翅・脚が重なる。毛に隠れる一部付け根の透視確認は未実施 / 前翅を立てる姿勢の前段階との差は控えめで、主な進化差は楕円窓と導電帯 / ユーザーの美術採用は未実施|
+
+優先対象070〜073は保存・読み戻しまで完了。070は回収画像を使用し再生成なし。072は旧版を残してv0.2を現行候補としています。061〜063の生成拒否・参照待ちは維持しています。
+
+最終照合：現行25画像は一意。旧版込み32PNGを保全。既存21種の画像・種レコードを変更していません。既存の素材検査・制作前データ検査は両方成功。[実出力と照合記録](validation_20261105.json)。全候補はpending_user_reviewのままです。
