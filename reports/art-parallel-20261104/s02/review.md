@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み16種／未完了12種。全種 pending_user_review。
+担当28種／保存確認済み17種／未完了11種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -23,7 +23,7 @@
 |062|wild_hinge_mantis_02 カナトギ|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
 |063|wild_hinge_mantis_03 ヒンジルド|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
 |064|wild_lattice_lichen_01 アミゴケ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png)|保存確認済み：前後図の奥隅の根脚は板・苔に隠れ、4本すべての付け根は直接目視できない / 生成りの苔斑と根の三叉先端は生成意匠 / ユーザーの美術採用は未実施|
-|065|wild_lattice_lichen_02 ネリカゴ|未制作|未着手：|
+|065|wild_lattice_lichen_02 ネリカゴ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_02/model_sheet_v0.1.png)|保存確認済み：奥隅の根脚は籠と重なり、4本の全付け根の直接目視は未確認 / 格子穴の細かな配置と生成り斑は美術採用時に確認 / ユーザーの美術採用は未実施|
 |066|wild_seal_gel_01 パチュル|未制作|未着手：|
 |067|wild_seal_gel_02 シメグル|未制作|未着手：|
 |068|wild_draught_chime_01 スズフワ|未制作|未着手：|
