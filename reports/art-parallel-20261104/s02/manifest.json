@@ -226,19 +226,35 @@
       "species_id": "wild_sun_sprout_01",
       "name_ja": "ヒマルネ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sun_sprout_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1257766,
+      "sha256": "805530104dadd4795aa37ff14bb2e475c030a18ff30a7a5bc4a0d7434260fe5e",
+      "visual_checks": [
+        "三面全身・文字なし・白地、単一の浅い皿形円盤葉と根脚2本を確認",
+        "薄金球根・緑葉・焦茶の点目、背面に顔なしを確認。腕・尾・翼なし"
+      ],
+      "unverified": [
+        "頬の桃色と胴の装飾曲線は設計外の生成意匠。採用時確認",
+        "横図の奥脚は少しずらして描かれる。全付け根の透視確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "805530104dadd4795aa37ff14bb2e475c030a18ff30a7a5bc4a0d7434260fe5e",
+        "bytes": 1257766,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:12:59.648451+00:00"
+      },
+      "image_commit": "03a1512e11abb5061132ad5dfdad00255cea9495",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_spring_steam_01/model_sheet_v0.1.png"
+      ]
     },
     {
       "dex_number": 53,
@@ -646,8 +662,35 @@
     "source_difference": "差分なし",
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
-    "saving": "GitHub連携。通常Gitのpush認証は利用不能。"
+    "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
+    "latest_verified_count": 7,
+    "remaining_count": 21,
+    "next_species_id": "wild_sun_sprout_02",
+    "remaining_ids": [
+      "wild_sun_sprout_02",
+      "wild_sulfur_toad_01",
+      "wild_sulfur_toad_02",
+      "wild_spark_mica_01",
+      "wild_ash_tumble_01",
+      "wild_cable_marten_01",
+      "wild_cable_marten_02",
+      "wild_cable_marten_03",
+      "wild_hinge_mantis_01",
+      "wild_hinge_mantis_02",
+      "wild_hinge_mantis_03",
+      "wild_lattice_lichen_01",
+      "wild_lattice_lichen_02",
+      "wild_seal_gel_01",
+      "wild_seal_gel_02",
+      "wild_draught_chime_01",
+      "wild_draught_chime_02",
+      "wild_shade_hedgehog_01",
+      "wild_shade_hedgehog_02",
+      "wild_lens_moth_01",
+      "wild_lens_moth_02"
+    ],
+    "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "6c91beaecd4e6135944dfee1368131eb58793b20",
+  "last_image_commit": "03a1512e11abb5061132ad5dfdad00255cea9495",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
