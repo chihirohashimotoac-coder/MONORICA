@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み24種／未完了4種。全種 pending_user_review。
+担当28種／保存確認済み25種／未完了3種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -31,4 +31,4 @@
 |070|wild_shade_hedgehog_01 カゲハリ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png)|保存確認済み：板束の下縁に小さな重なりがあり、5大束の可読性はユーザー確認 / 背図は顔の輪郭が少し見える後3/4角度。奥脚の根は隠れる / ユーザーの美術採用は未実施|
 |071|wild_shade_hedgehog_02 ヨロトゲ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_02/model_sheet_v0.1.png)|保存確認済み：板束境界の重なりと半球の強調度はユーザー採用時に確認 / 一部の奥脚付け根は胴に隠れる / ユーザーの美術採用は未実施|
 |072|wild_lens_moth_01 マドリネ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png)|保存確認済み：横図の奥側2翅と一部脚は自然な重なりで隠れる / 胸の毛で一部付け根は隠れるため透視的な接続確認は未実施 / ユーザーの美術採用は未実施|
-|073|wild_lens_moth_02 レンズィア|未制作|未着手：|
+|073|wild_lens_moth_02 レンズィア|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png)|保存確認済み：横図は奥側翅・脚が重なる。毛に隠れる一部付け根の透視確認は未実施 / 前翅を立てる姿勢の前段階との差は控えめで、主な進化差は楕円窓と導電帯 / ユーザーの美術採用は未実施|

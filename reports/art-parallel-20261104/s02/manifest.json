@@ -936,19 +936,36 @@
       "species_id": "wild_lens_moth_02",
       "name_ja": "レンズィア",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_02/model_sheet_v0.1.png",
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "bytes": 1548035,
+      "sha256": "527e068c3a5e2ea3738f2de0d70bc18c48be6cf515a939ede1b6f931a976f5e0",
+      "visual_checks": [
+        "前後3/4で4翅・各翅1つの楕円透明窓・6脚を計数。短い羽毛触角2本を確認",
+        "072の円窓から楕円窓へ伸び、紺の細縁に沿う水色の導電帯を確認",
+        "白い頬・大黒目・淡藤/紺/水色、胸と頭の器官接続を継承。三面全身・白地・文字なし"
+      ],
+      "unverified": [
+        "横図は奥側翅・脚が重なる。毛に隠れる一部付け根の透視確認は未実施",
+        "前翅を立てる姿勢の前段階との差は控えめで、主な進化差は楕円窓と導電帯",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "527e068c3a5e2ea3738f2de0d70bc18c48be6cf515a939ede1b6f931a976f5e0",
+        "bytes": 1548035,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:16:35.220730+00:00"
+      },
+      "image_commit": "38dd92f322bc75154888e6f1e1dce784b68d82bc",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png"
+      ]
     }
   ],
   "session": {
@@ -958,19 +975,18 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 24,
-    "remaining_count": 4,
-    "next_species_id": "wild_lens_moth_02",
+    "latest_verified_count": 25,
+    "remaining_count": 3,
+    "next_species_id": null,
     "remaining_ids": [
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
-      "wild_hinge_mantis_03",
-      "wild_lens_moth_02"
+      "wild_hinge_mantis_03"
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。",
     "resumed_after_interruption_jst": "2026-11-05",
     "resume_verification_ja": "長時間停止後にGitHub最新headを再照合。既存21種は新規cloneの画像実体でSHA-256・サイズ・寸法・モードを再確認。070の未保存生成結果を保持された画像データから復元して保存。061生成拒否・062/063参照待ちを維持。"
   },
-  "last_image_commit": "84040be0c817c8ca89e883a1324276102b4c3dfb",
+  "last_image_commit": "38dd92f322bc75154888e6f1e1dce784b68d82bc",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
