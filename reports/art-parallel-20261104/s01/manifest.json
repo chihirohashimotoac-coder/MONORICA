@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "session": "s01",
-  "date_jst": "2026-11-04",
+  "date_jst": "2026-11-05",
   "repository": "chihirohashimotoac-coder/MONORICA",
   "branch": "work/art-parallel-s01-20261104",
   "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
@@ -9,10 +9,10 @@
   "design_branch_difference": "identical; ahead_by=0; behind_by=0",
   "counts": {
     "assigned": 30,
-    "saved_verified": 29,
-    "incomplete": 1
+    "saved_verified": 30,
+    "incomplete": 0
   },
-  "status": "in_progress",
+  "status": "completed_pending_user_review",
   "blocker_ja": null,
   "entries": [
     {
@@ -45,7 +45,12 @@
       },
       "save_commit": "d83b393196516c405b61ac102c854a1db833f4e1",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 13,
@@ -76,7 +81,12 @@
       },
       "save_commit": "7c6d4598ec0e6492af4f24f8389810999ae00729",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 15,
@@ -107,7 +117,12 @@
       },
       "save_commit": "a826f1b7aa0acae8bc177e2aaf437262cf4cd8ee",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 17,
@@ -138,7 +153,12 @@
       },
       "save_commit": "0510ee210e6a618308ae2c00b12ebd5e80c2fc29",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 19,
@@ -169,7 +189,12 @@
       },
       "save_commit": "7d56bee6648daecb347184eadb761b4da752014d",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 21,
@@ -200,7 +225,12 @@
       },
       "save_commit": "c86267e43ec90025306ff2a983d2af2f6db1300a",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 22,
@@ -231,7 +261,12 @@
       },
       "save_commit": "330196bd0881d37f73c113bae5bc48472f482143",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 23,
@@ -262,7 +297,12 @@
       },
       "save_commit": "8d57ac10a0eaf83200b25500baca3fd2786819b2",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 24,
@@ -293,7 +333,12 @@
       },
       "save_commit": "92ed8ca0a53c3f379f67cfa7c20a5b1dcf660808",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 25,
@@ -324,7 +369,12 @@
       },
       "save_commit": "a80c54e24a2baf4b85986b4cce722c7ab6c3c3a8",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 26,
@@ -364,7 +414,12 @@
           "save_commit": "ab5ba40921dddcbc4dfd7f0135ffed2c8e4ed791",
           "note": "横図の小鋏が後端に見えるため接続を修正。旧画像保持。"
         }
-      ]
+      ],
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 27,
@@ -395,7 +450,12 @@
       },
       "save_commit": "3e001a948089aa0426bc42f5476847e9ec2323d6",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 28,
@@ -426,7 +486,12 @@
       },
       "save_commit": "48666db3c4efcac4d4e554dd923104e656721c27",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 29,
@@ -457,7 +522,12 @@
       },
       "save_commit": "6773cb0d4424f07e0f8707634dcce77ecc0f49de",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 30,
@@ -488,7 +558,12 @@
       },
       "save_commit": "f934b5059ea2ad1f0e1f1c5c2b1151e839b4b78a",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 31,
@@ -519,7 +594,12 @@
       },
       "save_commit": "9675726671d2640833d39ff458e7270e5f9b54ec",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 32,
@@ -550,7 +630,12 @@
       },
       "save_commit": "8f6a39093ad0a7c867e46451d11b66624e650df9",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 33,
@@ -581,7 +666,12 @@
       },
       "save_commit": "b410f88cc82f64a05e078331c055d08cd37cf885",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 34,
@@ -612,7 +702,12 @@
       },
       "save_commit": "9e9d5bdc7fc137dfa7bac96373270a1a8011485e",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 35,
@@ -643,7 +738,12 @@
       },
       "save_commit": "75dc6bfeab638dc8f937d35841becd9a30962cca",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 36,
@@ -674,7 +774,12 @@
       },
       "save_commit": "2604cc9c2b8211c42bc8f17d88c0dbc9b19f5e68",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 37,
@@ -705,7 +810,12 @@
       },
       "save_commit": "7f13245268ccb27e5f5cde6803363226758f57c5",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 38,
@@ -736,7 +846,12 @@
       },
       "save_commit": "83d0b9e4eabcb4a5692855b0840e2cfd649526a2",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 39,
@@ -767,7 +882,12 @@
       },
       "save_commit": "e51fd4ecbe218be34e11c534a73602603ef333e3",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 40,
@@ -798,7 +918,12 @@
       },
       "save_commit": "acbcbe3e12865a9e76f74ea3512f560a9763ba82",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 41,
@@ -829,7 +954,12 @@
       },
       "save_commit": "02a14b6af6888511d9524e9daa6a0f4ddc2be27c",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 42,
@@ -860,7 +990,12 @@
       },
       "save_commit": "e499dc01c4a85e530e2c1429e0f46508abc854a4",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 43,
@@ -892,7 +1027,12 @@
       },
       "save_commit": "733a8ef7d391d166dfef97dacc52026c129955d1",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 44,
@@ -924,7 +1064,12 @@
       },
       "save_commit": "e507e84edd1913acdad5dc16ff5a2548e9ae8201",
       "status": "保存確認済み",
-      "adoption_status": "pending_user_review"
+      "adoption_status": "pending_user_review",
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     },
     {
       "dex": 45,
@@ -949,20 +1094,37 @@
         "背板の重なりと屈折帯、細かな皮膚斑点の三面での厳密一致は最終確認待ち。遠側足の指は部分的に重なる。"
       ],
       "github_readback": {
-        "status": "not_performed",
-        "sha256": null,
-        "size_bytes": null
+        "status": "verified",
+        "method": "HTTPS full image body pinned to save commit",
+        "sha256": "263ee51d9c0f2934ea8ac8fe31b0ae80a487880ef1a1336b65ba97d8f1a077cc",
+        "size_bytes": 1791254
       },
-      "save_commit": null,
-      "status": "生成済み未保存",
+      "save_commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+      "status": "保存確認済み",
       "adoption_status": "pending_user_review",
       "superseded_candidates": [
         {
           "path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.1.png",
           "reason": "横図の背板が4枚のため不採用。元出力は保全。"
         }
-      ]
+      ],
+      "completion_readback": {
+        "commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+        "status": "verified",
+        "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json"
+      }
     }
   ],
-  "execution_environment_ja": "Linuxクラウド内の独立チェックアウト。モデル・エフォートはUI操作で確認/変更できず、指定済みとは報告しない。内蔵画像生成ツール使用。"
+  "execution_environment_ja": "Linuxクラウド内の独立チェックアウト。モデル・エフォートはUI操作で確認/変更できず、指定済みとは報告しない。内蔵画像生成ツール使用。",
+  "resume_20261105": {
+    "starting_branch_head": "7db6ae88d9faad0fc0fbaf702e73dcd396049a35",
+    "inherited_saved_verified": 27,
+    "new_saved_verified": 3,
+    "ui_model_effort_change": "not_performed; originating browser connection unavailable",
+    "generation_tool": "built-in image_gen",
+    "paid_api_used": false,
+    "git_push_result": "failed: could not read Username for https://github.com",
+    "remote_write_method": "authenticated GitHub connector create_blob/create_tree/create_commit/update_ref, fast-forward only",
+    "visual_provenance": "27種の先行目視記録を保持、今回生成3種は今回目視。先行目視を今回の実績とはしない。"
+  }
 }

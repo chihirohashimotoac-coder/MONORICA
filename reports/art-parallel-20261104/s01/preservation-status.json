@@ -387,5 +387,12 @@
     "github_originals": 9,
     "library_originals": 6,
     "preserved_verified": 15
+  },
+  "resume_20261105_reverification": {
+    "preserved_bodies_fetched": 15,
+    "hash_size_dimension_mode_match": true,
+    "readback_commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+    "report": "reports/art-parallel-20261104/s01/completion-verification-20261105.json",
+    "note_ja": "既存保存・目視の履歴はそのまま保持。今回15画像本体を再取得し、バイト数/SHA-256/寸法/モードを再照合。今回再生成・再採用はしていない。"
   }
 }

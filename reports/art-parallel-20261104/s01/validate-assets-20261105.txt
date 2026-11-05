@@ -1,0 +1,20 @@
+{
+  "recorded_file_check": "pass",
+  "files_checked": 49,
+  "catalog_complete": false,
+  "runtime_images": 19,
+  "audio_tracks": 0,
+  "pending_categories": [
+    "full_species_catalog",
+    "monster_runtime_art",
+    "character_sprites",
+    "map_tiles_and_layouts",
+    "complete_moves_items_abilities",
+    "complete_story_events",
+    "audio",
+    "ui_art"
+  ],
+  "errors": [],
+  "scope": "file existence, hashes and PNG header dimensions only"
+}
+exit_code=0
