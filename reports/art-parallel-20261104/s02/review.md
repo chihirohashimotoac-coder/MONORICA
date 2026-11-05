@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み10種／未完了18種。全種 pending_user_review。
+担当28種／保存確認済み11種／未完了17種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -14,7 +14,7 @@
 |053|wild_sun_sprout_02 ヒノサラナ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_sun_sprout_02/model_sheet_v0.1.png)|保存確認済み：桃色の頬は進化前候補由来の生成意匠。採用時確認 / 横図の奥脚は少しずれて見える。隠れた付け根の透視確認は未実施 / ユーザーの美術採用は未実施|
 |054|wild_sulfur_toad_01 イオプク|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.2.png)|保存確認済み：横面では奥側脚と奥側気孔が重なる。全付け根の透視確認は未実施 / ユーザーの美術採用は未実施|
 |055|wild_sulfur_toad_02 ユガマド|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_02/model_sheet_v0.1.png)|保存確認済み：進化前との体格差は控えめ。窯蓋形の背の強調度はユーザー確認 / 奥側脚と一部気孔は投影で隠れる / ユーザーの美術採用は未実施|
-|056|wild_spark_mica_01 キラシグ|未制作|未着手：|
+|056|wild_spark_mica_01 キラシグ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_spark_mica_01/model_sheet_v0.1.png)|保存確認済み：灰色パッチと目の大きさは生成意匠としてユーザー確認 / ユーザーの美術採用は未実施|
 |057|wild_ash_tumble_01 ハイコロネ|未制作|未着手：|
 |058|wild_cable_marten_01 ヒモテン|未制作|未着手：|
 |059|wild_cable_marten_02 アミラチ|未制作|未着手：|

@@ -372,19 +372,33 @@
       "species_id": "wild_spark_mica_01",
       "name_ja": "キラシグ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_spark_mica_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_spark_mica_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1228982,
+      "sha256": "5cb3f2a8eb2a1643d6663c642243ec6b3d0edf7c65ff85740bd50dfc3923e9f5",
+      "visual_checks": [
+        "3ビューで錆銅の薄板3層・青白い継ぎ目・灰色の差し色を確認",
+        "上板の縁の目2つ・細い口、背面に顔なし、脚・翼・尾なし",
+        "一体のくさび形で板間を継ぎ目が連結し、独立浮遊なし。全身枠内"
+      ],
+      "unverified": [
+        "灰色パッチと目の大きさは生成意匠としてユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "5cb3f2a8eb2a1643d6663c642243ec6b3d0edf7c65ff85740bd50dfc3923e9f5",
+        "bytes": 1228982,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:23:33.782706+00:00"
+      },
+      "image_commit": "ffcdca2fa4066dda13cdbc64e97df1c0b0a07dc8",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
     },
     {
       "dex_number": 57,
@@ -717,11 +731,10 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 10,
-    "remaining_count": 18,
-    "next_species_id": "wild_spark_mica_01",
+    "latest_verified_count": 11,
+    "remaining_count": 17,
+    "next_species_id": "wild_ash_tumble_01",
     "remaining_ids": [
-      "wild_spark_mica_01",
       "wild_ash_tumble_01",
       "wild_cable_marten_01",
       "wild_cable_marten_02",
@@ -742,6 +755,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "5a2cc94a87e91b02bd75cb9857cb2e477371a51b",
+  "last_image_commit": "ffcdca2fa4066dda13cdbc64e97df1c0b0a07dc8",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
