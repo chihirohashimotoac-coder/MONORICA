@@ -895,19 +895,41 @@
       "species_id": "wild_lens_moth_01",
       "name_ja": "マドリネ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_lens_moth_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.2.png",
+      "width": 1920,
+      "height": 819,
+      "mode": "RGB",
+      "bytes": 1505952,
+      "sha256": "65d5ae8be382885b515f7011c0896c565e62af729fad857d353d6131c864f39f",
+      "visual_checks": [
+        "修正版の前後3/4図で脚先6本・細長い翅4枚・各翅1つの透明円窓を計数",
+        "短い羽毛触角2本・白い頬・大きな黒目、淡藤/紺/水色を三面で維持",
+        "胸から脚と翅、頭から触角の構造を確認。全身枠内・白地・文字なし"
+      ],
+      "unverified": [
+        "横図の奥側2翅と一部脚は自然な重なりで隠れる",
+        "胸の毛で一部付け根は隠れるため透視的な接続確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "65d5ae8be382885b515f7011c0896c565e62af729fad857d353d6131c864f39f",
+        "bytes": 1505952,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:14:13.578607+00:00"
+      },
+      "image_commit": "84040be0c817c8ca89e883a1324276102b4c3dfb",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_lens_moth_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "前後図で4翅のうち奥側の後翅が隠れて3枚しか判別できなかったため、翅の開き方と後図の脚の見え方を修正。"
+        }
+      ]
     },
     {
       "dex_number": 73,
@@ -936,20 +958,19 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 23,
-    "remaining_count": 5,
-    "next_species_id": "wild_lens_moth_01",
+    "latest_verified_count": 24,
+    "remaining_count": 4,
+    "next_species_id": "wild_lens_moth_02",
     "remaining_ids": [
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
       "wild_hinge_mantis_03",
-      "wild_lens_moth_01",
       "wild_lens_moth_02"
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。",
     "resumed_after_interruption_jst": "2026-11-05",
     "resume_verification_ja": "長時間停止後にGitHub最新headを再照合。既存21種は新規cloneの画像実体でSHA-256・サイズ・寸法・モードを再確認。070の未保存生成結果を保持された画像データから復元して保存。061生成拒否・062/063参照待ちを維持。"
   },
-  "last_image_commit": "8cb4f6caaf35768a29b85c0fdec8b279304972d6",
+  "last_image_commit": "84040be0c817c8ca89e883a1324276102b4c3dfb",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
