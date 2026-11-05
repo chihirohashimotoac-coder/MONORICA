@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み21種／未完了7種。全種 pending_user_review。
+担当28種／保存確認済み22種／未完了6種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -28,7 +28,7 @@
 |067|wild_seal_gel_02 シメグル|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_seal_gel_02/model_sheet_v0.1.png)|保存確認済み：背面の2小孔の上に淡い小斑が残る。孔に見えるかはユーザー確認 / 側面は上面も見える角度。完全な水平投影ではない / ユーザーの美術採用は未実施|
 |068|wild_draught_chime_01 スズフワ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_draught_chime_01/model_sheet_v0.1.png)|保存確認済み：銀の渦模様・朱の菱形・上端の小蓋は生成意匠として採用時確認 / 横図はわずかに前側も見える角度 / ユーザーの美術採用は未実施|
 |069|wild_draught_chime_02 フウリンカ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_draught_chime_02/model_sheet_v0.1.png)|保存確認済み：風向きへの傾きは控えめで、短冊は左右へ開く。ユーザー確認 / 渦模様・菱形・小蓋は初期候補由来の生成意匠 / ユーザーの美術採用は未実施|
-|070|wild_shade_hedgehog_01 カゲハリ|未制作|未着手：|
+|070|wild_shade_hedgehog_01 カゲハリ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png)|保存確認済み：板束の下縁に小さな重なりがあり、5大束の可読性はユーザー確認 / 背図は顔の輪郭が少し見える後3/4角度。奥脚の根は隠れる / ユーザーの美術採用は未実施|
 |071|wild_shade_hedgehog_02 ヨロトゲ|未制作|未着手：|
 |072|wild_lens_moth_01 マドリネ|未制作|未着手：|
 |073|wild_lens_moth_02 レンズィア|未制作|未着手：|

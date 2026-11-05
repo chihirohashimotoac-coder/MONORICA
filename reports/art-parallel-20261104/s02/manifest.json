@@ -825,19 +825,34 @@
       "species_id": "wild_shade_hedgehog_01",
       "name_ja": "カゲハリ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_shade_hedgehog_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_shade_hedgehog_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1333094,
+      "sha256": "43e7f7229ee19a77d6f5675de954f0acfb7e1fcf3f452dbb7a663bc75d593dde",
+      "visual_checks": [
+        "回収した既存生成結果を開き、墨紫の板針5大束・乳白の四足胴・短尾1本を確認",
+        "細鼻・小黒目・淡い丸目縁と鈍銅の板縁を三面で維持",
+        "前後図で脚先4本、横は奥脚が重なる。白地・文字なし・全身枠内。再生成なし"
+      ],
+      "unverified": [
+        "板束の下縁に小さな重なりがあり、5大束の可読性はユーザー確認",
+        "背図は顔の輪郭が少し見える後3/4角度。奥脚の根は隠れる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showで画像実体を読み戻し元と照合",
+        "sha256": "43e7f7229ee19a77d6f5675de954f0acfb7e1fcf3f452dbb7a663bc75d593dde",
+        "bytes": 1333094,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T04:08:19.060270+00:00"
+      },
+      "image_commit": "9b1da76760bc397014dfa0a9537ff32536a6dc6c",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
     },
     {
       "dex_number": 71,
@@ -904,20 +919,21 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 21,
-    "remaining_count": 7,
-    "next_species_id": "wild_shade_hedgehog_01",
+    "latest_verified_count": 22,
+    "remaining_count": 6,
+    "next_species_id": "wild_shade_hedgehog_02",
     "remaining_ids": [
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
       "wild_hinge_mantis_03",
-      "wild_shade_hedgehog_01",
       "wild_shade_hedgehog_02",
       "wild_lens_moth_01",
       "wild_lens_moth_02"
     ],
-    "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
+    "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。",
+    "resumed_after_interruption_jst": "2026-11-05",
+    "resume_verification_ja": "長時間停止後にGitHub最新headを再照合。既存21種は新規cloneの画像実体でSHA-256・サイズ・寸法・モードを再確認。070の未保存生成結果を保持された画像データから復元して保存。061生成拒否・062/063参照待ちを維持。"
   },
-  "last_image_commit": "1be104bbd9f84a1534178172894361ca1617e605",
+  "last_image_commit": "9b1da76760bc397014dfa0a9537ff32536a6dc6c",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
