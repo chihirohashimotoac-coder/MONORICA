@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み18種／未完了10種。全種 pending_user_review。
+担当28種／保存確認済み19種／未完了9種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -25,7 +25,7 @@
 |064|wild_lattice_lichen_01 アミゴケ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png)|保存確認済み：前後図の奥隅の根脚は板・苔に隠れ、4本すべての付け根は直接目視できない / 生成りの苔斑と根の三叉先端は生成意匠 / ユーザーの美術採用は未実施|
 |065|wild_lattice_lichen_02 ネリカゴ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_02/model_sheet_v0.1.png)|保存確認済み：奥隅の根脚は籠と重なり、4本の全付け根の直接目視は未確認 / 格子穴の細かな配置と生成り斑は美術採用時に確認 / ユーザーの美術採用は未実施|
 |066|wild_seal_gel_01 パチュル|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png)|保存確認済み：背面の2孔の上に淡い小斑が残る。孔に見えるかはユーザー確認（縁付きの明確な孔は2つ） / 胴の盛り上がりの平たさはユーザー確認 / ユーザーの美術採用は未実施|
-|067|wild_seal_gel_02 シメグル|未制作|未着手：|
+|067|wild_seal_gel_02 シメグル|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_seal_gel_02/model_sheet_v0.1.png)|保存確認済み：背面の2小孔の上に淡い小斑が残る。孔に見えるかはユーザー確認 / 側面は上面も見える角度。完全な水平投影ではない / ユーザーの美術採用は未実施|
 |068|wild_draught_chime_01 スズフワ|未制作|未着手：|
 |069|wild_draught_chime_02 フウリンカ|未制作|未着手：|
 |070|wild_shade_hedgehog_01 カゲハリ|未制作|未着手：|

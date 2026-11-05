@@ -719,19 +719,36 @@
       "species_id": "wild_seal_gel_02",
       "name_ja": "シメグル",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_seal_gel_02_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1303146,
+      "sha256": "d9364f9e7fece2fcb2c6c419a75416ac22e5bed3f727c86fc63ccf189b5b660c",
+      "visual_checks": [
+        "閉じた初期形から中央が白く抜けた貫通輪へ変化し、一部を起こす姿勢を確認",
+        "葡萄灰の太いゲル体・浅緑の吸着縁・銀粒・U字口を継承",
+        "輪体上の縁付き小孔2つと中央大孔を区別。脚・触腕・尾なし、白地文字なし"
+      ],
+      "unverified": [
+        "背面の2小孔の上に淡い小斑が残る。孔に見えるかはユーザー確認",
+        "側面は上面も見える角度。完全な水平投影ではない",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "d9364f9e7fece2fcb2c6c419a75416ac22e5bed3f727c86fc63ccf189b5b660c",
+        "bytes": 1303146,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:42:55.733652+00:00"
+      },
+      "image_commit": "b2a9235d6c16ebde20db8bda7e9d7f57447cd046",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_seal_gel_01/model_sheet_v0.2.png"
+      ]
     },
     {
       "dex_number": 68,
@@ -855,14 +872,13 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 18,
-    "remaining_count": 10,
-    "next_species_id": "wild_seal_gel_02",
+    "latest_verified_count": 19,
+    "remaining_count": 9,
+    "next_species_id": "wild_draught_chime_01",
     "remaining_ids": [
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
       "wild_hinge_mantis_03",
-      "wild_seal_gel_02",
       "wild_draught_chime_01",
       "wild_draught_chime_02",
       "wild_shade_hedgehog_01",
@@ -872,6 +888,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "b332edfaf0397773f0a3f0258cc23e3042caaabb",
+  "last_image_commit": "b2a9235d6c16ebde20db8bda7e9d7f57447cd046",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
