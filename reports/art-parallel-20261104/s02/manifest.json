@@ -439,19 +439,34 @@
       "species_id": "wild_cable_marten_01",
       "name_ja": "ヒモテン",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_cable_marten_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1170744,
+      "sha256": "f8bdc459e1035af318cca25b124a40c4b710077af2d244ab9d5402de3b444048",
+      "visual_checks": [
+        "長胴・四足・丸耳・細鼻・琥珀の目を確認。錆赤/墨/青緑の配色を維持",
+        "腰から1本の細い編み尾が直線状に伸びる。尾先まで3ビューの枠内",
+        "前後図で四足を計数。白地・文字なし"
+      ],
+      "unverified": [
+        "側面の尾先余白は狭いが欠けなし",
+        "体側の青緑模様は生成意匠。奥脚の付け根は胴と重なる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "f8bdc459e1035af318cca25b124a40c4b710077af2d244ab9d5402de3b444048",
+        "bytes": 1170744,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:27:55.524336+00:00"
+      },
+      "image_commit": "7a16c0f1bd6334dfaf61691e0bc48fce24b718bc",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
     },
     {
       "dex_number": 59,
@@ -746,11 +761,10 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 12,
-    "remaining_count": 16,
-    "next_species_id": "wild_cable_marten_01",
+    "latest_verified_count": 13,
+    "remaining_count": 15,
+    "next_species_id": "wild_cable_marten_02",
     "remaining_ids": [
-      "wild_cable_marten_01",
       "wild_cable_marten_02",
       "wild_cable_marten_03",
       "wild_hinge_mantis_01",
@@ -769,6 +783,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "e9802fd673c0155e962b29f835fc21ee3b820484",
+  "last_image_commit": "7a16c0f1bd6334dfaf61691e0bc48fce24b718bc",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
