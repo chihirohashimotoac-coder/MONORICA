@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み13種／未完了15種。全種 pending_user_review。
+担当28種／保存確認済み14種／未完了14種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -17,7 +17,7 @@
 |056|wild_spark_mica_01 キラシグ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_spark_mica_01/model_sheet_v0.1.png)|保存確認済み：灰色パッチと目の大きさは生成意匠としてユーザー確認 / ユーザーの美術採用は未実施|
 |057|wild_ash_tumble_01 ハイコロネ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_ash_tumble_01/model_sheet_v0.1.png)|保存確認済み：横図は奥の房が重なり、4房すべての境界の直接確認はできない / 灰色がやや暖色寄り。配色の採否はユーザー確認 / ユーザーの美術採用は未実施|
 |058|wild_cable_marten_01 ヒモテン|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_cable_marten_01/model_sheet_v0.1.png)|保存確認済み：側面の尾先余白は狭いが欠けなし / 体側の青緑模様は生成意匠。奥脚の付け根は胴と重なる / ユーザーの美術採用は未実施|
-|059|wild_cable_marten_02 アミラチ|未制作|未着手：|
+|059|wild_cable_marten_02 アミラチ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png)|保存確認済み：体格・姿勢の変化は少なく、進化差は尾の太さを中心とする / 奥脚の一部の付け根は胴に隠れる / ユーザーの美術採用は未実施|
 |060|wild_cable_marten_03 ケイラトス|未制作|未着手：|
 |061|wild_hinge_mantis_01 ツギハサ|未制作|未着手：|
 |062|wild_hinge_mantis_02 カナトギ|未制作|未着手：|
