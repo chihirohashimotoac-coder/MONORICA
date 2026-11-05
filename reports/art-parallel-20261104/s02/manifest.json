@@ -405,19 +405,34 @@
       "species_id": "wild_ash_tumble_01",
       "name_ja": "ハイコロネ",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_ash_tumble_01_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_ash_tumble_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1386341,
+      "sha256": "1d252a3f9124606f0009711d43dc60626cc729e02924cc122139b938ff57d95f",
+      "visual_checks": [
+        "灰白の球状藻体に大きな4毛房、割れ目の橙、焦茶の輪郭を確認",
+        "前面の丸目2つ・下の小口、背面に顔なし。脚・手・尾なし",
+        "三面の全身と房の連なりを確認。白地・文字なし"
+      ],
+      "unverified": [
+        "横図は奥の房が重なり、4房すべての境界の直接確認はできない",
+        "灰色がやや暖色寄り。配色の採否はユーザー確認",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "1d252a3f9124606f0009711d43dc60626cc729e02924cc122139b938ff57d95f",
+        "bytes": 1386341,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:25:53.109426+00:00"
+      },
+      "image_commit": "e9802fd673c0155e962b29f835fc21ee3b820484",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": []
     },
     {
       "dex_number": 58,
@@ -731,11 +746,10 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 11,
-    "remaining_count": 17,
-    "next_species_id": "wild_ash_tumble_01",
+    "latest_verified_count": 12,
+    "remaining_count": 16,
+    "next_species_id": "wild_cable_marten_01",
     "remaining_ids": [
-      "wild_ash_tumble_01",
       "wild_cable_marten_01",
       "wild_cable_marten_02",
       "wild_cable_marten_03",
@@ -755,6 +769,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "ffcdca2fa4066dda13cdbc64e97df1c0b0a07dc8",
+  "last_image_commit": "e9802fd673c0155e962b29f835fc21ee3b820484",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
