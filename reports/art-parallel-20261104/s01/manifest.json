@@ -867,22 +867,22 @@
       "name": "スナペト",
       "species_id": "wild_glass_gecko_01",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_glass_gecko_01.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_01/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_01/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1299503,
+      "sha256": "4024c59122322bdc347b3c1192a022730147ca34b62a035b9ec32cbb33c4f451",
+      "visual_checks": [
+        "生成画像本体を開いて前3/4・後3/4・横の3ビューと全身枠内を確認。",
+        "脚4・腰尾1の構造、短尾、中央背板1枚と根元、見える足の吸着指3つ、黒目1ハイライト・細い笑口を目視。遠側脚は胴と近側脚へ重なる。",
+        "砂金/薄青/乳白と低い平胴。既存リスコロ原画は画風参照のみ、新系列の初期形として制作。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "遠側の足は重なりで全指を直接数えられない。細かな斑点配置の立体一致と美術採用はユーザー確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -890,7 +890,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
