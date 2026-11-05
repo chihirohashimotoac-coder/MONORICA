@@ -509,19 +509,36 @@
       "species_id": "wild_cable_marten_03",
       "name_ja": "ケイラトス",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_cable_marten_03_v0.1.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_03/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1193685,
+      "sha256": "42fef6d876f10144144cc280f38ed9468bdb6c9ea0f7c0dca4183fd824fc1ef1",
+      "visual_checks": [
+        "低い長胴・四足・丸耳・琥珀目と3配色を継承",
+        "一本尾の編み目が大きな3節へ整理され、上下へ湾曲した形を確認",
+        "三面の尾と全身が枠内、文字なし・白地を確認"
+      ],
+      "unverified": [
+        "尾のS字は浅く、強調度と3大節の読み取りやすさはユーザー確認",
+        "横図の奥脚の付け根は胴に重なる",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "42fef6d876f10144144cc280f38ed9468bdb6c9ea0f7c0dca4183fd824fc1ef1",
+        "bytes": 1193685,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:32:12.930704+00:00"
+      },
+      "image_commit": "0b40e04d725501f0b6c9e5e07beb28b615d4d66e",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [
+        "assets/source/monsters/parallel_20261104/s02/wild_cable_marten_02/model_sheet_v0.1.png"
+      ]
     },
     {
       "dex_number": 61,
@@ -778,11 +795,10 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 14,
-    "remaining_count": 14,
-    "next_species_id": "wild_cable_marten_03",
+    "latest_verified_count": 15,
+    "remaining_count": 13,
+    "next_species_id": "wild_hinge_mantis_01",
     "remaining_ids": [
-      "wild_cable_marten_03",
       "wild_hinge_mantis_01",
       "wild_hinge_mantis_02",
       "wild_hinge_mantis_03",
@@ -799,6 +815,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "a39b92b37b1420fb5c02f2d7b30e91a4512526cc",
+  "last_image_commit": "0b40e04d725501f0b6c9e5e07beb28b615d4d66e",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
