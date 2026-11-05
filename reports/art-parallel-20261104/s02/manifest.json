@@ -296,19 +296,40 @@
       "species_id": "wild_sulfur_toad_01",
       "name_ja": "イオプク",
       "reference_sha": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
-      "image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "bytes": null,
-      "sha256": null,
-      "visual_checks": [],
-      "unverified": [],
-      "github_readback": null,
-      "image_commit": null,
-      "status": "未着手",
-      "art_adoption": "pending_user_review"
+      "prompt_file": "reports/art-parallel-20261104/s02/prompts/wild_sulfur_toad_01_v0.2.txt",
+      "image_path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.2.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 1286248,
+      "sha256": "8a161932dee0157c985592e0efe0d8f3c21eb48850d777dcca105eb9849810a2",
+      "visual_checks": [
+        "四足の蟾蜍形・丸い橙の頬袋・横長瞳を三面で確認",
+        "背面で浅い気孔6つを計数。鈍黄の背と灰紫の下部、尾なしを確認",
+        "全身・白地・文字なし、前段階の形として保持"
+      ],
+      "unverified": [
+        "横面では奥側脚と奥側気孔が重なる。全付け根の透視確認は未実施",
+        "ユーザーの美術採用は未実施"
+      ],
+      "github_readback": {
+        "method": "git fetch後、固定画像コミットのgit showから画像実体取得し元画像と照合",
+        "sha256": "8a161932dee0157c985592e0efe0d8f3c21eb48850d777dcca105eb9849810a2",
+        "bytes": 1286248,
+        "matched": true,
+        "checked_at_utc": "2026-11-05T01:19:06.207759+00:00"
+      },
+      "image_commit": "27038e8c3334c1fb33ed017ee846a3fda1a62065",
+      "status": "保存確認済み",
+      "art_adoption": "pending_user_review",
+      "reference_images": [],
+      "earlier_candidates": [
+        {
+          "path": "assets/source/monsters/parallel_20261104/s02/wild_sulfur_toad_01/model_sheet_v0.1.png",
+          "status": "要修正",
+          "reason": "背面の気孔が設計6つに対して7つだったため、v0.2で6つへ修正。"
+        }
+      ]
     },
     {
       "dex_number": 55,
@@ -679,11 +700,10 @@
     "resumed_at_jst": "2026-11-05",
     "model_ui_setting": "この再開環境からモデル・エフォートのUI選択は未実施。利用済みと主張しない。",
     "saving": "認証済みGitHub連携blob/tree/commit/ref。Git通常pushは今回dry-runで認証不足を確認。",
-    "latest_verified_count": 8,
-    "remaining_count": 20,
-    "next_species_id": "wild_sulfur_toad_01",
+    "latest_verified_count": 9,
+    "remaining_count": 19,
+    "next_species_id": "wild_sulfur_toad_02",
     "remaining_ids": [
-      "wild_sulfur_toad_01",
       "wild_sulfur_toad_02",
       "wild_spark_mica_01",
       "wild_ash_tumble_01",
@@ -706,6 +726,6 @@
     ],
     "verification_scope_ja": "今回の新規cloneで既存046〜051の候補6画像のSHA-256・バイト数・寸法・モードを照合。一致。新規候補は各画像コミットのgit showで画像実体を再取得し照合。旧候補は保持。"
   },
-  "last_image_commit": "54d7eb6970dd99ae76cfed320673236776405ac6",
+  "last_image_commit": "27038e8c3334c1fb33ed017ee846a3fda1a62065",
   "draft_pr": "https://github.com/chihirohashimotoac-coder/MONORICA/pull/7"
 }
