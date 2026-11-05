@@ -899,22 +899,22 @@
       "name": "ハクスリカ",
       "species_id": "wild_glass_gecko_02",
       "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
-      "prompt_file": null,
+      "prompt_file": "reports/art-parallel-20261104/s01/prompts/wild_glass_gecko_02.txt",
       "planned_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_02/model_sheet_v0.1.png",
-      "actual_image_path": null,
-      "width": null,
-      "height": null,
-      "mode": null,
-      "has_transparency": null,
-      "size_bytes": null,
-      "sha256": null,
-      "visual_checks": [],
+      "actual_image_path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_02/model_sheet_v0.1.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "has_transparency": false,
+      "size_bytes": 1242502,
+      "sha256": "0e9eeefa97588ad1c7c85a8a7f5225396c75f4b983982e5b920c5f4e22b1cd94",
+      "visual_checks": [
+        "保存本体を開き前3/4・後3/4・横、全身と長尾が枠内にあることを目視。",
+        "背板3枚が頭側から腰側へ中央一列に接続。四脚・尾1、見える足の吸着指3、独立翼/角なしを確認。",
+        "初期スナペト原画を参照し、胴伸長・尾伸長・背板1→3の成長差と配色/顔を継承。"
+      ],
       "unverified": [
-        "参照原画本体の取得と目視",
-        "画像生成",
-        "三面の整合・器官数・付け根・全身欠け",
-        "実ファイル計測",
-        "GitHubへの画像保存と本体読み戻し"
+        "遠側の足の指は重なりで全数を直接数えられない。背の小斑点位置・尾上面の斑点の厳密な三面対応は最終確認待ち。"
       ],
       "github_readback": {
         "status": "not_performed",
@@ -922,7 +922,7 @@
         "size_bytes": null
       },
       "save_commit": null,
-      "status": "未着手",
+      "status": "生成済み未保存",
       "adoption_status": "pending_user_review"
     },
     {
