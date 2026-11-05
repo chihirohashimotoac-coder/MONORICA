@@ -1,6 +1,6 @@
 # MONORICA s02 レビュー一覧
 
-担当28種／保存確認済み15種／未完了13種。全種 pending_user_review。
+担当28種／保存確認済み16種／未完了12種。全種 pending_user_review。
 
 |番号|種ID・名前|設定画|状態・懸念|
 |---|---|---|---|
@@ -22,7 +22,7 @@
 |061|wild_hinge_mantis_01 ツギハサ|未制作|生成拒否：内蔵画像生成がHTTP400 moderation_blocked（output、other）で拒否。画像なし。拒否の回避・再試行は未実施|
 |062|wild_hinge_mantis_02 カナトギ|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
 |063|wild_hinge_mantis_03 ヒンジルド|未制作|参照待ち：進化前ツギハサの画像生成が拒否されたため、系列同一性の参照がない。無理に制作せず保留|
-|064|wild_lattice_lichen_01 アミゴケ|未制作|未着手：|
+|064|wild_lattice_lichen_01 アミゴケ|[画像](https://github.com/chihirohashimotoac-coder/MONORICA/blob/work/art-parallel-s02-20261104/assets/source/monsters/parallel_20261104/s02/wild_lattice_lichen_01/model_sheet_v0.1.png)|保存確認済み：前後図の奥隅の根脚は板・苔に隠れ、4本すべての付け根は直接目視できない / 生成りの苔斑と根の三叉先端は生成意匠 / ユーザーの美術採用は未実施|
 |065|wild_lattice_lichen_02 ネリカゴ|未制作|未着手：|
 |066|wild_seal_gel_01 パチュル|未制作|未着手：|
 |067|wild_seal_gel_02 シメグル|未制作|未着手：|
