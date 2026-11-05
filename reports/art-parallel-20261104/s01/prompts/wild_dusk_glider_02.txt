@@ -1,0 +1,53 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_dusk_glider_02 ヨイトバリ
+{
+  "motifs_ja": "飛膜を持つ夜行モモンガ",
+  "full_body_silhouette_ja": "四肢間の膜が外へ深く張る凧形、尾で舵を取る",
+  "palette_main": [
+    "藍",
+    "紫"
+  ],
+  "palette_accents": [
+    "象牙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "大きな茶の目、明るい目周りの模様。闇属性でも柔らかい顔。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "前脚2・後脚2。左右の飛膜は手首から足首へ各1面。独立翼0、追加脚0。尾1本は腰中央で膜と独立。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：大きな茶の目、明るい目周りの模様。闇属性でも柔らかい顔。 識別点：明るい目の縁と深い紫の菱形膜",
+    "back_ja": "背面でも保つ輪郭：四肢間の膜が外へ深く張る凧形、尾で舵を取る。前脚2・後脚2。左右の飛膜は手首から足首へ各1面。独立翼0、追加脚0。尾1本は腰中央で膜と独立。",
+    "side_ja": "横面の接続：前脚2・後脚2。左右の飛膜は手首から足首へ各1面。独立翼0、追加脚0。尾1本は腰中央で膜と独立。。膜の幅と尾の舵面が育つ。四肢4・独立翼0のまま。"
+  },
+  "evolution_changes_ja": "膜の幅と尾の舵面が育つ。四肢4・独立翼0のまま。",
+  "family_retained_features_ja": "飛膜を持つ夜行モモンガ。大きな茶の目、明るい目周りの模様。闇属性でも柔らかい顔。",
+  "sprite_96px_ja": "四肢間の膜が外へ深く張る凧形、尾で舵を取る。明るい目の縁と深い紫の菱形膜を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "明るい目の縁と深い紫の菱形膜を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "翼を持つ鳥・蛾と違い、四肢間の飛膜。",
+  "production_difficulty_ja": "高：v0.2を基準に4つの膜端を四肢へ対応。イベント個体の捕獲だけを唯一経路にしない。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  },
+  "explicit_anatomy_constraint": {
+    "status": "current_user_requirement",
+    "legs": 4,
+    "independent_wings": 0,
+    "membrane_pairs": 1,
+    "connection_ja": "手首から足首、四肢4本のみ。"
+  }
+}
+Reference image is current FOUR-LIMBED juvenile ヨルミル v0.2, not old rejected six-limbed v0.1. Create mature evolution: wider and deeper purple diamond-shaped patagium, larger steering tail. EXACTLY FOUR TOTAL LIMBS (two forelegs and two hindlegs), INDEPENDENT WINGS ZERO. Each side membrane stretches continuously from existing wrist to existing ankle; the four membrane corners are the four paws. NO extra wing bones or separate arms/legs under membrane. Tail is one independent furry rudder rooted at rump. Friendly large brown eyes, ivory eye rims and belly, indigo dorsal fur. Views clearly expose four membrane attachment corners.

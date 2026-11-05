@@ -1,0 +1,47 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_stream_otter_02 カワミオ
+{
+  "motifs_ja": "水紋の平尾を持つカワウソ",
+  "full_body_silhouette_ja": "滑るような細長い体、横へ広がる舵尾",
+  "palette_main": [
+    "灰青",
+    "象牙"
+  ],
+  "palette_accents": [
+    "濃青",
+    "水色"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "丸い茶の目、丸耳2つ、左右のひげ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "短い前脚2本と後脚2本。腰から平たい尾1本。水紋は尾上面のみ。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸い茶の目、丸耳2つ、左右のひげ。 識別点：長胴と水紋入りの幅広舵尾",
+    "back_ja": "背面でも保つ輪郭：滑るような細長い体、横へ広がる舵尾。短い前脚2本と後脚2本。腰から平たい尾1本。水紋は尾上面のみ。",
+    "side_ja": "横面の接続：短い前脚2本と後脚2本。腰から平たい尾1本。水紋は尾上面のみ。。尾が横広に育ち、足は短いまま。肩を熊の盾形へ変えない。"
+  },
+  "evolution_changes_ja": "尾が横広に育ち、足は短いまま。肩を熊の盾形へ変えない。",
+  "family_retained_features_ja": "水紋の平尾を持つカワウソ。丸い茶の目、丸耳2つ、左右のひげ。",
+  "sprite_96px_ja": "滑るような細長い体、横へ広がる舵尾。長胴と水紋入りの幅広舵尾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "長胴と水紋入りの幅広舵尾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "水熊は直立と盾、本種は横長の体と平尾。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference is juvenile ミズッタ. Mature quadruped river otter: visibly longer sleek body, four short legs, one much wider flat rudder tail. Water ripple motif ONLY on TOP surface of tail, no shoulder marks or bear shields. Show top of horizontal tail in 3/4 views and thin edge from side. Ivory muzzle, throat and belly; gray-blue back, round ears, brown eyes and whiskers.

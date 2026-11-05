@@ -1,0 +1,99 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_kiln_pup_02 カマテラ
+{
+  "motifs_ja": "炉床を温める焼土の子犬",
+  "full_body_silhouette_ja": "胸が厚い四足、背が浅い窯の弧になる",
+  "palette_main": [
+    "赤土",
+    "墨"
+  ],
+  "palette_accents": [
+    "乳白",
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。 識別点：窯形の背と垂れ耳",
+    "back_ja": "背面でも保つ輪郭：胸が厚い四足、背が浅い窯の弧になる。胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+    "side_ja": "横面の接続：胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。。背の塊が浅い空洞の弧へ。穴は器官の通気口。"
+  },
+  "evolution_changes_ja": "背の塊が浅い空洞の弧へ。穴は器官の通気口。",
+  "family_retained_features_ja": "炉床を温める焼土の子犬。丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "sprite_96px_ja": "胸が厚い四足、背が浅い窯の弧になる。窯形の背と垂れ耳を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "窯形の背と垂れ耳を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "ホノルの翼と角ではなく四足と窯床形の背。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
+Intermediate evolution must visibly change anatomy: sturdier thicker chest and larger quadrupedal body; juvenile's solid round earthen lump becomes a SHALLOW HOLLOW KILN ARCH integrated directly into dorsal skin. One clear organic ventilation opening under that shallow red-earth arch, not a detached oven, house or mechanical appliance. Keep two soft floppy ears, four charcoal paws, one central rump tail, cream/orange accents and friendly round face. No extra chimney, horn, wings or limbs.
+
+GENERATION ERROR: first call returned moderation_blocked at output; no image delivered. Request a0966f0b-c18a-4556-a608-f4cb7ff4da57.
+
+RETRY PROMPT (clarify healthy cartoon and ceramic-shell vent):
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_kiln_pup_02 カマテラ
+{
+  "motifs_ja": "炉床を温める焼土の子犬",
+  "full_body_silhouette_ja": "胸が厚い四足、背が浅い窯の弧になる",
+  "palette_main": [
+    "赤土",
+    "墨"
+  ],
+  "palette_accents": [
+    "乳白",
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 4,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。 識別点：窯形の背と垂れ耳",
+    "back_ja": "背面でも保つ輪郭：胸が厚い四足、背が浅い窯の弧になる。胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。",
+    "side_ja": "横面の接続：胸に前脚2・腰に後脚2。背の耐火殻は皮膚へ密着し、尾1本は腰中央。。背の塊が浅い空洞の弧へ。穴は器官の通気口。"
+  },
+  "evolution_changes_ja": "背の塊が浅い空洞の弧へ。穴は器官の通気口。",
+  "family_retained_features_ja": "炉床を温める焼土の子犬。丸い鼻と垂れ耳2つ。眉を上げ、職人の作業を待つ。",
+  "sprite_96px_ja": "胸が厚い四足、背が浅い窯の弧になる。窯形の背と垂れ耳を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "窯形の背と垂れ耳を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "ホノルの翼と角ではなく四足と窯床形の背。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+可愛い健康な架空の子犬モンスター「カマテラ」。ホコロンから成長した中間形を描く。厚い胸、赤土色の体、墨色の四足、柔らかい垂れ耳2つ、腰中央の尾1本、乳白の口元と胸、橙の差し色。背中を覆う滑らかな耐火性の陶土殻は体にぴったり沿う。背殻は小さな丸塊から浅い窯状のアーチに成長し、殻のアーチ下の通気口から淡い橙色が見える。通気口は硬い陶土殻の構造で、傷や損傷ではない。犬本体は健康で愛らしく、身体の切断や内部断面は描かない。独立した窯や機械を載せない。四脚・尾1・翼0・角0。参照は初期形なので、厚い胸と浅い背殻アーチを持つ成長差を明瞭にする。白地に同一個体の前3/4・後3/4・横を並べ、全身と全器官を収める。文字なし。

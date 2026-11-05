@@ -1,0 +1,48 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_lock_crab_03 ミトガニス
+{
+  "motifs_ja": "水門の留め金に似た蟹殻",
+  "full_body_silhouette_ja": "厚い水門形の殻、二つの板はさみを前で組む",
+  "palette_main": [
+    "錫灰",
+    "群青"
+  ],
+  "palette_accents": [
+    "橙"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。",
+  "anatomy_counts": {
+    "independent_arms": 2,
+    "legs": 6,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。 識別点：板はさみと横長の殻",
+    "back_ja": "背面でも保つ輪郭：厚い水門形の殻、二つの板はさみを前で組む。板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。",
+    "side_ja": "横面の接続：板はさみ2本を胸前へ接続し、個体の左を右より広く保つ。歩脚6本は左右各3本。前背で左右が入れ替わる見え方を確認する。。両はさみが板形になるが左を広く残す。"
+  },
+  "evolution_changes_ja": "両はさみが板形になるが左を広く残す。",
+  "family_retained_features_ja": "水門の留め金に似た蟹殻。殻上の丸い眼2つ。はさみを閉じると穏やかな口元が見える。",
+  "sprite_96px_ja": "厚い水門形の殻、二つの板はさみを前で組む。板はさみと横長の殻を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "横長の水門殻と前で組む板はさみを残す。広い左はさみの左右を保ち、板の細い溝は省く。",
+  "differentiation_ja": "遺構の巻く石ダンゴムシと違い、横歩きと大はさみ。",
+  "production_difficulty_ja": "高：脚は6本、はさみ2本。蟹の慣習で歩脚を8本へ増やさない。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference is middle セキバサミ. Create FINAL evolution ミトガニス: broader low gate-like torso, wide thick rectangular carapace and broad individual LEFT stop-water plate pincer; right claw ALSO becomes a plate pincer, but narrower than the left. LEFT claw viewer RIGHT in front, viewer LEFT in rear. THREE walking legs per side, SIX total, and TWO pincer forearms =8 appendages total. Rear view must clearly expose all three near and all three far silver-jointed legs; no additional small isolated blue feet under belly. Side view retain 3 near walking legs and large left plate at front, narrower right PLATE claw peeks on far side. Adult change is wider low body and greater plate scale, not extra limbs.
+CORRECTION PASS:
+Precise anatomy correction: BOTH claw forearms attach to the FRONT CHEST, never the rear rump. Keep the giant anatomical LEFT plate claw and six walking legs unchanged. In the RIGHTMOST SIDE VIEW (head facing left), REMOVE the tiny pincer sticking out from the far RIGHT REAR of the shell. Instead show the narrower anatomical RIGHT claw as a small FLAT RECTANGULAR PLATE peeking from behind/above the giant LEFT claw at the FRONT LEFT chest, beneath the eyes/bill area; same position as paired front claws, far arm naturally occluded. In MIDDLE REAR VIEW replace the small thin pincer visible on far body side with the same narrow rectangular silver-rimmed blue/orange PLATE. Front view already has the correct small plate on viewer LEFT, preserve it. All views same two plates: left wide, right narrower, 6 walking legs, tin-gray broad gate shell. No new limbs or text.

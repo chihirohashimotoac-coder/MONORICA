@@ -1,0 +1,46 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_lantern_jelly_01 ホヤリネ
+{
+  "motifs_ja": "水面の灯籠に似た淡水クラゲ",
+  "full_body_silhouette_ja": "丸い小傘から短い触腕4本が垂れる",
+  "palette_main": [
+    "乳白",
+    "藤"
+  ],
+  "palette_accents": [
+    "琥珀"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "傘の内側に丸い眼点2つ。無表情でも目線を読める。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 0,
+    "independent_wings": 0,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 4
+  },
+  "anatomy_connections_ja": "傘1つの下面から触腕4本。灯は傘の内部で、独立した球体を浮かべない。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：傘の内側に丸い眼点2つ。無表情でも目線を読める。 識別点：傘内の琥珀灯と4触腕",
+    "back_ja": "背面でも保つ輪郭：丸い小傘から短い触腕4本が垂れる。傘1つの下面から触腕4本。灯は傘の内部で、独立した球体を浮かべない。",
+    "side_ja": "横面の接続：傘1つの下面から触腕4本。灯は傘の内部で、独立した球体を浮かべない。。小さい一灯。"
+  },
+  "evolution_changes_ja": "小さい一灯。",
+  "family_retained_features_ja": "水面の灯籠に似た淡水クラゲ。傘の内側に丸い眼点2つ。無表情でも目線を読める。",
+  "sprite_96px_ja": "丸い小傘から短い触腕4本が垂れる。傘内の琥珀灯と4触腕を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "傘内の琥珀灯と4触腕を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "後日の潮ベールは水平の襟。本種は縦長の灯籠傘。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+

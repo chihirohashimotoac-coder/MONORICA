@@ -1,0 +1,48 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_silt_skate_02 スナミオ
+{
+  "motifs_ja": "泥を滑る陸エイ",
+  "full_body_silhouette_ja": "横長の菱形、後ろへ伸びる板尾",
+  "palette_main": [
+    "泥茶",
+    "乳白"
+  ],
+  "palette_accents": [
+    "青"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "背の小さい点目2つ、口は腹側。笑顔を上面へ貼らない。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 0,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 2,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "左右の胸鰭2枚を胴へ直結。後方の尾1本、脚・翼なし。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：背の小さい点目2つ、口は腹側。笑顔を上面へ貼らない。 識別点：菱形の接地面と板尾",
+    "back_ja": "背面でも保つ輪郭：横長の菱形、後ろへ伸びる板尾。左右の胸鰭2枚を胴へ直結。後方の尾1本、脚・翼なし。",
+    "side_ja": "横面の接続：左右の胸鰭2枚を胴へ直結。後方の尾1本、脚・翼なし。。胸鰭が角張り、尾が櫂形へ。"
+  },
+  "evolution_changes_ja": "胸鰭が角張り、尾が櫂形へ。",
+  "family_retained_features_ja": "泥を滑る陸エイ。背の小さい点目2つ、口は腹側。笑顔を上面へ貼らない。",
+  "sprite_96px_ja": "横長の菱形、後ろへ伸びる板尾。菱形の接地面と板尾を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "菱形の接地面と板尾を最優先。細部を省略しても付け根と本数の設計は変えない。",
+  "differentiation_ja": "高地の空を泳ぐ光線エイと違い、泥に接地する厚い胴。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
+CORRECTION PASS:
+Strengthen the actual evolution from round juvenile to adult スナミオ. Change its whole plan-view silhouette into a BROAD TRANSVERSE DIAMOND: left/right chest fins form large pointed lateral corners continuous with the trunk, not small rounded side lobes. The adult is wider side-to-side than front-to-back, lower flat mud-contact belly. Extend ONE rear tail into a distinct broad FLAT OAR-SHAPED PLATE with a BLUE paddle end, visibly longer and wider than the juvenile short tail. Preserve mud-brown dorsal/cream ventral palette and the two tiny dorsal dot eyes. Mouth remains underside and not visible on upper face; no smiling mouth on top. Exactly TWO continuous lateral chest fins and ONE tail, ZERO limbs or wings. Show coherent front3/4, rear3/4 and low side in same white three-view sheet with all extremities in frame. No text.

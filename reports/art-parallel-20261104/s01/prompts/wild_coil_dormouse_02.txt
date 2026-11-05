@@ -1,0 +1,52 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_coil_dormouse_02 マキデン
+{
+  "motifs_ja": "コイル尾のヤマネ",
+  "full_body_silhouette_ja": "尾の渦を横に立てて、体は低く支える",
+  "palette_main": [
+    "薄紫",
+    "プラム茶"
+  ],
+  "palette_accents": [
+    "象牙",
+    "銅",
+    "水色"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "茶の丸い目、象牙の頬、銅色の耳内側。慎重に周りを見る。",
+  "anatomy_counts": {
+    "independent_arms": 2,
+    "legs": 2,
+    "independent_wings": 0,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：茶の丸い目、象牙の頬、銅色の耳内側。慎重に周りを見る。 識別点：連続する渦尾と増えた発光帯",
+    "back_ja": "背面でも保つ輪郭：尾の渦を横に立てて、体は低く支える。腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。",
+    "side_ja": "横面の接続：腰の尾1本が渦を描き、銅4帯・水色4帯が交互に連続する制作案。渦の中心は空洞。帯を胴へ移さない。。尾の径と巻きを増す。帯は銅4・水色4へ増す構造案で、初期の帯数を変更しない。"
+  },
+  "evolution_changes_ja": "尾の径と巻きを増す。帯は銅4・水色4へ増す構造案で、初期の帯数を変更しない。",
+  "family_retained_features_ja": "コイル尾のヤマネ。茶の丸い目、象牙の頬、銅色の耳内側。慎重に周りを見る。",
+  "sprite_96px_ja": "尾の渦を横に立てて、体は低く支える。連続する渦尾と増えた発光帯を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "渦尾の白い中心と低い胴を優先。帯は太い銅・水色面としてまとめ、4帯ずつの確認は96pxと設定画で行う。",
+  "differentiation_ja": "リスの詰まった尾と違い、空洞の渦と発光帯がある。黄色一色にしない。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+Reference is juvenile ココイル. Make mature マキデン: larger hollow spiral tail, low supporting body, lilac fur with plum-brown tail, ivory cheeks, copper inner ears. ONE tail must have EXACTLY FOUR COPPER BANDS plus EXACTLY FOUR CYAN BANDS (8 bands total), in alternating sequence along the spiral; do not copy juvenile's 3+3. Separate each band clearly with plum tail surface so count is unambiguous. Bands wrap tail only, never trunk. Keep exactly same sequence and positions in front/back/profile. Two short arms, two hind legs. Center of spiral is white open air.
+CORRECTION PASS:
+Edit only the spiral tail markings in this マキデン three-view sheet. Current image has only THREE copper bands and THREE cyan bands; required anatomy is FOUR COPPER plus FOUR CYAN per tail. Preserve current three outer copper and three outer cyan bands. Add ONE clearly visible copper band and ONE clearly visible cyan band onto the INNER CURL of the same tail (the bare plum-colored inward-curling segment visible inside the large white center), in all three views. Total 4 copper + 4 cyan, alternating along the single tail. Keep every band a separate stripe with dark plum gaps. Do not add bands on ears/body, do not add rings or another tail. Keep same individual, three views, all other anatomy, colors, layout, white background and no text. This is a precise count correction; make newly added two inner-curl bands unmistakable.
+CORRECTION PASS 2 (remove excess bands):
+Correct the tail stripes ONLY, keeping all three body drawings and white sheet. ERASE ALL existing copper/cyan tail stripes first. Then each single tail receives EXACTLY EIGHT narrow separated colored bands in this clockwise order around its OUTER LOOP: at 12 o'clock COPPER, at 1:30 CYAN, at 3 COPPER, at 4:30 CYAN, at 6 COPPER, at 7:30 CYAN, at 9 COPPER, at 10:30 CYAN. FOUR copper and FOUR cyan. Keep dark plum gaps between every stripe. The entire INNER CURL/tail tip must remain solid dark plum with ZERO stripes. No ninth stripe. No inner striped loop. Draw the same stripe mapping on all three tails. Tail loop may be slightly shifted sideways from body to show all 8 bands. Keep one continuous hollow spiral tail rooted at center rump, two short arms, two legs, lilac/plum body, ivory cheeks, copper ear interiors, same expression, three full body views. Do not add text or labels.

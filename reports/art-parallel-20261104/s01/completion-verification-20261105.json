@@ -1,0 +1,479 @@
+{
+  "date_jst": "2026-11-05",
+  "reference_commit": "b6c1d875e3f624bb77d1e632bfed561380d7ed19",
+  "readback_commit": "680b22067e45a1d3bee37997e16bc67f3c3ee3cb",
+  "assigned": 30,
+  "saved_verified": 30,
+  "incomplete": 0,
+  "preserved_verified": 15,
+  "unique_selected_candidate_hashes": 30,
+  "baseline_file_count": 243,
+  "baseline_files_unchanged": true,
+  "selected_candidates": [
+    {
+      "species_id": "wild_seed_squirrel_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_seed_squirrel_02/model_sheet_v0.1.png",
+      "sha256": "9341ad3a02c36c215cbbffcd6961ac7ffd18d55d7de38e6365bfb1cf5f1da449",
+      "size_bytes": 1512965,
+      "width": 1923,
+      "height": 818,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_vine_mole_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_vine_mole_02/model_sheet_v0.1.png",
+      "sha256": "5984a540b0f23c7e1de6387d8937e0a5fc5bcfd28473d3b15b10ea93d9c88f08",
+      "size_bytes": 1366128,
+      "width": 1995,
+      "height": 788,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_breeze_bird_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_breeze_bird_02/model_sheet_v0.1.png",
+      "sha256": "c0edc6bd2d9517e14c4dc3ee4407d6cac2ef8831f2c13834ee3fa764a87ea17f",
+      "size_bytes": 1488548,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_stream_otter_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_stream_otter_02/model_sheet_v0.1.png",
+      "sha256": "faa842b281ba91e639735e856c14d43763e3a259f68dc59e61e0e1c04ce745f8",
+      "size_bytes": 1173239,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_coil_dormouse_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_coil_dormouse_02/model_sheet_v0.1.png",
+      "sha256": "d8ed978e4d746ea3ed84e6ba4584739587d2dccf254b614bb8f19a99a1b686e5",
+      "size_bytes": 1680644,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_dusk_glider_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_dusk_glider_02/model_sheet_v0.1.png",
+      "sha256": "00378f167b00e885a2dcd0c854827fccfc389989cf35229b11f30b2207210400",
+      "size_bytes": 1486806,
+      "width": 1921,
+      "height": 819,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_reed_crane_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_01/model_sheet_v0.1.png",
+      "sha256": "65c7fdb90fa9b67d14077f9eec7bd4d15667376ce8cf59bdeddcb71be1cf2c8e",
+      "size_bytes": 1395130,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_reed_crane_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_02/model_sheet_v0.1.png",
+      "sha256": "560acc53226907573a5759b2e6bd13b1ca75ba5aff2023aed042e0b383f8a03d",
+      "size_bytes": 1327990,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_reed_crane_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_reed_crane_03/model_sheet_v0.1.png",
+      "sha256": "b0b2397b1875a1efbc3080ebf1c33e973e5d7fbfd33904dd1414d007dd5b31cf",
+      "size_bytes": 1420971,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lock_crab_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_01/model_sheet_v0.1.png",
+      "sha256": "6020e20cfeac63e381fc1054b52f88ac55dc961505ce2ab45ec4739cac131be9",
+      "size_bytes": 1467676,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lock_crab_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_02/model_sheet_v0.2.png",
+      "sha256": "e48d0d3a1416f866343f05f94bf25b00f528fbe6405f14276606be1cf74d5f81",
+      "size_bytes": 1854643,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lock_crab_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lock_crab_03/model_sheet_v0.1.png",
+      "sha256": "a4789cd4488c7107fb3261b9f126c2358c5086dd1a8da2fa8cbe3516d6711a9f",
+      "size_bytes": 1784432,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lotus_frog_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_01/model_sheet_v0.1.png",
+      "sha256": "ad3c7fa5908343aa15deeb544f41bed678cd850d5f2b8218b66ad2f96d08d9d2",
+      "size_bytes": 1448594,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lotus_frog_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lotus_frog_02/model_sheet_v0.1.png",
+      "sha256": "e05bb7e7b4f99b8aee5b94c2656c94d45ef9bbe3cc6aeffd61e796f8b00bb91b",
+      "size_bytes": 1387817,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_silt_skate_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_silt_skate_01/model_sheet_v0.1.png",
+      "sha256": "09be7acab5e30929845641dbe4439ea9c93245be0171c7da116cef4f19a1dc31",
+      "size_bytes": 1158811,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_silt_skate_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_silt_skate_02/model_sheet_v0.1.png",
+      "sha256": "6a5dd3c93f2610c452c4cd1cdd7980a6fa66ed7bc73328b34b1dff84f1f1fbf0",
+      "size_bytes": 1162943,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_mist_snail_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_01/model_sheet_v0.1.png",
+      "sha256": "53dafac6e67053b5b742b68039e7c45fc48432cef866c1543d4e88fe7960e6a8",
+      "size_bytes": 1424955,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_mist_snail_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_mist_snail_02/model_sheet_v0.1.png",
+      "sha256": "8433e9c437f232e49575f65039f76f7d7d1942b2326c5697805084ba82978e68",
+      "size_bytes": 1438754,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lantern_jelly_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_01/model_sheet_v0.1.png",
+      "sha256": "d6bc37a1afd46722d5d929c0234c0489a4a376356ea519f6d43fbdb98aa37a4a",
+      "size_bytes": 1453068,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_lantern_jelly_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_lantern_jelly_02/model_sheet_v0.1.png",
+      "sha256": "c0716b0fccc43b43e6ac8a0959eff298a63cb4ef750d66470c0a1ddfff9806e3",
+      "size_bytes": 1446154,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_bog_leech_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_01/model_sheet_v0.1.png",
+      "sha256": "a84c5fb1b5ccf289681699e72b046f955f023c2031f53d99f57889c212c2bda4",
+      "size_bytes": 1262212,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_bog_leech_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_bog_leech_02/model_sheet_v0.1.png",
+      "sha256": "d9df91ff0b44ecc6c6e0e16b12615f0561e3423eff556220fbfa77290cb79cce",
+      "size_bytes": 1313635,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_reed_whistle_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_reed_whistle_01/model_sheet_v0.1.png",
+      "sha256": "d3dc622bda6105f928cb1c5b38dde5e1ff8db19aa78345a276404e75ccbd5b17",
+      "size_bytes": 1488148,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_bubble_moth_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_bubble_moth_01/model_sheet_v0.1.png",
+      "sha256": "ee15a1871c6617a2efb27e2cbbc97fb0168f01d2db3bc04630a04185784cbe7a",
+      "size_bytes": 1932594,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_kiln_pup_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_01/model_sheet_v0.1.png",
+      "sha256": "4f6019cbf190ab5b213670fcd64ca3dbe58cdad9740df16087dfb9a480c28c06",
+      "size_bytes": 1265617,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_kiln_pup_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_02/model_sheet_v0.1.png",
+      "sha256": "b0baab59bd33e6cca788e2811cef287f5b1090e3d85cfa255dd26f23801a3e28",
+      "size_bytes": 1323881,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_kiln_pup_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_kiln_pup_03/model_sheet_v0.1.png",
+      "sha256": "34aaf57cfd3d0b9d4ca7ffc9fb1948102f5fe5a2b0b6ee236ce5f76df218f1c8",
+      "size_bytes": 1267863,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_glass_gecko_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_01/model_sheet_v0.1.png",
+      "sha256": "4024c59122322bdc347b3c1192a022730147ca34b62a035b9ec32cbb33c4f451",
+      "size_bytes": 1299503,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_glass_gecko_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_02/model_sheet_v0.1.png",
+      "sha256": "0e9eeefa97588ad1c7c85a8a7f5225396c75f4b983982e5b920c5f4e22b1cd94",
+      "size_bytes": 1242502,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_glass_gecko_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/wild_glass_gecko_03/model_sheet_v0.2.png",
+      "sha256": "263ee51d9c0f2934ea8ac8fe31b0ae80a487880ef1a1336b65ba97d8f1a077cc",
+      "size_bytes": 1791254,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    }
+  ],
+  "preserved_originals": [
+    {
+      "species_id": "starter_ember_wyvern_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_ember_wyvern_01/model_sheet_v0.2.png",
+      "sha256": "2df05475544cb4fbd35ed07ecd9f2326809d765a6ec15d2c9375972235ea2dde",
+      "size_bytes": 1537212,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_flower_hare_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_flower_hare_01/model_sheet_v0.2.png",
+      "sha256": "2eb01f8b836fd1c467eb929be62679e0f4d3867373ef507045e4be9d3e66474c",
+      "size_bytes": 1695990,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_tide_bear_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_tide_bear_01/model_sheet_v0.1.png",
+      "sha256": "a6558302e4de5085950577982bf932b9dc4e80eecfb10e0ee509dbd5fb9f2a24",
+      "size_bytes": 1353713,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_breeze_bird_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_breeze_bird_01/model_sheet_v0.1.png",
+      "sha256": "6e0b2683a35f1b7e154a342255215f8af37751120be9e69b86e37a72d59187ae",
+      "size_bytes": 1409564,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_coil_dormouse_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_coil_dormouse_01/model_sheet_v0.1.png",
+      "sha256": "8b555a79c5c7ce13944eb6fe8f9f256b5d887a7332c26ab8e51cbc3cba109618",
+      "size_bytes": 1367280,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_dusk_glider_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_dusk_glider_01/model_sheet_v0.2.png",
+      "sha256": "2f51f9991b102f69d85f927cff80c84113368032551c183bec215d4a79f9be06",
+      "size_bytes": 1667088,
+      "width": 1922,
+      "height": 818,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_seed_squirrel_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_seed_squirrel_01/model_sheet_v0.1.png",
+      "sha256": "31d8893e41711a27e38577f7eb69abe01d21e97a8e45732f2df475900563c3d2",
+      "size_bytes": 1455056,
+      "width": 1923,
+      "height": 817,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_stream_otter_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_stream_otter_01/model_sheet_v0.1.png",
+      "sha256": "695b9d7696c9a6a21bd47f0bdb92e20ff58644166bf367ca7ff4977cb7afcdbc",
+      "size_bytes": 1286685,
+      "width": 1983,
+      "height": 793,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "wild_vine_mole_01",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/wild_vine_mole_01/model_sheet_v0.1.png",
+      "sha256": "060363a944ca3453dc18fb0cb9fb8eedb12a6ef5774ef80ba095bb0e454b5fb0",
+      "size_bytes": 1333012,
+      "width": 1995,
+      "height": 788,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_flower_hare_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_flower_hare_02/model_sheet_library_original.png",
+      "sha256": "27732aeebf9cd4022e4ef6f6770ba15393616c5213de795db15667de6312bbe0",
+      "size_bytes": 1417263,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_flower_hare_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_flower_hare_03/model_sheet_library_original.png",
+      "sha256": "14ce5e0f4d5bd3ba5d925ea5bb557523bc86946ab729a58b75ae248571ea789b",
+      "size_bytes": 1618686,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_ember_wyvern_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_ember_wyvern_02/model_sheet_library_original.png",
+      "sha256": "0ea407a6ab571ad35645a3e20247ecb98d0467dd68e7e35b65a9848f6c759e62",
+      "size_bytes": 1480113,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_ember_wyvern_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_ember_wyvern_03/model_sheet_library_original.png",
+      "sha256": "6d16ebdeee1d8beb591a203354280820b0be473a03915b0aa8c017cfe5da4de8",
+      "size_bytes": 1708723,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_tide_bear_02",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_tide_bear_02/model_sheet_library_original.png",
+      "sha256": "0e0482af42c730e2e8c7830fee5c99d2b7eba7f4180f03c34a254579ab68cae1",
+      "size_bytes": 1362726,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    },
+    {
+      "species_id": "starter_tide_bear_03",
+      "path": "assets/source/monsters/parallel_20261104/s01/preserved/starter_tide_bear_03/model_sheet_library_original.png",
+      "sha256": "97019fc567e224449f7dccfcc436e78c2d2ed7cf5e56cef9dd3f8532d2153128",
+      "size_bytes": 1521570,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "github_body_match": true
+    }
+  ],
+  "visual_scope": "27種は前工程の目視記録を保持。今回追加3種は生成本体と保存本体を目視。全45本体を今回HTTPS取得し実測・照合。美術採用やruntime昇格を意味しない。",
+  "starting_branch_head": "7db6ae88d9faad0fc0fbaf702e73dcd396049a35",
+  "starting_branch_pngs_unchanged": 110,
+  "validators": {
+    "validate_assets.py": {
+      "exit_code": 0,
+      "output": "validate-assets-20261105.txt"
+    },
+    "validate_preproduction.py": {
+      "exit_code": 0,
+      "output": "validate-preproduction-20261105.txt"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_reed_crane_01 アシピナ
+{
+  "motifs_ja": "葦の脚環を持つ鶴",
+  "full_body_silhouette_ja": "丸い雛が長い2脚で立ち、短い翼を横へ",
+  "palette_main": [
+    "白灰",
+    "青緑"
+  ],
+  "palette_accents": [
+    "朱"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "細い黒目と短い朱の眉、長いくちばしを下げる。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 2,
+    "independent_wings": 2,
+    "tails": 1,
+    "horns": 0,
+    "antennae": 0,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "細脚2本は骨盤、翼2枚は肩。葦環は脚の模様。尾羽は1束。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：細い黒目と短い朱の眉、長いくちばしを下げる。 識別点：長脚の葦色の環",
+    "back_ja": "背面でも保つ輪郭：丸い雛が長い2脚で立ち、短い翼を横へ。細脚2本は骨盤、翼2枚は肩。葦環は脚の模様。尾羽は1束。",
+    "side_ja": "横面の接続：細脚2本は骨盤、翼2枚は肩。葦環は脚の模様。尾羽は1束。。雛。翼は小さく首もまだ短い。"
+  },
+  "evolution_changes_ja": "雛。翼は小さく首もまだ短い。",
+  "family_retained_features_ja": "葦の脚環を持つ鶴。細い黒目と短い朱の眉、長いくちばしを下げる。",
+  "sprite_96px_ja": "丸い雛が長い2脚で立ち、短い翼を横へ。長脚の葦色の環を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "長脚と丸い雛胴の比率を優先。脚の細い葦環より、二足で歩く葦笛との胴の違いを残す。",
+  "differentiation_ja": "ハネリの短脚・大扇尾ではなく長脚・小尾。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+This is the BASIC juvenile form of reed crane family, 1 of 3. Keep appealing small round-bodied wading chick and reed tuft features as specified. No adult extravagant ornamental feathers; subsequent stages grow neck and legs. Do not borrow the previous mammal or fan-tail bird anatomy. Entirely original reed crane concept.
+CORRECTION PASS:
+Precise correction to the reed-crane chick three-view sheet: change ONLY the markings on its two shins. The reed-colored leg rings are FLAT COLOR PATTERNS IN THE LEG SKIN, not tied reeds, bracelets, anklets, ribbons or attached leaves. Remove ALL projecting leaves and stalks beside the legs. Replace each bulky wrap with two simple thin olive/reed-colored painted horizontal bands on the existing leg surface. Preserve the exact same two-leg anatomy and everything else: white-gray round chick, short neck, two small teal-tipped wings, one small tail tuft, slim black eyes, red eyebrows, long downward bill, three whole-body views on white. No text.

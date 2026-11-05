@@ -1,0 +1,49 @@
+Use case: stylized-concept. MONORICA original monster design sheet. Exactly ONE species and same individual in THREE full-body views left to right: front three-quarter, rear three-quarter, exact side profile. Wide horizontal white canvas, ample margins; no overlaps between views; whole body and all appendages fit fully. Cute approachable creature RPG art, crisp colored dark outlines, simple large cel shaded color areas, consistent with reference. No writing, labels, numbers, logos, watermark, UI, scenery or unrelated props. Same color patches, body-side placement, numbers and roots of organs in every view. Natural far-side occlusion only. High-resolution full color, no pixel art or sprites. The following Japanese design is authoritative: species-specific connections and evolution changes take priority over generic family language. 96/32px entries are identifying features only; do not make small sprites. For evolution, reference image anchors juvenile continuity and art style, but render the specified grown form.
+Species wild_bubble_moth_01 アワハリカ
+{
+  "motifs_ja": "泡を運ぶ水草の蛾",
+  "full_body_silhouette_ja": "丸い4翅の内側に泡形の白い斑が並ぶ",
+  "palette_main": [
+    "薄緑",
+    "乳白"
+  ],
+  "palette_accents": [
+    "藤"
+  ],
+  "palette_status": "production_proposal",
+  "face_expression_ja": "小さな丸目とふわり曲がる触角。",
+  "anatomy_counts": {
+    "independent_arms": 0,
+    "legs": 6,
+    "independent_wings": 4,
+    "tails": 0,
+    "horns": 0,
+    "antennae": 2,
+    "fins": 0,
+    "tentacles": 0
+  },
+  "anatomy_connections_ja": "胸から脚6本と翅4枚。触角2本は頭。泡は翅のくぼみで、卵や顔にしない。",
+  "anatomy_scope_ja": "全構造が今回の制作案。未制作の画像で確認済みとは扱わない。",
+  "view_invariants": {
+    "front_ja": "顔・前側の色面：小さな丸目とふわり曲がる触角。 識別点：丸翅と大きな泡斑",
+    "back_ja": "背面でも保つ輪郭：丸い4翅の内側に泡形の白い斑が並ぶ。胸から脚6本と翅4枚。触角2本は頭。泡は翅のくぼみで、卵や顔にしない。",
+    "side_ja": "横面の接続：胸から脚6本と翅4枚。触角2本は頭。泡は翅のくぼみで、卵や顔にしない。。単独種。泡数の違いを別種へ数えない。"
+  },
+  "evolution_changes_ja": "単独種。泡数の違いを別種へ数えない。",
+  "family_retained_features_ja": "泡を運ぶ水草の蛾。小さな丸目とふわり曲がる触角。",
+  "sprite_96px_ja": "丸い4翅の内側に泡形の白い斑が並ぶ。丸翅と大きな泡斑を太い色面で残し、細い陰影より器官の重なりを優先。",
+  "icon_32px_ja": "横へ丸く開いた翅と大きな白い泡斑を残す。レンズ蛾の縦長の円窓と外形で分ける。",
+  "differentiation_ja": "煤蛾・星繭とは丸い翅と泡のくぼみで区別。",
+  "production_difficulty_ja": "中：器官の付け根と色面を三面で一致させる。",
+  "art_adoption": {
+    "concept_direction": "production_proposal",
+    "model_sheet": "not_created",
+    "runtime_art": "not_created",
+    "new_anatomy_detail": "production_proposal",
+    "note_ja": "今回の文字設計のみ。画像未制作・未採用。"
+  }
+}
+
+Critical count: SIX slender insect legs rooted in THORAX (three per side), FOUR round wings rooted in thorax (two forewings + two hindwings), TWO gently curved antennae rooted in head. No extra fluffy tail, arms, wing pair or detached bubbles. In front3/4 spread all six legs enough to count. In rear3/4 show their chest roots/overlap coherently. Bubble-like WHITE recessed wing spots stay on wing surfaces, not floating eggs or eyes.
+CORRECTION PASS:
+Correct ONLY six-leg readability on this アワハリカ model sheet. The FRONT (left drawing) and REAR (middle drawing) currently show only FIVE clearly separated purple foot tips. Each moth must have EXACTLY SIX legs, THREE slender legs rooted on each SIDE of the THORAX, with SIX distinct purple foot tips. Reveal the occluded/missing sixth leg by fanning the existing legs apart, do not add a seventh. In front draw three visible foot tips toward viewer-left and three toward viewer-right, all with clear white gaps. Mirror coherent leg placement in rear, six tips total. Side retains three near legs and far legs may overlap naturally. All leg roots under fluffy thorax, not abdomen. Preserve four wings, two antennae, body, spots, colors, layout and white background. No text.
